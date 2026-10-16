@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: phase-complete
-stopped_at: Phase 1 complete, verified 5/5
-last_updated: "2026-10-17T02:00:00.000Z"
-last_activity: 2026-10-17 -- Phase 01 verified 5/5, LHCI median green
+status: executing
+stopped_at: Phase 02 plan 01 complete (SEO contracts)
+last_updated: "2026-10-17T02:15:00.000Z"
+last_activity: 2026-10-17 -- Completed 02-01 SEO contracts (silo taxonomy + canonical/hreflang + JSON-LD builders)
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 4
+  total_plans: 8
   completed_plans: 4
-  percent: 17
+  percent: 50
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-10-16)
 
 **Core value:** Tier-1 readers find our articles on Google page 1 and stay to read — organic sessions from US/UK/CA/AU grow every week.
-**Current focus:** Phase 2 — SEO Architecture + Silo IA (ready to plan; Phase 1 verified 5/5)
+**Current focus:** Phase 02 — seo-architecture-silo-ia
 
 ## Current Position
 
-Phase: 1 of 6 complete (Site Foundation + Trust — verified 5/5, LHCI median home 0.95 / post 0.93)
-Plan: 4 of 4 in Phase 1 (01-01, 01-02, 01-03, 01-04 complete; 01-VERIFICATION.md 5/5 PASS)
-Status: Phase 1 complete, ready for Phase 2 planning
-Last activity: 2026-10-17 -- Phase 01 verified 5/5, LHCI median green
+Phase: 02 (seo-architecture-silo-ia) — EXECUTING
+Plan: 2 of 4
+Status: Executing Phase 02 (02-01 complete, 02-02 next)
+Last activity: 2026-10-17 -- Completed 02-01 SEO contracts
 
 Progress: [██░░░░░░░░] 17%
 
@@ -63,6 +63,9 @@ Recent decisions affecting current work:
 - [Roadmap]: Research Corrected Decisions supersede PROJECT.md — Next.js 16.x (not 14), Content Collections (not Contentlayer), single-locale en-US launch, FAQPage as hygiene, sitemaps + GSC API Google track
 - [Roadmap]: 6 phases in dependency order render → indexability → structure → quality → autonomy → optimization; no auto-publish before proven QA gates
 - [Roadmap]: Pipeline (Phase 3) split from QA gates (Phase 4) for executable planning; coupled by ordering invariant
+- [02-01]: JSON-LD builders typed against installed next-seo v7 prop types (not raw schema-dts unions) — spreadability is the hard contract; FAQ component is FAQJsonLd; inLanguage omitted (not a v7 ArticleBase field)
+- [02-01]: T-02-01 sanitization is true `<`-stripping — plan's single-escaped '\u003c' is a runtime no-op
+- [02-01]: BreadcrumbJsonLdProps needs Extract-before-Omit (union collapses under bare Omit)
 
 ### Pending Todos
 
@@ -82,6 +85,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-16T17:18:49.518Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-site-foundation-trust/01-CONTEXT.md
+Last session: 2026-10-17T02:15:00.000Z
+Stopped at: Completed 02-01 (SEO contracts)
+Resume file: .planning/phases/02-seo-architecture-silo-ia/02-01-SUMMARY.md

@@ -54,8 +54,17 @@ Cross-cutting constraints: single-source SEO strings via lib/site.ts (Plans 01�
   3. Post page emits valid Article + BreadcrumbList JSON-LD (FAQPage as hygiene) from single-source builders
   4. Archives, tags, and pagination are noindexed and the CI crawl-consistency suite is green
   5. Visitor can navigate 4–8 silo landing pages with hub-and-spoke cluster links; US visitor gets en-US canonical (+ x-default) and hreflang plumbing passes CI single-locale
-**Plans**: TBD
+**Plans**: 4 plans in 2 waves
 **UI hint**: yes
+
+Plans:
+- [x] 02-01-PLAN.md — SEO contracts: silo taxonomy + canonical/hreflang + JSON-LD builders (Wave 1)
+- [ ] 02-02-PLAN.md — Split sitemaps + robots + crawl-consistency CI suite (Wave 1, parallel with 02-01)
+- Wave 2 *(blocked on 02-01 contracts)*:
+- [ ] 02-03-PLAN.md — 5 silo landings + homepage hubs section
+- [ ] 02-04-PLAN.md — Post-page SEO wiring: silo crumb, JSON-LD, hreflang, Related upgrade (parallel with 02-03)
+
+Cross-cutting constraints: single-source SEO strings via lib/site.ts + lib/silos.ts + lib/seo/ builders (Plans 01–04); `npm run build` + `npm run check:crawl` green after every task; flat /blog/{slug} untouched, hierarchy via links only.
 
 ### Phase 3: Content Pipeline
 **Goal**: System can turn a governed keyword into a structured, template-conformant draft with assets
@@ -111,7 +120,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
-| 2. SEO Architecture + Silo IA | 0/TBD | Not started | - |
+| 2. SEO Architecture + Silo IA | 1/4 | In progress | - |
 | 3. Content Pipeline | 0/TBD | Not started | - |
 | 4. Quality Gates | 0/TBD | Not started | - |
 | 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |
