@@ -4,8 +4,15 @@
 module.exports = {
   ci: {
     collect: {
-      url: ['http://localhost:3000/'],
+      // Homepage + representative post template (Plan 04): the seed post
+      // exercises TL;DR, TOC, tables, code blocks, FAQ, and related-posts.
+      url: [
+        'http://localhost:3000/',
+        'http://localhost:3000/blog/best-ai-writing-assistants-2026',
+      ],
       numberOfRuns: 1,
+      startServerCommand: 'npm start',
+      startServerReadyPattern: 'Ready in',
     },
     assert: {
       assertions: {
