@@ -42,3 +42,6 @@ next-env.d.ts
 
 # content-collections (generated at build time)
 .content-collections/
+
+# lighthouse-ci (local lab artifacts, large HTML/JSON per run)
+.lighthouseci/

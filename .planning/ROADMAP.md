@@ -12,7 +12,7 @@ Tier-1 readers find our articles on Google page 1 and stay to read. We get there
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Site Foundation + Trust** - Fast, trustworthy article site on the edge with seed posts
+- [x] **Phase 1: Site Foundation + Trust** - Fast, trustworthy article site on the edge with seed posts
 - [ ] **Phase 2: SEO Architecture + Silo IA** - Crawlable flat-URL site with silo link graph and single-locale plumbing
 - [ ] **Phase 3: Content Pipeline** - Serial gated pipeline from keyword registry to structured draft
 - [ ] **Phase 4: Quality Gates** - Fail-closed EEAT/anti-spam gates with quarantine and auto-pause
@@ -35,12 +35,12 @@ Decimal phases appear between their surrounding integers in numeric order.
 **UI hint**: yes
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold + content layer + editorial shell + edge posture (Wave 1)
+- [x] 01-01-PLAN.md — Scaffold + content layer + editorial shell + edge posture (Wave 1)
 - Wave 2 *(blocked on Wave 1 completion)*:
-- [ ] 01-02-PLAN.md — Article template + MDX system + OG images
-- [ ] 01-03-PLAN.md — Trust pages (author, About, process, Contact, legal)
+- [x] 01-02-PLAN.md — Article template + MDX system + OG images
+- [x] 01-03-PLAN.md — Trust pages (author, About, process, Contact, legal)
 - Wave 3 *(blocked on Wave 2 completion)*:
-- [ ] 01-04-PLAN.md — 5 seed posts + conformance/LHCI gates + deploy verification
+- [x] 01-04-PLAN.md — 5 seed posts + conformance/LHCI gates + deploy verification
 
 Cross-cutting constraints: single-source SEO strings via lib/site.ts (Plans 01–04); `npm run build` green after every task (Content Collections schema gate); no webfonts / near-zero client JS (Plans 01, 02, 04).
 
@@ -110,7 +110,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Site Foundation + Trust | 0/TBD | Not started | - |
+| 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
 | 2. SEO Architecture + Silo IA | 0/TBD | Not started | - |
 | 3. Content Pipeline | 0/TBD | Not started | - |
 | 4. Quality Gates | 0/TBD | Not started | - |

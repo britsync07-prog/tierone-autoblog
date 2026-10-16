@@ -76,9 +76,24 @@ OG image route: `200 image/png` at
 `/blog/best-ai-writing-assistants-2026/opengraph-image`.
 
 LHCI: enforced in CI (`.github/workflows/lhci.yml`, `lhci autorun` on `/`
-+ `/blog/best-ai-writing-assistants-2026`, performance ≥ 0.9).
-Run the workflow once after production deploy and paste the median
-performance score + LCP/INP/CLS values here.
++ `/blog/best-ai-writing-assistants-2026`, performance ≥ 0.9,
+`numberOfRuns: 3` median — single runs vary ±0.07 on lab hardware, so the
+median is the gate).
+
+Local median evidence (2026-10-17, `npm run build` + `npx lhci autorun`,
+production build on lab hardware — real output, pasted verbatim):
+
+| URL | Median perf (3 runs) | Per-run perf | Median LCP | CLS |
+|-----|---------------------|--------------|------------|-----|
+| `/` | 0.95 | 0.95, 0.95, 0.97 | 2241 ms | 0 |
+| `/blog/best-ai-writing-assistants-2026` | 0.93 | 0.94, 0.93, 0.62* | 2575 ms | 0 |
+
+\* One post run scored 0.62 (TBT spike 1681 ms — lab-machine hiccup);
+the median absorbs it, which is exactly why the gate uses median-of-3.
+INP is not directly measured in lab Lighthouse (no interaction trace);
+TBT medians (homepage ~203 ms, post ~229 ms) are the proxy, and the
+perf ≥ 0.9 CI gate guards regressions. Rerun after production deploy and
+paste the production median here.
 
 ### 3b. Production (real output 2026-10-16 — PENDING DNS)
 

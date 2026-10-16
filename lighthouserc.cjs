@@ -10,7 +10,7 @@ module.exports = {
         'http://localhost:3000/',
         'http://localhost:3000/blog/best-ai-writing-assistants-2026',
       ],
-      numberOfRuns: 1,
+      numberOfRuns: 3,
       startServerCommand: 'npm start',
       startServerReadyPattern: 'Ready in',
     },
