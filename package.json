@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:seeds": "node scripts/check-seeds.mjs"
+    "check:seeds": "node scripts/check-seeds.mjs",
+    "check:crawl": "node scripts/check-crawl.mjs"
   },
   "dependencies": {
     "@content-collections/core": "^0.15.3",
