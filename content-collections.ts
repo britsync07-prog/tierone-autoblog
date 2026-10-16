@@ -6,6 +6,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import { z } from 'zod';
+import { SILO_SLUGS } from './lib/silos';
 
 // Typed post collection: frontmatter is the single source of truth and the
 // build-time QA gate — malformed frontmatter fails the build, never publishes
@@ -24,7 +25,9 @@ const posts = defineCollection({
       .array(z.object({ q: z.string().min(1), a: z.string().min(1) }))
       .min(3)
       .max(5),
-    silo: z.string().min(1),
+    // T-02-02: silo enum — an undeclared silo fails the build loudly instead
+    // of rendering a landing-less orphan (landings derive from SILO_SLUGS).
+    silo: z.enum(SILO_SLUGS),
     // Explicit content property (raw markdown body, supplied by the
     // frontmatter parser — never written in frontmatter files). Required by
     // @content-collections/core: omitting it triggers the
