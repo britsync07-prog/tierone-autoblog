@@ -1,0 +1,69 @@
+# Project State
+
+## Project Reference
+
+See: .planning/PROJECT.md (updated 2026-10-16)
+
+**Core value:** Tier-1 readers find our articles on Google page 1 and stay to read — organic sessions from US/UK/CA/AU grow every week.
+**Current focus:** Phase 1 — Site Foundation + Trust (ready to plan)
+
+## Current Position
+
+Phase: 1 of 6 (Site Foundation + Trust)
+Plan: 0 of TBD in current phase
+Status: Ready to plan
+Last activity: 2026-10-16 — Roadmap created (6 phases, 28/28 requirements mapped)
+
+Progress: [░░░░░░░░░░] 0%
+
+## Performance Metrics
+
+**Velocity:**
+- Total plans completed: 0
+- Average duration: -
+- Total execution time: 0 hours
+
+**By Phase:**
+
+| Phase | Plans | Total | Avg/Plan |
+|-------|-------|-------|----------|
+| - | - | - | - |
+
+**Recent Trend:**
+- Last 5 plans: -
+- Trend: -
+
+*Updated after each plan completion*
+
+## Accumulated Context
+
+### Decisions
+
+Decisions are logged in PROJECT.md Key Decisions table.
+Recent decisions affecting current work:
+
+- [Roadmap]: Research Corrected Decisions supersede PROJECT.md — Next.js 16.x (not 14), Content Collections (not Contentlayer), single-locale en-US launch, FAQPage as hygiene, sitemaps + GSC API Google track
+- [Roadmap]: 6 phases in dependency order render → indexability → structure → quality → autonomy → optimization; no auto-publish before proven QA gates
+- [Roadmap]: Pipeline (Phase 3) split from QA gates (Phase 4) for executable planning; coupled by ordering invariant
+
+### Pending Todos
+
+None yet.
+
+### Blockers/Concerns
+
+None yet.
+
+## Deferred Items
+
+Items acknowledged and carried forward from previous milestone close:
+
+| Category | Item | Status | Deferred At |
+|----------|------|--------|-------------|
+| *(none)* | | | |
+
+## Session Continuity
+
+Last session: 2026-10-16
+Stopped at: Roadmap created, awaiting phase planning
+Resume file: None
