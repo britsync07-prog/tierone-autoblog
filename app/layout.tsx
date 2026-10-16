@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
+import AdSlot from '@/components/ad-slot';
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import './globals.css';
 
@@ -78,6 +79,9 @@ export default function RootLayout({
         />
         <SiteJsonLd />
         <SiteHeader />
+        <div className="hidden md:block">
+          <AdSlot id="header-leaderboard" width={728} height={90} />
+        </div>
         {children}
         <SiteFooter />
       </body>
