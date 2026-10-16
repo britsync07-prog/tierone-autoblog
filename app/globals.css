@@ -24,6 +24,53 @@ samp {
   outline-offset: 2px;
 }
 
+/* Heading anchor links (rehype-autolink-headings `.anchor-link`): hover/focus
+   only, reserved inline space so there is no layout shift. */
+.prose h2 .anchor-link,
+.prose h3 .anchor-link {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  opacity: 0;
+  text-decoration: none;
+}
+.prose h2:hover .anchor-link,
+.prose h3:hover .anchor-link,
+.prose h2 .anchor-link:focus-visible,
+.prose h3 .anchor-link:focus-visible {
+  opacity: 1;
+  color: #4f46e5;
+}
+
+/* Comparison tables (D-07): striped body, tinted header, 14px cells. */
+.prose table {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+.prose thead th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.prose tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+.prose tbody td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Shiki-highlighted code (rehype-pretty-code, server-rendered). */
+[data-rehype-pretty-code-figure] pre {
+  margin: 0;
+}
+[data-highlighted-line] {
+  background-color: rgba(79, 70, 229, 0.08);
+}
+
 /* Respect reduced motion: progress bar + smooth scroll stay still. */
 @media (prefers-reduced-motion: reduce) {
   html {

@@ -2,9 +2,15 @@ import { withContentCollections } from '@content-collections/next';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Preserve create-next-app 16.x scaffold defaults.
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Classic App Router caching model (not Cache Components): the posts
+  // collection is legitimately EMPTY in pre-seed builds (UI-SPEC §3 empty
+  // state; seeds land in Plan 04), and Cache Components hard-fails the build
+  // when generateStaticParams returns [] (empty-generate-static-params).
+  // Classic model: empty params = paths render on demand; non-empty params
+  // = fully static prerender — exactly the rebuild-per-publish posture in
+  // STACK.md. Revisit only if partial-prerendering is ever needed.
+  cacheComponents: false,
+  partialPrefetching: false,
   turbopack: {
     rules: {
       '*.css': {
