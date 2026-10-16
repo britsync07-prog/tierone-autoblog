@@ -59,7 +59,7 @@ Cross-cutting constraints: single-source SEO strings via lib/site.ts (Plans 01�
 
 Plans:
 - [x] 02-01-PLAN.md — SEO contracts: silo taxonomy + canonical/hreflang + JSON-LD builders (Wave 1)
-- [ ] 02-02-PLAN.md — Split sitemaps + robots + crawl-consistency CI suite (Wave 1, parallel with 02-01)
+- [x] 02-02-PLAN.md — Split sitemaps + robots + crawl-consistency CI suite (Wave 1, parallel with 02-01)
 - Wave 2 *(blocked on 02-01 contracts)*:
 - [ ] 02-03-PLAN.md — 5 silo landings + homepage hubs section
 - [ ] 02-04-PLAN.md — Post-page SEO wiring: silo crumb, JSON-LD, hreflang, Related upgrade (parallel with 02-03)
