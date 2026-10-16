@@ -31,8 +31,18 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Visitor can verify publisher trust via real author page, About, editorial-process, Contact, and Privacy/Terms pages
   4. Visitor sharing any post sees the correct OG/Twitter programmatic image and title in the unfurl
   5. US visitor is served from the edge (Vercel + Cloudflare CDN front, US origin) over HTTPS with correct Googlebot cache behavior
-**Plans**: TBD
+**Plans**: 4 plans in 3 waves
 **UI hint**: yes
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold + content layer + editorial shell + edge posture (Wave 1)
+- Wave 2 *(blocked on Wave 1 completion)*:
+- [ ] 01-02-PLAN.md — Article template + MDX system + OG images
+- [ ] 01-03-PLAN.md — Trust pages (author, About, process, Contact, legal)
+- Wave 3 *(blocked on Wave 2 completion)*:
+- [ ] 01-04-PLAN.md — 5 seed posts + conformance/LHCI gates + deploy verification
+
+Cross-cutting constraints: single-source SEO strings via lib/site.ts (Plans 01–04); `npm run build` green after every task (Content Collections schema gate); no webfonts / near-zero client JS (Plans 01, 02, 04).
 
 ### Phase 2: SEO Architecture + Silo IA
 **Goal**: Crawlers can discover, understand, and efficiently crawl every post inside a topical silo structure
