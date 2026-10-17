@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-15T05:00:00.000Z",
+  "keywords": [
+    {
+      "id": "fixture-draft",
+      "keyword": "ai writing assistant workflow",
+      "silo": "ai-writing",
+      "stage": "outlined",
+      "createdAt": "2026-10-15T00:00:00.000Z",
+      "updatedAt": "2026-10-15T01:00:00.000Z",
+      "serpTop3": [
+        { "url": "https://example.com/ai-writing-guide", "title": "Example A on AI writing workflows", "position": 1 },
+        { "url": "https://example.com/writing-tools-review", "title": "Example B reviewing writing tools", "position": 2 },
+        { "url": "https://example.com/automation-notes", "title": "Example C notes on automation", "position": 3 }
+      ],
+      "paa": [
+        "Do AI writing tools hurt SEO rankings?",
+        "Which AI writing tool is best for beginners?",
+        "Can AI writing tools pass plagiarism checks?",
+        "How much should I pay for an AI writing assistant?"
+      ],
+      "brief": { "completedAt": "2026-10-15T00:30:00.000Z" },
+      "outline": { "completedAt": "2026-10-15T00:40:00.000Z", "lint": "pass" },
+      "images": {
+        "hero": {
+          "slot": "hero",
+          "alt": "Fixture hero concept for the draft pipeline",
+          "src": "/images/fixture-draft/hero.avif"
+        },
+        "completedAt": "2026-10-15T00:50:00.000Z"
+      }
+    },
+    {
+      "id": "fixture-noimages",
+      "keyword": "ai writing assistant review",
+      "silo": "ai-writing",
+      "stage": "outlined",
+      "createdAt": "2026-10-15T00:00:00.000Z",
+      "updatedAt": "2026-10-15T02:00:00.000Z",
+      "serpTop3": [
+        { "url": "https://example.com/a", "title": "Example A", "position": 1 },
+        { "url": "https://example.com/b", "title": "Example B", "position": 2 },
+        { "url": "https://example.com/c", "title": "Example C", "position": 3 }
+      ],
+      "paa": [
+        "Do AI writing tools hurt SEO rankings?",
+        "Which AI writing tool is best for beginners?",
+        "Can AI writing tools pass plagiarism checks?",
+        "How much should I pay for an AI writing assistant?"
+      ],
+      "brief": { "completedAt": "2026-10-15T00:30:00.000Z" },
+      "outline": { "completedAt": "2026-10-15T00:40:00.000Z", "lint": "pass" }
+    },
+    {
+      "id": "fixture-nocompletedat",
+      "keyword": "ai writing assistant setup",
+      "silo": "ai-writing",
+      "stage": "outlined",
+      "createdAt": "2026-10-15T00:00:00.000Z",
+      "updatedAt": "2026-10-15T03:00:00.000Z",
+      "serpTop3": [
+        { "url": "https://example.com/a", "title": "Example A", "position": 1 },
+        { "url": "https://example.com/b", "title": "Example B", "position": 2 },
+        { "url": "https://example.com/c", "title": "Example C", "position": 3 }
+      ],
+      "paa": [
+        "Do AI writing tools hurt SEO rankings?",
+        "Which AI writing tool is best for beginners?",
+        "Can AI writing tools pass plagiarism checks?",
+        "How much should I pay for an AI writing assistant?"
+      ],
+      "brief": { "completedAt": "2026-10-15T00:30:00.000Z" },
+      "outline": { "lint": "pass" },
+      "images": {
+        "hero": {
+          "slot": "hero",
+          "alt": "Fixture hero concept for the outline gate",
+          "src": "/images/fixture-nocompletedat/hero.avif"
+        },
+        "completedAt": "2026-10-15T00:50:00.000Z"
+      }
+    },
+    {
+      "id": "fixture-attempts-ceiling",
+      "keyword": "ai writing assistant pricing",
+      "silo": "ai-writing",
+      "stage": "outlined",
+      "createdAt": "2026-10-15T00:00:00.000Z",
+      "updatedAt": "2026-10-15T04:00:00.000Z",
+      "serpTop3": [
+        { "url": "https://example.com/a", "title": "Example A", "position": 1 },
+        { "url": "https://example.com/b", "title": "Example B", "position": 2 },
+        { "url": "https://example.com/c", "title": "Example C", "position": 3 }
+      ],
+      "paa": [
+        "Do AI writing tools hurt SEO rankings?",
+        "Which AI writing tool is best for beginners?",
+        "Can AI writing tools pass plagiarism checks?",
+        "How much should I pay for an AI writing assistant?"
+      ],
+      "brief": { "completedAt": "2026-10-15T00:30:00.000Z" },
+      "outline": { "completedAt": "2026-10-15T00:40:00.000Z", "lint": "pass" },
+      "images": {
+        "hero": {
+          "slot": "hero",
+          "alt": "Fixture hero concept for the ceiling entry",
+          "src": "/images/fixture-attempts-ceiling/hero.avif"
+        },
+        "completedAt": "2026-10-15T00:50:00.000Z"
+      },
+      "draft": {
+        "slug": "fixture-attempts-ceiling",
+        "attempts": 5,
+        "lastError": "previous template gate failure recorded by earlier test runs"
+      }
+    }
+  ]
+}
