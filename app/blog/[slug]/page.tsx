@@ -21,6 +21,7 @@ import AdSlot from '@/components/ad-slot';
 import AiBadge from '@/components/ai-badge';
 import Byline from '@/components/byline';
 import RelatedPosts from '@/components/related-posts';
+import ComparisonTable from '@/components/comparison-table';
 import Tldr from '@/components/tldr';
 import { Toc, TocInline } from '@/components/toc';
 import ReadingProgress from '@/components/reading-progress';
@@ -208,6 +209,10 @@ export default async function PostPage({
             <AiBadge href="/editorial-process" />
             <Tldr items={[post.tldr]} />
             <TocInline headings={post.headings} />
+            {/* D-14/PIPE-04: frontmatter comparison DATA renders immediately
+                ABOVE the MDX body (Wirecutter early-table pattern). Posts
+                without comparison frontmatter are rendered unchanged. */}
+            {post.comparison && <ComparisonTable {...post.comparison} />}
             <ArticleBody code={post.mdx} />
             <FaqSection faq={post.faq} />
             <RelatedPosts currentSlug={post.slug} silo={post.silo} />
