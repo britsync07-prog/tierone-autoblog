@@ -1,5 +1,2462 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T09:05:26.498Z",
-  "keywords": []
+  "updatedAt": "2026-10-17T11:27:52.883Z",
+  "keywords": [
+    {
+      "id": "ai-coding-assistant",
+      "keyword": "ai coding assistant",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:19:53.754Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-free",
+      "keyword": "ai coding assistant free",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:19:53.756Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-comparison",
+      "keyword": "ai coding assistant comparison",
+      "silo": "ai-coding",
+      "stage": "filtered",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.425Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:19:52.178Z",
+      "paa": []
+    },
+    {
+      "id": "ai-coding-assistant-tools",
+      "keyword": "ai coding assistant tools",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.428Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-in-a",
+      "keyword": "ai coding assistant in a code repository environment",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.432Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistants-list",
+      "keyword": "ai coding assistants list",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.439Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-easy",
+      "keyword": "ai coding assistant easy",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.444Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistants-are-best",
+      "keyword": "ai coding assistants are best used to",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.448Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-cursor",
+      "keyword": "ai coding assistant cursor",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.452Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-coding-assistant-github",
+      "keyword": "ai coding assistant github",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai coding assistant",
+      "createdAt": "2026-10-17T11:19:52.178Z",
+      "updatedAt": "2026-10-17T11:20:09.457Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "github-copilot-alternatives",
+      "keyword": "github copilot alternatives",
+      "silo": "ai-coding",
+      "stage": "filtered",
+      "seedTopic": "github copilot alternatives",
+      "createdAt": "2026-10-17T11:20:09.462Z",
+      "updatedAt": "2026-10-17T11:20:26.222Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://github.com/",
+          "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+          "position": 1
+        },
+        {
+          "url": "https://github.com/login",
+          "title": "Sign in to GitHub · GitHub",
+          "position": 2
+        },
+        {
+          "url": "https://x.com/github",
+          "title": "GitHub (@ github ) / X",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:20:09.462Z",
+      "paa": []
+    },
+    {
+      "id": "github-copilot-alternatives-for-vs",
+      "keyword": "github copilot alternatives for vs code",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "github copilot alternatives",
+      "createdAt": "2026-10-17T11:20:09.462Z",
+      "updatedAt": "2026-10-17T11:20:41.538Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://github.com/",
+          "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+          "position": 1
+        },
+        {
+          "url": "https://github.com/login",
+          "title": "Sign in to GitHub · GitHub",
+          "position": 2
+        },
+        {
+          "url": "https://x.com/github",
+          "title": "GitHub (@ github ) / X",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:20:09.462Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with github-copilot-alternatives"
+    },
+    {
+      "id": "github-copilot-alternatives-free",
+      "keyword": "github copilot alternatives free",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "github copilot alternatives",
+      "createdAt": "2026-10-17T11:20:09.462Z",
+      "updatedAt": "2026-10-17T11:20:57.113Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://github.com/",
+          "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+          "position": 1
+        },
+        {
+          "url": "https://github.com/login",
+          "title": "Sign in to GitHub · GitHub",
+          "position": 2
+        },
+        {
+          "url": "https://x.com/github",
+          "title": "GitHub (@ github ) / X",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:20:09.462Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with github-copilot-alternatives"
+    },
+    {
+      "id": "claude-in-terminal",
+      "keyword": "claude in terminal",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:20:57.942Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-mac",
+      "keyword": "claude in terminal mac",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:20:57.948Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-windows",
+      "keyword": "claude in terminal windows",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:20:57.953Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-vs-vscode",
+      "keyword": "claude in terminal vs vscode",
+      "silo": "ai-coding",
+      "stage": "filtered",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:13.668Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://claude.com/",
+          "title": "Claude",
+          "position": 1
+        },
+        {
+          "url": "https://claude.ai/",
+          "title": "Sign in - Claude",
+          "position": 2
+        },
+        {
+          "url": "https://claude.com/download",
+          "title": "Download Claude | Claude by Anthropic",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:20:56.548Z",
+      "paa": []
+    },
+    {
+      "id": "claude-in-terminal-vs-app",
+      "keyword": "claude in terminal vs app",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.079Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://claude.com/",
+          "title": "Claude",
+          "position": 1
+        },
+        {
+          "url": "https://claude.ai/",
+          "title": "Sign in - Claude",
+          "position": 2
+        },
+        {
+          "url": "https://claude.com/download",
+          "title": "Download Claude | Claude by Anthropic",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:20:56.548Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with claude-in-terminal-vs-vscode"
+    },
+    {
+      "id": "claude-in-terminal-download",
+      "keyword": "claude in terminal download",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.082Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-command",
+      "keyword": "claude in terminal command",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.085Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-install",
+      "keyword": "claude in terminal install",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.088Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-vscode",
+      "keyword": "claude in terminal vscode",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.092Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "claude-in-terminal-not-working",
+      "keyword": "claude in terminal not working",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "claude in terminal",
+      "createdAt": "2026-10-17T11:20:56.548Z",
+      "updatedAt": "2026-10-17T11:21:29.095Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-code-review-tools",
+      "keyword": "ai code review tools",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:21:29.100Z",
+      "updatedAt": "2026-10-17T11:21:45.600Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:21:29.100Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-reddit",
+      "keyword": "ai code review tools reddit",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:21:29.100Z",
+      "updatedAt": "2026-10-17T11:22:01.229Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:21:29.100Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-open",
+      "keyword": "ai code review tools open source",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:21:29.100Z",
+      "updatedAt": "2026-10-17T11:22:16.580Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:21:29.100Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-free",
+      "keyword": "ai code review tools free",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:22:32.325Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:22:15.960Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-2025",
+      "keyword": "ai code review tools 2025",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:22:48.051Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:22:15.960Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-github",
+      "keyword": "ai code review tools github",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:23:03.559Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:22:15.960Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-azure",
+      "keyword": "ai code review tools azure devops",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:23:18.965Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:22:15.960Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-bitbucket",
+      "keyword": "ai code review tools bitbucket",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:23:34.911Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:22:15.960Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-code-review-tools-gitlab",
+      "keyword": "ai code review tools gitlab",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:23:34.916Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-code-review-tools-comparison",
+      "keyword": "ai code review tools comparison",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai code review tool",
+      "createdAt": "2026-10-17T11:22:15.960Z",
+      "updatedAt": "2026-10-17T11:23:34.922Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "cursor-vs-copilot",
+      "keyword": "cursor vs copilot",
+      "silo": "ai-coding",
+      "stage": "filtered",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:23:51.553Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": []
+    },
+    {
+      "id": "cursor-vs-copilot-vs-claude",
+      "keyword": "cursor vs copilot vs claude",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:24:07.027Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-reddit",
+      "keyword": "cursor vs copilot reddit",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:24:22.482Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-2026",
+      "keyword": "cursor vs copilot 2026",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:24:38.060Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-pricing",
+      "keyword": "cursor vs copilot pricing",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:24:57.351Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-which-is",
+      "keyword": "cursor vs copilot which is better",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:25:14.692Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-cli",
+      "keyword": "cursor vs copilot cli",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:25:30.154Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://cursor.com/",
+          "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+          "position": 1
+        },
+        {
+          "url": "https://custom-cursor.com/",
+          "title": "Custom Cursor - 12,000+ Custom Cursors & Mouse Pointers",
+          "position": 2
+        },
+        {
+          "url": "https://cursor.com/download",
+          "title": "Cursor · Download",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:23:34.931Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with cursor-vs-copilot"
+    },
+    {
+      "id": "cursor-vs-copilot-for-coding",
+      "keyword": "cursor vs copilot for coding",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "cursor vs copilot",
+      "createdAt": "2026-10-17T11:23:34.931Z",
+      "updatedAt": "2026-10-17T11:25:30.161Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-programming",
+      "keyword": "chatgpt for programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.796Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-programming-numerical-methods",
+      "keyword": "chatgpt for programming numerical methods",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.801Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-programming-free",
+      "keyword": "chatgpt for programming free",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.816Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-programming-reddit",
+      "keyword": "chatgpt for programming reddit",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.819Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-programming-code",
+      "keyword": "chatgpt for programming code",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.822Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-for-programming",
+      "keyword": "chatgpt prompt for programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:31.826Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-chatgpt-for-programming",
+      "keyword": "best chatgpt for programming",
+      "silo": "ai-coding",
+      "stage": "filtered",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:47.208Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:30.169Z",
+      "paa": []
+    },
+    {
+      "id": "chatgpt-for-python-programming",
+      "keyword": "chatgpt for python programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:47.212Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-alternative-for-programming",
+      "keyword": "chatgpt alternative for programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:47.216Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "using-chatgpt-for-programming",
+      "keyword": "using chatgpt for programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for programming",
+      "createdAt": "2026-10-17T11:25:30.169Z",
+      "updatedAt": "2026-10-17T11:25:47.220Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-llm-for-coding",
+      "keyword": "best llm for coding",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:26:03.879Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-2026",
+      "keyword": "best llm for coding 2026",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:26:19.676Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-locally",
+      "keyword": "best llm for coding locally",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:26:35.449Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-right",
+      "keyword": "best llm for coding right now",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:26:50.848Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-reddit",
+      "keyword": "best llm for coding reddit",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:06.422Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-ollama",
+      "keyword": "best llm for coding ollama",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:21.890Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-self",
+      "keyword": "best llm for coding self hosted",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:37.319Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-free",
+      "keyword": "best llm for coding free",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:52.855Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:25:47.230Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-chatgpt-for-programming"
+    },
+    {
+      "id": "best-llm-for-coding-to",
+      "keyword": "best llm for coding to run locally",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:52.867Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-llm-for-coding-in",
+      "keyword": "best llm for coding in r",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "best llm for coding",
+      "createdAt": "2026-10-17T11:25:47.230Z",
+      "updatedAt": "2026-10-17T11:27:52.874Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming",
+      "keyword": "ai pair programming",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:27:54.209Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming-tools",
+      "keyword": "ai pair programming tools",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:27:54.216Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming-interview",
+      "keyword": "ai pair programming interview",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:27:54.222Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming-vs-vibe",
+      "keyword": "ai pair programming vs vibe coding",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:28:09.412Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://openai.com/",
+          "title": "OpenAI | Research & Deployment",
+          "position": 1
+        },
+        {
+          "url": "https://gemini.google.com/",
+          "title": "‎Google Gemini",
+          "position": 2
+        },
+        {
+          "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+          "title": "What is artificial intelligence ( AI )? - IBM",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:27:52.883Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ai-coding-assistant-comparison"
+    },
+    {
+      "id": "ai-pair-programming-with-github",
+      "keyword": "ai pair programming with github copilot",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:28:09.418Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming-and-knowledge",
+      "keyword": "ai pair programming and knowledge sharing in developer communities",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:28:09.425Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "keyword shape 9 words outside the 2-8 long-tail window (G2) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-pair-programming-in-your",
+      "keyword": "ai pair programming in your terminal",
+      "silo": "ai-coding",
+      "stage": "rejected",
+      "seedTopic": "ai pair programming",
+      "createdAt": "2026-10-17T11:27:52.883Z",
+      "updatedAt": "2026-10-17T11:28:09.431Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    }
+  ]
 }

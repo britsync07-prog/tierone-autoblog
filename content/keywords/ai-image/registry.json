@@ -1,5 +1,2147 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T09:05:26.498Z",
-  "keywords": []
+  "updatedAt": "2026-10-17T11:32:26.304Z",
+  "keywords": [
+    {
+      "id": "ai-image-generator",
+      "keyword": "ai image generator",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:56.994Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-free",
+      "keyword": "ai image generator free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.006Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-free-no",
+      "keyword": "ai image generator free no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.014Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-from-text",
+      "keyword": "ai image generator from text",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.018Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-google",
+      "keyword": "ai image generator google",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.023Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-gemini",
+      "keyword": "ai image generator gemini",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.028Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-perchance",
+      "keyword": "ai image generator perchance",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.032Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-online",
+      "keyword": "ai image generator online",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.038Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-generator-no-sign",
+      "keyword": "ai image generator no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image generator",
+      "createdAt": "2026-10-17T11:27:55.651Z",
+      "updatedAt": "2026-10-17T11:27:57.043Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "midjourney-alternatives",
+      "keyword": "midjourney alternatives",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:28:26.035Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": []
+    },
+    {
+      "id": "midjourney-alternatives-free",
+      "keyword": "midjourney alternatives free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:28:41.458Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "midjourney-alternatives-reddit",
+      "keyword": "midjourney alternatives reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:28:57.049Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "midjourney-alternatives-2025",
+      "keyword": "midjourney alternatives 2025",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:29:12.461Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "midjourney-alternatives-free-reddit",
+      "keyword": "midjourney alternatives free reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:29:27.930Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "midjourney-alternatives-2026",
+      "keyword": "midjourney alternatives 2026",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:29:43.407Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "midjourney-alternatives-janitor-ai",
+      "keyword": "midjourney alternatives janitor ai",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:29:58.962Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.midjourney.com/",
+          "title": "Midjourney",
+          "position": 1
+        },
+        {
+          "url": "https://www.midjourney.com/explore",
+          "title": "Explore - Midjourney",
+          "position": 2
+        },
+        {
+          "url": "https://midjourney.ing/en/",
+          "title": "Midjourney AI Image Generator | Prompts, Parameters & Tutorials",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with midjourney-alternatives"
+    },
+    {
+      "id": "best-midjourney-alternatives",
+      "keyword": "best midjourney alternatives",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:30:14.531Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:28:09.452Z",
+      "paa": []
+    },
+    {
+      "id": "midjourney-ai-alternatives",
+      "keyword": "midjourney ai alternatives",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:30:14.537Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "mid-midjourney-alternatives",
+      "keyword": "mid midjourney alternatives",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "midjourney alternatives",
+      "createdAt": "2026-10-17T11:28:09.452Z",
+      "updatedAt": "2026-10-17T11:30:14.543Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator",
+      "keyword": "free ai image generator",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.899Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-no",
+      "keyword": "free ai image generator no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.904Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-from",
+      "keyword": "free ai image generator from text",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.909Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-with",
+      "keyword": "free ai image generator with no restrictions no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.913Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "keyword shape 10 words outside the 2-8 long-tail window (G2) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-app",
+      "keyword": "free ai image generator app",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.917Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-online",
+      "keyword": "free ai image generator online",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.922Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-reddit",
+      "keyword": "free ai image generator reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.924Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "free-ai-image-generator-without",
+      "keyword": "free ai image generator without login",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "free ai image generator",
+      "createdAt": "2026-10-17T11:30:14.558Z",
+      "updatedAt": "2026-10-17T11:30:15.927Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "dalle-alternatives",
+      "keyword": "dalle alternatives",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "dalle alternatives",
+      "createdAt": "2026-10-17T11:30:15.935Z",
+      "updatedAt": "2026-10-17T11:30:17.530Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 4
+      },
+      "rejectionReason": "topic expansion breadth too low (G2 breadth 4 suggestions) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "dalle-alternatives-free",
+      "keyword": "dalle alternatives free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "dalle alternatives",
+      "createdAt": "2026-10-17T11:30:15.935Z",
+      "updatedAt": "2026-10-17T11:30:17.537Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 4
+      },
+      "rejectionReason": "topic expansion breadth too low (G2 breadth 4 suggestions) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "dalle-3-alternatives",
+      "keyword": "dalle 3 alternatives",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "dalle alternatives",
+      "createdAt": "2026-10-17T11:30:15.935Z",
+      "updatedAt": "2026-10-17T11:30:17.546Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 4
+      },
+      "rejectionReason": "topic expansion breadth too low (G2 breadth 4 suggestions) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "alternatives-dalle-beton",
+      "keyword": "alternatives dalle beton",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "dalle alternatives",
+      "createdAt": "2026-10-17T11:30:15.935Z",
+      "updatedAt": "2026-10-17T11:30:17.551Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 4
+      },
+      "rejectionReason": "topic expansion breadth too low (G2 breadth 4 suggestions) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor",
+      "keyword": "ai photo editor",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.169Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-free",
+      "keyword": "ai photo editor free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.175Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-online-free",
+      "keyword": "ai photo editor online free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.179Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-no-restrictions",
+      "keyword": "ai photo editor no restrictions",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.184Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-free-no",
+      "keyword": "ai photo editor free no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.189Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-generator",
+      "keyword": "ai photo editor generator",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.193Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-app",
+      "keyword": "ai photo editor app",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.195Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-anup-sagar",
+      "keyword": "ai photo editor anup sagar",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.197Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-photo-editor-no-sign",
+      "keyword": "ai photo editor no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai photo editor",
+      "createdAt": "2026-10-17T11:30:17.563Z",
+      "updatedAt": "2026-10-17T11:30:19.200Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ideogram-reviews",
+      "keyword": "ideogram reviews",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:30:36.499Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": []
+    },
+    {
+      "id": "ideogram-review-reddit",
+      "keyword": "ideogram review reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:30:51.982Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ideogram-reviews"
+    },
+    {
+      "id": "ideogram-ai-review",
+      "keyword": "ideogram ai review",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:31:07.526Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ideogram-reviews"
+    },
+    {
+      "id": "ideogram-4-review",
+      "keyword": "ideogram 4 review",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:31:23.126Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ideogram-reviews"
+    },
+    {
+      "id": "ideogram-4-0-review",
+      "keyword": "ideogram 4.0 review",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:31:38.556Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ideogram-reviews"
+    },
+    {
+      "id": "ideogram-3-0-review",
+      "keyword": "ideogram 3.0 review",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:31:53.850Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ideogram.ai/",
+          "title": "Ideogram | AI apps and models in one platform",
+          "position": 1
+        },
+        {
+          "url": "https://ideogram.ai/login",
+          "title": "Ideogram",
+          "position": 2
+        },
+        {
+          "url": "https://docs.ideogram.ai/create/create",
+          "title": "Create Images | Ideogram",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with ideogram-reviews"
+    },
+    {
+      "id": "aerobite-review",
+      "keyword": "aerobite review",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:32:09.434Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://stackoverflow.com/questions/1815390/what-do-xx-printgc-and-xx-printgcdetails-flags-do",
+          "title": "What do -XX:-PrintGC and XX:-PrintGCDetails flags do?",
+          "position": 1
+        },
+        {
+          "url": "https://stackoverflow.com/questions/13804955/is-there-a-standard-set-of-http-500-xx-codes",
+          "title": "Is there a standard set of HTTP 500.xx codes? - Stack Overflow",
+          "position": 2
+        },
+        {
+          "url": "https://stackoverflow.com/questions/6859683/what-is-the-meaning-of-the-xxnewratio-and-xxoldsize-jvm-flags",
+          "title": "java - What is the meaning of the -XX:NewRatio and -XX:OldSize JVM ...",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": []
+    },
+    {
+      "id": "magnat-tempus-33-review",
+      "keyword": "magnat tempus 33 review",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:32:24.817Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 9,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://poki.com/?msockid=2e3b36e9800f69df3179211c81db687d",
+          "title": "Free Online Games at Poki - Play Now!",
+          "position": 1
+        },
+        {
+          "url": "https://poki.com/en/g/penalty-shooters-2?msockid=2e3b36e9800f69df3179211c81db687d",
+          "title": "Penalty Shooters 2 - Play Online for Free! | Poki",
+          "position": 2
+        },
+        {
+          "url": "https://poki.com/en/g/tag?msockid=2e3b36e9800f69df3179211c81db687d",
+          "title": "Tag - Play Online for Free! | Poki",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:30:19.206Z",
+      "paa": []
+    },
+    {
+      "id": "helight-review",
+      "keyword": "helight review",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ideogram review",
+      "createdAt": "2026-10-17T11:30:19.206Z",
+      "updatedAt": "2026-10-17T11:32:24.825Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 9
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator",
+      "keyword": "ai logo generator",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.270Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-free",
+      "keyword": "ai logo generator free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.272Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-free-without",
+      "keyword": "ai logo generator free without watermark",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.275Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-free-no",
+      "keyword": "ai logo generator free no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.278Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-with-prompt",
+      "keyword": "ai logo generator with prompt",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.281Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-from-text",
+      "keyword": "ai logo generator from text",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.284Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-from-image",
+      "keyword": "ai logo generator from image",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.287Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-reddit",
+      "keyword": "ai logo generator reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.291Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-gemini",
+      "keyword": "ai logo generator gemini",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.294Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-logo-generator-free-online",
+      "keyword": "ai logo generator free online",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai logo generator",
+      "createdAt": "2026-10-17T11:32:24.844Z",
+      "updatedAt": "2026-10-17T11:32:26.296Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler",
+      "keyword": "ai image upscaler",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:27.998Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-free",
+      "keyword": "ai image upscaler free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.001Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-4k",
+      "keyword": "ai image upscaler 4k",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.004Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-reddit",
+      "keyword": "ai image upscaler reddit",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.008Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-free-no",
+      "keyword": "ai image upscaler free no sign up",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.012Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-free-online",
+      "keyword": "ai image upscaler free online",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.017Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-8k",
+      "keyword": "ai image upscaler 8k",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.021Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-16k",
+      "keyword": "ai image upscaler 16k",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.023Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-4k-free",
+      "keyword": "ai image upscaler 4k free",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.026Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-image-upscaler-and-enhancer",
+      "keyword": "ai image upscaler and enhancer",
+      "silo": "ai-image",
+      "stage": "rejected",
+      "seedTopic": "ai image upscaler",
+      "createdAt": "2026-10-17T11:32:26.304Z",
+      "updatedAt": "2026-10-17T11:32:28.029Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    }
+  ]
 }

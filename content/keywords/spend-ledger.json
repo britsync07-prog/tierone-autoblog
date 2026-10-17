@@ -7,6 +7,5858 @@
       "note": "03-01 task-2 verification op (offline budget smoke test; no real DataForSEO call)",
       "ts": "2026-10-17T09:13:22.132Z",
       "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai writing assistant"
+      ],
+      "note": "Google autocomplete q='ai writing assistant' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:16:02.688Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai writing assistant"
+      ],
+      "note": "Google autocomplete q='ai writing assistant' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:16:02.806Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai writing assistant"
+      ],
+      "note": "Google autocomplete q='ai writing assistant' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:16:03.230Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai writing assistant"
+      ],
+      "note": "Google autocomplete q='ai writing assistant' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:16:03.634Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "Google autocomplete q='best ai writing tools' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:16:04.043Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "Google autocomplete q='best ai writing tools' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:16:04.458Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "Google autocomplete q='best ai writing tools' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:16:04.865Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "Google autocomplete q='best ai writing tools' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:16:05.266Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:16:20.644Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "SERP HTML (Bing) q='best ai writing tools' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:16:21.119Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai writing tools for novels"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:16:36.248Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools for novels"
+      ],
+      "note": "SERP HTML (Bing) q='best ai writing tools for novels' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:16:36.628Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai writing tools free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:16:51.707Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools free"
+      ],
+      "note": "SERP HTML (Bing) q='best ai writing tools free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:16:52.598Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai writing tools reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:17:07.442Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools reddit"
+      ],
+      "note": "SERP HTML (Bing) q='best ai writing tools reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:17:07.873Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai writing tools 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:17:22.931Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools 2026"
+      ],
+      "note": "SERP HTML (Bing) q='best ai writing tools 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:17:23.424Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "Google autocomplete q='chatgpt vs claude for writing' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:17:23.706Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "Google autocomplete q='chatgpt vs claude for writing' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:17:23.976Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "Google autocomplete q='chatgpt vs claude for writing' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:17:24.392Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "Google autocomplete q='chatgpt vs claude for writing' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:17:24.797Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:17:40.029Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt vs claude for writing' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:17:40.404Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai paraphrasing tool"
+      ],
+      "note": "Google autocomplete q='ai paraphrasing tool' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:17:40.681Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai paraphrasing tool"
+      ],
+      "note": "Google autocomplete q='ai paraphrasing tool' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:17:40.963Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai paraphrasing tool"
+      ],
+      "note": "Google autocomplete q='ai paraphrasing tool' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:17:41.396Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai paraphrasing tool"
+      ],
+      "note": "Google autocomplete q='ai paraphrasing tool' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:17:41.780Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai grammar checker"
+      ],
+      "note": "Google autocomplete q='ai grammar checker' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:17:42.186Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai grammar checker"
+      ],
+      "note": "Google autocomplete q='ai grammar checker' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:17:42.589Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai grammar checker"
+      ],
+      "note": "Google autocomplete q='ai grammar checker' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:17:42.998Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai grammar checker"
+      ],
+      "note": "Google autocomplete q='ai grammar checker' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:17:43.422Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite review"
+      ],
+      "note": "Google autocomplete q='sudowrite review' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:17:43.842Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite review"
+      ],
+      "note": "Google autocomplete q='sudowrite review' gl=gb → 9 suggestions",
+      "ts": "2026-10-17T11:17:44.261Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite review"
+      ],
+      "note": "Google autocomplete q='sudowrite review' gl=ca → 9 suggestions",
+      "ts": "2026-10-17T11:17:44.665Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite review"
+      ],
+      "note": "Google autocomplete q='sudowrite review' gl=au → 9 suggestions",
+      "ts": "2026-10-17T11:17:45.068Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite reviews"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:18:00.678Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite reviews"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite reviews' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:18:01.083Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite reviews reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:18:15.931Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite reviews reddit"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite reviews reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:18:16.293Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite reviews 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:18:31.416Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite reviews 2026"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite reviews 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:18:31.808Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite review 2025"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:18:46.866Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite review 2025"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite review 2025' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:18:47.225Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite reviews complaints"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:19:02.404Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite reviews complaints"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite reviews complaints' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:19:02.835Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite ai reviews"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:19:17.893Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite ai reviews"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite ai reviews' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:19:18.282Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite muse review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:19:33.384Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite muse review"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite muse review' → 0 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:19:33.754Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "sudowrite app review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:19:48.813Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "sudowrite app review"
+      ],
+      "note": "SERP HTML (Bing) q='sudowrite app review' → 0 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:19:49.114Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai essay writer"
+      ],
+      "note": "Google autocomplete q='ai essay writer' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:19:49.346Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai essay writer"
+      ],
+      "note": "Google autocomplete q='ai essay writer' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:19:49.636Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai essay writer"
+      ],
+      "note": "Google autocomplete q='ai essay writer' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:19:50.053Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai essay writer"
+      ],
+      "note": "Google autocomplete q='ai essay writer' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:19:50.464Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai blog writer"
+      ],
+      "note": "Google autocomplete q='ai blog writer' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:19:50.897Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai blog writer"
+      ],
+      "note": "Google autocomplete q='ai blog writer' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:19:51.306Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai blog writer"
+      ],
+      "note": "Google autocomplete q='ai blog writer' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:19:51.737Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai blog writer"
+      ],
+      "note": "Google autocomplete q='ai blog writer' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:19:52.124Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant"
+      ],
+      "note": "Google autocomplete q='ai coding assistant' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:19:52.518Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant"
+      ],
+      "note": "Google autocomplete q='ai coding assistant' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:19:52.956Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant"
+      ],
+      "note": "Google autocomplete q='ai coding assistant' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:19:53.345Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant"
+      ],
+      "note": "Google autocomplete q='ai coding assistant' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:19:53.749Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai coding assistant comparison"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:20:08.991Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant comparison"
+      ],
+      "note": "SERP HTML (Bing) q='ai coding assistant comparison' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:20:09.416Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "Google autocomplete q='github copilot alternatives' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:20:09.707Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "Google autocomplete q='github copilot alternatives' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:20:09.985Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "Google autocomplete q='github copilot alternatives' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:20:10.380Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "Google autocomplete q='github copilot alternatives' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:20:10.796Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:20:25.610Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:20:26.216Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives for vs code"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:20:41.128Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives for vs code"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives for vs code' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:20:41.534Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:20:56.689Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:20:56.988Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:20:57.102Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives free"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:20:57.110Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:20:57.521Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:20:57.929Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives for visual studio 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:12.178Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives for visual studio 2026"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives for visual studio 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:12.629Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "claude in terminal vs vscode"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:13.266Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal vs vscode"
+      ],
+      "note": "SERP HTML (Bing) q='claude in terminal vs vscode' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:13.653Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:27.597Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives reddit"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:27.966Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "claude in terminal vs app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:28.713Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal vs app"
+      ],
+      "note": "SERP HTML (Bing) q='claude in terminal vs app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:29.076Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:21:29.395Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:21:29.619Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:21:30.039Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:21:30.440Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "github copilot alternatives 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:43.075Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives 2026"
+      ],
+      "note": "SERP HTML (Bing) q='github copilot alternatives 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:43.523Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:21:43.799Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:21:44.082Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:21:44.492Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal"
+      ],
+      "note": "Google autocomplete q='claude in terminal' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:21:44.899Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:45.249Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:21:45.595Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "claude in terminal vs vscode"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:21:59.773Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal vs vscode"
+      ],
+      "note": "SERP HTML (Bing) q='claude in terminal vs vscode' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:00.128Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:00.729Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools reddit"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:01.225Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "claude in terminal vs app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:15.494Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "claude in terminal vs app"
+      ],
+      "note": "SERP HTML (Bing) q='claude in terminal vs app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:15.921Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools open source"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:16.223Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:22:16.245Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:22:16.483Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools open source"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools open source' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:16.571Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:22:16.899Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tool"
+      ],
+      "note": "Google autocomplete q='ai code review tool' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:22:17.301Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:31.702Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:31.947Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools free"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:32.167Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools free"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:32.321Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools 2025"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:47.207Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools 2025"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools 2025' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:47.584Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools 2025"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:22:47.603Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools 2025"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools 2025' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:22:48.036Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools github"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:02.685Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools github"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:03.150Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools github"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools github' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:03.243Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools github"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools github' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:03.544Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools azure devops"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:18.179Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools azure devops"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:18.572Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools azure devops"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools azure devops' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:18.596Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools azure devops"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools azure devops' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:18.961Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools bitbucket"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:33.695Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools bitbucket"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools bitbucket' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:34.183Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:23:34.449Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai code review tools bitbucket"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:34.522Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:23:34.744Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai code review tools bitbucket"
+      ],
+      "note": "SERP HTML (Bing) q='ai code review tools bitbucket' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:34.902Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:23:35.157Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:23:35.441Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:23:35.564Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:23:35.861Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "Google autocomplete q='cursor vs copilot' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:23:36.264Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:50.412Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:50.787Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:23:51.112Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:23:51.540Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 2,
+      "keywords": [
+        "cursor vs copilot vs claude"
+      ],
+      "note": "Google Trends 'cursor vs copilot vs claude' (today 3-m) → interest 3.9",
+      "ts": "2026-10-17T11:23:52.566Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot vs claude"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:06.599Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot vs claude"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot vs claude' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:07.021Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:08.807Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot reddit"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:09.727Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:22.137Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot reddit"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:22.477Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:24.545Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot 2026"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:24.882Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:37.630Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot 2026"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:38.055Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot pricing"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:40.122Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot pricing"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot pricing' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:40.730Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot pricing"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:53.561Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot which is better"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:24:55.833Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot pricing"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot pricing' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:24:57.346Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot which is better"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot which is better' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:00.435Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot which is better"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:12.581Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot which is better"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot which is better' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:14.688Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot cli"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:16.134Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot cli"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot cli' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:16.530Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:25:16.844Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:25:17.083Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:25:17.471Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:25:17.893Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "cursor vs copilot cli"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:29.809Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "cursor vs copilot cli"
+      ],
+      "note": "SERP HTML (Bing) q='cursor vs copilot cli' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:30.139Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:25:30.402Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:25:30.744Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:25:31.099Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for programming"
+      ],
+      "note": "Google autocomplete q='chatgpt for programming' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:25:31.524Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best chatgpt for programming"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:32.885Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best chatgpt for programming"
+      ],
+      "note": "SERP HTML (Bing) q='best chatgpt for programming' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:33.522Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:25:34.075Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:25:34.189Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:25:34.605Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:25:35.002Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best chatgpt for programming"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:46.738Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best chatgpt for programming"
+      ],
+      "note": "SERP HTML (Bing) q='best chatgpt for programming' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:47.202Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:25:47.469Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:25:47.735Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:25:48.185Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "Google autocomplete q='best llm for coding' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:25:48.572Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:25:49.865Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:25:50.267Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:03.463Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:03.862Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:05.316Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding 2026"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:05.803Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:19.112Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding 2026"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:19.663Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding locally"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:20.814Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding locally"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding locally' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:21.231Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding locally"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:34.987Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding locally"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding locally' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:35.433Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding right now"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:36.309Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding right now"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding right now' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:36.688Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding right now"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:50.457Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding right now"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding right now' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:50.843Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:26:52.161Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding reddit"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:26:52.604Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:05.930Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding reddit"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:06.406Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding ollama"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:07.141Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding ollama"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding ollama' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:07.494Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding ollama"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:21.417Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding ollama"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding ollama' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:21.875Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding self hosted"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:22.926Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding self hosted"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding self hosted' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:23.343Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding self hosted"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:36.871Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding self hosted"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding self hosted' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:37.312Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:38.428Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding free"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:38.800Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:27:39.140Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:27:39.356Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:27:39.782Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:27:40.175Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best llm for coding free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:52.379Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best llm for coding free"
+      ],
+      "note": "SERP HTML (Bing) q='best llm for coding free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:52.842Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:27:53.124Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:27:53.398Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:27:53.798Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming"
+      ],
+      "note": "Google autocomplete q='ai pair programming' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:27:54.196Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai pair programming vs vibe coding"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:27:55.156Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming vs vibe coding"
+      ],
+      "note": "SERP HTML (Bing) q='ai pair programming vs vibe coding' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:27:55.567Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image generator"
+      ],
+      "note": "Google autocomplete q='ai image generator' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:27:55.898Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image generator"
+      ],
+      "note": "Google autocomplete q='ai image generator' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:27:56.167Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image generator"
+      ],
+      "note": "Google autocomplete q='ai image generator' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:27:56.565Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image generator"
+      ],
+      "note": "Google autocomplete q='ai image generator' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:27:56.974Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:27:57.388Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:27:57.789Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:27:58.195Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:27:58.593Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ai pair programming vs vibe coding"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:09.042Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai pair programming vs vibe coding"
+      ],
+      "note": "SERP HTML (Bing) q='ai pair programming vs vibe coding' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:09.401Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:28:09.680Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:28:09.967Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:28:10.369Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "Google autocomplete q='midjourney alternatives' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:28:10.785Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:13.446Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:13.926Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:25.606Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:26.016Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:28.925Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives free"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:29.328Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:41.074Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives free"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:41.452Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives 2025"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:44.425Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives 2025"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives 2025' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:44.796Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:56.571Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives reddit"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:28:57.038Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives free reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:28:59.918Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives free reddit"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives free reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:00.303Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives 2025"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:12.072Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives 2025"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives 2025' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:12.446Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:15.393Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives 2026"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:15.861Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives free reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:27.495Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives free reddit"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives free reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:27.925Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives janitor ai"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:30.914Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives janitor ai"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives janitor ai' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:31.503Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives 2026"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:43.031Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives 2026"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives 2026' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:43.403Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "mid midjourney alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:46.378Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "mid midjourney alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='mid midjourney alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:46.788Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "midjourney alternatives janitor ai"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:29:58.521Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives janitor ai"
+      ],
+      "note": "SERP HTML (Bing) q='midjourney alternatives janitor ai' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:29:58.911Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best free midjourney alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:01.558Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best free midjourney alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='best free midjourney alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:01.942Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:30:02.275Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:30:02.482Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:30:02.885Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:30:03.293Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=us → 4 suggestions",
+      "ts": "2026-10-17T11:30:03.708Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=gb → 4 suggestions",
+      "ts": "2026-10-17T11:30:04.104Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=ca → 4 suggestions",
+      "ts": "2026-10-17T11:30:04.514Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=au → 4 suggestions",
+      "ts": "2026-10-17T11:30:04.910Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:30:05.326Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:30:05.733Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:30:06.139Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:30:06.556Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=us → 9 suggestions",
+      "ts": "2026-10-17T11:30:06.985Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=gb → 9 suggestions",
+      "ts": "2026-10-17T11:30:07.388Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=ca → 9 suggestions",
+      "ts": "2026-10-17T11:30:07.792Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=au → 9 suggestions",
+      "ts": "2026-10-17T11:30:08.218Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best midjourney alternatives"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:14.015Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best midjourney alternatives"
+      ],
+      "note": "SERP HTML (Bing) q='best midjourney alternatives' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:14.518Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:30:14.801Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:30:15.063Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:30:15.477Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "free ai image generator"
+      ],
+      "note": "Google autocomplete q='free ai image generator' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:30:15.884Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=us → 4 suggestions",
+      "ts": "2026-10-17T11:30:16.301Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=gb → 4 suggestions",
+      "ts": "2026-10-17T11:30:16.710Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=ca → 4 suggestions",
+      "ts": "2026-10-17T11:30:17.104Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "dalle alternatives"
+      ],
+      "note": "Google autocomplete q='dalle alternatives' gl=au → 4 suggestions",
+      "ts": "2026-10-17T11:30:17.511Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:30:17.920Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:30:18.322Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:30:18.758Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai photo editor"
+      ],
+      "note": "Google autocomplete q='ai photo editor' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:30:19.147Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=us → 9 suggestions",
+      "ts": "2026-10-17T11:30:19.554Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=gb → 9 suggestions",
+      "ts": "2026-10-17T11:30:19.970Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=ca → 9 suggestions",
+      "ts": "2026-10-17T11:30:20.371Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review"
+      ],
+      "note": "Google autocomplete q='ideogram review' gl=au → 9 suggestions",
+      "ts": "2026-10-17T11:30:20.795Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram reviews"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:23.517Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram reviews"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram reviews' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:23.981Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram reviews"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:36.084Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram reviews"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram reviews' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:36.493Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram review reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:39.003Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review reddit"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram review reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:39.439Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram review reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:51.584Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram review reddit"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram review reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:51.966Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram ai review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:30:54.501Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram ai review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram ai review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:30:54.907Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram ai review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:07.054Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram ai review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram ai review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:07.517Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 4 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:10.022Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 4 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 4 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:10.387Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 4 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:22.612Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 4 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 4 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:23.116Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 4.0 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:25.487Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 4.0 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 4.0 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:25.849Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 4.0 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:38.019Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 4.0 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 4.0 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:38.530Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 3.0 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:40.933Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 3.0 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 3.0 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:41.341Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "ideogram 3.0 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:53.498Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ideogram 3.0 review"
+      ],
+      "note": "SERP HTML (Bing) q='ideogram 3.0 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:53.843Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "aerobite review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:31:56.445Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "aerobite review"
+      ],
+      "note": "SERP HTML (Bing) q='aerobite review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:31:56.888Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "aerobite review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:08.988Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "aerobite review"
+      ],
+      "note": "SERP HTML (Bing) q='aerobite review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:09.428Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "magnat tempus 33 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:11.919Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "magnat tempus 33 review"
+      ],
+      "note": "SERP HTML (Bing) q='magnat tempus 33 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:12.268Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:12.570Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:12.801Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:13.214Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:13.612Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:14.022Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:14.425Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:14.838Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:15.252Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai productivity tools"
+      ],
+      "note": "Google autocomplete q='ai productivity tools' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:15.652Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai productivity tools"
+      ],
+      "note": "Google autocomplete q='ai productivity tools' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:16.056Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai productivity tools"
+      ],
+      "note": "Google autocomplete q='ai productivity tools' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:16.464Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai productivity tools"
+      ],
+      "note": "Google autocomplete q='ai productivity tools' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:16.866Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai note taking app"
+      ],
+      "note": "Google autocomplete q='ai note taking app' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:17.275Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai note taking app"
+      ],
+      "note": "Google autocomplete q='ai note taking app' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:17.684Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai note taking app"
+      ],
+      "note": "Google autocomplete q='ai note taking app' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:18.413Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai note taking app"
+      ],
+      "note": "Google autocomplete q='ai note taking app' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:18.543Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai meeting summarizer"
+      ],
+      "note": "Google autocomplete q='ai meeting summarizer' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:18.976Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai meeting summarizer"
+      ],
+      "note": "Google autocomplete q='ai meeting summarizer' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:19.395Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai meeting summarizer"
+      ],
+      "note": "Google autocomplete q='ai meeting summarizer' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:19.792Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai meeting summarizer"
+      ],
+      "note": "Google autocomplete q='ai meeting summarizer' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:20.217Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:20.642Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:21.047Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:21.443Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:21.859Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "magnat tempus 33 review"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:24.428Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "magnat tempus 33 review"
+      ],
+      "note": "SERP HTML (Bing) q='magnat tempus 33 review' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:24.802Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:25.118Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:25.425Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:25.857Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai logo generator"
+      ],
+      "note": "Google autocomplete q='ai logo generator' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:26.261Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:26.660Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:27.075Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:27.581Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai image upscaler"
+      ],
+      "note": "Google autocomplete q='ai image upscaler' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:27.992Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:32:28.318Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:32:28.730Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:32:29.125Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "Google autocomplete q='best ai calendar app' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:32:29.532Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:37.114Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:37.523Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:44.791Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:45.309Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app for iphone"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:32:52.605Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app for iphone"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app for iphone' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:32:52.994Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app for iphone"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:00.258Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app for iphone"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app for iphone' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:00.654Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:08.127Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app free"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:08.589Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app free"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:15.784Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app free"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app free' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:16.269Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:23.587Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app reddit"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:23.949Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar app reddit"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:31.260Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app reddit"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar app reddit' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:31.705Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai scheduling app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:39.048Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai scheduling app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai scheduling app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:39.435Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai scheduling app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:46.739Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai scheduling app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai scheduling app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:47.160Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar scheduling app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:33:54.494Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar scheduling app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar scheduling app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:33:54.967Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai calendar scheduling app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:02.246Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar scheduling app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai calendar scheduling app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:02.707Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai family calendar app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:09.968Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai family calendar app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai family calendar app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:10.436Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:10.718Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:10.996Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:11.410Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:11.805Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:12.221Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:12.604Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:13.016Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:13.430Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "best ai family calendar app"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:17.674Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai family calendar app"
+      ],
+      "note": "SERP HTML (Bing) q='best ai family calendar app' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:18.101Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:18.352Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:18.650Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:19.041Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai task manager"
+      ],
+      "note": "Google autocomplete q='ai task manager' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:19.810Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:19.980Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:20.386Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:20.798Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work"
+      ],
+      "note": "Google autocomplete q='chatgpt for work' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:21.200Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt for work vs codex"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:28.264Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work vs codex"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt for work vs codex' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:28.629Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:28.904Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:29.170Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:29.579Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:29.988Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:30.401Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:30.828Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:31.248Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:31.684Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:32.105Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:32.511Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:32.928Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:33.330Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt for work vs codex"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:36.026Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt for work vs codex"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt for work vs codex' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:36.420Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:36.724Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:36.974Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:37.377Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai email assistant"
+      ],
+      "note": "Google autocomplete q='ai email assistant' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:37.810Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:38.194Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:38.610Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:39.018Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai transcription tool"
+      ],
+      "note": "Google autocomplete q='ai transcription tool' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:39.426Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:39.830Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:40.238Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:40.643Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "Google autocomplete q='how to use chatgpt effectively' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:41.071Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:48.678Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "SERP HTML (Bing) q='how to use chatgpt effectively' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:49.118Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:49.394Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:49.671Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:50.082Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:50.470Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:50.872Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:51.272Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:51.677Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:52.088Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt workflow tutorial"
+      ],
+      "note": "Google autocomplete q='chatgpt workflow tutorial' gl=us → 0 suggestions",
+      "ts": "2026-10-17T11:34:52.516Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:52.924Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:53.322Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:53.734Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:54.124Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=us → 8 suggestions",
+      "ts": "2026-10-17T11:34:54.541Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=gb → 8 suggestions",
+      "ts": "2026-10-17T11:34:54.953Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=ca → 8 suggestions",
+      "ts": "2026-10-17T11:34:55.364Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=au → 8 suggestions",
+      "ts": "2026-10-17T11:34:55.780Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:34:56.330Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "how to use chatgpt effectively"
+      ],
+      "note": "SERP HTML (Bing) q='how to use chatgpt effectively' → 0 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:34:56.681Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:56.978Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:57.216Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:57.635Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "prompt engineering basics"
+      ],
+      "note": "Google autocomplete q='prompt engineering basics' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:58.026Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:34:58.459Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:34:58.873Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:34:59.290Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai for small business"
+      ],
+      "note": "Google autocomplete q='ai for small business' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:34:59.682Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt workflow tutorial"
+      ],
+      "note": "Google autocomplete q='chatgpt workflow tutorial' gl=us → 0 suggestions",
+      "ts": "2026-10-17T11:35:00.109Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:35:00.507Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:35:00.913Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:35:01.327Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "automate tasks with ai"
+      ],
+      "note": "Google autocomplete q='automate tasks with ai' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:35:01.736Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=us → 8 suggestions",
+      "ts": "2026-10-17T11:35:02.144Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=gb → 8 suggestions",
+      "ts": "2026-10-17T11:35:02.556Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=ca → 8 suggestions",
+      "ts": "2026-10-17T11:35:02.961Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "Google autocomplete q='chatgpt beginner guide' gl=au → 8 suggestions",
+      "ts": "2026-10-17T11:35:03.365Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:11.031Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt beginner guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:11.461Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:18.684Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt beginner guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:19.169Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt beginners guide pdf"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:26.227Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginners guide pdf"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt beginners guide pdf' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:26.662Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt beginners guide pdf"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:34.184Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt beginners guide pdf"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt beginners guide pdf' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:34.610Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt starter guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:41.998Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt starter guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt starter guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:42.451Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt starter guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:49.674Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt starter guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt starter guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:50.103Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt 101 beginners guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:35:57.500Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt 101 beginners guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt 101 beginners guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:35:57.955Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt 101 beginners guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:05.188Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt 101 beginners guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt 101 beginners guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:05.610Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt 101 the complete beginner's guide and masterclass"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:13.075Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt 101 the complete beginner's guide and masterclass"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt 101 the complete beginner's guide and masterclass' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:13.679Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt 101 the complete beginner's guide and masterclass"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:20.630Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt 101 the complete beginner's guide and masterclass"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt 101 the complete beginner's guide and masterclass' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:21.101Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt masterclass the ultimate beginner's guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:28.606Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt masterclass the ultimate beginner's guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt masterclass the ultimate beginner's guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:28.971Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "chatgpt masterclass the ultimate beginner's guide"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:36.105Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt masterclass the ultimate beginner's guide"
+      ],
+      "note": "SERP HTML (Bing) q='chatgpt masterclass the ultimate beginner's guide' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:36.517Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "beginners guide to acoustic guitar"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:44.023Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "beginners guide to acoustic guitar"
+      ],
+      "note": "SERP HTML (Bing) q='beginners guide to acoustic guitar' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:44.531Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "beginners guide to acoustic guitar"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:51.606Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "beginners guide to acoustic guitar"
+      ],
+      "note": "SERP HTML (Bing) q='beginners guide to acoustic guitar' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:51.956Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "beginners guide to watch collecting"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:36:59.496Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "beginners guide to watch collecting"
+      ],
+      "note": "SERP HTML (Bing) q='beginners guide to watch collecting' → 0 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:36:59.871Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:37:00.207Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:37:00.410Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:37:00.826Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:37:01.227Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:37:01.634Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:37:02.028Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:37:02.450Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:37:02.870Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.trends",
+      "cost": 0,
+      "requests": 3,
+      "keywords": [
+        "beginners guide to watch collecting"
+      ],
+      "note": "trends FAILED: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)",
+      "ts": "2026-10-17T11:37:07.126Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.serp",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "beginners guide to watch collecting"
+      ],
+      "note": "SERP HTML (Bing) q='beginners guide to watch collecting' → 3 organic anchors, 0 PAA",
+      "ts": "2026-10-17T11:37:07.490Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:37:07.741Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:37:08.013Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:37:08.430Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai tools for students"
+      ],
+      "note": "Google autocomplete q='ai tools for students' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:37:08.842Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=us → 10 suggestions",
+      "ts": "2026-10-17T11:37:09.254Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=gb → 10 suggestions",
+      "ts": "2026-10-17T11:37:09.652Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=ca → 10 suggestions",
+      "ts": "2026-10-17T11:37:10.133Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.autocomplete",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt prompt examples"
+      ],
+      "note": "Google autocomplete q='chatgpt prompt examples' gl=au → 10 suggestions",
+      "ts": "2026-10-17T11:37:10.488Z",
+      "month": "2026-10"
     }
   ]
 }

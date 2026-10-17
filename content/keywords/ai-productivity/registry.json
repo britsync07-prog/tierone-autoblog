@@ -1,5 +1,2128 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T09:05:26.498Z",
-  "keywords": []
+  "updatedAt": "2026-10-17T11:34:37.863Z",
+  "keywords": [
+    {
+      "id": "ai-productivity-tools",
+      "keyword": "ai productivity tools",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.873Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-for-work",
+      "keyword": "ai productivity tools for work",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.875Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-list",
+      "keyword": "ai productivity tools list",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.878Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-examples",
+      "keyword": "ai productivity tools examples",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.881Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-reddit",
+      "keyword": "ai productivity tools reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.884Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-for-admin",
+      "keyword": "ai productivity tools for admin professionals",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.887Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-2026",
+      "keyword": "ai productivity tools 2026",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.890Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-meaning",
+      "keyword": "ai productivity tools meaning",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.893Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-for-developers",
+      "keyword": "ai productivity tools for developers",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.895Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-productivity-tools-market",
+      "keyword": "ai productivity tools market",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai productivity tools",
+      "createdAt": "2026-10-17T11:32:15.304Z",
+      "updatedAt": "2026-10-17T11:32:16.898Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-note-taking-app",
+      "keyword": "ai note taking app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai note taking app",
+      "createdAt": "2026-10-17T11:32:16.905Z",
+      "updatedAt": "2026-10-17T11:32:18.554Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-note-taking-app-for",
+      "keyword": "ai note taking app for in person meetings",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai note taking app",
+      "createdAt": "2026-10-17T11:32:16.905Z",
+      "updatedAt": "2026-10-17T11:32:18.557Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-note-taking-app-that",
+      "keyword": "ai note taking app that can record from same phone",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai note taking app",
+      "createdAt": "2026-10-17T11:32:16.905Z",
+      "updatedAt": "2026-10-17T11:32:18.560Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "keyword shape 10 words outside the 2-8 long-tail window (G2) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-note-taking-app-free",
+      "keyword": "ai note taking app free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai note taking app",
+      "createdAt": "2026-10-17T11:32:16.905Z",
+      "updatedAt": "2026-10-17T11:32:18.562Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer",
+      "keyword": "ai meeting summarizer",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.224Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-github",
+      "keyword": "ai meeting summarizer github",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.226Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-research-paper",
+      "keyword": "ai meeting summarizer research paper",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.228Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-free",
+      "keyword": "ai meeting summarizer free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.231Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-app",
+      "keyword": "ai meeting summarizer app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.233Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-device",
+      "keyword": "ai meeting summarizer device",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.236Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-project",
+      "keyword": "ai meeting summarizer project",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.238Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-tool",
+      "keyword": "ai meeting summarizer tool",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.242Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summary-teams",
+      "keyword": "ai meeting summary teams",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.245Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-meeting-summarizer-for-zoom",
+      "keyword": "ai meeting summarizer for zoom",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai meeting summarizer",
+      "createdAt": "2026-10-17T11:32:18.569Z",
+      "updatedAt": "2026-10-17T11:32:20.247Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-ai-calendar-app",
+      "keyword": "best ai calendar app",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:32:45.314Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.google.com/chrome/index.html",
+          "title": "Chrome Web Browser - Google Chrome",
+          "position": 1
+        },
+        {
+          "url": "https://www.google.com/chrome/",
+          "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+          "position": 2
+        },
+        {
+          "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform=Desktop",
+          "title": "Download and install Google Chrome",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": []
+    },
+    {
+      "id": "best-ai-calendar-app-for",
+      "keyword": "best ai calendar app for iphone",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:33:00.660Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://support.microsoft.com/en-us/swiftkey-keyboard/why-has-my-enter-key-turned-into-a-send-button-in-whatsapp",
+          "title": "Why has my enter key turned into a send button in WhatsApp?",
+          "position": 1
+        },
+        {
+          "url": "https://support.microsoft.com/es-es/windows/experience/backup-recovery/back-up-and-restore-with-windows-backup",
+          "title": "Realizar copias de seguridad y restaurar con Copias de seguridad de ...",
+          "position": 2
+        },
+        {
+          "url": "https://www.answers.com/telecommunications/What_is_the_correct_mobile_number_format_for_Ireland",
+          "title": "What is the correct mobile number format for Ireland? - Answers",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": []
+    },
+    {
+      "id": "best-ai-calendar-app-free",
+      "keyword": "best ai calendar app free",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:33:16.277Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": []
+    },
+    {
+      "id": "best-ai-calendar-app-reddit",
+      "keyword": "best ai calendar app reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:33:31.712Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-calendar-app-free"
+    },
+    {
+      "id": "best-ai-scheduling-app",
+      "keyword": "best ai scheduling app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:33:47.174Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-calendar-app-free"
+    },
+    {
+      "id": "best-ai-calendar-scheduling-app",
+      "keyword": "best ai calendar scheduling app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:34:02.713Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-calendar-app-free"
+    },
+    {
+      "id": "best-ai-family-calendar-app",
+      "keyword": "best ai family calendar app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:34:18.106Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:32:28.047Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-calendar-app-free"
+    },
+    {
+      "id": "best-ai-for-apple-calendar",
+      "keyword": "best ai for apple calendar",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:34:18.108Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-calendar-app-no-ai",
+      "keyword": "best calendar app no ai",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "best ai calendar app",
+      "createdAt": "2026-10-17T11:32:28.047Z",
+      "updatedAt": "2026-10-17T11:34:18.110Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager",
+      "keyword": "ai task manager",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.836Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-free",
+      "keyword": "ai task manager free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.843Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-app",
+      "keyword": "ai task manager app",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.848Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-github",
+      "keyword": "ai task manager github",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.852Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-open-source",
+      "keyword": "ai task manager open source",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.858Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-microsoft",
+      "keyword": "ai task manager microsoft",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.863Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-adhd",
+      "keyword": "ai task manager adhd",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.868Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-reddit",
+      "keyword": "ai task manager reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.871Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-tool",
+      "keyword": "ai task manager tool",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.875Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-task-manager-app-market",
+      "keyword": "ai task manager app market",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai task manager",
+      "createdAt": "2026-10-17T11:34:18.118Z",
+      "updatedAt": "2026-10-17T11:34:19.877Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work",
+      "keyword": "chatgpt for work",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:21.219Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-pricing",
+      "keyword": "chatgpt for work pricing",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:21.224Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-download",
+      "keyword": "chatgpt for work download",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:21.227Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-vs-codex",
+      "keyword": "chatgpt for work vs codex",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.432Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:34:19.884Z",
+      "paa": []
+    },
+    {
+      "id": "chatgpt-for-workout-plans-reddit",
+      "keyword": "chatgpt for workout plans reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.436Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-workplace",
+      "keyword": "chatgpt for workplace",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.441Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-cost",
+      "keyword": "chatgpt for work cost",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.446Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-free",
+      "keyword": "chatgpt for work free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.451Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-reddit",
+      "keyword": "chatgpt for work reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.455Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-for-work-101",
+      "keyword": "chatgpt for work 101",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "chatgpt for work",
+      "createdAt": "2026-10-17T11:34:19.884Z",
+      "updatedAt": "2026-10-17T11:34:36.458Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant",
+      "keyword": "ai email assistant",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.820Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-for-outlook",
+      "keyword": "ai email assistant for outlook",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.824Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-free",
+      "keyword": "ai email assistant free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.827Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-gmail",
+      "keyword": "ai email assistant gmail",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.831Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-outlook-free",
+      "keyword": "ai email assistant outlook free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.834Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-github",
+      "keyword": "ai email assistant github",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.838Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-gmail-free",
+      "keyword": "ai email assistant gmail free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.843Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-email-assistant-open-source",
+      "keyword": "ai email assistant open source",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.846Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "what-is-ai-assistant",
+      "keyword": "what is ai assistant",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.850Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "email-assistant-jobs",
+      "keyword": "email assistant jobs",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai email assistant",
+      "createdAt": "2026-10-17T11:34:36.464Z",
+      "updatedAt": "2026-10-17T11:34:37.853Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool",
+      "keyword": "ai transcription tool",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.440Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-free",
+      "keyword": "ai transcription tool free",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.446Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-for-meetings",
+      "keyword": "ai transcription tool for meetings",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.451Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-audio-to",
+      "keyword": "ai transcription tool audio to text",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.455Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-for-in",
+      "keyword": "ai transcription tool for in person meetings",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.459Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-for-teams",
+      "keyword": "ai transcription tool for teams",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.462Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-reddit",
+      "keyword": "ai transcription tool reddit",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.466Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-for-video",
+      "keyword": "ai transcription tool for video",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.470Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-zoom",
+      "keyword": "ai transcription tool zoom",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.474Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-transcription-tool-music",
+      "keyword": "ai transcription tool music",
+      "silo": "ai-productivity",
+      "stage": "rejected",
+      "seedTopic": "ai transcription tool",
+      "createdAt": "2026-10-17T11:34:37.863Z",
+      "updatedAt": "2026-10-17T11:34:39.478Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    }
+  ]
 }

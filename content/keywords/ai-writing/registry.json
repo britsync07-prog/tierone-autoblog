@@ -1,5 +1,1935 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T09:05:26.498Z",
-  "keywords": []
+  "updatedAt": "2026-10-17T11:19:50.527Z",
+  "keywords": [
+    {
+      "id": "ai-writing-assistant",
+      "keyword": "ai writing assistant",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.642Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-free",
+      "keyword": "ai writing assistant free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.644Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-free-online",
+      "keyword": "ai writing assistant free online",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.647Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-google",
+      "keyword": "ai writing assistant google",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.649Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-online",
+      "keyword": "ai writing assistant online",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.652Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-app",
+      "keyword": "ai writing assistant app",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.655Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-for-novels",
+      "keyword": "ai writing assistant for novels",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.658Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistants-shrink-linguistic",
+      "keyword": "ai writing assistants shrink linguistic diversity and blur personal identity",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.662Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-writing-assistant-chatgpt",
+      "keyword": "ai writing assistant chatgpt",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai writing assistant",
+      "createdAt": "2026-10-17T11:16:02.295Z",
+      "updatedAt": "2026-10-17T11:16:03.665Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "best-ai-writing-tools",
+      "keyword": "best ai writing tools",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:16:21.125Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:16:03.671Z",
+      "paa": []
+    },
+    {
+      "id": "best-ai-writing-tools-for",
+      "keyword": "best ai writing tools for novels",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:16:36.642Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:16:03.671Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-writing-tools"
+    },
+    {
+      "id": "best-ai-writing-tools-free",
+      "keyword": "best ai writing tools free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:16:52.609Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:16:03.671Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-writing-tools"
+    },
+    {
+      "id": "best-ai-writing-tools-reddit",
+      "keyword": "best ai writing tools reddit",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:17:07.880Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:16:03.671Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-writing-tools"
+    },
+    {
+      "id": "best-ai-writing-tools-2026",
+      "keyword": "best ai writing tools 2026",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:17:23.440Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.bestbuy.com/",
+          "title": "Best Buy | Official Online Store | Shop Now & Save",
+          "position": 1
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/best",
+          "title": "BEST | English meaning - Cambridge Dictionary",
+          "position": 2
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/best",
+          "title": "BEST Definition & Meaning - Merriam-Webster",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:16:03.671Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with best-ai-writing-tools"
+    },
+    {
+      "id": "what-are-the-best-ai",
+      "keyword": "what are the best ai tools",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "best ai writing tools",
+      "createdAt": "2026-10-17T11:16:03.671Z",
+      "updatedAt": "2026-10-17T11:17:23.448Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-vs-claude-for-writing",
+      "keyword": "chatgpt vs claude for writing",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "chatgpt vs claude for writing",
+      "createdAt": "2026-10-17T11:17:23.459Z",
+      "updatedAt": "2026-10-17T11:17:40.416Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:23.459Z",
+      "paa": []
+    },
+    {
+      "id": "ai-paraphrasing-tool",
+      "keyword": "ai paraphrasing tool",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.789Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-free",
+      "keyword": "ai paraphrasing tool free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.794Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-free-online",
+      "keyword": "ai paraphrasing tool free online",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.800Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-free-unlimited",
+      "keyword": "ai paraphrasing tool free unlimited words",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.805Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-ahrefs",
+      "keyword": "ai paraphrasing tool ahrefs",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.809Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-grammarly",
+      "keyword": "ai paraphrasing tool grammarly",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.816Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-for-academic",
+      "keyword": "ai paraphrasing tool for academic writing",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.820Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-to-avoid",
+      "keyword": "ai paraphrasing tool to avoid ai detection",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.824Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-paraphrasing-tool-free-no",
+      "keyword": "ai paraphrasing tool free no sign up",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.827Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "which-paraphrasing-tool-is-best",
+      "keyword": "which paraphrasing tool is best",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai paraphrasing tool",
+      "createdAt": "2026-10-17T11:17:40.436Z",
+      "updatedAt": "2026-10-17T11:17:41.829Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker",
+      "keyword": "ai grammar checker",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.440Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-free",
+      "keyword": "ai grammar checker free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.450Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-and-rephraser",
+      "keyword": "ai grammar checker and rephraser",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.487Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-paraphraser",
+      "keyword": "ai grammar checker & paraphraser",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.491Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-paraphraser-languagetool",
+      "keyword": "ai grammar checker & paraphraser – languagetool",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.495Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-online",
+      "keyword": "ai grammar checker online",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.498Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-chatgpt",
+      "keyword": "ai grammar checker chatgpt",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.502Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-free-no",
+      "keyword": "ai grammar checker free no sign up",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.507Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-grammar-checker-online-free",
+      "keyword": "ai grammar checker online free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai grammar checker",
+      "createdAt": "2026-10-17T11:17:41.834Z",
+      "updatedAt": "2026-10-17T11:17:43.512Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "sudowrite-reviews",
+      "keyword": "sudowrite reviews",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:18:01.086Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.reddit.com/r/wikipedia/comments/9p4x9/wikipedias_372_most_interesting_articles_and_140/",
+          "title": "Wikipedia's 372 most interesting articles and 140 most useful ...",
+          "position": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/worldbuilding/comments/8vgtdn/useful_tool_for_worldbuilding_wars_wikipedia/",
+          "title": "Useful tool for Worldbuilding Wars (Wikipedia Military Box Editor)",
+          "position": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/wikipedia/comments/mz2d87/who_writes_the_wikipedia_pages_of_people/",
+          "title": "Who writes the Wikipedia pages of people? : r/wikipedia - Reddit",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-reviews-reddit",
+      "keyword": "sudowrite reviews reddit",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:18:16.297Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://ibblportal.islamibankbd.com/",
+          "title": "IBBPLC iBanking - Internet Banking Service",
+          "position": 1
+        },
+        {
+          "url": "https://ibblportal.islamibankbd.com/instrucRegistration.do",
+          "title": "Register Page - Islami Bank Bangladesh Ltd",
+          "position": 2
+        },
+        {
+          "url": "https://ibblportal.islamibankbd.com/indexViewPdf.do?file=/XBrLZqjj03Xpp4TWennvaSftmn9jnjDjIDXwmICPNU=",
+          "title": "userManual - Islami Bank Bangladesh Ltd",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-reviews-2026",
+      "keyword": "sudowrite reviews 2026",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:18:31.812Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.reddit.com/r/wikipedia/comments/9p4x9/wikipedias_372_most_interesting_articles_and_140/",
+          "title": "Wikipedia's 372 most interesting articles and 140 most useful ...",
+          "position": 1
+        },
+        {
+          "url": "https://www.reddit.com/r/worldbuilding/comments/8vgtdn/useful_tool_for_worldbuilding_wars_wikipedia/",
+          "title": "Useful tool for Worldbuilding Wars (Wikipedia Military Box Editor)",
+          "position": 2
+        },
+        {
+          "url": "https://www.reddit.com/r/WikipediaVandalism/",
+          "title": "Hilarious Edits Found on Wikipedia - Reddit",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with sudowrite-reviews"
+    },
+    {
+      "id": "sudowrite-review-2025",
+      "keyword": "sudowrite review 2025",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:18:47.237Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://stackoverflow.com/questions/10997614/simplest-way-to-get-mediawiki-to-require-https-on-all-pages",
+          "title": "Simplest way to get MediaWiki to require HTTPS on all pages?",
+          "position": 1
+        },
+        {
+          "url": "https://stackoverflow.com/questions/5313703/how-can-i-set-up-jenkins-ci-to-use-https-on-windows",
+          "title": "How can I set up Jenkins CI to use https on Windows?",
+          "position": 2
+        },
+        {
+          "url": "https://support.google.com/waze/partners/?hl=en",
+          "title": "Waze Partners Help",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-reviews-complaints",
+      "keyword": "sudowrite reviews complaints",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:02.845Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://support.microsoft.com/en-us/windows/security/identity-signin/change-your-account-picture-in-windows",
+          "title": "Change Your Account Picture in Windows | Microsoft Support",
+          "position": 1
+        },
+        {
+          "url": "https://www.wikihow.com/Change-a-User-Account-Picture-in-Windows-10",
+          "title": "How to Change or Delete a User Account Picture in Windows",
+          "position": 2
+        },
+        {
+          "url": "https://geekzag.com/guides/computers/change-your-user-account-picture-easily-windows/",
+          "title": "Change Your User Account Picture Easily Windows 11 & 10",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-ai-reviews",
+      "keyword": "sudowrite ai reviews",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:18.289Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://www.wikihow.com/Password-Protect-Your-Windows-Computer",
+          "title": "How to Password Protect Your Windows Computer : Easy Guide - wikiHow",
+          "position": 1
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z1DbE_LTPSE",
+          "title": "How to Set Password on Windows 11 or 10 PC - YouTube",
+          "position": 2
+        },
+        {
+          "url": "https://www.wikihow.com/Set-a-Windows-Password",
+          "title": "How to Set a Password in Windows 10 or 11: Easy Steps - wikiHow",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-muse-review",
+      "keyword": "sudowrite muse review",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:33.760Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "sudowrite-app-review",
+      "keyword": "sudowrite app review",
+      "silo": "ai-writing",
+      "stage": "filtered",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:49.118Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [],
+      "serpAsOf": "2026-10-17T11:17:43.518Z",
+      "paa": []
+    },
+    {
+      "id": "squibler-vs-sudowrite-review",
+      "keyword": "squibler vs sudowrite review",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:49.121Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "novelcrafter-vs-sudowrite-review",
+      "keyword": "novelcrafter vs sudowrite review",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "sudowrite review",
+      "createdAt": "2026-10-17T11:17:43.518Z",
+      "updatedAt": "2026-10-17T11:19:49.124Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer",
+      "keyword": "ai essay writer",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.470Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-free",
+      "keyword": "ai essay writer free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.474Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-free-no",
+      "keyword": "ai essay writer free no sign up",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.478Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-with-citations",
+      "keyword": "ai essay writer with citations free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.481Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-undetectable",
+      "keyword": "ai essay writer undetectable",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.484Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-free-online",
+      "keyword": "ai essay writer free online",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.488Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-that-can",
+      "keyword": "ai essay writer that can't be detected",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.492Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-checker",
+      "keyword": "ai essay writer checker",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.496Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-reddit",
+      "keyword": "ai essay writer reddit",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.499Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-essay-writer-humanizer",
+      "keyword": "ai essay writer humanizer",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai essay writer",
+      "createdAt": "2026-10-17T11:19:49.130Z",
+      "updatedAt": "2026-10-17T11:19:50.502Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer",
+      "keyword": "ai blog writer",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.134Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-free",
+      "keyword": "ai blog writer free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.137Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-with-images",
+      "keyword": "ai blog writer with images free",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.140Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-us",
+      "keyword": "ai blog writer us",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.144Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-tool",
+      "keyword": "ai blog writer tool",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.148Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-wordpress",
+      "keyword": "ai blog writer wordpress",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.152Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-jobs",
+      "keyword": "ai blog writer jobs",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.156Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-github",
+      "keyword": "ai blog writer github",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.160Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-blog-writer-for-seo",
+      "keyword": "ai blog writer for seo",
+      "silo": "ai-writing",
+      "stage": "rejected",
+      "seedTopic": "ai blog writer",
+      "createdAt": "2026-10-17T11:19:50.527Z",
+      "updatedAt": "2026-10-17T11:19:52.163Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    }
+  ]
 }

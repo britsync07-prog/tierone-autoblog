@@ -1,5 +1,1721 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T09:05:26.498Z",
-  "keywords": []
+  "updatedAt": "2026-10-17T11:37:08.888Z",
+  "keywords": [
+    {
+      "id": "how-to-use-chatgpt-effectively",
+      "keyword": "how to use chatgpt effectively",
+      "silo": "ai-guides",
+      "stage": "filtered",
+      "seedTopic": "how to use chatgpt effectively",
+      "createdAt": "2026-10-17T11:34:39.495Z",
+      "updatedAt": "2026-10-17T11:34:56.686Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [],
+      "serpAsOf": "2026-10-17T11:34:39.495Z",
+      "paa": []
+    },
+    {
+      "id": "prompt-engineering-basics",
+      "keyword": "prompt engineering basics",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.049Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-pdf",
+      "keyword": "prompt engineering basics pdf",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.058Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-for-beginners",
+      "keyword": "prompt engineering basics for beginners",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.062Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-anthropic",
+      "keyword": "prompt engineering basics anthropic",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.066Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-youtube",
+      "keyword": "prompt engineering basics youtube",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.070Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-course",
+      "keyword": "prompt engineering basics course",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.073Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-by-ibm",
+      "keyword": "prompt engineering basics by ibm",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.077Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-free-course",
+      "keyword": "prompt engineering basics free course",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.081Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "prompt-engineering-basics-ppt",
+      "keyword": "prompt engineering basics ppt",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.085Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "coursera-prompt-engineering-basics",
+      "keyword": "coursera prompt engineering basics",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "prompt engineering basics",
+      "createdAt": "2026-10-17T11:34:56.692Z",
+      "updatedAt": "2026-10-17T11:34:58.087Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business",
+      "keyword": "ai for small business",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.689Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-owners",
+      "keyword": "ai for small business owners",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.691Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-marketing",
+      "keyword": "ai for small business marketing",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.693Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-course",
+      "keyword": "ai for small business course",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.696Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-training",
+      "keyword": "ai for small business training",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.698Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-anthropic",
+      "keyword": "ai for small business anthropic",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.701Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-book",
+      "keyword": "ai for small business book",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.704Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-claude",
+      "keyword": "ai for small business claude",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.706Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-for-small-business-phil",
+      "keyword": "ai for small business phil pallen",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai for small business",
+      "createdAt": "2026-10-17T11:34:58.093Z",
+      "updatedAt": "2026-10-17T11:34:59.709Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-workflow-tutorial",
+      "keyword": "chatgpt workflow tutorial",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt workflow tutorial",
+      "createdAt": "2026-10-17T11:34:59.716Z",
+      "updatedAt": "2026-10-17T11:34:59.716Z",
+      "rejectionReason": "Google autocomplete returned 0 suggestions for seed topic (US) — topic has no long-tail pool"
+    },
+    {
+      "id": "automate-tasks-with-ai",
+      "keyword": "automate tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.743Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-tasks-with-ai-agents",
+      "keyword": "automate tasks with ai agents",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.745Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-daily-tasks-with-ai",
+      "keyword": "automate daily tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.748Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-repetitive-tasks-with-ai",
+      "keyword": "automate repetitive tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.750Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-browser-tasks-with-ai",
+      "keyword": "automate browser tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.752Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-desktop-tasks-with-ai",
+      "keyword": "automate desktop tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.755Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-computer-tasks-with-ai",
+      "keyword": "automate computer tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.758Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-excel-tasks-with-ai",
+      "keyword": "automate excel tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.762Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-your-tasks-with-ai",
+      "keyword": "automate your tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.764Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "automate-windows-tasks-with-ai",
+      "keyword": "automate windows tasks with ai",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "automate tasks with ai",
+      "createdAt": "2026-10-17T11:35:00.122Z",
+      "updatedAt": "2026-10-17T11:35:01.767Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-beginner-guide",
+      "keyword": "chatgpt beginner guide",
+      "silo": "ai-guides",
+      "stage": "filtered",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:35:19.175Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": []
+    },
+    {
+      "id": "chatgpt-beginners-guide-pdf",
+      "keyword": "chatgpt beginners guide pdf",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:35:34.630Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with chatgpt-beginner-guide"
+    },
+    {
+      "id": "chatgpt-starter-guide",
+      "keyword": "chatgpt starter guide",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:35:50.123Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with chatgpt-beginner-guide"
+    },
+    {
+      "id": "chatgpt-101-beginners-guide",
+      "keyword": "chatgpt 101 beginners guide",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:36:05.631Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with chatgpt-beginner-guide"
+    },
+    {
+      "id": "chatgpt-101-the-complete-beginner",
+      "keyword": "chatgpt 101 the complete beginner's guide and masterclass",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:36:21.121Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with chatgpt-beginner-guide"
+    },
+    {
+      "id": "chatgpt-masterclass-the-ultimate-beginner",
+      "keyword": "chatgpt masterclass the ultimate beginner's guide",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:36:36.524Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://chatgpt.com/",
+          "title": "ChatGPT : Chat, Work, Create & Code with AI",
+          "position": 1
+        },
+        {
+          "url": "https://chatgpt.com/features",
+          "title": "ChatGPT",
+          "position": 2
+        },
+        {
+          "url": "https://openai.com/index/chatgpt/",
+          "title": "Introducing ChatGPT - OpenAI",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": [],
+      "rejectionReason": "near-cannibal: >=60% overlap with chatgpt-beginner-guide"
+    },
+    {
+      "id": "beginners-guide-to-acoustic-guitar",
+      "keyword": "beginners guide to acoustic guitar",
+      "silo": "ai-guides",
+      "stage": "filtered",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:36:51.964Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/no",
+          "title": "NO | English meaning - Cambridge Dictionary",
+          "position": 1
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=POszCiLezbg",
+          "title": "Meghan Trainor - NO (Lyrics ) - YouTube",
+          "position": 2
+        },
+        {
+          "url": "https://music.youtube.com/watch?v=cMTAUr3Nm6I",
+          "title": "NO (Official Video) - YouTube Music",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": []
+    },
+    {
+      "id": "beginners-guide-to-watch-collecting",
+      "keyword": "beginners guide to watch collecting",
+      "silo": "ai-guides",
+      "stage": "filtered",
+      "seedTopic": "chatgpt beginner guide",
+      "createdAt": "2026-10-17T11:35:01.773Z",
+      "updatedAt": "2026-10-17T11:37:07.496Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 8,
+        "trend": {
+          "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)"
+        }
+      },
+      "serpTop3": [
+        {
+          "url": "https://summerplaceal.com/",
+          "title": "Summer Place Apartment Homes | Summer Place",
+          "position": 1
+        },
+        {
+          "url": "https://summerplaceal.com/portal/",
+          "title": "Login | Prisma - Summer Place Apartments",
+          "position": 2
+        },
+        {
+          "url": "https://summerplaceal.com/floor-plans/",
+          "title": "Floor Plans | Summer Place Apartment Homes",
+          "position": 3
+        }
+      ],
+      "serpAsOf": "2026-10-17T11:35:01.773Z",
+      "paa": []
+    },
+    {
+      "id": "ai-tools-for-students",
+      "keyword": "ai tools for students",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.852Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-with",
+      "keyword": "ai tools for students with disabilities",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.855Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-to",
+      "keyword": "ai tools for students to study",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.858Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-free",
+      "keyword": "ai tools for students free",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.860Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-and",
+      "keyword": "ai tools for students and teachers",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.863Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-for",
+      "keyword": "ai tools for students for exam",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.866Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-learning",
+      "keyword": "ai tools for students learning",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.871Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-like",
+      "keyword": "ai tools for students like chatgpt",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.875Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "ai-tools-for-students-assignment",
+      "keyword": "ai tools for students assignment",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "ai tools for students",
+      "createdAt": "2026-10-17T11:37:07.507Z",
+      "updatedAt": "2026-10-17T11:37:08.878Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples",
+      "keyword": "chatgpt prompt examples",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.499Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 1
+          },
+          "uk": {
+            "rank": 1
+          },
+          "ca": {
+            "rank": 1
+          },
+          "au": {
+            "rank": 1
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-for-photo",
+      "keyword": "chatgpt prompt examples for photo editing",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.502Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 2
+          },
+          "uk": {
+            "rank": 2
+          },
+          "ca": {
+            "rank": 2
+          },
+          "au": {
+            "rank": 2
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-for-image",
+      "keyword": "chatgpt prompt examples for image generation",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.504Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 3
+          },
+          "uk": {
+            "rank": 3
+          },
+          "ca": {
+            "rank": 3
+          },
+          "au": {
+            "rank": 3
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-for-photos",
+      "keyword": "chatgpt prompt examples for photos",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.508Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 4
+          },
+          "uk": {
+            "rank": 4
+          },
+          "ca": {
+            "rank": 4
+          },
+          "au": {
+            "rank": 4
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-pdf",
+      "keyword": "chatgpt prompt examples pdf",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.512Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 5
+          },
+          "uk": {
+            "rank": 5
+          },
+          "ca": {
+            "rank": 5
+          },
+          "au": {
+            "rank": 5
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-reddit",
+      "keyword": "chatgpt prompt examples reddit",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.515Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 6
+          },
+          "uk": {
+            "rank": 6
+          },
+          "ca": {
+            "rank": 6
+          },
+          "au": {
+            "rank": 6
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-examples-image",
+      "keyword": "chatgpt prompt examples image",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.518Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 7
+          },
+          "uk": {
+            "rank": 7
+          },
+          "ca": {
+            "rank": 7
+          },
+          "au": {
+            "rank": 7
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-prompt-sample",
+      "keyword": "chatgpt prompt sample",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.521Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 8
+          },
+          "uk": {
+            "rank": 8
+          },
+          "ca": {
+            "rank": 8
+          },
+          "au": {
+            "rank": 8
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "no article-worthy intent signal (G3: question/comparison/best/review/alternatives/guide form absent) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-system-prompt-examples",
+      "keyword": "chatgpt system prompt examples",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.524Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 9
+          },
+          "uk": {
+            "rank": 9
+          },
+          "ca": {
+            "rank": 9
+          },
+          "au": {
+            "rank": 9
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 9 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    },
+    {
+      "id": "chatgpt-image-prompt-examples-reddit",
+      "keyword": "chatgpt image prompt examples reddit",
+      "silo": "ai-guides",
+      "stage": "rejected",
+      "seedTopic": "chatgpt prompt examples",
+      "createdAt": "2026-10-17T11:37:08.888Z",
+      "updatedAt": "2026-10-17T11:37:10.528Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": {
+            "rank": 10
+          },
+          "uk": {
+            "rank": 10
+          },
+          "ca": {
+            "rank": 10
+          },
+          "au": {
+            "rank": 10
+          }
+        },
+        "breadth": 10
+      },
+      "rejectionReason": "autocomplete rank 10 beyond top-8 (G1) — ⚠ free-signal proxy gate (replaces KD/volume gates per owner fully-free directive)"
+    }
+  ]
 }
