@@ -11,9 +11,19 @@
     "start": "next start",
     "lint": "eslint",
     "check:seeds": "node scripts/check-seeds.mjs",
-    "check:crawl": "node scripts/check-crawl.mjs"
+    "check:crawl": "node scripts/check-crawl.mjs",
+    "pipeline": "tsx lib/pipeline/run.ts",
+    "pipeline:expand": "tsx lib/pipeline/run.ts --stage expand",
+    "pipeline:brief": "tsx lib/pipeline/run.ts --stage brief",
+    "pipeline:outline": "tsx lib/pipeline/run.ts --stage outline",
+    "pipeline:assets": "tsx lib/pipeline/run.ts --stage assets",
+    "pipeline:draft": "tsx lib/pipeline/run.ts --stage draft",
+    "check:registry": "node scripts/check-registry.mjs",
+    "check:outline": "node scripts/check-outline.mjs",
+    "check:template": "node scripts/check-template.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
     "@content-collections/core": "^0.15.3",
     "@content-collections/mdx": "^0.2.2",
     "@content-collections/next": "^0.2.11",
@@ -22,6 +32,7 @@
     "github-slugger": "^2.0.0",
     "next": "^16.4.2",
     "next-seo": "^7.3.0",
+    "openai": "^7.36.0",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "rehype-autolink-headings": "^7.1.0",
@@ -29,6 +40,7 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
     "schema-dts": "^2.1.0",
+    "sharp": "^0.35.5",
     "shiki": "^4.5.0",
     "zod": "^4.6.7"
   },
@@ -38,9 +50,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^18.0.8",
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
