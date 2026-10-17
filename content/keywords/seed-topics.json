@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "topics": {
+    "ai-writing": [
+      "ai writing assistant",
+      "best ai writing tools",
+      "chatgpt vs claude for writing",
+      "ai paraphrasing tool",
+      "ai grammar checker",
+      "sudowrite review",
+      "ai essay writer",
+      "ai blog writer"
+    ],
+    "ai-coding": [
+      "ai coding assistant",
+      "github copilot alternatives",
+      "claude in terminal",
+      "ai code review tool",
+      "cursor vs copilot",
+      "chatgpt for programming",
+      "best llm for coding",
+      "ai pair programming"
+    ],
+    "ai-image": [
+      "ai image generator",
+      "midjourney alternatives",
+      "free ai image generator",
+      "dalle alternatives",
+      "ai photo editor",
+      "ideogram review",
+      "ai logo generator",
+      "ai image upscaler"
+    ],
+    "ai-productivity": [
+      "ai productivity tools",
+      "ai note taking app",
+      "ai meeting summarizer",
+      "best ai calendar app",
+      "ai task manager",
+      "chatgpt for work",
+      "ai email assistant",
+      "ai transcription tool"
+    ],
+    "ai-guides": [
+      "how to use chatgpt effectively",
+      "prompt engineering basics",
+      "ai for small business",
+      "chatgpt workflow tutorial",
+      "automate tasks with ai",
+      "chatgpt beginner guide",
+      "ai tools for students",
+      "chatgpt prompt examples"
+    ]
+  }
+}
