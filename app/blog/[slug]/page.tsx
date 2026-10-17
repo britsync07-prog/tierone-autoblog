@@ -1,6 +1,7 @@
 import type { ComponentProps, ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from 'next-seo';
 import { allPosts } from 'content-collections';
 import { MDXContent } from '@content-collections/mdx/react';
 import {
@@ -8,6 +9,13 @@ import {
   AUTHOR_SLUG,
   SITE_URL,
 } from '@/lib/site';
+import { getSilo, siloUrl } from '@/lib/silos';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+import {
+  buildArticleJsonLd,
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+} from '@/lib/seo/jsonld';
 import { useMDXComponents } from '@/mdx-components';
 import AdSlot from '@/components/ad-slot';
 import AiBadge from '@/components/ai-badge';
@@ -33,12 +41,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = findPost(slug);
   if (!post) return {};
-  const canonical = `${SITE_URL}/blog/${slug}`;
+  const canonical = canonicalFor(`/blog/${slug}`);
   const ogImage = `/blog/${slug}/opengraph-image`;
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical },
+    // GEO-01/GEO-03 (single-locale): self-referencing canonical + en-US and
+    // x-default pointing at it — derived only via lib/seo/canonical.
+    alternates: { ...localeAlternates(canonical) },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -55,7 +65,19 @@ export async function generateMetadata({
   };
 }
 
-function Breadcrumb({ title }: { title: string }) {
+// D-06 silo crumb: Home / {Silo} / Title — the middle node links to the silo
+// landing. The BreadcrumbList JSON-LD below mirrors this exact trail from
+// the same post object (schema-mirror rule: no SEO string rendered twice
+// from two sources).
+function Breadcrumb({
+  siloLabel,
+  siloHref,
+  title,
+}: {
+  siloLabel: string;
+  siloHref: string;
+  title: string;
+}) {
   return (
     <nav aria-label="Breadcrumb">
       <ol className="flex flex-wrap items-center gap-2 text-[14px] text-slate-600">
@@ -65,7 +87,11 @@ function Breadcrumb({ title }: { title: string }) {
           </a>
         </li>
         <li aria-hidden="true">/</li>
-        <li>Blog</li>
+        <li>
+          <a href={siloHref} className="hover:text-[#4f46e5] hover:underline">
+            {siloLabel}
+          </a>
+        </li>
         <li aria-hidden="true">/</li>
         <li aria-current="page" className="text-[#171717]">
           {title}
@@ -136,12 +162,37 @@ export default async function PostPage({
   const { slug } = await params;
   const post = findPost(slug);
   if (!post) notFound();
+  // T-02-02 posture: enum-validated posts always resolve their silo, but the
+  // lookup is guarded so a future taxonomy drift fails closed, not open.
+  const siloDef = getSilo(post.silo);
+  if (!siloDef) notFound();
+
+  // SEO-02/GEO-01 structured data + head links, all single-sourced from the
+  // same `post` object that renders the visible crumb/FAQ (mirror by
+  // construction). Builders strip `<` (T-02-01) and next-seo v7 components
+  // serialize + escape the JSON.
+  const canonical = canonicalFor(`/blog/${slug}`);
+  const siloHref = siloUrl(siloDef.slug);
+  const faqJsonLd = buildFaqJsonLd(post.faq);
 
   return (
     <>
+      <ArticleJsonLd type="BlogPosting" {...buildArticleJsonLd(post, canonical)} />
+      <BreadcrumbJsonLd
+        {...buildBreadcrumbJsonLd([
+          { name: 'Home', item: SITE_URL },
+          { name: siloDef.label, item: `${SITE_URL}${siloHref}` },
+          { name: post.title, item: canonical },
+        ])}
+      />
+      {faqJsonLd ? <FAQJsonLd {...faqJsonLd} /> : null}
       <main id="main-content" className="mx-auto max-w-5xl px-4 py-8">
         <ReadingProgress />
-        <Breadcrumb title={post.title} />
+        <Breadcrumb
+          siloLabel={siloDef.label}
+          siloHref={siloHref}
+          title={post.title}
+        />
         <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,65ch)_220px]">
           <article className="mx-auto w-full max-w-[65ch]">
             <h1 className="text-[30px] font-semibold leading-[1.2] text-[#171717]">
