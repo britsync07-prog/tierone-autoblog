@@ -32,7 +32,7 @@ import { readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import type { ZodType } from 'zod';
 
-export type LlmTask = 'summarize' | 'title-desc' | 'outline-body' | 'generic-structured';
+export type LlmTask = 'summarize' | 'title-desc' | 'outline-body' | 'draft-body' | 'generic-structured';
 export type LlmProviderId = 'primary' | 'fallback';
 /** ⚠ reworked per owner directive: provider tags are ROLE tags of the free adapter. */
 export type LlmProviderTag = LlmProviderId | 'fixture';
@@ -51,11 +51,14 @@ export interface LlmJson<T> {
   attempts: number;
 }
 
-/** Tight default for every task family — explicit per plan contract. */
+/** Tight default for every task family — explicit per plan contract.
+ * 'draft-body' needs 12000: a 2,500-word body + frontmatter fields + FAQs +
+ * comparison rows cannot fit outline-body's 4000 (Plan 03-06). */
 export const TASK_MAX_TOKENS: Record<LlmTask, number> = {
   summarize: 2000,
   'title-desc': 400,
   'outline-body': 4000,
+  'draft-body': 12000,
   'generic-structured': 2000,
 };
 

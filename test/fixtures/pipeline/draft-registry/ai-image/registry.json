@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-17T12:00:00.000Z",
+  "keywords": [
+    {
+      "id": "fixture-no-serp",
+      "keyword": "fixture keyword without serp",
+      "silo": "ai-image",
+      "stage": "filtered",
+      "seedTopic": "fixture seeds",
+      "createdAt": "2026-10-17T12:00:00.000Z",
+      "updatedAt": "2026-10-17T12:00:02.000Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": { "rank": 3 },
+          "uk": { "rank": 3 },
+          "ca": { "rank": 3 },
+          "au": { "rank": 3 }
+        },
+        "breadth": 7
+      },
+      "paa": []
+    }
+  ]
+}

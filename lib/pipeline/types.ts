@@ -63,7 +63,9 @@ export interface RegistryEntry {
   };
   brief?: { completedAt: string };
   outline?: { completedAt: string; lint: 'pass' };
-  draft?: { slug: string; landedAt: string; attempts: number; lastError?: string };
+  /** landedAt is OPTIONAL: failed attempts persist the trail (D-04) while the
+   * entry is still 'outlined' — it only gains a landedAt once the gate passes. */
+  draft?: { slug: string; landedAt?: string; attempts: number; lastError?: string };
   images?: { hero: ImageSlot; inArticle?: ImageSlot[]; completedAt: string };
 }
 
