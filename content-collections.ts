@@ -6,41 +6,23 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import { z } from 'zod';
-import { SILO_SLUGS } from './lib/silos';
+import { draftSchema } from './lib/pipeline/draft-schema';
 
 // Typed post collection: frontmatter is the single source of truth and the
 // build-time QA gate — malformed frontmatter fails the build, never publishes
 // silently (Build → publish boundary).
+//
+// Schema attach note (Plan 03-04, T-03-09 — no schema drift): the post
+// schema is imported from lib/pipeline/draft-schema, the deliberate
+// single-source zod contract shared with the Phase-3 draft stage. Only
+// `content` (the raw MDX body supplied by the frontmatter parser — never
+// written in frontmatter files; required by @content-collections/core so
+// `document.content` stays typed in the transform) is collection-local.
 const posts = defineCollection({
   name: 'posts',
   directory: 'content/posts',
   include: '*.mdx',
-  schema: z.object({
-    title: z.string().min(50).max(60),
-    description: z.string().min(150).max(160),
-    slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
-    publishedAt: z.string().datetime(),
-    updatedAt: z.string().datetime(),
-    faq: z
-      .array(z.object({ q: z.string().min(1), a: z.string().min(1) }))
-      .min(3)
-      .max(5),
-    // T-02-02: silo enum — an undeclared silo fails the build loudly instead
-    // of rendering a landing-less orphan (landings derive from SILO_SLUGS).
-    silo: z.enum(SILO_SLUGS),
-    // Explicit content property (raw markdown body, supplied by the
-    // frontmatter parser — never written in frontmatter files). Required by
-    // @content-collections/core: omitting it triggers the
-    // implicit-content-property deprecation and leaves `document.content`
-    // untyped in the transform.
-    content: z.string(),
-    tldr: z
-      .string()
-      .min(1)
-      .refine((v) => v.split(/\s+/).filter(Boolean).length <= 100, {
-        message: 'tldr must be 100 words or fewer',
-      }),
-  }),
+  schema: draftSchema.extend({ content: z.string() }),
   transform: async (document, context) => {
     // Rehype pipeline (D-07): GFM tables, stable heading ids, anchor links,
     // Shiki server-highlighted code (zero runtime highlighter, T-02-01).
