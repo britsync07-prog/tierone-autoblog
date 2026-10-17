@@ -3,8 +3,8 @@
 // the ⚠ OWNER FULLY-FREE DIRECTIVE: no third-party paid APIs, ever. The
 // DataForSEO client and its KD/gates are gone; keyword intelligence comes from
 // the keyless in-house sources in ../free-keywords (anonymous per-geo Google
-// autocomplete + Google Trends public explore + anonymous free Google SERP
-// HTML). Budget governance survived as a monthly REQUEST-cap governor
+// autocomplete + Google Trends public explore + anonymous free SERP HTML —
+// Bing engine, since Google's keyless SERP renders no organic markup). Budget governance survived as a monthly REQUEST-cap governor
 // (assertRequestsAvailable hard-stop; the USD ledger ops are always $0).
 //
 // Flow (sequential, never parallel API bursts):

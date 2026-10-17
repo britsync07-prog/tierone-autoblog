@@ -12,10 +12,17 @@
 //   2. Google Trends public explore endpoint (trends.google.com/trends/api/*
 //      two-step widget handshake, today 3-m window) — the "trend interest"
 //      free-signal proxy gate. Failures degrade to an honest absence note.
-//   3. Anonymous free Google SERP HTML (www.google.com/search, no JS) —
-//      top-3 organic URLs for the UNCHANGED D-05 anti-cannibalization check
-//      plus PAA question capture. HTML is parsed as text data ONLY (T-03-06:
-//      stored titles/questions are plain strings, never executed).
+//   3. Anonymous free SERP HTML for the UNCHANGED D-05 anti-cannibalization
+//      check + PAA question capture. ENGINE: Bing (www.bing.com), because on
+//      2026-10-17 every anonymous keyless Google SERP fetch variant (fresh
+//      browser UA, legacy mobile UA, gbv=1) returned only the JS-only shell
+//      with ZERO organic markup (h3=0 verified) — Google free SERP HTML no
+//      longer exists as a data source, per its own ⚠ directive rule "use an
+//      alternative that is free". Bing's anonymous HTML serves plain organic
+//      result blocks keylessly (verified same day). Same contract as before:
+//      top-3 organic URLs + PAA as plain-text data (T-03-06: titles/questions
+//      are stored as plain strings, never executed). PAA may be absent on
+//      Bing-built SERPs — an empty capture is recorded honestly.
 //
 // Security boundaries carried over from the Plan 03-02 threat register:
 //   T-03-02 analog: third-party public payloads are UNTRUSTED INPUT — JSON is
@@ -47,10 +54,12 @@ export const GEO_LOCALES: Record<GeoCode, { gl: string; hl: string }> = {
   au: { gl: 'au', hl: 'en-AU' },
 };
 
-/** Compile-time host allowlist — no dynamic hosts from any input (T-03-05). */
+/** Compile-time host allowlist — no dynamic hosts from any input (T-03-05).
+ * SERP engine is Bing (documented in the header block: Google's anonymous
+ * SERP serves a JS-only shell with zero organic markup as of 2026-10-17). */
 export const SUGGEST_HOST = 'suggestqueries.google.com';
 export const TRENDS_HOST = 'trends.google.com';
-export const SERP_HOST = 'www.google.com';
+export const SERP_HOST = 'www.bing.com';
 
 /** Anonymous browser UA for keyless public fetches (no cookies, no auth). */
 const USER_AGENT =
@@ -179,7 +188,7 @@ function innerText(htmlInner: string): string {
   return decodeEntities(stripTags(htmlInner)).replace(/\s+/g, ' ').trim();
 }
 
-/** LONG-RAW URL decode for /url?q= redirect wrappers + %xx escapes. */
+/** LONG-ish URL decode for /url?q= redirect wrappers + %xx escapes. */
 function decodeUrlish(s: string): string {
   try {
     return decodeURIComponent(s);
@@ -188,46 +197,86 @@ function decodeUrlish(s: string): string {
   }
 }
 
+/** Unwrap a Bing click-tracking redirect /ck/a?...&u=a1<base64-url>&...
+ * into the destination URL (u param carries an "a1" + base64url payload).
+ * Returns null when the href is not a wrapped URL. */
+function unwrapBingRedirect(href: string): string | null {
+  try {
+    const url = new URL(href, `https://${SERP_HOST}`);
+    if (!/\/{1,3}ck\/a(?:\/|$)/.test(url.pathname) && url.pathname !== '/ck/a') return null;
+    const u = url.searchParams.get('u');
+    if (u && (u.startsWith('a1'))) {
+      let decoded = '';
+      try {
+        decoded = Buffer.from(u.slice(2), 'base64url').toString('utf8');
+      } catch {
+        decoded = '';
+      }
+      if (/^https?:\/\//i.test(decoded)) return decoded;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export interface SerpParse {
   top: SerpResult[];
   paa: string[];
 }
 
+/** One organic candidate discovered in the parsed SERP HTML. */
+interface SerpAnchor {
+  idx: number;
+  href: string;
+  title: string;
+}
+
 /**
- * Parse the traditional non-JS Google SERP HTML:
- *  - every result title is an <h3>; its organic URL is the nearest <a href>
- *    that opens at/before that h3 (title-anchored pairing).
- *  - /url?q=… redirect wrappers are unwrapped.
- *  - internal google nav links (/search, /preferences, root) are skipped.
- *  - PAA questions come from the "People also ask" region's <h3> items.
- * Parsing is TEXT-ONLY and tolerant: any yield (even zero) is an honest
- * observation the stage records verbatim — nothing is invented.
+ * Parse anonymous free SERP HTML (Bing engine) deterministically into organic
+ * results. Parsing is TEXT-ONLY and tolerant: `<script>`/`<style>` blocks are
+ * stripped first so JS config strings never masquerade as visible markup;
+ * every result title comes from inside a `b_algo` organic block's first
+ * <h2><a href> anchor; Bing /ck/a click wrappers are unwrapped to the real
+ * destination URL. PAA questions are read from the visible "People also ask"
+ * region when the engine renders one (an empty capture is an honest outcome).
+ * Any yield (even zero) is an observation the stage records verbatim —
+ * nothing is invented.
  */
-export function parseSerpHtml(html: string): SerpParse {
-  const anchors: { idx: number; href: string }[] = [];
-  for (const m of html.matchAll(/<a\b[^>]*?\bhref="([^"]+)"[^>]*>/gi)) {
-    if (m.index !== undefined) anchors.push({ idx: m.index, href: m[1] });
+export function parseSerpHtml(rawHtml: string): SerpParse {
+  // Strip script/style payloads BEFORE any matching (T-03-06 data-only).
+  const html = rawHtml
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ');
+
+  // Organic blocks: Bing marks results with li.b_algo (ads/answers excluded).
+  const blockStarts: number[] = [];
+  for (const m of html.matchAll(/<li\b[^>]*\bclass="[^"]*\bb_algo\b[^"]*"[^>]*>/gi)) {
+    if (m.index !== undefined) blockStarts.push(m.index);
   }
-  const h3s: { idx: number; text: string }[] = [];
-  for (const m of html.matchAll(/<h3\b[^>]*>([\s\S]{0,400}?)<\/h3>/gi)) {
-    const text = innerText(m[1] ?? '');
-    if (text && m.index !== undefined) h3s.push({ idx: m.index, text });
+  const H2_A_RE =
+    /<h2\b[^>]*>\s*<a\b[^>]*?\bhref="([^"]+)"[^>]*>([\s\S]{0,400}?)<\/a>\s*<\/h2>/i;
+  const blockEnds = blockStarts.map((start, i) =>
+    i + 1 < blockStarts.length ? blockStarts[i + 1] : Math.min(start + 100_000, html.length),
+  );
+  const anchors: SerpAnchor[] = [];
+  for (let i = 0; i < blockStarts.length; i += 1) {
+    const m = html.slice(blockStarts[i], blockEnds[i]).match(H2_A_RE);
+    const title = innerText(m?.[2] ?? '');
+    if (title && m?.[1] !== undefined) {
+      anchors.push({ idx: blockStarts[i], href: m[1], title });
+    }
   }
 
   const top: SerpResult[] = [];
   const seenUrls = new Set<string>();
-  for (const h of h3s) {
-    let best: { idx: number; href: string } | null = null;
-    for (const a of anchors) {
-      if (a.idx < h.idx) best = a;
-      else break;
-    }
-    if (best === null) continue;
-    let href = best.href;
-    if (/^\/url\?/i.test(href)) {
-      const q = new URLSearchParams(decodeUrlish(href.split('?')[1] ?? '')).get('q');
-      if (q) href = q;
-    }
+  for (const a of anchors) {
+    // hrefs arrive HTML-escaped (&amp;u=a1…) — unescape BEFORE unwrapping so
+    // the click-tracking de-wrapper can read its real query params.
+    let href = decodeEntities(a.href);
+    const unwrapped = unwrapBingRedirect(href);
+    if (unwrapped) href = unwrapped;
+    href = decodeUrlish(href);
     let full = href;
     if (href.startsWith('/')) full = `https://${SERP_HOST}${href}`;
     if (!/^https?:\/\//i.test(full)) continue;
@@ -237,28 +286,31 @@ export function parseSerpHtml(html: string): SerpParse {
     } catch {
       continue;
     }
-    const path = url.pathname;
-    // Skip Google's own navigation chrome (never organic results).
-    if (path.startsWith('/search') || path.startsWith('/preferences') || path === '/') continue;
-    const dedup = `${url.hostname.toLowerCase().replace(/^www\./, '')}${path}`;
+    // Skip the engine's own navigation/chrome links (never organic results).
+    const bareHost = url.hostname.toLowerCase().replace(/^www\./, '');
+    if (bareHost === SERP_HOST.replace(/^www\./, '')) {
+      if (
+        url.pathname.startsWith('/search') ||
+        url.pathname.startsWith('/ck/') ||
+        url.pathname.startsWith('/preferences') ||
+        url.pathname === '/'
+      ) {
+        continue;
+      }
+    }
+    const dedup = `${bareHost}${url.pathname}`;
     if (seenUrls.has(dedup)) continue;
     seenUrls.add(dedup);
-    top.push({ url: url.toString(), title: h.text, position: top.length + 1 });
+    top.push({ url: url.toString(), title: a.title, position: top.length + 1 });
     if (top.length >= 3) break;
   }
 
   const paa: string[] = [];
-  const paaIdx = html.indexOf('People also ask');
+  const paaIdx = html.search(/people also ask/i);
   if (paaIdx >= 0) {
-    const win = html.slice(paaIdx, paaIdx + 20_000);
-    let first = true;
+    const win = html.slice(paaIdx, paaIdx + 30_000);
     for (const m of win.matchAll(/<h3\b[^>]*>([\s\S]{0,400}?)<\/h3>/gi)) {
       const text = innerText(m[1] ?? '');
-      if (first && /^people also ask$/i.test(text)) {
-        first = false;
-        continue; // region heading itself is not a question
-      }
-      first = false;
       if (!text) continue;
       if (!paa.includes(text)) paa.push(text);
       if (paa.length >= 10) break;
@@ -586,24 +638,28 @@ export function createFreeSources(deps: FreeSourcesDeps = {}) {
     }
   }
 
-  // ---- source 3: anonymous free Google SERP HTML ------------------------------
+  // ---- source 3: anonymous free SERP HTML (Bing engine) ----------------------
   function serpUrl(keyword: string, geo: GeoCode): string {
-    const { gl, hl } = GEO_LOCALES[geo];
+    // Per-geo market via mkt (Bing's en-GB/en-CA/en-AU/en-US market codes come
+    // straight from GEO_LOCALES[geo].hl — D-07 per-geo capture semantics).
+    const { hl } = GEO_LOCALES[geo];
     const url = new URL(`https://${SERP_HOST}/search`);
-    url.searchParams.set('num', '20');
-    url.searchParams.set('hl', hl);
-    url.searchParams.set('gl', gl);
+    url.searchParams.set('count', '20');
+    url.searchParams.set('setlang', hl);
+    url.searchParams.set('mkt', hl);
     url.searchParams.set('q', keyword);
     return url.toString();
   }
 
   /** ONE anonymous SERP HTML pull returns the top-3 organic URLs (D-05
-   * "one SERP pull per check") + PAA questions T-03-06-safe as plain text. */
+   * "one SERP pull per check") + PAA questions T-03-06-safe as plain text.
+   * Engine: Bing — see the header block (Google anonymous SERP serves no
+   * organic markup to keyless fetches since 2026-10). */
   async function serpTop(keyword: string, geo: GeoCode, registryDir: string): Promise<SerpCapture> {
     if (!keyword.trim()) throw new Error('serpTop(keyword) requires a non-empty keyword');
     if (!GEO_CODES.includes(geo)) throw new Error(`serpTop(geo) unknown geo '${String(geo)}'`);
     const url = serpUrl(keyword, geo);
-    const label = `Google SERP HTML q='${keyword}' gl=${GEO_LOCALES[geo].gl}`;
+    const label = `SERP HTML (Bing) q='${keyword}' mkt=${GEO_LOCALES[geo].hl}`;
     let attempts = 0;
     let html: string;
     try {
@@ -633,7 +689,7 @@ export function createFreeSources(deps: FreeSourcesDeps = {}) {
       'free.serp',
       [keyword],
       attempts,
-      `Google SERP HTML q='${keyword}' → ${parse.top.length} organic anchors, ${parse.paa.length} PAA`,
+      `SERP HTML (Bing) q='${keyword}' → ${parse.top.length} organic anchors, ${parse.paa.length} PAA`,
     );
     return { ok: true, top: parse.top, paa: parse.paa };
   }
