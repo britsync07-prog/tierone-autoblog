@@ -14,10 +14,10 @@
 
 ### SEO Architecture
 
-- [ ] **SEO-01**: Crawler can discover all posts via split XML sitemaps (posts only = canonical 200-status, diff-gated lastmod) + robots.ts
-- [ ] **SEO-02**: Post page emits valid Article + BreadcrumbList JSON-LD (FAQPage as hygiene) with single-source builders
-- [ ] **SEO-03**: Post URL is flat `/blog/{slug}` with self-referencing canonical; hierarchy via breadcrumbs + silo landings
-- [ ] **SEO-04**: Site enforces crawl efficiency: archives/tags/pagination noindexed, CI crawl-consistency suite green
+- [x] **SEO-01**: Crawler can discover all posts via split XML sitemaps (posts only = canonical 200-status, diff-gated lastmod) + robots.ts
+- [x] **SEO-02**: Post page emits valid Article + BreadcrumbList JSON-LD (FAQPage as hygiene) with single-source builders
+- [x] **SEO-03**: Post URL is flat `/blog/{slug}` with self-referencing canonical; hierarchy via breadcrumbs + silo landings
+- [x] **SEO-04**: Site enforces crawl efficiency: archives/tags/pagination noindexed, CI crawl-consistency suite green
 - [x] **SEO-05**: Visitor can navigate 4–8 silo landing pages with hub-and-spoke cluster links (flat URLs, soft silos)
 
 ### Content Pipeline
@@ -44,9 +44,9 @@
 
 ### Geo-Targeting (v1 = single-locale launch)
 
-- [ ] **GEO-01**: US visitor gets en-US canonical (+ x-default) with USD pricing, US providers, imperial+metric where natural
+- [x] **GEO-01**: US visitor gets en-US canonical (+ x-default) with USD pricing, US providers, imperial+metric where natural
 - [ ] **GEO-02**: Site serves from edge (Vercel + Cloudflare CDN front, correct Googlebot cache-bypass, US origin) with HTTPS everywhere
-- [ ] **GEO-03**: Site ships hreflang-capable plumbing validated by CI, launched single-locale (multi-locale deferred to trigger)
+- [x] **GEO-03**: Site ships hreflang-capable plumbing validated by CI, launched single-locale (multi-locale deferred to trigger)
 
 ### Observe + Compound
 
@@ -98,10 +98,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SITE-02 | Phase 1 | Pending |
 | SITE-03 | Phase 1 | Pending |
 | SITE-04 | Phase 1 | Pending |
-| SEO-01 | Phase 2 | Pending |
-| SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 2 | Pending |
-| SEO-04 | Phase 2 | Pending |
+| SEO-01 | Phase 2 | Complete |
+| SEO-02 | Phase 2 | Complete |
+| SEO-03 | Phase 2 | Complete |
+| SEO-04 | Phase 2 | Complete |
 | SEO-05 | Phase 2 | Complete |
 | PIPE-01 | Phase 3 | Pending |
 | PIPE-02 | Phase 3 | Pending |
@@ -116,9 +116,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AUTO-02 | Phase 5 | Pending |
 | AUTO-03 | Phase 5 | Pending |
 | AUTO-04 | Phase 5 | Pending |
-| GEO-01 | Phase 2 | Pending |
+| GEO-01 | Phase 2 | Complete |
 | GEO-02 | Phase 1 | Pending |
-| GEO-03 | Phase 2 | Pending |
+| GEO-03 | Phase 2 | Complete |
 | GROW-01 | Phase 6 | Pending |
 | GROW-02 | Phase 6 | Pending |
 | GROW-03 | Phase 6 | Pending |
@@ -130,4 +130,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-10-16*
-*Last updated: 2026-10-16 after initial definition*
+*Last updated: 2026-10-17 after Phase 2 completion (SEO-01..05, GEO-01, GEO-03 Complete)*

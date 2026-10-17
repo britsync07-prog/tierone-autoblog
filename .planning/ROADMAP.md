@@ -13,7 +13,7 @@ Tier-1 readers find our articles on Google page 1 and stay to read. We get there
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Site Foundation + Trust** - Fast, trustworthy article site on the edge with seed posts
-- [ ] **Phase 2: SEO Architecture + Silo IA** - Crawlable flat-URL site with silo link graph and single-locale plumbing
+- [x] **Phase 2: SEO Architecture + Silo IA** - Crawlable flat-URL site with silo link graph and single-locale plumbing (all 5 success criteria verified via 02-04 phase sweep)
 - [ ] **Phase 3: Content Pipeline** - Serial gated pipeline from keyword registry to structured draft
 - [ ] **Phase 4: Quality Gates** - Fail-closed EEAT/anti-spam gates with quarantine and auto-pause
 - [ ] **Phase 5: Autonomous Publish + Indexing** - Throttled cron publishing with live-URL verification and dual-track indexing
@@ -62,7 +62,7 @@ Plans:
 - [x] 02-02-PLAN.md — Split sitemaps + robots + crawl-consistency CI suite (Wave 1, parallel with 02-01)
 - Wave 2 *(blocked on 02-01 contracts)*:
 - [x] 02-03-PLAN.md — 5 silo landings + homepage hubs section
-- [ ] 02-04-PLAN.md — Post-page SEO wiring: silo crumb, JSON-LD, hreflang, Related upgrade (parallel with 02-03)
+- [x] 02-04-PLAN.md — Post-page SEO wiring: silo crumb, JSON-LD, hreflang, Related upgrade (parallel with 02-03)
 
 Cross-cutting constraints: single-source SEO strings via lib/site.ts + lib/silos.ts + lib/seo/ builders (Plans 01–04); `npm run build` + `npm run check:crawl` green after every task; flat /blog/{slug} untouched, hierarchy via links only.
 
@@ -120,7 +120,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
-| 2. SEO Architecture + Silo IA | 3/4 | In progress (02-04 remaining) | - |
+| 2. SEO Architecture + Silo IA | 4/4 | Complete (phase sweep verified 5/5 criteria, 2026-10-17) | 2026-10-17 |
 | 3. Content Pipeline | 0/TBD | Not started | - |
 | 4. Quality Gates | 0/TBD | Not started | - |
 | 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |
