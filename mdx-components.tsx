@@ -1,4 +1,5 @@
 import type { ComponentProps } from 'react';
+import Image from 'next/image';
 import Callout from '@/components/callout';
 import Tldr from '@/components/tldr';
 
@@ -73,6 +74,43 @@ export function useMDXComponents() {
         </pre>
       </div>
     ),
+    // D-13/PIPE-05: in-article MDX images render through next/image at the
+    // in-article raster dims (1080x608), lazy by default — never LCP
+    // candidates (only the page hero carries priority). Alt text is
+    // pipeline-enforced (>=10 chars at the draft gate); an MDX image with
+    // an empty alt fails the build instead of silently shipping an unnamed
+    // image (a11y + image-SEO quality floor).
+    img: ({
+      src,
+      alt,
+      title,
+      // native-img width/height are dropped from the spread — the in-article
+      // raster dims (1080x608) are the D-13 contract and never overridden
+      width: _w,
+      height: _h,
+      ...rest
+    }: ComponentProps<'img'>) => {
+      if (!alt) {
+        throw new Error(
+          `MDX image without alt text: ${String(src)} — alt is pipeline-enforced (D-13/PIPE-05)`,
+        );
+      }
+      if (typeof src !== 'string') {
+        return <img src={src} alt={alt} title={title} {...rest} />;
+      }
+      return (
+        <Image
+          src={src}
+          alt={alt}
+          title={title}
+          width={1080}
+          height={608}
+          sizes="(min-width: 768px) 42rem, 100vw"
+          className="rounded-lg"
+          {...rest}
+        />
+      );
+    },
     Callout,
     Tldr,
   };

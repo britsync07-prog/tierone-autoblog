@@ -1,6 +1,7 @@
 import type { ComponentProps, ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from 'next-seo';
 import { allPosts } from 'content-collections';
 import { MDXContent } from '@content-collections/mdx/react';
@@ -55,13 +56,39 @@ export async function generateMetadata({
       description: post.description,
       url: canonical,
       type: 'article',
-      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
+      // D-13/PIPE-05: hero posts advertise the generated art itself — the
+      // site-absolute 1280x720 AVIF first, then the SAME-art 1200x630 og.jpg
+      // crop (derived from the frontmatter hero src — note the basename
+      // change, hero.avif -> og.jpg is not an extension swap). Seeds keep
+      // the Phase-1 @vercel/og fallback shape byte-identical.
+      images: post.heroImage
+        ? [
+            {
+              url: `${SITE_URL}${post.heroImage.src}`,
+              width: 1280,
+              height: 720,
+              alt: post.heroImage.alt,
+            },
+            {
+              url: `${SITE_URL}${post.heroImage.src.replace(/hero\.(?:avif|webp)$/, 'og.jpg')}`,
+              width: 1200,
+              height: 630,
+              alt: post.heroImage.alt,
+            },
+          ]
+        : [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [ogImage],
+      // Hero posts tweet the universal raster og.jpg crop (AVIF-gap safe);
+      // seeds keep the @vercel/og route image unchanged.
+      images: [
+        post.heroImage
+          ? `${SITE_URL}${post.heroImage.src.replace(/hero\.(?:avif|webp)$/, 'og.jpg')}`
+          : ogImage,
+      ],
     },
   };
 }
@@ -206,6 +233,22 @@ export default async function PostPage({
               updated={post.updatedAt}
               readingMinutes={post.readingMinutes}
             />
+            {/* D-13/PIPE-05: pipeline-generated LCP hero. priority +
+                fetchPriority="high" preloads it as the LCP candidate; the
+                enforced frontmatter alt is the only alt source. Seeds (no
+                hero art) render exactly as before — zero new markup. */}
+            {post.heroImage ? (
+              <Image
+                src={post.heroImage.src}
+                alt={post.heroImage.alt}
+                width={1280}
+                height={720}
+                priority
+                fetchPriority="high"
+                sizes="(min-width: 768px) 42rem, 100vw"
+                className="mt-4 rounded-lg"
+              />
+            ) : null}
             <AiBadge href="/editorial-process" />
             <Tldr items={[post.tldr]} />
             <TocInline headings={post.headings} />
