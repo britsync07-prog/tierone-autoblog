@@ -61,7 +61,7 @@ Plans:
 - [x] 02-01-PLAN.md — SEO contracts: silo taxonomy + canonical/hreflang + JSON-LD builders (Wave 1)
 - [x] 02-02-PLAN.md — Split sitemaps + robots + crawl-consistency CI suite (Wave 1, parallel with 02-01)
 - Wave 2 *(blocked on 02-01 contracts)*:
-- [ ] 02-03-PLAN.md — 5 silo landings + homepage hubs section
+- [x] 02-03-PLAN.md — 5 silo landings + homepage hubs section
 - [ ] 02-04-PLAN.md — Post-page SEO wiring: silo crumb, JSON-LD, hreflang, Related upgrade (parallel with 02-03)
 
 Cross-cutting constraints: single-source SEO strings via lib/site.ts + lib/silos.ts + lib/seo/ builders (Plans 01–04); `npm run build` + `npm run check:crawl` green after every task; flat /blog/{slug} untouched, hierarchy via links only.
@@ -120,7 +120,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
-| 2. SEO Architecture + Silo IA | 1/4 | In progress | - |
+| 2. SEO Architecture + Silo IA | 3/4 | In progress (02-04 remaining) | - |
 | 3. Content Pipeline | 0/TBD | Not started | - |
 | 4. Quality Gates | 0/TBD | Not started | - |
 | 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |

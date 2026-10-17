@@ -18,7 +18,7 @@
 - [ ] **SEO-02**: Post page emits valid Article + BreadcrumbList JSON-LD (FAQPage as hygiene) with single-source builders
 - [ ] **SEO-03**: Post URL is flat `/blog/{slug}` with self-referencing canonical; hierarchy via breadcrumbs + silo landings
 - [ ] **SEO-04**: Site enforces crawl efficiency: archives/tags/pagination noindexed, CI crawl-consistency suite green
-- [ ] **SEO-05**: Visitor can navigate 4–8 silo landing pages with hub-and-spoke cluster links (flat URLs, soft silos)
+- [x] **SEO-05**: Visitor can navigate 4–8 silo landing pages with hub-and-spoke cluster links (flat URLs, soft silos)
 
 ### Content Pipeline
 
@@ -102,7 +102,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-02 | Phase 2 | Pending |
 | SEO-03 | Phase 2 | Pending |
 | SEO-04 | Phase 2 | Pending |
-| SEO-05 | Phase 2 | Pending |
+| SEO-05 | Phase 2 | Complete |
 | PIPE-01 | Phase 3 | Pending |
 | PIPE-02 | Phase 3 | Pending |
 | PIPE-03 | Phase 3 | Pending |
