@@ -19,8 +19,9 @@ const ROOT = resolve(process.cwd());
 const GATE = resolve(ROOT, 'scripts', 'check-template.mjs');
 const FIX = resolve(ROOT, 'test', 'fixtures', 'pipeline', 'template-fixtures');
 
-function run(...args: string[]): ReturnType<typeof spawnSync> {
-  return spawnSync(process.execPath, [GATE, ...args], { encoding: 'utf8' });
+function run(...args: string[]): { status: number | null; stdout: string; stderr: string } {
+  const r = spawnSync(process.execPath, [GATE, ...args], { encoding: 'utf8' });
+  return { status: r.status, stdout: String(r.stdout ?? ''), stderr: String(r.stderr ?? '') };
 }
 
 test('T1: default corpus — every content/posts file passes, prints "N passed", exit 0', () => {
