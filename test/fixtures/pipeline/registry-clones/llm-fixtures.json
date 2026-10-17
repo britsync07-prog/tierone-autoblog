@@ -1,0 +1,35 @@
+{
+  "brief:ai-productivity:fixture-serp-alpha": {
+    "compressions": [
+      { "url": "https://example.com/calendar-a", "coverage": "Single-tool review of calendar app A with annotated screenshots." },
+      { "url": "https://example.com/calendar-b", "coverage": "Two-app comparison with a pricing KPI table but no hands-on results." },
+      { "url": "https://example.com/calendar-c", "coverage": "General weekly-planning guide that uses the app as one running example." }
+    ],
+    "gaps": [
+      "No current-version verdict table with feature-by-feature scores",
+      "No hands-on testing notes and no explicit trade-offs stated anywhere in the top-3"
+    ],
+    "questions": [
+      "Which fixture calendar app schedules tasks fastest?",
+      "Is the fixture calendar app free?",
+      "Does the fixture calendar app support shared calendars?"
+    ],
+    "heroImage": "Split 16:9 mockup of the two calendar apps side by side under a verdict badge",
+    "inArticleImages": ["Feature-comparison banner placed directly under the verdict-table H2"],
+    "worthIt": true,
+    "worthReason": "The top-3 cover the tools but stop short of a current-version verdict table and hands-on notes, which our testing lane adds trivially. Both gaps are winnable with modest effort and match the silo's buying-intent audience, so a focused post earns its keep."
+  },
+  "brief:ai-productivity:fixture-serp-not-worth": {
+    "compressions": [
+      { "url": "https://example.net/not-worth-a", "coverage": "Official vendor changelog page, not a review." },
+      { "url": "https://example.net/not-worth-b", "coverage": "Short generic listicle with zero testing behind it." },
+      { "url": "https://example.net/not-worth-c", "coverage": "Forum thread, thin and outdated." }
+    ],
+    "gaps": ["Nothing divergent is missing — the intent surface is already fully served"],
+    "questions": ["Is this fixture note worthwhile?"],
+    "heroImage": "16:9 generic app screenshot banner",
+    "inArticleImages": [],
+    "worthIt": false,
+    "worthReason": "The top-3 already answer the full intent surface with fresher data; a new post would duplicate the same ground without a differentiator and risks a thin-content shape. Recommend rejection on the next promotion pass."
+  }
+}

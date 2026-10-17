@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-17T12:00:00.000Z",
+  "keywords": [
+    {
+      "id": "fixture-serp-alpha",
+      "keyword": "fixture keyword alpha",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "fixture seeds",
+      "createdAt": "2026-10-17T12:00:00.000Z",
+      "updatedAt": "2026-10-17T12:00:00.000Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": { "rank": 2 },
+          "uk": { "rank": 2 },
+          "ca": { "rank": 2 },
+          "au": { "rank": 2 }
+        },
+        "breadth": 8,
+        "trend": { "note": "trends unavailable: HTTP 429 upstream (blocked or throttled) after 3 polite attempt(s)" }
+      },
+      "serpTop3": [
+        { "url": "https://example.com/calendar-a", "title": "Example calendar app A review", "position": 1 },
+        { "url": "https://example.com/calendar-b", "title": "Example calendar app B compared", "position": 2 },
+        { "url": "https://example.com/calendar-c", "title": "Example weekly planning guide", "position": 3 }
+      ],
+      "serpAsOf": "2026-10-17T11:00:00.000Z",
+      "paa": []
+    },
+    {
+      "id": "fixture-serp-not-worth",
+      "keyword": "fixture keyword not worth",
+      "silo": "ai-productivity",
+      "stage": "filtered",
+      "seedTopic": "fixture seeds",
+      "createdAt": "2026-10-17T12:00:00.000Z",
+      "updatedAt": "2026-10-17T12:00:01.000Z",
+      "freeSignal": {
+        "autocomplete": {
+          "us": { "rank": 5 },
+          "uk": { "rank": 5 },
+          "ca": { "rank": 5 },
+          "au": { "rank": 5 }
+        },
+        "breadth": 6
+      },
+      "serpTop3": [
+        { "url": "https://example.net/not-worth-a", "title": "Vendor changelog page", "position": 1 },
+        { "url": "https://example.net/not-worth-b", "title": "Generic short listicle", "position": 2 },
+        { "url": "https://example.net/not-worth-c", "title": "Outdated forum thread", "position": 3 }
+      ],
+      "serpAsOf": "2026-10-17T11:00:00.000Z",
+      "paa": []
+    }
+  ]
+}
