@@ -1,0 +1,58 @@
+---
+title: "How the TierOne AutoBlog Draft Pipeline Works Day One"
+description: "Draft stage: turns an outlined, image-ready registry entry into a template-conformant MDX post: zod frontmatter, stage assertions, a gate, trail."
+slug: "fixture-draft-pipeline"
+publishedAt: "2026-10-17T00:00:00.000Z"
+updatedAt: "2026-10-17T00:00:00.000Z"
+author: "fixture"
+silo: "ai-writing"
+tldr: "The draft pipeline turns one outlined, image-ready topic into a landed MDX post. Frontmatter is parsed and validated first, stage assertions check the word band and structure, then the template gate reads the file back before the registry entry can advance."
+faq:
+  - q: "What turns an outlined topic into a landed draft?"
+    a: "A single stage run: it loads the outline, calls the model for a structured payload, validates frontmatter with zod, writes the MDX file, and only then lets the template gate read it back."
+  - q: "Why does the template gate run after the file is written?"
+    a: "The gate reads the final artifact exactly as a future build would. Spawning it on the posts directory keeps the rule set decoupled from the writer and means every landed post, manual or automated, meets the same template contract."
+  - q: "What happens when an assertion fails mid-run?"
+    a: "Nothing is written and the entry stays outlined. The attempt count and last error are recorded so the next run can retry the same topic without losing the failure history."
+comparison:
+  title: "Draft pipeline stages, head to head"
+  note: "Stage order is fixed; only timing shifts between runs."
+  columns:
+    - id: "stage"
+      label: "Stage"
+    - id: "verb"
+      label: "Core verb"
+    - id: "output"
+      label: "Output"
+  rows:
+    - cells: ["outline", "structure the topic", "markdown outline artifact"]
+      best: true
+    - cells: ["draft", "write the body payload", "validated MDX file"]
+---
+
+**TL;DR:** The draft pipeline turns one outlined, image-ready topic into a landed MDX post. Frontmatter is parsed and validated first, stage assertions check the word band and structure, and the template gate reads the file back before the registry entry advances.
+
+Landing a draft is deliberately boring. The stage re-reads the registry entry, opens the outline file, and calls the model once. Whatever comes back is treated as untrusted data: parsed into a narrow payload shape, checked against the facts already gathered during research, and only then written to disk.
+
+## The outline becomes frontmatter
+
+Every draft starts from the outline artifact the previous stage produced. Headings in the outline are copied verbatim into the body, comparison slots are flagged on or off, and frequently asked questions are drawn from the questions the research stage observed in the wild rather than invented ones.
+
+### Why questions come from the wild
+
+Models happily invent plausible questions, but invented questions drift away from what readers actually search for. Tying the answer block to observed questions keeps the landed page aligned with the demand data collected during the research pass.
+
+## Assertions run before anything touches disk
+
+After the model returns, the stage checks the body length against the agreed band, verifies every heading survived the trip, and makes sure each question still belongs to the observed set. A single failed check means no file is written and the attempt is recorded honestly.
+
+### Attempts and honest failure
+
+Repeated failures are part of normal operation. The retry budget is counted per topic, and when it runs out the entry stays put with its last error attached, waiting for a human to read the trail.
+
+## Where the draft lands and who reads the reports
+
+Landed drafts share the same file shape as the oldest seeds, which keeps the downstream build simple. The run report names every attempt, every gate verdict, and where each file went, and the migration-free trail means a later audit can reconstruct the whole chain. Curious readers can start from the [about page](/about) for the ownership story behind the project.
+
+Automated runs do not ship a perfect article every time. What they ship is an article whose failures were caught inside the pipeline instead of in a browser tab days later, which is the trade this setup chose from day one.
+
