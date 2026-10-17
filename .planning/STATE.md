@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 requests) — ready for 03-03
-last_updated: "2026-10-17T17:45:00.000Z"
-last_activity: 2026-10-17 -- Phase 3 P03-02 executed (real free-source backfill; DataForSEO reworked out per owner fully-free directive)
+stopped_at: "Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests) — ready for 03-03"
+last_updated: "2026-10-17T12:36:29.977Z"
+last_activity: 2026-10-17
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 14
-  completed_plans: 10
-  percent: 71
+  completed_plans: 11
+  percent: 79
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-10-16)
 ## Current Position
 
 Phase: 3 (content-pipeline) — EXECUTING
-Plan: 3 of 6
-Status: Executing Phase 3
-Last activity: 2026-10-17 -- Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests)
+Plan: 4 of 6
+Status: Ready to execute
+Last activity: 2026-10-17
 
-Progress: [██████████████] 71%
+Progress: [████████░░] 79%
 
 ## Performance Metrics
 
@@ -47,6 +47,7 @@ Progress: [██████████████] 71%
 | 03 | 2/6 | ~2h40 | ~1h20 |
 
 *Updated after each plan completion. Latest: Phase 03 P02 — ~2h15m wall (interrupted run resumed) — 3 tasks — 6 data files + 4 pipeline modules.*
+| Phase 03 P03 | 29min | 3 tasks | 23 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,10 @@ Recent decisions affecting current work:
 - [03-02]: KD/volume gates -> free-signal proxies G1 (autocomplete rank 1-8) / G2 (2-8 word shape, breadth>=5) / G3 (article-worthy intent form); D-05 >=60% overlap + D-07 per-geo capture UNCHANGED; every rejection keeps a reason prefix (G1/G2/G3/near-cannibal/U1)
 - [03-02]: Anonymous Google HTML SERP blocked upstream -> anonymous Bing HTML swap (c19c8a1); consequence: paa[] empty platform-wide (Bing HTML has no PAA block) — FAQ stages must source questions elsewhere, no fabrication
 - [03-02]: Request-cap governance added over the $0 ledger — monthlyRequestCap 4000 (used 807, 20%); SpendOp.requests records actual HTTP attempts incl. retries; monthlyEnvelopeUsd retained but all free ops bill $0.00 (correct per fully-free policy)
+- [Phase 3]: 03-03: LLM adapter reworked to env-configurable OpenAI-compatible over plain fetch per binding fully-free directive (LLM_BASE_URL/LLM_MODEL/optional LLM_API_KEY + CHEAP/FALLBACK; errors name env vars, never values)
+- [Phase 3]: 03-03: new free.llm ledger service records real-mode LLM calls at cost 0 with truthful attempts + assertRequestsAvailable preflight
+- [Phase 3]: 03-03: outline FAQs carry DERIVED provenance from brief candidate questions (paa[] empty platform-wide); check-outline lint enforces non-invention via sibling brief
+- [Phase 3]: 03-03: real full-chain run over 27 filtered survivors deferred to Plan 03-06 with free-endpoint env keys; pipeline:brief fails honestly at LlmNoCredentialsError before touching registry
 
 ### Pending Todos
 
@@ -97,6 +102,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-17T17:45:00.000Z
+Last session: 2026-10-17T12:32:57.572Z
 Stopped at: Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests) — ready for 03-03
-Resume file: .planning/phases/03-content-pipeline/03-03-PLAN.md
+Resume file: None
