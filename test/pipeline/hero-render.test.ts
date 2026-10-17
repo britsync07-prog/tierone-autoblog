@@ -52,7 +52,7 @@ test('page: OG branch — hero posts get the 1280x720 AVIF first + 1200x630 og.j
   assert.match(src, /: \[\{ url: ogImage, width: 1200, height: 630, alt: post\.title \}\]/, 'seed OG fallback shape unchanged (ternary else-branch)');
   // hero branch: SITE_URL-prefixed absolute AVIF first, then the same-art og.jpg crop
   assert.match(src, /post\.heroImage\.src/, 'OG hero branch reads the frontmatter src');
-  assert.match(src, /SITE_URL\$\{post\.heroImage\.src\}/, 'first OG entry is the site-absolute hero AVIF');
+  assert.match(src, /\$\{SITE_URL\}\$\{post\.heroImage\.src\}/, 'first OG entry is the site-absolute hero AVIF');
   assert.match(src, /post\.heroImage\.src\.replace\(/, 'og.jpg path DERIVED from the frontmatter hero src (string replace, never re-declared)');
   assert.match(src, /'og\.jpg'/, 'og crop targets the og.jpg basename — hero.avif -> og.jpg is not a plain extension swap');
   assert.match(src, /width: 1280,/, 'first OG entry is 1280x720');
