@@ -1,0 +1,12 @@
+{
+  "monthlyEnvelopeUsd": 25,
+  "ops": [
+    {
+      "service": "dfs.serp",
+      "cost": 0.6,
+      "note": "03-01 task-2 verification op (offline budget smoke test; no real DataForSEO call)",
+      "ts": "2026-10-17T09:13:22.132Z",
+      "month": "2026-10"
+    }
+  ]
+}
