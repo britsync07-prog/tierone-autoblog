@@ -39,13 +39,29 @@ const IN_ARTICLE: ImageConcept = {
 
 interface Sandbox {
   outDir: string;
-  cleanup: () => void;
+  cleanup: () => Promise<void>;
 }
+
+const sleep = (ms: number): Promise<void> => new Promise((r) => setTimeout(r, ms));
 
 function makeSandbox(): Sandbox {
   const root = mkdtempSync(join(tmpdir(), 'images-module-'));
   const outDir = join(root, 'public', 'images');
-  return { outDir, cleanup: () => rmSync(root, { recursive: true, force: true }) };
+  return {
+    outDir,
+    // Windows: sharp's native handles can outlive the await — retry before
+    // giving up (final failure is swallowed: OS temp hygiene owns leftovers).
+    cleanup: async () => {
+      for (let attempt = 0; attempt < 6; attempt += 1) {
+        try {
+          rmSync(root, { recursive: true, force: true });
+          return;
+        } catch {
+          await sleep(150);
+        }
+      }
+    },
+  };
 }
 
 const ENV_KEYS = ['PIPELINE_IMAGE_FIXTURE', 'PIPELINE_IMAGE_PROVIDER', 'OPENAI_API_KEY', 'OPENAI_IMAGE_MODEL'] as const;
@@ -86,7 +102,7 @@ test('fixture provider: hero concept -> 4 files (hero.avif/webp + og.avif/og.jpg
     assert.equal(assets[0].webpPath, '/images/fixture-probe-one/hero.webp');
     assert.equal(assets[0].ogJpgPath, '/images/fixture-probe-one/og.jpg');
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
@@ -106,7 +122,7 @@ test('sharp metadata probe: hero is 1280x720 (avif+webp); og pair is 1200x630', 
     assert.equal(`${ogAvif.width}x${ogAvif.height}`, '1200x630');
     assert.equal(`${ogJpg.width}x${ogJpg.height}`, '1200x630');
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
@@ -125,7 +141,7 @@ test('in-article concept -> in-article-1.avif+webp at 1080x608, NO og pair, no o
     assert.equal(assets[0].ogAvifPath, undefined);
     assert.equal(assets[0].avifPath, '/images/fixture-probe-inline/in-article-1.avif');
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
@@ -176,7 +192,7 @@ test('fixture run twice is idempotent: same file set, no duplication, same bytes
       first.map((a) => [a.slot, a.avifPath]),
     );
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
@@ -194,7 +210,7 @@ test('slug guard: escape attempts and malformed slugs never write outside public
     }
     assert.equal(existsSync(sandbox.outDir), false, 'no directories written for malformed slugs');
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
@@ -216,13 +232,13 @@ test('procedural provider: free deterministic art (same inputs -> same bytes), o
     const art = await sharp(join(sandbox.outDir, 'procedural-probe', 'hero.avif')).metadata();
     assert.equal(`${art.width}x${art.height}`, '1280x720');
   } finally {
-    sandbox.cleanup();
+    await sandbox.cleanup();
   }
 });
 
 test('heroPrompt export exists (plan contract) and carries the style guard', () => {
   const prompt = heroPrompt(HERO);
   assert.match(prompt, /editorial/i);
-  assert.match(prompt, /no text|no logos|no faces/);
-  assert.match(prompt, HERO.concept.slice(0, 10));
+  assert.match(prompt, /no text|no logos|no faces/i);
+  assert.ok(prompt.includes(HERO.concept.slice(0, 10)));
 });
