@@ -37,10 +37,10 @@ const S = z.object({ h1: z.string() });
 const OK_MESSAGES = [{ role: 'user' as const, content: 'produce json' }];
 
 /** Set LLM env vars for one test, restoring prior values after. */
-async function withEnv(
+async function withEnv<T>(
   vars: Record<string, string | undefined>,
-  fn: () => Promise<void>,
-): Promise<void> {
+  fn: () => Promise<T>,
+): Promise<T> {
   const saved = new Map<string, string | undefined>();
   for (const [k, v] of Object.entries(vars)) {
     saved.set(k, process.env[k]);
@@ -48,7 +48,7 @@ async function withEnv(
     else process.env[k] = v;
   }
   try {
-    await fn();
+    return await fn();
   } finally {
     for (const [k, v] of saved) {
       if (v === undefined) delete process.env[k];
@@ -172,6 +172,8 @@ test('T4: primary failure → fallback provider once; both failing → LlmProvid
 
   await withEnv(
     {
+      LLM_BASE_URL: 'https://primary.test/v1',
+      LLM_MODEL: 'primary-model',
       LLM_FALLBACK_BASE_URL: undefined,
       LLM_FALLBACK_MODEL: undefined,
     },
@@ -198,12 +200,16 @@ test('T5: invalid structured output → 1 repair retry carrying the validation e
     if (n === 1) return { raw: JSON.stringify({ h1: 5 }), attempts: 1 };
     return { raw: JSON.stringify({ h1: 'fixed' }), attempts: 1 };
   };
-  const ok = await completeJson({
-    task: 'generic-structured',
-    zodSchema: S,
-    messages: OK_MESSAGES,
-    transports: { primary: brokenThenFixed },
-  });
+  const ok = await withEnv(
+    { LLM_BASE_URL: 'https://free-endpoint.test/v1', LLM_MODEL: 'primary-model' },
+    async () =>
+      completeJson({
+        task: 'generic-structured',
+        zodSchema: S,
+        messages: OK_MESSAGES,
+        transports: { primary: brokenThenFixed },
+      }),
+  );
   assert.equal(ok.parsed.h1, 'fixed');
   assert.equal(n, 2);
   assert.match(seen[1]!.at(-1)!, /h1/); // validation error names the failing field
@@ -214,14 +220,18 @@ test('T5: invalid structured output → 1 repair retry carrying the validation e
     m += 1;
     return { raw: JSON.stringify({ h1: 5 }), attempts: 1 };
   };
-  await assert.rejects(
-    completeJson({
-      task: 'generic-structured',
-      zodSchema: S,
-      messages: OK_MESSAGES,
-      transports: { primary: alwaysBroken },
-    }),
-    LlmBadStructuredOutputError,
+  await withEnv(
+    { LLM_BASE_URL: 'https://free-endpoint.test/v1', LLM_MODEL: 'primary-model' },
+    async () =>
+      assert.rejects(
+        completeJson({
+          task: 'generic-structured',
+          zodSchema: S,
+          messages: OK_MESSAGES,
+          transports: { primary: alwaysBroken },
+        }),
+        LlmBadStructuredOutputError,
+      ),
   );
   assert.equal(m, 2);
 });
