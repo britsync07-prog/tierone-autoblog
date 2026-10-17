@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: ready_to_plan
-stopped_at: Completed 02-04 (post-page SEO wiring + phase verification) — Phase 2 fully executed
-last_updated: "2026-10-17T05:25:00.000Z"
-last_activity: 2026-10-17
+status: executing
+stopped_at: Completed 03-01-PLAN.md (registry + budget + runner foundation) — ready for 03-02
+last_updated: "2026-10-17T09:28:00.000Z"
+last_activity: 2026-10-17 -- Phase 3 P03-01 executed (registry foundation, budget governance, pipeline CLI)
 progress:
   total_phases: 6
   completed_phases: 2
-  total_plans: 8
-  completed_plans: 8
-  percent: 33
+  total_plans: 14
+  completed_plans: 9
+  percent: 64
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-10-16)
 
 **Core value:** Tier-1 readers find our articles on Google page 1 and stay to read — organic sessions from US/UK/CA/AU grow every week.
-**Current focus:** Phase 02 — seo-architecture-silo-ia (COMPLETE — all 4 plans executed; awaiting phase transition/verify-work)
+**Current focus:** Phase 3 — content-pipeline
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-10-17
+Phase: 3 (content-pipeline) — EXECUTING
+Plan: 2 of 6
+Status: Executing Phase 3
+Last activity: 2026-10-17 -- Completed 03-01-PLAN.md (registry + budget + runner foundation)
 
 Progress: [██████████] 100%
 
@@ -36,16 +36,17 @@ Progress: [██████████] 100%
 
 **Velocity:**
 
-- Total plans completed: 12 (milestone total planned 8)
-- Average duration: ~39 min/plan (recent plans)
-- Total execution time: ~3.6 hours
+- Total plans completed: 13 (milestone total planned 14)
+- Average duration: ~37 min/plan (recent plans)
+- Total execution time: ~4.1 hours
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01 | 4 | ~2h | ~30min |
 | 02 | 4 | - | - |
+| 03 | 1/6 | 25min | 25min |
 
-*Updated after each plan completion. Latest: Phase 02 P04 — 18min — 2 tasks — 2 files.*
+*Updated after each plan completion. Latest: Phase 03 P01 — 25min — 3 tasks — 14 files.*
 
 ## Accumulated Context
 
@@ -68,6 +69,10 @@ Recent decisions affecting current work:
 - [02-04]: Post JSON-LD emitted via next-seo v7 FAQJsonLd (no FAQPageJsonLd export), fed by Plan-01 builders from the same post object that renders the visible crumb/FAQ — mirror by construction
 - [02-04]: RelatedPosts never returns null now — empty same-silo list renders 'See all {Label} guides' landing link (1-post silos have no dead end); silo prop narrowed to SiloSlug (content enum guarantee), call site unchanged
 - [02-04]: Phase verification sweeps assert schema against SERVED visible markup with ground truth text-parsed from frontmatter + lib/silos.ts (suites never import site code); React SSR quirks to expect: <!-- --> between text expressions, attr-order variance (class before href), hrefLang camelCase
+- [03-01]: `SpendOp.month` typed as regex-verified `${number}-${number}` template type — plan's `'YYYY-MM'` annotation cannot compile as a literal type; runtime MONTH_RE proves the shape before cast
+- [03-01]: run.ts wraps top-level await in async main() — package.json has no "type":"module" so tsx transforms .ts as CJS; flipping global module type would risk Next build configs, so the runner avoids top-level await instead
+- [03-01]: Full-chain runner records per-stage failures and keeps walking (plan requires walking all 5 with honest FAILs, exit 1 at end); only budget exhaustion (assertSpendable) aborts the run immediately per D-02 hard-stop
+- [03-01]: check:registry strips // + /* */ comments before vocab/tuple regexes (self-invalidating-gate hygiene); RegistryStage vocabulary grepped from types.ts text, SILO_SLUGS from silos.ts text — site code never imported
 
 ### Pending Todos
 
@@ -87,6 +92,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-17T05:25:00.000Z
-Stopped at: Completed 02-04 (post-page SEO wiring + phase verification) — Phase 2 fully executed
-Resume file: .planning/phases/02-seo-architecture-silo-ia/02-04-SUMMARY.md
+Last session: 2026-10-17T09:28:00.000Z
+Stopped at: Completed 03-01-PLAN.md (registry + budget + runner foundation) — ready for 03-02
+Resume file: .planning/phases/03-content-pipeline/03-02-PLAN.md
