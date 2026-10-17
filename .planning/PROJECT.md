@@ -63,6 +63,7 @@ Tier-1 readers find our articles on Google page 1 and stay to read — organic s
 | Fully autonomous publishing | Owner choice for volume; mitigated by automated QA gates | — Pending |
 | Monetization deferred | Owner priority is visitors first; ad slots designed-in but inactive | — Pending |
 | Long-tail-first keyword strategy | New domains cannot win head terms; KD<20 programmatic clusters compound | — Pending |
+| **Fully-free platform — no third-party PAID APIs ever** (2026-10-17) | Owner directive: build free keyless sources in-house; everyone uses free-tier or env-configured free endpoints | — Pending — supersedes all DataForSEO usage (stack D-02/D-03) and any paid-LLM assumption
 
 ## Evolution
 

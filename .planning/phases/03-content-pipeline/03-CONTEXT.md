@@ -17,7 +17,17 @@ Phase 3 ends at template-conformant draft + assets. It does NOT publish (Phase 5
 <decisions>
 ## Implementation Decisions
 
-### Keyword acquisition + budget (PIPE-01)
+> **⚠ OWNER OVERRIDE (2026-10-17, checkpoint decision): FULLY-FREE PLATFORM — every remaining implementation choice below is now subordinated to this rule.**
+> **The platform must work fully free. No third-party PAID APIs — ever. If we need data or an API, we build it ourselves or use an alternative that is free.**
+> Concretely, this supersedes the locked decisions **D-02** (DataForSEO budget envelope), **the DataForSEO parts of D-01/D-03**, and the paid-LLM framing everywhere:
+> - **Keyword acquisition (03-02/03-03): NO DataForSEO.** The pipeline builds its own keyless, zero-cost keyword intelligence in-house (Google autocomplete/suggest-style endpoints scraped anonymously per-geo via gl/hl params, Google Trends public endpoint, free SERP HTML for gap/PAA signal). Honest-failure policy stays: never fabricate a datapoint; if a free source returns empty, record it visibly and move on.
+> - **Absolute volume/KD numbers are not free**: filter gates that required paid metrics (KD<raw and 500–5k volume) are replaced by free-signal proxies (autocomplete rank/position, expansion breadth, trend interest, question-form intent). Deviation from ROADMAP SC #1 wording is accepted as part of this override; the anti-cannibalization gate (D-05) and per-geo capture (D-07) are UNCHANGED.
+> - **Spend governance (D-02 spirit, new object):** the $-envelope/ledger becomes a **monthly free-API usage governor** (request caps per month + hard-stop + ledger trail) — the governance mechanics the registry/budget module implements stay as-is, but nothing is ever billed. No account signup, no keys, no billing is acceptable for keyword data.
+> - **LLM stages (03-03/03-06 + assets stage's alt-text etc.): any provider used must be free** — an env-configurable OpenAI-compatible adapter (base URL + key + model from env) that can point at free-tier endpoints (e.g. Groq, OpenRouter `:free`, local Ollama) or a free gateway. No paid Anthropic/OpenAI bill ever. Keys may still exist (free-tier signup) but cost $0; MissingCredentialsError protocol is unchanged (name the var, never the value).
+> - **Image pipeline (03-05): generator must be free** (free OSS/local generation, or public-domain asset sourcing) — never a paid image API.
+> Cache-everything rule (D-06) still applies to free sources to respect rate limits.
+
+### Keyword acquisition + budget (PIPE-01) — *pre-override, superseded in part by ⚠ OVERRIDE above*
 - **D-01:** Keywords enter via owner-seeded topics per silo in a config file (a curated seed-topic list); the pipeline expands those topics to long-tail candidates through DataForSEO, applies filters and anti-cannibalization. Fully-automated generic-root discovery is rejected (runaway spend risk); purely manual keyword lists are rejected (slow).
 - **D-02:** Spend governance = a monthly DataForSEO budget envelope (default ~$25/mo, owner-tunable) with a persisted spend ledger; remaining budget is visible in the registry data. Expansion hard-stops when the envelope is exhausted (monthly rollover). Cache-everything rule applies — a keyword's metrics are never re-billed while valid (see D-06).
 - **D-03:** Phase 3 includes a one-time real backfill run: expand ~25–40 seed topics (5 silos × 5–8 topics) through DataForSEO into filtered candidates so the registry starts populated and outline/draft stages test against real data. Not placeholder-first.
