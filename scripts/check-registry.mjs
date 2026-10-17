@@ -10,7 +10,11 @@
 //     against path traversal — T-03-01)
 //   - "no silent discards" (D-04): any rejected entry MUST carry a reason
 //   - spend ledger ops are well-formed (month/service/cost) and the
-//     current-month sum stays within the envelope + $0.01 (T-03-03)
+//     current-month USD sum stays within the envelope + $0.01 (T-03-03)
+//   - ⚠ fully-free directive (2026-10-17): free.* services must carry
+//     cost === 0 + an integer requests >= 1; the current-month request sum
+//     stays within monthlyRequestCap (default 4000) — dfs.* services remain
+//     valid so the pre-directive audit trail still validates
 //   - seed-topics keys equal SILO_SLUGS and total stays in the 25-40 envelope
 //     (D-03)
 //
@@ -143,13 +147,16 @@ try {
 } catch (err) {
   check('ledger', false, `unreadable/broken JSON: ${err.message}`);
 }
-const SERVICES = ['dfs.keyword-ideas', 'dfs.serp'];
+const SERVICES = ['dfs.keyword-ideas', 'dfs.serp', 'free.autocomplete', 'free.trends', 'free.serp'];
+const FREE_SERVICES = ['free.autocomplete', 'free.trends', 'free.serp'];
 const CURRENT_MONTH = new Date().toISOString().slice(0, 7);
 
 if (ledger) {
   const envelope = typeof ledger.monthlyEnvelopeUsd === 'number' && Number.isFinite(ledger.monthlyEnvelopeUsd) && ledger.monthlyEnvelopeUsd > 0 ? ledger.monthlyEnvelopeUsd : 25;
+  const requestCap = typeof ledger.monthlyRequestCap === 'number' && Number.isInteger(ledger.monthlyRequestCap) && ledger.monthlyRequestCap > 0 ? ledger.monthlyRequestCap : 4000;
   check('ledger', Array.isArray(ledger.ops), `${LEDGER}: ops must be an array`);
   let monthCents = 0;
+  let monthRequestsSum = 0;
   const ops = Array.isArray(ledger.ops) ? ledger.ops : [];
   for (let i = 0; i < ops.length; i += 1) {
     const op = ops[i];
@@ -158,15 +165,29 @@ if (ledger) {
     if (typeof op !== 'object' || op === null) continue;
     check('ledger', /^(20\d{2})-(0[1-9]|1[0-2])$/.test(op.month), `${ctx}: month '${op.month}' is not YYYY-MM`);
     check('ledger', SERVICES.includes(op.service), `${ctx}: service '${op.service}' not in ${SERVICES.join('|')}`);
-    check('ledger', typeof op.cost === 'number' && Number.isFinite(op.cost) && op.cost > 0, `${ctx}: cost must be a positive finite number (T-03-03)`);
+    // ⚠ fully-free directive: free.* ops always $0 + truthful integer requests
+    if (FREE_SERVICES.includes(op.service)) {
+      check('ledger', op.cost === 0, `${ctx}: free service '${op.service}' must record cost exactly 0 — no USD number ever becomes nonzero (owner directive)`);
+      check('ledger', Number.isInteger(op.requests) && op.requests >= 1, `${ctx}: free service '${op.service}' must record an integer requests >= 1 (got ${String(op.requests)})`);
+    } else {
+      check('ledger', typeof op.cost === 'number' && Number.isFinite(op.cost) && op.cost > 0, `${ctx}: cost must be a positive finite number (T-03-03)`);
+    }
     check('ledger', typeof op.ts === 'string' && !Number.isNaN(Date.parse(op.ts)), `${ctx}: ts not ISO-parseable`);
-    if (op.month === CURRENT_MONTH) monthCents += Math.round(op.cost * 100);
+    if (op.month === CURRENT_MONTH) {
+      monthCents += Math.round(op.cost * 100);
+      if (Number.isInteger(op.requests) && op.requests >= 1) monthRequestsSum += op.requests;
+    }
   }
   const monthSpend = monthCents / 100;
   check(
     'ledger',
     monthSpend <= envelope + 0.01,
     `${LEDGER}: current-month spend $${monthSpend.toFixed(2)} exceeds envelope $${envelope.toFixed(2)} + $0.01 tolerance (raise monthlyEnvelopeUsd or stop spending — D-02)`,
+  );
+  check(
+    'ledger',
+    monthRequestsSum <= requestCap,
+    `${LEDGER}: current-month free-source requests ${monthRequestsSum} exceed monthlyRequestCap ${requestCap} (⚠ fully-free directive request-cap governor — raise monthlyRequestCap in the ledger file or wait for monthly rollover)`,
   );
 }
 

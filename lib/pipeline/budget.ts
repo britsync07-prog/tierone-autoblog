@@ -1,11 +1,16 @@
-// DataForSEO spend governance (PIPE-01, D-02): a monthly USD envelope with a
-// persisted, git-committed spend ledger. Sums gate only the current month
-// (monthly rollover — old-month ops stay in the file as the audit trail).
+// Free-API usage governance (PIPE-01, D-02 spirit repurposed per the ⚠ OWNER
+// FULLY-FREE DIRECTIVE of 2026-10-17): a monthly USD envelope (kept, and never
+// exceeded — free ops are always $0) PLUS a monthly REQUEST cap over the same
+// persisted, git-committed ledger. Sums gate only the current month (monthly
+// rollover — old-month ops stay in the file as the audit trail).
 // Ledger file: content/keywords/spend-ledger.json
-//   { "monthlyEnvelopeUsd": 25, "ops": SpendOp[] }
-// The envelope is owner-tunable by editing that single number (D-02). All
-// writes are atomic (tmp + rename) so a crash never loses the spend trail
-// (T-03-04), and assertSpendable hard-stops BEFORE any batched spend.
+//   { "monthlyEnvelopeUsd": 25, "monthlyRequestCap": 4000, "ops": SpendOp[] }
+// The envelope/cap are owner-tunable by editing those numbers (D-02). All
+// writes are atomic (tmp + rename) so a crash never loses the trail
+// (T-03-04), and assertSpendable/assertRequestsAvailable hard-stop BEFORE any
+// batch of spend/requests. Services `free.*` record `cost: 0` + `requests: N`
+// — no USD number ever becomes nonzero; the dfs.* services are kept only so
+// historical (pre-directive) ledger ops still validate as the audit trail.
 
 import {
   mkdirSync,
@@ -17,11 +22,23 @@ import { join, resolve, sep } from 'node:path';
 
 export type MonthKey = `${number}-${number}`; // 'YYYY-MM' shape, regex-verified at runtime
 
+/** Ledger service vocabulary (additive, ⚠ fully-free directive): `dfs.*` are
+ * legacy pre-directive services kept so historical ops validate; `free.*` are
+ * the keyless in-house sources — always `cost: 0` with a truthful
+ * `requests: N` (actual HTTP attempts made, including retries). */
+export type SpendOpService =
+  | 'dfs.keyword-ideas'
+  | 'dfs.serp'
+  | 'free.autocomplete'
+  | 'free.trends'
+  | 'free.serp';
+
 export interface SpendOp {
   ts: string; // ISO datetime of the append
   month: MonthKey; // gate month — computed once at append time, never re-read
-  service: 'dfs.keyword-ideas' | 'dfs.serp';
-  cost: number;
+  service: SpendOpService;
+  cost: number; // USD; ALWAYS 0 for free.* services (fully-free directive)
+  requests?: number; // for free.* ops: actual HTTP attempts recorded this op
   keywords?: string[]; // keywords covered by this op (cache trail)
   note?: string;
 }
@@ -33,17 +50,37 @@ export interface Budget {
   month: string; // 'YYYY-MM'
   monthSpendUsd: number;
   remainingUsd: number;
+  /** Request-cap governance (⚠ fully-free directive) — additive on the same
+   * budget read: the monthly cap over keyless free-source HTTP requests. */
+  requestCap: number;
+  monthRequests: number;
+  remainingRequests: number;
 }
 
 export interface SpendLedger {
   monthlyEnvelopeUsd: number;
+  /** ⚠ fully-free directive: monthly request cap for free.* ops
+   * (owner-tunable; absent → DEFAULT_MONTHLY_REQUEST_CAP). */
+  monthlyRequestCap?: number;
   ops: SpendOp[];
 }
 
 /** D-02 default envelope when the ledger's field is absent. */
 export const DEFAULT_MONTHLY_ENVELOPE_USD = 25;
 
-const SERVICES: readonly SpendOp['service'][] = ['dfs.keyword-ideas', 'dfs.serp'];
+/** ⚠ fully-free directive default request cap (owner-tunable in the ledger
+ * file) — sized for several runs/mo at <100 requests/run with headroom. */
+export const DEFAULT_MONTHLY_REQUEST_CAP = 4000;
+
+const SERVICES: readonly SpendOpService[] = [
+  'dfs.keyword-ideas',
+  'dfs.serp',
+  'free.autocomplete',
+  'free.trends',
+  'free.serp',
+];
+/** Services that must never carry a nonzero USD cost (directive invariant). */
+const FREE_SERVICES: readonly SpendOpService[] = ['free.autocomplete', 'free.trends', 'free.serp'];
 const MONTH_RE = /^(20\d{2})-(0[1-9]|1[0-2])$/;
 
 /** Thrown by assertSpendable when the current-month envelope can't cover the
@@ -96,8 +133,10 @@ function ym(now: Date): MonthKey {
   return m as MonthKey; // MONTH_RE proves the ${number}-${number} shape
 }
 
-/** Read-only budget view: envelope from the ledger file (default 25), current-
- * month sum in cents (avoids float drift like 25 - 0.6 -> 24.399...). */
+/** Read-only budget view: envelope + request cap from the ledger file, with
+ * current-month sums in cents (avoids float drift like 25 - 0.6 -> 24.399...).
+ * free.* ops count toward `monthRequests` via their truthful `requests` value;
+ * legacy dfs.* ops (no `requests`) count only toward the USD envelope. */
 export function readBudget(registryDir: string, now: Date = new Date()): Budget {
   const ledger = readLedger(registryDir);
   const envelope =
@@ -106,11 +145,23 @@ export function readBudget(registryDir: string, now: Date = new Date()): Budget 
     ledger.monthlyEnvelopeUsd > 0
       ? ledger.monthlyEnvelopeUsd
       : DEFAULT_MONTHLY_ENVELOPE_USD;
+  const requestCap =
+    typeof ledger.monthlyRequestCap === 'number' &&
+    Number.isFinite(ledger.monthlyRequestCap) &&
+    Number.isInteger(ledger.monthlyRequestCap) &&
+    ledger.monthlyRequestCap > 0
+      ? ledger.monthlyRequestCap
+      : DEFAULT_MONTHLY_REQUEST_CAP;
   const month = ym(now);
   let spentCents = 0;
+  let monthRequests = 0;
   for (const op of ledger.ops) {
-    if (typeof op === 'object' && op !== null && typeof (op as SpendOp).month === 'string' && (op as SpendOp).month === month) {
-      spentCents += Math.round((op as SpendOp).cost * 100);
+    const o = op as SpendOp;
+    if (typeof op === 'object' && op !== null && typeof o.month === 'string' && o.month === month) {
+      spentCents += Math.round((o.cost ?? 0) * 100);
+      if (typeof o.requests === 'number' && Number.isFinite(o.requests)) {
+        monthRequests += Math.max(0, Math.round(o.requests));
+      }
     }
   }
   const envelopeCents = Math.round(envelope * 100);
@@ -119,17 +170,41 @@ export function readBudget(registryDir: string, now: Date = new Date()): Budget 
     month,
     monthSpendUsd: spentCents / 100,
     remainingUsd: (envelopeCents - spentCents) / 100,
+    requestCap,
+    monthRequests,
+    remainingRequests: requestCap - monthRequests,
   };
 }
 
-/** Append one spend op (ts/month computed here) and persist atomically. */
+/** Append one usage op (ts/month computed here) and persist atomically.
+ * Convention (⚠ fully-free directive): free.* services must carry `cost: 0`
+ * exactly plus a positive integer `requests` — the ledger can never gain a
+ * nonzero USD value; legacy dfs.* ops must carry cost > 0 (unchanged old rule). */
 export function appendSpend(registryDir: string, op: SpendOpInput, now: Date = new Date()): void {
   if (typeof op !== 'object' || op === null) fail('spend op is required');
   if (!SERVICES.includes(op.service)) {
     fail(`unknown spend service '${String(op.service)}' (valid: ${SERVICES.join(', ')})`);
   }
-  if (typeof op.cost !== 'number' || !Number.isFinite(op.cost) || op.cost <= 0) {
+  const isFreeOp = (FREE_SERVICES as readonly string[]).includes(op.service);
+  if (isFreeOp) {
+    if (op.cost !== 0) {
+      fail(`free service '${op.service}' must record cost exactly 0 — the platform is fully free and no USD number ever becomes nonzero (owner directive 2026-10-17)`);
+    }
+    if (
+      typeof op.requests !== 'number' ||
+      !Number.isInteger(op.requests) ||
+      op.requests < 1
+    ) {
+      fail(`free service '${op.service}' must record a truthfully counted integer requests >= 1 (got ${String(op.requests)}) — requests governance is the ledger's second axis (T-03-03 analog)`);
+    }
+  } else if (typeof op.cost !== 'number' || !Number.isFinite(op.cost) || op.cost <= 0) {
     fail(`spend cost must be a positive finite number (got ${String(op.cost)}) — over-inflated or free ops are rejected (T-03-03)`);
+  }
+  if (
+    op.requests !== undefined &&
+    (typeof op.requests !== 'number' || !Number.isInteger(op.requests) || op.requests < 1)
+  ) {
+    fail('spend op requests, when present, must be an integer >= 1');
   }
   if (op.keywords !== undefined && (!Array.isArray(op.keywords) || op.keywords.some((k) => typeof k !== 'string'))) {
     fail('spend op keywords, when present, must be an array of strings');
@@ -162,7 +237,31 @@ export function assertSpendable(registryDir: string, maxAddlUsd: number, now: Da
   const b = readBudget(registryDir, now);
   if (b.remainingUsd < maxAddlUsd) {
     throw new BudgetExhaustedError(
-      `DataForSEO monthly budget exhausted: remaining $${b.remainingUsd.toFixed(2)} < required $${maxAddlUsd.toFixed(2)} for month ${b.month} — raise monthlyEnvelopeUsd in content/keywords/spend-ledger.json or wait for monthly rollover (D-02)`,
+      `monthly spend envelope exhausted: remaining $${b.remainingUsd.toFixed(2)} < required $${maxAddlUsd.toFixed(2)} for month ${b.month} — raise monthlyEnvelopeUsd in content/keywords/spend-ledger.json or wait for monthly rollover (D-02; kept as the USD guardian of the ⚠ fully-free directive — no op may ever push it nonzero)`,
+    );
+  }
+  return b;
+}
+
+/**
+ * Request-cap hard-stop (⚠ fully-free directive, D-02 spirit): throws
+ * BudgetExhaustedError when the remaining monthly free-source request budget
+ * is below maxAddlRequests. Call BEFORE any batch of keyless source calls —
+ * this is the gate stages use instead of a USD envelope. maxAddlRequests = 0
+ * is a valid preflight ("never continue from an exhausted cap").
+ */
+export function assertRequestsAvailable(
+  registryDir: string,
+  maxAddlRequests: number,
+  now: Date = new Date(),
+): Budget {
+  if (typeof maxAddlRequests !== 'number' || !Number.isFinite(maxAddlRequests) || maxAddlRequests < 0) {
+    fail(`maxAddlRequests must be a non-negative finite number (got ${String(maxAddlRequests)})`);
+  }
+  const b = readBudget(registryDir, now);
+  if (b.remainingRequests < maxAddlRequests) {
+    throw new BudgetExhaustedError(
+      `free-source request cap exhausted for ${b.month}: ${b.monthRequests}/${b.requestCap} requests used, ${b.remainingRequests} remaining < required ${maxAddlRequests} — raise monthlyRequestCap in content/keywords/spend-ledger.json or wait for monthly rollover (⚠ fully-free directive; replaces the USD spend envelope as the operative hard-stop)`,
     );
   }
   return b;

@@ -18,6 +18,7 @@ import {
   type Budget,
   BudgetExhaustedError,
   appendSpend as appendSpendRaw,
+  assertRequestsAvailable as assertRequestsAvailableRaw,
   assertSpendable as assertSpendableRaw,
   readBudget as readBudgetRaw,
   type SpendOpInput,
@@ -62,6 +63,8 @@ export interface BudgetApi {
   readBudget(): Budget;
   appendSpend(op: SpendOpInput): void;
   assertSpendable(maxAddlUsd: number): Budget;
+  /** ⚠ fully-free directive: monthly free-source request-cap gate. */
+  assertRequestsAvailable(maxAddlRequests: number): Budget;
 }
 
 export interface StageContext {
@@ -88,6 +91,8 @@ function makeBudgetApi(registryDir: string): BudgetApi {
     readBudget: () => readBudgetRaw(registryDir),
     appendSpend: (op) => appendSpendRaw(registryDir, op),
     assertSpendable: (maxAddlUsd) => assertSpendableRaw(registryDir, maxAddlUsd),
+    assertRequestsAvailable: (maxAddlRequests) =>
+      assertRequestsAvailableRaw(registryDir, maxAddlRequests),
   };
 }
 
@@ -155,10 +160,13 @@ async function runPipeline(options: CliOptions): Promise<number> {
 
   for (const stage of stages) {
     // Budget preflight (key link run.ts -> budget.ts): never proceed from an
-    // over-spent envelope (D-02). assertSpendable(dir, 0) throws only when
-    // already over; stages themselves gate their own planned spend.
+    // over-spent envelope (D-02) or an exhausted free-source request cap (⚠
+    // fully-free directive). assertSpendable(dir, 0) throws only when already
+    // over USD; assertRequestsAvailable(dir, 0) throws only when the monthly
+    // request cap is already exhausted; stages gate their own planned spend.
     try {
       assertSpendableRaw(registryDir, 0);
+      assertRequestsAvailableRaw(registryDir, 0);
     } catch (err) {
       if (err instanceof BudgetExhaustedError) {
         console.log(`FAIL: aborting before stage '${stage}' — ${err.message}`);
