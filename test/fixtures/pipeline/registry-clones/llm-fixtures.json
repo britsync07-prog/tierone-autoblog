@@ -31,5 +31,22 @@
     "inArticleImages": [],
     "worthIt": false,
     "worthReason": "The top-3 already answer the full intent surface with fresher data; a new post would duplicate the same ground without a differentiator and risks a thin-content shape. Recommend rejection on the next promotion pass."
+  },
+  "outline:ai-productivity:fixture-serp-alpha": {
+    "h1": "Fixture Keyword Alpha: The Current-Version Verdict Table",
+    "meta": "We tested three fixture calendar apps on current versions, scoring verdicts, scheduling speed, and pricing trade-offs, so you can pick the right tool today.",
+    "tldr": "We tested all three fixture calendar apps on their current versions, built a feature-by-feature verdict table, measured real scheduling speed, and priced every tier. Our pick suits daily planning best, but the runner-up wins for shared calendars and tight budgets.",
+    "sections": [
+      { "h2": "Quick verdict: which fixture calendar app to pick", "h3": ["Who each pick suits"], "words": 200 },
+      { "h2": "Feature-by-feature comparison", "h3": [], "words": 400 },
+      { "h2": "Hands-on notes from daily scheduling", "h3": ["Setup friction", "Task speed"], "words": 500 },
+      { "h2": "Pricing and trade-offs", "h3": [], "words": 300 }
+    ],
+    "faqs": [
+      { "q": "Which fixture calendar app schedules tasks fastest?", "angle": "State the measured winner and the workload where it flips." },
+      { "q": "Is the fixture calendar app free?", "angle": "Free-tier limits versus paid tiers, per app." },
+      { "q": "Does the fixture calendar app support shared calendars?", "angle": "Sharing support matrix with the caveat where sharing breaks." }
+    ],
+    "comparison": true
   }
 }
