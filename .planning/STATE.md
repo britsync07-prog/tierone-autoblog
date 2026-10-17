@@ -4,14 +4,14 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: "Completed 03-04-PLAN.md (comparison-as-frontmatter state machine live: draft-schema single source, ComparisonTable component, seed-01 proof) — ready for 03-05"
-last_updated: "2026-10-17T13:07:39.558Z"
+last_updated: "2026-10-17T13:57:58.718Z"
 last_activity: 2026-10-17
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 14
-  completed_plans: 12
-  percent: 86
+  completed_plans: 13
+  percent: 93
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-10-16)
 ## Current Position
 
 Phase: 3 (content-pipeline) — EXECUTING
-Plan: 5 of 6
+Plan: 6 of 6
 Status: Ready to execute
 Last activity: 2026-10-17
 
-Progress: [█████████░] 86%
+Progress: [█████████░] 93%
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ Progress: [█████████░] 86%
 *Updated after each plan completion. Latest: Phase 03 P02 — ~2h15m wall (interrupted run resumed) — 3 tasks — 6 data files + 4 pipeline modules.*
 | Phase 03 P03 | 29min | 3 tasks | 23 files |
 | Phase 3 P04 | 15min | 3 tasks | 8 files |
+| Phase 03 P05 | 39min | 3 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -87,6 +88,9 @@ Recent decisions affecting current work:
 - [Phase 3]: 03-04 — draft-schema.ts is the SINGLE zod source for post frontmatter (content-collections.ts imports it; comparison + optional heroImage pre-wired for 03-05); site edge stays pure zod + lib/silos
 - [Phase 3]: 03-04 — ComparisonTable is a zero-client-JS server component with a comparison-gated slot before the MDX body; row-width refine fails the build ('one cell per column', negative-proof verified once); check:seeds accepts the component route on comparison presence
 - [Phase 3]: 03-04 — PIPE-04's both halves verified in served HTML: seed-01 prerender carries data-comparison-table + verbatim cells + aria best pick + 'More in' up-link; seed-02 (no comparison) renders none
+- [Phase 3]: 03-05 — Images: owner fully-free directive applied — free procedural SVG→sharp generator (real lane) + fixture lane; openai provider fails closed even with a key; no paid SDK installed
+- [Phase 3]: 03-05 — Images: spend governance = runtime cap MAX_IMAGES_PER_RUN=6 with visible park notes; spend not ledgered (always $0.00, reported in StageResult notes)
+- [Phase 3]: 03-05 — Images: assets stage records entry.images while stage stays outlined (D-09); OG metadata derives og.jpg from the hero src by basename replace; seeds stay byte-identical
 
 ### Pending Todos
 
@@ -106,6 +110,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-17T13:07:39.532Z
+Last session: 2026-10-17T13:57:24.852Z
 Stopped at: Completed 03-04-PLAN.md (comparison-as-frontmatter state machine live: draft-schema single source, ComparisonTable component, seed-01 proof) — ready for 03-05
 Resume file: None

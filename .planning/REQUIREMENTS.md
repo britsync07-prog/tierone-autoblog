@@ -26,7 +26,7 @@
 - [x] **PIPE-02**: System generates competitor gap brief + outline per keyword, structure-linted before draft spend
 - [ ] **PIPE-03**: System drafts 1,500–2,500 word posts section-wise (dual LLM provider) in the strict template (H1 50–60 chars, meta 150–160, TL;DR ≤100 words, H2/H3, tables/lists, 3–5 PAA-derived FAQs, conclusion + CTA)
 - [x] **PIPE-04**: System renders comparison-table component and related-post block (same-silo, zero orphans, mandatory pillar up-link)
-- [ ] **PIPE-05**: System processes post images (hero/OG/in-article, AVIF/WebP, LCP preload, alt text enforced)
+- [x] **PIPE-05**: System processes post images (hero/OG/in-article, AVIF/WebP, LCP preload, alt text enforced)
 
 ### Quality Gates (EEAT + Anti-Spam)
 
@@ -107,7 +107,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PIPE-02 | Phase 3 | Complete |
 | PIPE-03 | Phase 3 | Pending |
 | PIPE-04 | Phase 3 | Complete |
-| PIPE-05 | Phase 3 | Pending |
+| PIPE-05 | Phase 3 | Complete |
 | QA-01 | Phase 4 | Pending |
 | QA-02 | Phase 4 | Pending |
 | QA-03 | Phase 4 | Pending |

@@ -83,7 +83,7 @@ Plans:
 - [x] 03-02-PLAN.md — DataForSEO expansion: REST client, expander stage (filters + anti-cannibalization + envelope hard-stop), real backfill run (W2)
 - [x] 03-03-PLAN.md — Brief + outline intelligence: dual-provider LLM client, gap-brief stage, outline stage + structure-lint gate check:outline (W2)
 - [x] 03-04-PLAN.md — Comparison-table as frontmatter data: draft-schema single source, <ComparisonTable> component, seed-01 retrofit, check-seeds conditional (W2)
-- [ ] 03-05-PLAN.md — Image assets before drafts: images module + assets stage (hero/OG/in-article AVIF/WebP), hero render + MDX image mapping (W3)
+- [x] 03-05-PLAN.md — Image assets before drafts: images module + assets stage (hero/OG/in-article AVIF/WebP), hero render + MDX image mapping (W3)
 - [ ] 03-06-PLAN.md — Draft stage + template gate: draft-body LLM task, outlined→drafted with gate-before-advance, check:template, real full-chain run, CI wiring (W4)
 
 **UI hint**: yes
