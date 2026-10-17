@@ -22,7 +22,7 @@ tech-stack:
 
 key-files:
   created: []
-  modified: [content/keywords/ai-writing/registry.json, content/keywords/ai-coding/registry.json, content/keywords/ai-image/registry.json, content/keywords/ai-productivity/registry.json, content/keywords/ai-guides/registry.json, content/keywords/spend-ledger.json, lib/pipeline/free-keywords.ts, lib/pipeline/stages/expand.ts, lib/pipeline/budget.ts, lib/pipeline/dataforseo.ts]
+  modified: [content/keywords/ai-writing/registry.json, content/keywords/ai-coding/registry.json, content/keywords/ai-image/registry.json, content/keywords/ai-productivity/registry.json, content/keywords/ai-guides/registry.json, content/keywords/spend-ledger.json, lib/pipeline/free-keywords.ts, lib/pipeline/stages/expand.ts, lib/pipeline/budget.ts, -deleted: lib/pipeline/dataforseo.ts]
 
 key-decisions:
   - "Owner-directive rework: DataForSEO replaced by in-house keyless sources (Google autocomplete per-geo, Trends, anonymous Bing HTML SERP); dataforseo.ts superseded by 0064bdf
@@ -89,7 +89,7 @@ _Note: earlier commits 1246d24 + abf57de were the pre-directive implementation; 
 - `lib/pipeline/free-keywords.ts` — keyless clients: Google autocomplete (per-geo gl=), Google Trends, Bing SERP HTML parser; polite retries; zod-validated payloads (T-03-02)
 - `lib/pipeline/stages/expand.ts` — queue from seed-topics.json, G1/G2/G3 gates, D-05 overlap check, D-07 per-geo capture, crash-safe saves
 - `lib/pipeline/budget.ts` — request-cap governor layered over the (free) envelope
-- `lib/pipeline/dataforseo.ts` — superseded by 0064bdf (kept for reference/reversible swap; no calls in the free path)
+- `lib/pipeline/dataforseo.ts` — DELETED in 0064bdf (superseded by free-keywords.ts; no file remains — grep shows only historical commit-message/doc references)
 
 ## Decisions Made
 
@@ -134,7 +134,7 @@ _Note: earlier commits 1246d24 + abf57de were the pre-directive implementation; 
 - **3 filtered survivors lack SERP top-3** (serp pull failed at capture time; overlap-check treated empty as non-conflicting): ai-writing `sudowrite-muse-review`, `sudowrite-app-review`; ai-guides `how-to-use-chatgpt-effectively`. Buffered SERP refresh on promotion (D-06) can repair them later.
 - **40 entries have partial per-geo autocomplete coverage** (one or more geos missing — mostly candidates rejected at G1/G3 where overflow suggestions beyond rank 10 returned no exact matches; trend 429 contributed). Log lines flagged these as "per-geo rank evidence absent, US rank retained (D-07 partial)".
 - **Thin survivor silos (not failures, stated):** ai-productivity (4, clustered on best-ai-calendar-app variants + chatgpt-for-work-vs-codex), ai-guides (4, incl. two non-AI evergreen guides from broad seeds) — brief/outline stages must work exclusively with these + the 305-term rejection trail; re-expansion later can widen via more seeds, kept out of scope here.
-- **Verification gates:** `npm run check:registry` -> **5589 checks passed** (exit 0; up from ~1234 interim at interruption — full-run writes present). `npx tsc --noEmit` -> **exit 0**.
+- **Verification gates:** `npm run check:registry` -> **5589 checks passed** (exit 0; up from ~1234 interim at interruption — full-run writes present). `npx tsc --noEmit` -> **exit 0**. `npm run build` -> **green** (all prerendered routes intact; site untouched by this plan — verification re-run post-completion).
 
 ## Self-Check
 
