@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: "Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests) — ready for 03-03"
-last_updated: "2026-10-17T12:36:29.977Z"
+stopped_at: "Completed 03-04-PLAN.md (comparison-as-frontmatter state machine live: draft-schema single source, ComparisonTable component, seed-01 proof) — ready for 03-05"
+last_updated: "2026-10-17T13:07:39.558Z"
 last_activity: 2026-10-17
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 14
-  completed_plans: 11
-  percent: 79
+  completed_plans: 12
+  percent: 86
 ---
 
 # Project State
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-10-16)
 ## Current Position
 
 Phase: 3 (content-pipeline) — EXECUTING
-Plan: 4 of 6
+Plan: 5 of 6
 Status: Ready to execute
 Last activity: 2026-10-17
 
-Progress: [████████░░] 79%
+Progress: [█████████░] 86%
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Progress: [████████░░] 79%
 
 *Updated after each plan completion. Latest: Phase 03 P02 — ~2h15m wall (interrupted run resumed) — 3 tasks — 6 data files + 4 pipeline modules.*
 | Phase 03 P03 | 29min | 3 tasks | 23 files |
+| Phase 3 P04 | 15min | 3 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,9 @@ Recent decisions affecting current work:
 - [Phase 3]: 03-03: new free.llm ledger service records real-mode LLM calls at cost 0 with truthful attempts + assertRequestsAvailable preflight
 - [Phase 3]: 03-03: outline FAQs carry DERIVED provenance from brief candidate questions (paa[] empty platform-wide); check-outline lint enforces non-invention via sibling brief
 - [Phase 3]: 03-03: real full-chain run over 27 filtered survivors deferred to Plan 03-06 with free-endpoint env keys; pipeline:brief fails honestly at LlmNoCredentialsError before touching registry
+- [Phase 3]: 03-04 — draft-schema.ts is the SINGLE zod source for post frontmatter (content-collections.ts imports it; comparison + optional heroImage pre-wired for 03-05); site edge stays pure zod + lib/silos
+- [Phase 3]: 03-04 — ComparisonTable is a zero-client-JS server component with a comparison-gated slot before the MDX body; row-width refine fails the build ('one cell per column', negative-proof verified once); check:seeds accepts the component route on comparison presence
+- [Phase 3]: 03-04 — PIPE-04's both halves verified in served HTML: seed-01 prerender carries data-comparison-table + verbatim cells + aria best pick + 'More in' up-link; seed-02 (no comparison) renders none
 
 ### Pending Todos
 
@@ -102,6 +106,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-17T12:32:57.572Z
-Stopped at: Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests) — ready for 03-03
+Last session: 2026-10-17T13:07:39.532Z
+Stopped at: Completed 03-04-PLAN.md (comparison-as-frontmatter state machine live: draft-schema single source, ComparisonTable component, seed-01 proof) — ready for 03-05
 Resume file: None
