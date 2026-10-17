@@ -147,8 +147,8 @@ try {
 } catch (err) {
   check('ledger', false, `unreadable/broken JSON: ${err.message}`);
 }
-const SERVICES = ['dfs.keyword-ideas', 'dfs.serp', 'free.autocomplete', 'free.trends', 'free.serp'];
-const FREE_SERVICES = ['free.autocomplete', 'free.trends', 'free.serp'];
+const SERVICES = ['dfs.keyword-ideas', 'dfs.serp', 'free.autocomplete', 'free.trends', 'free.serp', 'free.llm'];
+const FREE_SERVICES = ['free.autocomplete', 'free.trends', 'free.serp', 'free.llm'];
 const CURRENT_MONTH = new Date().toISOString().slice(0, 7);
 
 if (ledger) {

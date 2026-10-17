@@ -31,7 +31,8 @@ export type SpendOpService =
   | 'dfs.serp'
   | 'free.autocomplete'
   | 'free.trends'
-  | 'free.serp';
+  | 'free.serp'
+  | 'free.llm';
 
 export interface SpendOp {
   ts: string; // ISO datetime of the append
@@ -78,9 +79,10 @@ const SERVICES: readonly SpendOpService[] = [
   'free.autocomplete',
   'free.trends',
   'free.serp',
+  'free.llm',
 ];
 /** Services that must never carry a nonzero USD cost (directive invariant). */
-const FREE_SERVICES: readonly SpendOpService[] = ['free.autocomplete', 'free.trends', 'free.serp'];
+const FREE_SERVICES: readonly SpendOpService[] = ['free.autocomplete', 'free.trends', 'free.serp', 'free.llm'];
 const MONTH_RE = /^(20\d{2})-(0[1-9]|1[0-2])$/;
 
 /** Thrown by assertSpendable when the current-month envelope can't cover the
