@@ -21,11 +21,15 @@ const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function parseFrontmatter(raw, file) {
   const match = /^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(raw);
-  if (!match) return { error: 'missing frontmatter fences', fm: {}, body: '' };
+  if (!match) return { error: 'missing frontmatter fences', fm: {}, body: '', fmBlock: '' };
   const [, fmBlock, body] = match;
   const fm = {};
   for (const line of fmBlock.split('\n')) {
-    const m = /^([A-Za-z]+):\s*(.*)$/.exec(line.trim());
+    // Top-level keys live at column 0. Nested keys (faq `- q:` items, the
+    // comparison block's `  title:`/`  note:`) must never shadow them —
+    // without the column-0 anchor a nested `title:` would clobber the post
+    // title here and fail the 50-60 gate for the wrong reason.
+    const m = /^([A-Za-z]+):\s*(.*)$/.exec(line);
     if (m) {
       let v = m[2].trim();
       if (
@@ -39,13 +43,28 @@ function parseFrontmatter(raw, file) {
   }
   // FAQ entries are `- q:` list items inside the frontmatter block.
   fm.__faqCount = (fmBlock.match(/^\s*-\s*q\s*:/gm) || []).length;
-  return { fm, body };
+  return { fm, body, fmBlock };
+}
+
+// D-14: posts carrying a `comparison:` frontmatter block (columns: + >=2
+// `- cells:` rows) satisfy the table requirement via the shared
+// <ComparisonTable> component instead of body GFM markup. Presence-check
+// only — row widths and shapes are the build's zod gate
+// (lib/pipeline/draft-schema.ts), not this lint's job.
+function satisfiesTableViaComparison(fmBlock) {
+  const idx = fmBlock.search(/^comparison:\s*$/m);
+  if (idx === -1) return false;
+  const block = fmBlock.slice(idx);
+  return (
+    Boolean(/^  columns:\s*$/m.test(block)) &&
+    (block.match(/^\s*-\s*cells:/gm) || []).length >= 2
+  );
 }
 
 function checkFile(file) {
   const failures = [];
   const raw = readFileSync(join(POSTS_DIR, file), 'utf8');
-  const { error, fm, body } = parseFrontmatter(raw, file);
+  const { error, fm, body, fmBlock } = parseFrontmatter(raw, file);
   if (error) return [`${file}: FAIL (${error})`];
 
   const title = fm.title ?? '';
@@ -80,7 +99,12 @@ function checkFile(file) {
 
   const h2s = (body.match(/^## .+/gm) || []).length;
   if (h2s < 3) failures.push(`H2 count ${h2s} (want >=3)`);
-  if (!body.includes('|')) failures.push('no GFM table marker `|`');
+  // Table rule (D-14 conditional): the requirement is satisfied either by a
+  // GFM table in the body (`|` markers, as before) or by comparison
+  // frontmatter rendering through the <ComparisonTable> component. No other
+  // rule is affected by this branch.
+  if (!body.includes('|') && !satisfiesTableViaComparison(fmBlock))
+    failures.push('no GFM table marker `|` (or comparison frontmatter block)');
   if (!/^```/m.test(body)) failures.push('no fenced code block');
   if (!/^## Sources/m.test(body)) failures.push('no `## Sources` section');
   if (!body.includes('/about')) failures.push('no /about CTA link');
