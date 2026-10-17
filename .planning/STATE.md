@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-01-PLAN.md (registry + budget + runner foundation) — ready for 03-02
-last_updated: "2026-10-17T09:28:00.000Z"
-last_activity: 2026-10-17 -- Phase 3 P03-01 executed (registry foundation, budget governance, pipeline CLI)
+stopped_at: Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 requests) — ready for 03-03
+last_updated: "2026-10-17T17:45:00.000Z"
+last_activity: 2026-10-17 -- Phase 3 P03-02 executed (real free-source backfill; DataForSEO reworked out per owner fully-free directive)
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 14
-  completed_plans: 9
-  percent: 64
+  completed_plans: 10
+  percent: 71
 ---
 
 # Project State
@@ -26,27 +26,27 @@ See: .planning/PROJECT.md (updated 2026-10-16)
 ## Current Position
 
 Phase: 3 (content-pipeline) — EXECUTING
-Plan: 2 of 6
+Plan: 3 of 6
 Status: Executing Phase 3
-Last activity: 2026-10-17 -- Completed 03-01-PLAN.md (registry + budget + runner foundation)
+Last activity: 2026-10-17 -- Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests)
 
-Progress: [██████████] 100%
+Progress: [██████████████] 71%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 13 (milestone total planned 14)
+- Total plans completed: 10 of 14 (milestone planned; Phase 3 is 2/6 done)
 - Average duration: ~37 min/plan (recent plans)
-- Total execution time: ~4.1 hours
+- Total execution time: ~4.5 hours
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01 | 4 | ~2h | ~30min |
 | 02 | 4 | - | - |
-| 03 | 1/6 | 25min | 25min |
+| 03 | 2/6 | ~2h40 | ~1h20 |
 
-*Updated after each plan completion. Latest: Phase 03 P01 — 25min — 3 tasks — 14 files.*
+*Updated after each plan completion. Latest: Phase 03 P02 — ~2h15m wall (interrupted run resumed) — 3 tasks — 6 data files + 4 pipeline modules.*
 
 ## Accumulated Context
 
@@ -74,6 +74,10 @@ Recent decisions affecting current work:
 - [03-01]: run.ts wraps top-level await in async main() — package.json has no "type":"module" so tsx transforms .ts as CJS; flipping global module type would risk Next build configs, so the runner avoids top-level await instead
 - [03-01]: Full-chain runner records per-stage failures and keeps walking (plan requires walking all 5 with honest FAILs, exit 1 at end); only budget exhaustion (assertSpendable) aborts the run immediately per D-02 hard-stop
 - [03-01]: check:registry strips // + /* */ comments before vocab/tuple regexes (self-invalidating-gate hygiene); RegistryStage vocabulary grepped from types.ts text, SILO_SLUGS from silos.ts text — site code never imported
+- [03-02]: Real backfill EXECUTED fully-free per the 2026-10-17 OWNER DIRECTIVE above — terminal line `expand: advanced=27 rejected=274 spent=$0.00`, ledger 807 keyless requests (autocomplete 257 / trends 413 / serp 137), shards hold 27 filtered + 305 rejection-trail entries (cumulative; check:registry 5589 passed)
+- [03-02]: KD/volume gates -> free-signal proxies G1 (autocomplete rank 1-8) / G2 (2-8 word shape, breadth>=5) / G3 (article-worthy intent form); D-05 >=60% overlap + D-07 per-geo capture UNCHANGED; every rejection keeps a reason prefix (G1/G2/G3/near-cannibal/U1)
+- [03-02]: Anonymous Google HTML SERP blocked upstream -> anonymous Bing HTML swap (c19c8a1); consequence: paa[] empty platform-wide (Bing HTML has no PAA block) — FAQ stages must source questions elsewhere, no fabrication
+- [03-02]: Request-cap governance added over the $0 ledger — monthlyRequestCap 4000 (used 807, 20%); SpendOp.requests records actual HTTP attempts incl. retries; monthlyEnvelopeUsd retained but all free ops bill $0.00 (correct per fully-free policy)
 
 ### Pending Todos
 
@@ -93,6 +97,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-10-17T09:28:00.000Z
-Stopped at: Completed 03-01-PLAN.md (registry + budget + runner foundation) — ready for 03-02
-Resume file: .planning/phases/03-content-pipeline/03-02-PLAN.md
+Last session: 2026-10-17T17:45:00.000Z
+Stopped at: Completed 03-02-PLAN.md (real fully-free keyword backfill: 27 survivors, $0.00, 807 keyless requests) — ready for 03-03
+Resume file: .planning/phases/03-content-pipeline/03-03-PLAN.md

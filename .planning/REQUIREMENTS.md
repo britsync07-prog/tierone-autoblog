@@ -22,7 +22,7 @@
 
 ### Content Pipeline
 
-- [ ] **PIPE-01**: System maintains keyword registry (per-geo US/UK/CA/AU, KD < 20, volume 500–5k, anti-cannibalization SERP-overlap check)
+- [x] **PIPE-01**: System maintains keyword registry (per-geo US/UK/CA/AU, KD < 20, volume 500–5k, anti-cannibalization SERP-overlap check)
 - [ ] **PIPE-02**: System generates competitor gap brief + outline per keyword, structure-linted before draft spend
 - [ ] **PIPE-03**: System drafts 1,500–2,500 word posts section-wise (dual LLM provider) in the strict template (H1 50–60 chars, meta 150–160, TL;DR ≤100 words, H2/H3, tables/lists, 3–5 PAA-derived FAQs, conclusion + CTA)
 - [ ] **PIPE-04**: System renders comparison-table component and related-post block (same-silo, zero orphans, mandatory pillar up-link)
@@ -103,7 +103,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-03 | Phase 2 | Complete |
 | SEO-04 | Phase 2 | Complete |
 | SEO-05 | Phase 2 | Complete |
-| PIPE-01 | Phase 3 | Pending |
+| PIPE-01 | Phase 3 | Complete |
 | PIPE-02 | Phase 3 | Pending |
 | PIPE-03 | Phase 3 | Pending |
 | PIPE-04 | Phase 3 | Pending |
