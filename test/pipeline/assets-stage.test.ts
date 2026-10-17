@@ -12,7 +12,7 @@
 // lives inside the sandbox too.
 import { test, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { runStage as runAssetsStage, MAX_IMAGES_PER_RUN } from '../../lib/pipeline/stages/assets';
@@ -153,6 +153,7 @@ function seedSandbox(
 ): void {
   const shard = { version: 1, updatedAt: '2026-10-17T10:00:00.000Z', keywords: entries.map((e) => outlinedEntry(e.id, e.seed)) };
   writeFileSync(join(sandbox.registryDir, SILO, 'registry.json'), JSON.stringify(shard, null, 2), 'utf8');
+  mkdirSync(join(sandbox.briefsDir, SILO), { recursive: true });
   for (const [id, md] of Object.entries(outlines)) {
     writeFileSync(join(sandbox.briefsDir, SILO, `${id}-outline.md`), md, 'utf8');
   }
@@ -194,12 +195,12 @@ test('assets: outlined entries -> entry.images persisted, stage REMAINS outlined
       },
     );
 
-    const provider = countingProvider({ calls: 0 });
-    const result = await runAssetsStage(ctx, { briefsDir: sandbox.briefsDir, outDir: sandbox.outDir, provider });
+    const counter = { calls: 0 };
+    const result = await runAssetsStage(ctx, { briefsDir: sandbox.briefsDir, outDir: sandbox.outDir, provider: countingProvider(counter) });
     assert.equal(result.advanced, 0, 'assets NEVER advance the frozen stage enum');
     assert.equal(result.rejected, 0);
     assert.equal(result.spentUsd, 0, 'fully-free platform: image spend is always $0');
-    assert.ok((provider as unknown as { calls: number }).calls >= 3, 'fixture provider generated the slots');
+    assert.ok(counter.calls >= 3, 'fixture provider generated the slots');
 
     const shard = readShard(sandbox);
     const alpha = shard.keywords.find((e) => e.id === 'alpha-outline-live');
@@ -235,7 +236,7 @@ test('assets: rerun is idempotent — entries with images skipped, zero re-gener
   const sandbox = makeSandbox();
   try {
     const { ctx } = ctxFor(sandbox);
-    seedSandbox([{ id: 'alpha-outline-live', seed: 1 }], {
+    seedSandbox(sandbox, [{ id: 'alpha-outline-live', seed: 1 }], {
       'alpha-outline-live': outlineMarkdown({ hero: HERO_CONCEPT, inArticle1: INLINE_CONCEPT }),
     });
 
