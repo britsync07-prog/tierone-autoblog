@@ -1,0 +1,47 @@
+{
+  "10001": {
+    "id": 10001,
+    "type": "story",
+    "by": "dang",
+    "score": 320,
+    "time": 1792350000,
+    "title": "Anthropic Releases Claude 3.7 Sonnet with Hybrid Reasoning",
+    "url": "https://www.anthropic.com/news/claude-3-7-sonnet"
+  },
+  "10002": {
+    "id": 10002,
+    "type": "story",
+    "by": "devfan",
+    "score": 45,
+    "time": 1792350000,
+    "title": "A new lightweight LLM for embedded devices",
+    "url": "https://example.com/embedded-llm"
+  },
+  "10003": {
+    "id": 10003,
+    "type": "story",
+    "by": "woodworker",
+    "score": 210,
+    "time": 1792350000,
+    "title": "Show HN: My handcrafted oak workbench restoration",
+    "url": "https://woodcraft.example.com/workbench"
+  },
+  "10004": {
+    "id": 10004,
+    "type": "story",
+    "by": "observer",
+    "score": 180,
+    "time": 1792000000,
+    "title": "OpenAI releases GPT-4o update with new voice latency improvements",
+    "url": "https://openai.com/news/gpt-4o-update"
+  },
+  "10005": {
+    "id": 10005,
+    "type": "story",
+    "by": "chipgeek",
+    "score": 195,
+    "time": 1792355000,
+    "title": "Nvidia announces next-generation Blackwell chips for AI coding workflows",
+    "url": "https://blogs.nvidia.com/blackwell-ai-chips"
+  }
+}

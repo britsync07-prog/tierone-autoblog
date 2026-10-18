@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The Verge - Tech</title>
+  <link href="https://www.theverge.com/tech" rel="alternate"/>
+  <updated>2026-10-18T22:00:00Z</updated>
+  <id>tag:theverge.com,2026:feed</id>
+  <entry>
+    <title>DeepSeek releases reasoning model with open architectural weights</title>
+    <link href="https://www.theverge.com/2026/10/18/deepseek-reasoning-open-weights" rel="alternate"/>
+    <id>tag:theverge.com,2026:entry:101</id>
+    <published>2026-10-18T20:10:00Z</published>
+    <updated>2026-10-18T20:10:00Z</updated>
+    <author>
+      <name>Alex Heath</name>
+    </author>
+    <summary type="html"><![CDATA[DeepSeek has introduced an open-weights reasoning model that approaches state-of-the-art benchmarks on code and math evaluation sets.]]></summary>
+    <content type="html"><![CDATA[<p>The new open-source model promises competitive reasoning capabilities with significantly lower compute requirements.</p>]]></content:encoded>
+  </entry>
+  <entry>
+    <title><![CDATA[Cursor AI launches team workspace features &amp; enterprise security controls]]></title>
+    <link href="https://www.theverge.com/2026/10/18/cursor-ai-team-workspaces" rel="alternate"/>
+    <id>tag:theverge.com,2026:entry:102</id>
+    <published>2026-10-18T19:00:00Z</published>
+    <updated>2026-10-18T19:00:00Z</updated>
+    <author>
+      <name>David Pierce</name>
+    </author>
+    <summary><![CDATA[The popular AI code editor Cursor now includes audit logs, SOC2 compliance flags, and team-wide prompt indexing.]]></summary>
+  </entry>
+</feed>

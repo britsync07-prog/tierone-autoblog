@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>TechCrunch - Artificial Intelligence</title>
+    <link>https://techcrunch.com/category/artificial-intelligence/</link>
+    <description>The latest artificial intelligence news from TechCrunch</description>
+    <item>
+      <title><![CDATA[Meta AI introduces Llama 4 code models for open source developers]]></title>
+      <link>https://techcrunch.com/2026/10/18/meta-llama-4-code-models/</link>
+      <dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+      <pubDate>Sun, 18 Oct 2026 18:45:00 +0000</pubDate>
+      <category><![CDATA[AI]]></category>
+      <description><![CDATA[Meta has released new code-specialized weights for Llama 4, competing directly with Anthropic and OpenAI in software engineering benchmarks.]]></description>
+      <content:encoded><![CDATA[<p>Meta unveiled its open-source coding models today, designed to run locally on consumer workstations with state-of-the-art accuracy.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Mistral releases new multi-modal model Le Chat Vision</title>
+      <link>https://techcrunch.com/2026/10/18/mistral-le-chat-vision/</link>
+      <dc:creator>Kyle Wiggers</dc:creator>
+      <pubDate>Sun, 18 Oct 2026 17:00:00 +0000</pubDate>
+      <category>Enterprise AI</category>
+      <description>Paris-based AI startup Mistral has launched vision processing capabilities inside Le Chat enterprise workspace.</description>
+    </item>
+  </channel>
+</rss>
