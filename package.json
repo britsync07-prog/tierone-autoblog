@@ -30,7 +30,8 @@
     "verify:live": "tsx scripts/verify-live-url.ts",
     "test:eval": "tsx --test tests/eval-20.test.ts",
     "eval:run": "tsx scripts/run-eval-suite.ts",
-    "refresh:run": "tsx scripts/run-content-refresh.ts"
+    "refresh:run": "tsx scripts/run-content-refresh.ts",
+    "post:retire": "tsx scripts/retire-post.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

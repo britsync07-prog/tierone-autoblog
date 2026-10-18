@@ -9,6 +9,9 @@ import {
   validateRedirectEntry,
   type RedirectEntry,
 } from '../lib/pipeline/redirects/registry';
+import { retireAndRedirectPost } from '../lib/pipeline/redirects/retire';
+import { loadShard, saveShard } from '../lib/pipeline/registry';
+import type { RegistryShard } from '../lib/pipeline/types';
 
 const FIXTURES_DIR = join(process.cwd(), '.test-tmp', 'redirects-test');
 
@@ -180,3 +183,173 @@ test('formatForNextConfig: maps entries to Next.js redirects format', () => {
     },
   ]);
 });
+
+test('retireAndRedirectPost: successfully relocates post to quarantine, updates registry, and appends redirect', async () => {
+  setupFixtures();
+  try {
+    const postsDir = join(FIXTURES_DIR, 'content', 'posts');
+    const quarantineDir = join(FIXTURES_DIR, 'content', 'quarantine');
+    const keywordsDir = join(FIXTURES_DIR, 'content', 'keywords');
+    const redirectsFile = join(FIXTURES_DIR, 'content', 'redirects.json');
+
+    mkdirSync(postsDir, { recursive: true });
+    mkdirSync(quarantineDir, { recursive: true });
+    mkdirSync(join(keywordsDir, 'ai-writing'), { recursive: true });
+
+    // 1. Create source post file
+    const postSlug = 'legacy-cannibalized-post';
+    const postPath = join(postsDir, `${postSlug}.mdx`);
+    writeFileSync(
+      postPath,
+      '---\ntitle: Legacy Post\n---\n# Legacy Post Body Content\n',
+      'utf8',
+    );
+
+    // 2. Create initial registry shard
+    const initialShard: RegistryShard = {
+      version: 1,
+      updatedAt: new Date().toISOString(),
+      keywords: [
+        {
+          id: postSlug,
+          keyword: 'legacy cannibalized post',
+          silo: 'ai-writing',
+          stage: 'published',
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+          draft: { slug: postSlug },
+          qa: { passedAt: new Date().toISOString() },
+        },
+      ],
+    };
+    saveShard(keywordsDir, 'ai-writing', initialShard);
+
+    // 3. Create initial empty redirects file
+    saveRedirects([], redirectsFile);
+
+    // 4. Execute post retirement
+    const result = await retireAndRedirectPost({
+      slug: postSlug,
+      destination: '/blog/new-pillar-guide-2026',
+      reason: 'Cannibalized by pillar guide',
+      postsDir,
+      quarantineDir,
+      keywordsDir,
+      redirectsFile,
+    });
+
+    assert.equal(result.success, true);
+    assert.equal(result.retired, true);
+    assert.equal(result.redirectedFrom, `/blog/${postSlug}`);
+    assert.equal(result.destination, '/blog/new-pillar-guide-2026');
+
+    // 5. Assert source post file is removed from postsDir
+    assert.equal(existsSync(postPath), false);
+
+    // 6. Assert post file and audit report exist in quarantineDir
+    const quarantinedPost = join(quarantineDir, `${postSlug}.mdx`);
+    const quarantineReport = join(quarantineDir, `${postSlug}-report.json`);
+    assert.equal(existsSync(quarantinedPost), true);
+    assert.equal(existsSync(quarantineReport), true);
+
+    // 7. Assert registry shard entry transitioned to 'quarantined'
+    const updatedShard = loadShard(keywordsDir, 'ai-writing');
+    const entry = updatedShard.keywords.find((k) => k.id === postSlug);
+    assert.ok(entry);
+    assert.equal(entry.stage, 'quarantined');
+    assert.equal(entry.quarantine?.failedRule, '301-consolidated');
+    assert.equal(entry.quarantine?.reportPath, 'content/redirects.json');
+
+    // 8. Assert redirects file has the permanent 301 rule
+    const redirects = loadRedirects(redirectsFile);
+    assert.equal(redirects.length, 1);
+    assert.equal(redirects[0].source, `/blog/${postSlug}`);
+    assert.equal(redirects[0].destination, '/blog/new-pillar-guide-2026');
+    assert.equal(redirects[0].permanent, true);
+    assert.equal(redirects[0].reason, 'Cannibalized by pillar guide');
+  } finally {
+    cleanupFixtures();
+  }
+});
+
+test('retireAndRedirectPost: dry run validates without modifying disk', async () => {
+  setupFixtures();
+  try {
+    const postsDir = join(FIXTURES_DIR, 'content', 'posts');
+    const quarantineDir = join(FIXTURES_DIR, 'content', 'quarantine');
+    const keywordsDir = join(FIXTURES_DIR, 'content', 'keywords');
+    const redirectsFile = join(FIXTURES_DIR, 'content', 'redirects.json');
+
+    mkdirSync(postsDir, { recursive: true });
+    const postSlug = 'dry-run-post';
+    const postPath = join(postsDir, `${postSlug}.mdx`);
+    writeFileSync(postPath, '---\ntitle: Dry Run Post\n---\n', 'utf8');
+    saveRedirects([], redirectsFile);
+
+    const result = await retireAndRedirectPost({
+      slug: postSlug,
+      destination: '/blog/destination-post',
+      dryRun: true,
+      postsDir,
+      quarantineDir,
+      keywordsDir,
+      redirectsFile,
+    });
+
+    assert.equal(result.success, true);
+    assert.equal(result.retired, false);
+    // Source file must still exist
+    assert.equal(existsSync(postPath), true);
+    // Redirects file must still be empty
+    assert.deepEqual(loadRedirects(redirectsFile), []);
+  } finally {
+    cleanupFixtures();
+  }
+});
+
+test('retireAndRedirectPost: fails safely on missing source post or invalid destination', async () => {
+  setupFixtures();
+  try {
+    const postsDir = join(FIXTURES_DIR, 'content', 'posts');
+    const redirectsFile = join(FIXTURES_DIR, 'content', 'redirects.json');
+    mkdirSync(postsDir, { recursive: true });
+    saveRedirects([], redirectsFile);
+
+    // Missing post file
+    const missingResult = await retireAndRedirectPost({
+      slug: 'non-existent-slug',
+      destination: '/blog/dest',
+      postsDir,
+      redirectsFile,
+    });
+    assert.equal(missingResult.success, false);
+    assert.match(missingResult.error || '', /Post file not found/);
+
+    // Create a real post file to test loop/format errors
+    const postSlug = 'test-error-post';
+    writeFileSync(join(postsDir, `${postSlug}.mdx`), '---\n---\n', 'utf8');
+
+    // Self-loop
+    const loopResult = await retireAndRedirectPost({
+      slug: postSlug,
+      destination: `/blog/${postSlug}`,
+      postsDir,
+      redirectsFile,
+    });
+    assert.equal(loopResult.success, false);
+    assert.match(loopResult.error || '', /Self-referential redirect loop/);
+
+    // Missing leading slash on destination
+    const badDestResult = await retireAndRedirectPost({
+      slug: postSlug,
+      destination: 'blog/invalid-dest',
+      postsDir,
+      redirectsFile,
+    });
+    assert.equal(badDestResult.success, false);
+    assert.match(badDestResult.error || '', /Destination path must start with '\/'/);
+  } finally {
+    cleanupFixtures();
+  }
+});
+
