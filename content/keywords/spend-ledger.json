@@ -5859,6 +5859,208 @@
       "note": "Google autocomplete q='chatgpt prompt examples' gl=au → 10 suggestions",
       "ts": "2026-10-17T11:37:10.488Z",
       "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:04.054Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:06.177Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant comparison"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:08.771Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:11.495Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "midjourney alternatives"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:14.229Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best midjourney alternatives"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:16.193Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai calendar app"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:19.963Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 2,
+      "keywords": [
+        "best ai calendar app for iphone"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:27.550Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 2,
+      "keywords": [
+        "chatgpt beginner guide"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:35.611Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 2,
+      "keywords": [
+        "beginners guide to acoustic guitar"
+      ],
+      "note": "brief compression via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-17T18:36:43.852Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "best ai writing tools"
+      ],
+      "note": "outline generation via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-18T05:01:53.200Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "chatgpt vs claude for writing"
+      ],
+      "note": "outline generation via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-18T05:01:56.548Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "ai coding assistant comparison"
+      ],
+      "note": "outline generation via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-18T05:02:00.186Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "keywords": [
+        "github copilot alternatives"
+      ],
+      "note": "outline generation via primary (OpenAI-compatible free endpoint)",
+      "ts": "2026-10-18T05:02:05.126Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:03:30.144Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:04:39.235Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:05:42.006Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 3,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:09:46.161Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 1,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:10:39.165Z",
+      "month": "2026-10"
+    },
+    {
+      "service": "free.llm",
+      "cost": 0,
+      "requests": 3,
+      "note": "draft-body for best-ai-writing-tools via primary (env-configured free adapter)",
+      "ts": "2026-10-18T05:12:43.890Z",
+      "month": "2026-10"
     }
   ]
 }

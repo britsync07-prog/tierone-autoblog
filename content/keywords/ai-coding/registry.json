@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T11:27:52.883Z",
+  "updatedAt": "2026-10-17T18:36:11.511Z",
   "keywords": [
     {
       "id": "ai-coding-assistant",
@@ -60,10 +60,10 @@
       "id": "ai-coding-assistant-comparison",
       "keyword": "ai coding assistant comparison",
       "silo": "ai-coding",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "ai coding assistant",
       "createdAt": "2026-10-17T11:19:52.178Z",
-      "updatedAt": "2026-10-17T11:20:09.425Z",
+      "updatedAt": "2026-10-17T18:36:08.783Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -102,7 +102,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:19:52.178Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:08.783Z"
+      }
     },
     {
       "id": "ai-coding-assistant-tools",
@@ -279,10 +282,10 @@
       "id": "github-copilot-alternatives",
       "keyword": "github copilot alternatives",
       "silo": "ai-coding",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "github copilot alternatives",
       "createdAt": "2026-10-17T11:20:09.462Z",
-      "updatedAt": "2026-10-17T11:20:26.222Z",
+      "updatedAt": "2026-10-17T18:36:11.507Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -321,7 +324,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:20:09.462Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:11.507Z"
+      }
     },
     {
       "id": "github-copilot-alternatives-for-vs",

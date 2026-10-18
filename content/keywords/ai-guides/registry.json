@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T11:37:08.888Z",
+  "updatedAt": "2026-10-17T18:36:43.864Z",
   "keywords": [
     {
       "id": "how-to-use-chatgpt-effectively",
       "keyword": "how to use chatgpt effectively",
       "silo": "ai-guides",
-      "stage": "filtered",
+      "stage": "rejected",
       "seedTopic": "how to use chatgpt effectively",
       "createdAt": "2026-10-17T11:34:39.495Z",
-      "updatedAt": "2026-10-17T11:34:56.686Z",
+      "updatedAt": "2026-10-17T18:36:27.577Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -32,7 +32,8 @@
       },
       "serpTop3": [],
       "serpAsOf": "2026-10-17T11:34:39.495Z",
-      "paa": []
+      "paa": [],
+      "rejectionReason": "cannot brief: no cached SERP — the expand stage captured none and brief time never re-pulls SERPs (D-02 cache rule)"
     },
     {
       "id": "prompt-engineering-basics",
@@ -819,10 +820,10 @@
       "id": "chatgpt-beginner-guide",
       "keyword": "chatgpt beginner guide",
       "silo": "ai-guides",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "chatgpt beginner guide",
       "createdAt": "2026-10-17T11:35:01.773Z",
-      "updatedAt": "2026-10-17T11:35:19.175Z",
+      "updatedAt": "2026-10-17T18:36:35.618Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -861,7 +862,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:35:01.773Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:35.618Z"
+      }
     },
     {
       "id": "chatgpt-beginners-guide-pdf",
@@ -1112,10 +1116,10 @@
       "id": "beginners-guide-to-acoustic-guitar",
       "keyword": "beginners guide to acoustic guitar",
       "silo": "ai-guides",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "chatgpt beginner guide",
       "createdAt": "2026-10-17T11:35:01.773Z",
-      "updatedAt": "2026-10-17T11:36:51.964Z",
+      "updatedAt": "2026-10-17T18:36:43.863Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -1154,7 +1158,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:35:01.773Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:43.862Z"
+      }
     },
     {
       "id": "beginners-guide-to-watch-collecting",

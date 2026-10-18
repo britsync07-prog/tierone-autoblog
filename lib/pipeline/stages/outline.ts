@@ -37,7 +37,7 @@
 // LLM_BASE_URL/LLM_MODEL fails the stage honestly (npm run pipeline:outline
 // without env prints LlmNoCredentialsError naming the env vars).
 
-import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join, resolve, sep } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { z } from 'zod';
@@ -343,6 +343,7 @@ export async function runStage(ctx: OutlineStageContext, opts: { briefsDir?: str
       const lint = spawnSync(process.execPath, [lintScript, outlineFile], { encoding: 'utf8' });
       const lintOut = `${lint.stdout ?? ''}${lint.stderr ?? ''}`.trim();
       if (lint.status !== 0) {
+        rmSync(outlineFile, { force: true });
         notes.push(`${entry.id}: outline lint FAILED — left at 'briefed', no outlined status, no draft spend (D-12). Lint output: ${lintOut.slice(0, 800)}`);
         ctx.log(`${entry.id}: outline lint FAILED — left at 'briefed' (D-12)`);
         continue;

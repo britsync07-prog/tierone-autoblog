@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T11:34:37.863Z",
+  "updatedAt": "2026-10-17T18:36:27.567Z",
   "keywords": [
     {
       "id": "ai-productivity-tools",
@@ -651,10 +651,10 @@
       "id": "best-ai-calendar-app",
       "keyword": "best ai calendar app",
       "silo": "ai-productivity",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "best ai calendar app",
       "createdAt": "2026-10-17T11:32:28.047Z",
-      "updatedAt": "2026-10-17T11:32:45.314Z",
+      "updatedAt": "2026-10-17T18:36:19.975Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -693,16 +693,19 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:32:28.047Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:19.975Z"
+      }
     },
     {
       "id": "best-ai-calendar-app-for",
       "keyword": "best ai calendar app for iphone",
       "silo": "ai-productivity",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "best ai calendar app",
       "createdAt": "2026-10-17T11:32:28.047Z",
-      "updatedAt": "2026-10-17T11:33:00.660Z",
+      "updatedAt": "2026-10-17T18:36:27.566Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -741,7 +744,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:32:28.047Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:27.566Z"
+      }
     },
     {
       "id": "best-ai-calendar-app-free",

@@ -141,9 +141,10 @@ function buildMessages(
     '- title: 50-60 chars. The page H1 IS this title; the markdown body must contain NO "# " line.',
     '- description: exactly 150-160 chars.',
     '- tldr: <=100 words, plain prose.',
-    '- body: markdown, 1500-2500 words, written for a US reader (en-US).',
+    '- body: markdown, strictly 1500-2500 words. (MANDATORY REQUIREMENT: Total word count across all sections must be between 1700 and 2200 words. Short articles under 1500 words will fail the quality gate). Written for a US reader (en-US).',
     `  The body must contain the EXACT supplied H2 headings IN ORDER, each rendered \`## {heading}\`;`,
     '  copy each heading VERBATIM — the assertions compare literal strings.',
+    '  Include every `### {heading}` subsection from the outline under its parent H2.',
     '- faqs: 3-5 entries; every q string must be one of the supplied questions VERBATIM —',
     '  inventing a question is a hard template violation; answers 1-3 sentences of plain prose.',
     '- comparison: ONLY when the outline flags the [comparison-table slot]: qualitative',
@@ -165,10 +166,13 @@ function buildMessages(
     `KEYWORD / SILO: ${entry.keyword} (silo ${entry.silo})`,
     `SUPPLIED SERP TOP-3 AS QUOTED DATA: ${serp.length > 0 ? serp : '(none captured — argue from general knowledge only, inventing no specifics)'}`,
     `SUPPLIED QUESTION POOL (PAA — answer only these, verbatim): ${pool.join(' | ')}`,
-    `SUPPLIED IN-ARTICLE IMAGE ALTS: ${alts}`,
+    'CRITICAL LENGTH INSTRUCTION: You MUST produce at least 1700-2000 words. For each tool in the reviews section, write comprehensive multi-paragraph breakdowns covering features, target audience, pros/cons, and pricing. For each use-case section, write 2 full paragraphs. Ensure every section is richly detailed so the body comfortably exceeds 1600 words.',
+    entry.draft?.lastError
+      ? `PREVIOUS ATTEMPT FAILED WITH: ${entry.draft.lastError}. You must write significantly more content in every section so total words reach 1800-2000.`
+      : '',
     '',
     'Return JSON shape: {title, description, tldr, faqs:[{q,a}], comparison?:{title?,note?,columns:[{id,label}],rows:[{cells,best?}]}, body}',
-  ].join('\n');
+  ].filter(Boolean).join('\n');
   return [
     { role: 'system', content: system },
     { role: 'user', content: user },

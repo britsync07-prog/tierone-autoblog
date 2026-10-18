@@ -58,7 +58,7 @@ export const TASK_MAX_TOKENS: Record<LlmTask, number> = {
   summarize: 2000,
   'title-desc': 400,
   'outline-body': 4000,
-  'draft-body': 12000,
+  'draft-body': Number(process.env.LLM_MAX_TOKENS_DRAFT ?? 6000),
   'generic-structured': 2000,
 };
 
@@ -229,7 +229,8 @@ export const defaultOpenAiTransport: LlmTransport = async (call) => {
     }
     if (attempt < MAX_HTTP_ATTEMPTS) {
       // 5xx / 429 / network transport errors are transient — retry politely
-      await sleep(RETRY_BACKOFF_MS);
+      const backoff = lastReason.includes('429') ? 35_000 : RETRY_BACKOFF_MS;
+      await sleep(backoff);
     }
   }
   throw new Error(

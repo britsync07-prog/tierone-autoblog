@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T11:32:26.304Z",
+  "updatedAt": "2026-10-17T18:36:16.207Z",
   "keywords": [
     {
       "id": "ai-image-generator",
@@ -243,10 +243,10 @@
       "id": "midjourney-alternatives",
       "keyword": "midjourney alternatives",
       "silo": "ai-image",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "midjourney alternatives",
       "createdAt": "2026-10-17T11:28:09.452Z",
-      "updatedAt": "2026-10-17T11:28:26.035Z",
+      "updatedAt": "2026-10-17T18:36:14.241Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -285,7 +285,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:28:09.452Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:14.241Z"
+      }
     },
     {
       "id": "midjourney-alternatives-free",
@@ -582,10 +585,10 @@
       "id": "best-midjourney-alternatives",
       "keyword": "best midjourney alternatives",
       "silo": "ai-image",
-      "stage": "filtered",
+      "stage": "briefed",
       "seedTopic": "midjourney alternatives",
       "createdAt": "2026-10-17T11:28:09.452Z",
-      "updatedAt": "2026-10-17T11:30:14.531Z",
+      "updatedAt": "2026-10-17T18:36:16.205Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -621,7 +624,10 @@
         }
       ],
       "serpAsOf": "2026-10-17T11:28:09.452Z",
-      "paa": []
+      "paa": [],
+      "brief": {
+        "completedAt": "2026-10-17T18:36:16.205Z"
+      }
     },
     {
       "id": "midjourney-ai-alternatives",
