@@ -1,0 +1,144 @@
+{
+  "source": "snapshot",
+  "fetchedAt": "2026-10-18T12:00:00.000Z",
+  "tier1Share": 86.4,
+  "sitemapRatio": {
+    "submitted": 11,
+    "indexed": 9,
+    "ratio": 0.8182,
+    "sitemaps": [
+      {
+        "path": "https://exclusivesources.online/sitemap/0.xml",
+        "submitted": 11,
+        "indexed": 9
+      }
+    ]
+  },
+  "tier1": {
+    "totalImpressions": 48500,
+    "tier1Impressions": 41904,
+    "tier1ImpressionShare": 0.864,
+    "totalClicks": 1820,
+    "tier1Clicks": 1562,
+    "tier1ClickShare": 0.8582,
+    "totalVisitors": 4250,
+    "tier1Visitors": 3664,
+    "tier1VisitorShare": 0.8621,
+    "tier1Share": 86.4,
+    "countryBreakdown": {
+      "US": {
+        "impressions": 28227,
+        "clicks": 1059,
+        "visitors": 2474
+      },
+      "UK": {
+        "impressions": 8487,
+        "clicks": 318,
+        "visitors": 744
+      },
+      "CA": {
+        "impressions": 3153,
+        "clicks": 118,
+        "visitors": 276
+      },
+      "AU": {
+        "impressions": 2037,
+        "clicks": 67,
+        "visitors": 170
+      },
+      "OTHER": {
+        "impressions": 6596,
+        "clicks": 258,
+        "visitors": 586
+      }
+    }
+  },
+  "topQueries": [
+    {
+      "country": "US",
+      "page": "https://exclusivesources.online/blog/chatgpt-vs-claude-for-coding",
+      "query": "chatgpt vs claude for coding benchmarks",
+      "clicks": 312,
+      "impressions": 4210,
+      "ctr": 0.0741,
+      "position": 4.2
+    },
+    {
+      "country": "US",
+      "page": "https://exclusivesources.online/blog/cursor-ai-vs-github-copilot",
+      "query": "cursor ai vs copilot 2026",
+      "clicks": 245,
+      "impressions": 3890,
+      "ctr": 0.063,
+      "position": 5.1
+    },
+    {
+      "country": "UK",
+      "page": "https://exclusivesources.online/blog/best-open-source-llms",
+      "query": "best open source llm coding uk",
+      "clicks": 142,
+      "impressions": 1980,
+      "ctr": 0.0717,
+      "position": 6.8
+    },
+    {
+      "country": "CA",
+      "page": "https://exclusivesources.online/blog/local-llm-setup-guide",
+      "query": "run local llm ollama macbook pro",
+      "clicks": 88,
+      "impressions": 1240,
+      "ctr": 0.071,
+      "position": 5.9
+    },
+    {
+      "country": "AU",
+      "page": "https://exclusivesources.online/blog/claude-3-sonnet-prompting-guide",
+      "query": "claude 3 prompt engineering tips",
+      "clicks": 54,
+      "impressions": 820,
+      "ctr": 0.0659,
+      "position": 7.4
+    },
+    {
+      "country": "US",
+      "page": "https://exclusivesources.online/blog/chatgpt-vs-claude-for-coding",
+      "query": "ai code generation accuracy comparisons",
+      "clicks": 98,
+      "impressions": 1420,
+      "ctr": 0.069,
+      "position": 8.6
+    }
+  ],
+  "topPages": [
+    {
+      "page": "https://exclusivesources.online/blog/chatgpt-vs-claude-for-coding",
+      "clicks": 410,
+      "impressions": 5630,
+      "avgPosition": 4.6
+    },
+    {
+      "page": "https://exclusivesources.online/blog/cursor-ai-vs-github-copilot",
+      "clicks": 320,
+      "impressions": 4900,
+      "avgPosition": 5.2
+    },
+    {
+      "page": "https://exclusivesources.online/blog/best-open-source-llms",
+      "clicks": 210,
+      "impressions": 3400,
+      "avgPosition": 6.5
+    },
+    {
+      "page": "https://exclusivesources.online/blog/local-llm-setup-guide",
+      "clicks": 180,
+      "impressions": 2800,
+      "avgPosition": 6.1
+    },
+    {
+      "page": "https://exclusivesources.online/blog/claude-3-sonnet-prompting-guide",
+      "clicks": 125,
+      "impressions": 1950,
+      "avgPosition": 7.3
+    }
+  ]
+}

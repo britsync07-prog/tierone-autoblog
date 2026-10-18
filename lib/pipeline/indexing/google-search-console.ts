@@ -15,6 +15,47 @@ export interface GscSubmitResult {
   message?: string;
 }
 
+export function getGscAuth(
+  clientEmailOrOptions?: string | { clientEmail?: string; privateKey?: string; scopes?: string[] },
+  privateKeyArg?: string,
+  scopesArg?: string[]
+) {
+  let email: string | undefined;
+  let rawKey: string | undefined;
+  let scopes: string[] = ['https://www.googleapis.com/auth/webmasters.readonly'];
+
+  if (typeof clientEmailOrOptions === 'object' && clientEmailOrOptions !== null) {
+    email = clientEmailOrOptions.clientEmail;
+    rawKey = clientEmailOrOptions.privateKey;
+    if (clientEmailOrOptions.scopes) scopes = clientEmailOrOptions.scopes;
+  } else {
+    email = clientEmailOrOptions;
+    rawKey = privateKeyArg;
+    if (scopesArg) scopes = scopesArg;
+  }
+
+  email = (email ?? process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL)?.trim();
+  rawKey = (rawKey ?? process.env.GOOGLE_PRIVATE_KEY)?.trim();
+
+  if (
+    !email ||
+    !rawKey ||
+    email === 'undefined' ||
+    rawKey === 'undefined'
+  ) {
+    return null;
+  }
+
+  const key = rawKey.replace(/\\n/g, '\n');
+  return new google.auth.GoogleAuth({
+    credentials: {
+      client_email: email,
+      private_key: key,
+    },
+    scopes,
+  });
+}
+
 export async function submitGscSitemap(options: GscSubmitOptions): Promise<GscSubmitResult> {
   const clientEmail = (options.clientEmail ?? process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL)?.trim();
   const rawPrivateKey = (options.privateKey ?? process.env.GOOGLE_PRIVATE_KEY)?.trim();
@@ -33,8 +74,6 @@ export async function submitGscSitemap(options: GscSubmitOptions): Promise<GscSu
     };
   }
 
-  const privateKey = rawPrivateKey.replace(/\\n/g, '\n');
-
   try {
     const formattedSiteUrl = options.siteUrl.endsWith('/')
       ? options.siteUrl
@@ -46,13 +85,20 @@ export async function submitGscSitemap(options: GscSubmitOptions): Promise<GscSu
         feedpath: options.sitemapUrl,
       });
     } else {
-      const auth = new google.auth.GoogleAuth({
-        credentials: {
-          client_email: clientEmail,
-          private_key: privateKey,
-        },
+      const auth = getGscAuth({
+        clientEmail,
+        privateKey: rawPrivateKey,
         scopes: ['https://www.googleapis.com/auth/webmasters'],
       });
+
+      if (!auth) {
+        return {
+          status: 'skipped-no-creds',
+          siteUrl: options.siteUrl,
+          sitemapUrl: options.sitemapUrl,
+          message: 'Google Search Console credentials not provisioned (skipped-no-creds).',
+        };
+      }
 
       const searchconsole = google.searchconsole({ version: 'v1', auth });
 
