@@ -167,8 +167,8 @@ check(
 
 check(
   'silo-parity',
-  SILO_SLUGS.length === 5,
-  `SILO_SLUGS has ${SILO_SLUGS.length} entries (D-07 ships all 5)`,
+  SILO_SLUGS.length === 6,
+  `SILO_SLUGS has ${SILO_SLUGS.length} entries (D-07 ships all 6)`,
 );
 check(
   'silo-parity',

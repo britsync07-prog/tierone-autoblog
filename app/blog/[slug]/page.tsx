@@ -16,6 +16,7 @@ import {
   buildArticleJsonLd,
   buildBreadcrumbJsonLd,
   buildFaqJsonLd,
+  getArticleSchemaType,
 } from '@/lib/seo/jsonld';
 import { useMDXComponents } from '@/mdx-components';
 import AdSlot from '@/components/ad-slot';
@@ -205,7 +206,7 @@ export default async function PostPage({
 
   return (
     <>
-      <ArticleJsonLd type="BlogPosting" {...buildArticleJsonLd(post, canonical)} />
+      <ArticleJsonLd type={getArticleSchemaType(post.silo)} {...buildArticleJsonLd(post, canonical)} />
       <BreadcrumbJsonLd
         {...buildBreadcrumbJsonLd([
           { name: 'Home', item: SITE_URL },

@@ -33,8 +33,14 @@ type ArticleProps = Omit<
   'type' | 'scriptId' | 'scriptKey' | 'nonce'
 >;
 
+export function getArticleSchemaType(
+  silo: string,
+): 'NewsArticle' | 'BlogPosting' {
+  return silo === 'ai-news' ? 'NewsArticle' : 'BlogPosting';
+}
+
 /**
- * Article props for a post, spreadable into `<ArticleJsonLd type="BlogPosting"
+ * Article props for a post, spreadable into `<ArticleJsonLd type={getArticleSchemaType(post.silo)}
  * {...buildArticleJsonLd(post, canonical)} />`. Image is the absolute per-post
  * OG route; mainEntityOfPage is the canonical post URL.
  */
@@ -43,6 +49,36 @@ export function buildArticleJsonLd(
   canonical: string,
 ): ArticleProps {
   return {
+    headline: clean(post.title),
+    description: clean(post.description),
+    url: canonical,
+    author: {
+      '@type': 'Person',
+      name: AUTHOR_NAME,
+      url: `${SITE_URL}/authors/${AUTHOR_SLUG}`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    image: `${canonical}/opengraph-image`,
+    mainEntityOfPage: canonical,
+  };
+}
+
+/**
+ * Standalone NewsArticle JSON-LD builder for Schema.org validation and Google News discovery.
+ */
+export function buildNewsArticleJsonLd(
+  post: Post,
+  canonical: string,
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle' as const,
     headline: clean(post.title),
     description: clean(post.description),
     url: canonical,

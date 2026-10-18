@@ -61,11 +61,27 @@ export default async function SiloLandingPage({
     { name: def.label, item: canonical },
   ]);
 
+  // Schema.org CollectionPage declaring hasPart relationships with all published spokes
+  const collectionJsonLd = buildCollectionPageJsonLd(
+    def,
+    posts.map((p) => ({
+      title: p.title,
+      slug: p.slug,
+      publishedAt: p.publishedAt,
+      updatedAt: p.updatedAt,
+    })),
+    canonical
+  );
+
   if (!isPillarHub) {
     // Standard reverse-chronological archive view for developing clusters (<8 posts)
     return (
       <>
         <BreadcrumbJsonLd {...breadcrumbProps} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+        />
         <main id="main-content" className="mx-auto max-w-3xl px-4 py-16">
           <nav aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-2 text-[14px] text-slate-600">
@@ -88,13 +104,13 @@ export default async function SiloLandingPage({
             {def.intro}
           </p>
 
-          <section aria-label={`Latest ${def.label} guides`} className="mt-12">
+          <section aria-label={`Latest ${def.label}`} className="mt-12">
             <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
-              Latest {def.label} guides
+              {silo === 'ai-news' ? `Latest ${def.label}` : `Latest ${def.label} guides`}
             </h2>
             {posts.length === 0 ? (
               <p className="mt-4 text-[16px] leading-[1.5] text-slate-600">
-                Fresh {def.label} guides are on the way. Check back soon.
+                Fresh {def.label} content is on the way. Check back soon.
               </p>
             ) : (
               <ul className="mt-6 grid gap-8">
@@ -133,18 +149,6 @@ export default async function SiloLandingPage({
   }
 
   // Elevated Pillar Hub Layout (>= 8 published articles)
-  // Schema.org CollectionPage declaring hasPart relationships with all published spokes
-  const collectionJsonLd = buildCollectionPageJsonLd(
-    def,
-    posts.map((p) => ({
-      title: p.title,
-      slug: p.slug,
-      publishedAt: p.publishedAt,
-      updatedAt: p.updatedAt,
-    })),
-    canonical
-  );
-
   // Identify cornerstone flagship guide
   const cornerstoneGuide =
     posts.find(

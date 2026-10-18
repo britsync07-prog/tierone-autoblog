@@ -26,8 +26,9 @@ test('Test 1: eval-queries.json contains exactly 20 queries across 5 silos (4 pe
     assert.ok(Array.isArray(q.expectedGainPoints), 'Query must have expectedGainPoints array');
   }
 
-  assert.equal(Object.keys(counts).length, 5, 'Must cover all 5 silos');
-  for (const silo of SILO_SLUGS) {
+  assert.equal(Object.keys(counts).length, 5, 'Must cover all 5 evergreen silos');
+  const evergreenSilos = SILO_SLUGS.filter((s) => s !== 'ai-news');
+  for (const silo of evergreenSilos) {
     assert.equal(counts[silo], 4, `Expected exactly 4 queries for silo ${silo}, got ${counts[silo]}`);
   }
 });
