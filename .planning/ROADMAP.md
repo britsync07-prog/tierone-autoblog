@@ -127,7 +127,11 @@ Plans:
   1. Owner can view a country-segmented dashboard (GSC country × page × query + Plausible engagement) with Tier-1 share as the headline and indexed-vs-submitted ratio ≥ 70%
   2. Striking-distance (positions 5–20) and decay (>90d drop) reports feed a refresh queue (dateModified bumps, merge-with-301, link repair)
   3. Publishing velocity scales to daily only after 60+ days of healthy baselines, and pillar hubs exist once silos reach 8–12 clusters
-**Plans**: TBD
+**Plans**: 4 plans
+  - [x] 06-01-PLAN.md: Analytics Data Ingestion & Protected Dashboard Route (GROW-01, D-01, D-02, D-03)
+  - [x] 06-02-PLAN.md: Striking-Distance, Content Decay & Refresh Engine (GROW-02, D-04, D-05)
+  - [x] 06-03-PLAN.md: Data-Driven 301 Redirect Consolidation & Post Retirement (GROW-02, D-06)
+  - [x] 06-04-PLAN.md: Publishing Velocity Scaling Governor & Dynamic Pillar Hubs (GROW-03, D-07, D-08, D-09, D-10)
 **UI hint**: yes
 
 ## Progress
@@ -142,4 +146,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 3. Content Pipeline | 6/6 | Complete (pipeline verified 5/5 criteria, 2026-10-18) | 2026-10-18 |
 | 4. Quality Gates | 5/5 | Complete (verified 5/5, 2026-10-18) | 2026-10-18 |
 | 5. Autonomous Publish + Indexing | 4/4 | Complete (verified 4/4, 2026-10-18) | 2026-10-18 |
-| 6. Observe, Refresh + Compound | 0/TBD | Not started | - |
+| 6. Observe, Refresh + Compound | 4/4 | Complete (verified 3/3 criteria, 2026-10-18) | 2026-10-18 |

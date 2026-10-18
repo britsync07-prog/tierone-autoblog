@@ -50,9 +50,9 @@
 
 ### Observe + Compound
 
-- [ ] **GROW-01**: Owner can view country-segmented dashboard (GSC country × page × query + Plausible engagement; Tier-1 share headline, indexed-vs-submitted ratio ≥70%)
-- [ ] **GROW-02**: System produces striking-distance (positions 5–20) and decay (>90d drop) reports feeding a refresh queue (dateModified bumps, merge-with-301, link repair)
-- [ ] **GROW-03**: System scales velocity to daily only after 60+ days of healthy baselines; pillar hubs built at 8–12 clusters per silo
+- [x] **GROW-01**: Owner can view country-segmented dashboard (GSC country × page × query + Plausible engagement; Tier-1 share headline, indexed-vs-submitted ratio ≥70%)
+- [x] **GROW-02**: System produces striking-distance (positions 5–20) and decay (>90d drop) reports feeding a refresh queue (dateModified bumps, merge-with-301, link repair)
+- [x] **GROW-03**: System scales velocity to daily only after 60+ days of healthy baselines; pillar hubs built at 8–12 clusters per silo
 
 ## v2 Requirements
 
@@ -119,9 +119,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | GEO-01 | Phase 2 | Complete |
 | GEO-02 | Phase 1 | Pending |
 | GEO-03 | Phase 2 | Complete |
-| GROW-01 | Phase 6 | Pending |
-| GROW-02 | Phase 6 | Pending |
-| GROW-03 | Phase 6 | Pending |
+| GROW-01 | Phase 6 | Complete |
+| GROW-02 | Phase 6 | Complete |
+| GROW-03 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 28 total
@@ -130,4 +130,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-10-16*
-*Last updated: 2026-10-17 after Phase 2 completion (SEO-01..05, GEO-01, GEO-03 Complete)*
+*Last updated: 2026-10-18 after Phase 6 completion (GROW-01..03 Complete)*
