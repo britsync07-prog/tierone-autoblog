@@ -37,10 +37,10 @@
 
 ### Autonomous Publish + Indexing
 
-- [ ] **AUTO-01**: System publishes on schedule via single-owner cron (Vercel Cron primary, idempotent claim-by-hash, run log + DLQ), starting 3–4 posts/week
-- [ ] **AUTO-02**: System runs post-publish live-URL verifier (status/schema/links/placeholders); fail triggers auto-unpublish + alert
-- [ ] **AUTO-03**: System dispatches dual-track indexing per post (IndexNow for Bing et al. + sitemap/GSC-API track for Google)
-- [ ] **AUTO-04**: System pins a 20-query eval set guarding prompt/model changes from ranking regressions
+- [x] **AUTO-01**: System publishes on schedule via single-owner cron (Vercel Cron primary, idempotent claim-by-hash, run log + DLQ), starting 3–4 posts/week
+- [x] **AUTO-02**: System runs post-publish live-URL verifier (status/schema/links/placeholders); fail triggers auto-unpublish + alert
+- [x] **AUTO-03**: System dispatches dual-track indexing per post (IndexNow for Bing et al. + sitemap/GSC-API track for Google)
+- [x] **AUTO-04**: System pins a 20-query eval set guarding prompt/model changes from ranking regressions
 
 ### Geo-Targeting (v1 = single-locale launch)
 
@@ -112,10 +112,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | QA-02 | Phase 4 | Complete |
 | QA-03 | Phase 4 | Complete |
 | QA-04 | Phase 4 | Complete |
-| AUTO-01 | Phase 5 | Pending |
-| AUTO-02 | Phase 5 | Pending |
-| AUTO-03 | Phase 5 | Pending |
-| AUTO-04 | Phase 5 | Pending |
+| AUTO-01 | Phase 5 | Complete |
+| AUTO-02 | Phase 5 | Complete |
+| AUTO-03 | Phase 5 | Complete |
+| AUTO-04 | Phase 5 | Complete |
 | GEO-01 | Phase 2 | Complete |
 | GEO-02 | Phase 1 | Pending |
 | GEO-03 | Phase 2 | Complete |
