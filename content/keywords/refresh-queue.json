@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-18T11:26:17.702Z",
+  "items": [
+    {
+      "id": "refresh-cursor-ai-vs-github-copilot-2026-10",
+      "slug": "cursor-ai-vs-github-copilot",
+      "silo": "ai-writing",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-10-18T11:25:45.135Z",
+      "status": "pending",
+      "diagnostics": {
+        "currentImpressions": 3890,
+        "queries": [
+          {
+            "query": "cursor ai vs copilot 2026",
+            "position": 5.1,
+            "impressions": 3890,
+            "clicks": 245
+          }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump dateModified in frontmatter to signal freshness"
+        },
+        {
+          "action": "inject-faq",
+          "faqItem": {
+            "q": "What should you know about cursor ai vs copilot 2026?",
+            "a": "Understanding cursor ai vs copilot 2026 is essential for optimizing workflow performance and achieving accurate, consistent results."
+          },
+          "details": "Inject striking-distance FAQ targeting query: \"cursor ai vs copilot 2026\""
+        },
+        {
+          "action": "repair-links",
+          "details": "Audit outbound links to eliminate 404s"
+        }
+      ]
+    },
+    {
+      "id": "refresh-best-open-source-llms-2026-10",
+      "slug": "best-open-source-llms",
+      "silo": "ai-writing",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-10-18T11:25:45.135Z",
+      "status": "pending",
+      "diagnostics": {
+        "currentImpressions": 1980,
+        "queries": [
+          {
+            "query": "best open source llm coding uk",
+            "position": 6.8,
+            "impressions": 1980,
+            "clicks": 142
+          }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump dateModified in frontmatter to signal freshness"
+        },
+        {
+          "action": "inject-faq",
+          "faqItem": {
+            "q": "What should you know about best open source llm coding uk?",
+            "a": "Understanding best open source llm coding uk is essential for optimizing workflow performance and achieving accurate, consistent results."
+          },
+          "details": "Inject striking-distance FAQ targeting query: \"best open source llm coding uk\""
+        },
+        {
+          "action": "repair-links",
+          "details": "Audit outbound links to eliminate 404s"
+        }
+      ]
+    },
+    {
+      "id": "refresh-local-llm-setup-guide-2026-10",
+      "slug": "local-llm-setup-guide",
+      "silo": "ai-writing",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-10-18T11:25:45.135Z",
+      "status": "pending",
+      "diagnostics": {
+        "currentImpressions": 1240,
+        "queries": [
+          {
+            "query": "run local llm ollama macbook pro",
+            "position": 5.9,
+            "impressions": 1240,
+            "clicks": 88
+          }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump dateModified in frontmatter to signal freshness"
+        },
+        {
+          "action": "inject-faq",
+          "faqItem": {
+            "q": "What should you know about run local llm ollama macbook pro?",
+            "a": "Understanding run local llm ollama macbook pro is essential for optimizing workflow performance and achieving accurate, consistent results."
+          },
+          "details": "Inject striking-distance FAQ targeting query: \"run local llm ollama macbook pro\""
+        },
+        {
+          "action": "repair-links",
+          "details": "Audit outbound links to eliminate 404s"
+        }
+      ]
+    },
+    {
+      "id": "refresh-chatgpt-vs-claude-for-coding-2026-10",
+      "slug": "chatgpt-vs-claude-for-coding",
+      "silo": "ai-writing",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-10-18T11:25:45.135Z",
+      "status": "pending",
+      "diagnostics": {
+        "currentImpressions": 1420,
+        "queries": [
+          {
+            "query": "ai code generation accuracy comparisons",
+            "position": 8.6,
+            "impressions": 1420,
+            "clicks": 98
+          }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump dateModified in frontmatter to signal freshness"
+        },
+        {
+          "action": "inject-faq",
+          "faqItem": {
+            "q": "What should you know about ai code generation accuracy comparisons?",
+            "a": "Understanding ai code generation accuracy comparisons is essential for optimizing workflow performance and achieving accurate, consistent results."
+          },
+          "details": "Inject striking-distance FAQ targeting query: \"ai code generation accuracy comparisons\""
+        },
+        {
+          "action": "repair-links",
+          "details": "Audit outbound links to eliminate 404s"
+        }
+      ]
+    },
+    {
+      "id": "refresh-claude-3-sonnet-prompting-guide-2026-10",
+      "slug": "claude-3-sonnet-prompting-guide",
+      "silo": "ai-writing",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-10-18T11:25:45.135Z",
+      "status": "pending",
+      "diagnostics": {
+        "currentImpressions": 820,
+        "queries": [
+          {
+            "query": "claude 3 prompt engineering tips",
+            "position": 7.4,
+            "impressions": 820,
+            "clicks": 54
+          }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump dateModified in frontmatter to signal freshness"
+        },
+        {
+          "action": "inject-faq",
+          "faqItem": {
+            "q": "What should you know about claude 3 prompt engineering tips?",
+            "a": "Understanding claude 3 prompt engineering tips is essential for optimizing workflow performance and achieving accurate, consistent results."
+          },
+          "details": "Inject striking-distance FAQ targeting query: \"claude 3 prompt engineering tips\""
+        },
+        {
+          "action": "repair-links",
+          "details": "Audit outbound links to eliminate 404s"
+        }
+      ]
+    }
+  ]
+}
