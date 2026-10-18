@@ -113,7 +113,11 @@ Plans:
   2. Post-publish live-URL verifier checks status, schema, links, and placeholders on the real URL; any fail triggers auto-unpublish plus alert
   3. Every post dispatches dual-track indexing (IndexNow for Bing et al. + sitemap/GSC-API track for Google)
   4. The pinned 20-query eval set runs green, guarding prompt/model changes against ranking regressions
-**Plans**: TBD
+**Plans**: 4 plans
+  - 05-01-PLAN.md: Dual-Track Indexing Integration (AUTO-03, D-07, D-08, D-09)
+  - 05-02-PLAN.md: Scheduled Publishing Engine & Claim-by-Hash DLQ (AUTO-01, D-01, D-02, D-03)
+  - 05-03-PLAN.md: Post-Publish Live-URL Verification & Automated Rollback (AUTO-02, D-04, D-05, D-06)
+  - 05-04-PLAN.md: Pinned 20-Query Evaluation Benchmark (AUTO-04, D-10, D-11, D-12)
 
 ### Phase 6: Observe, Refresh + Compound
 **Goal**: Owner can see Tier-1 growth by country and the system compounds it via refresh and gated scale-up
@@ -137,5 +141,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 2. SEO Architecture + Silo IA | 4/4 | Complete (phase sweep verified 5/5 criteria, 2026-10-17) | 2026-10-17 |
 | 3. Content Pipeline | 6/6 | Complete (pipeline verified 5/5 criteria, 2026-10-18) | 2026-10-18 |
 | 4. Quality Gates | 5/5 | Complete (verified 5/5, 2026-10-18) | 2026-10-18 |
-| 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |
+| 5. Autonomous Publish + Indexing | 0/4 | Not started | - |
 | 6. Observe, Refresh + Compound | 0/TBD | Not started | - |
