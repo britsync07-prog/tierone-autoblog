@@ -18,6 +18,7 @@ import { clearDlqEntry, checkDlqExhaustion, recordDlqFailure } from '../lib/pipe
 import { dispatchDualTrackIndexing } from '../lib/pipeline/indexing';
 import { verifyLiveUrl } from '../lib/pipeline/publish/verifier';
 import { executeAutomatedRollback } from '../lib/pipeline/publish/rollback';
+import { checkVelocityGovernor, isBaselineDay } from '../lib/pipeline/publish/governor';
 import { SITE_URL } from '../lib/site';
 import type { RegistryEntry } from '../lib/pipeline/types';
 
@@ -31,6 +32,9 @@ export interface PublishOptions {
   quarantineDir?: string;
   postsDir?: string;
   siteUrl?: string;
+  now?: Date;
+  enforceGovernor?: boolean;
+  mockIndexRatio?: number;
 }
 
 export interface PublishResult {
@@ -109,6 +113,28 @@ export async function runPublishScheduled(options: PublishOptions = {}): Promise
       return { status: 'skipped', reason: `Forced candidate ${options.candidateId} not found` };
     }
   } else {
+    const now = options.now ?? new Date();
+    const baselineDay = isBaselineDay(now);
+
+    if (!baselineDay || options.enforceGovernor) {
+      const governor = checkVelocityGovernor({
+        keywordsDir,
+        now,
+        mockIndexRatio: options.mockIndexRatio,
+        siteUrl,
+      });
+
+      if (!governor.unlocked) {
+        console.log('[governor] Velocity gate locked (<60d baseline): skipping non-scheduled daily publish.');
+        console.log(`[governor] Locked reasons: ${governor.reasons.join('; ')}`);
+        return {
+          status: 'skipped',
+          reason: `Velocity governor locked: ${governor.reasons.join('; ')}`,
+        };
+      }
+      console.log('[governor] 60-day baseline criteria fully met. Daily publication unlocked.');
+    }
+
     const candidates = findPublishableCandidates(keywordsDir);
     if (candidates.length === 0) {
       console.log('[publish] No QA-passed drafts waiting to publish.');
