@@ -188,3 +188,86 @@ test('getDashboardAnalytics: falls back safely to snapshot or synthetic data whe
     if (origPlausible !== undefined) process.env.PLAUSIBLE_API_KEY = origPlausible;
   }
 });
+
+test('Dashboard metadata: disallows robot indexing via { index: false, follow: false }', async () => {
+  const { metadata } = await import('../app/dashboard/page');
+  assert.deepEqual(metadata.robots, { index: false, follow: false });
+  assert.ok(metadata.title?.toString().includes('Private'));
+});
+
+test('validateDashboardToken: validates token against DASHBOARD_SECRET securely', async () => {
+  const { validateDashboardToken } = await import('../app/dashboard/page');
+  const origSecret = process.env.DASHBOARD_SECRET;
+  try {
+    process.env.DASHBOARD_SECRET = 'super-secret-token-123';
+
+    assert.equal(validateDashboardToken(undefined), false);
+    assert.equal(validateDashboardToken(''), false);
+    assert.equal(validateDashboardToken('wrong-token'), false);
+    assert.equal(validateDashboardToken('super-secret-token-123'), true);
+
+    delete process.env.DASHBOARD_SECRET;
+    assert.equal(validateDashboardToken('super-secret-token-123'), false);
+  } finally {
+    if (origSecret !== undefined) process.env.DASHBOARD_SECRET = origSecret;
+    else delete process.env.DASHBOARD_SECRET;
+  }
+});
+
+test('DashboardPage: fails closed and calls notFound() on unauthorized access', async () => {
+  const { default: DashboardPage } = await import('../app/dashboard/page');
+  const origSecret = process.env.DASHBOARD_SECRET;
+  try {
+    process.env.DASHBOARD_SECRET = 'test-token-xyz';
+
+    const isNotFoundError = (err: any) => {
+      const msg = String(err?.message || err);
+      const digest = String(err?.digest || '');
+      return (
+        digest.includes('NEXT_HTTP_ERROR_FALLBACK;404') ||
+        digest.includes('NEXT_NOT_FOUND') ||
+        msg.includes('NEXT_HTTP_ERROR_FALLBACK;404') ||
+        msg.includes('NEXT_NOT_FOUND')
+      );
+    };
+
+    // Missing token
+    await assert.rejects(
+      async () => {
+        await DashboardPage({ searchParams: Promise.resolve({}) });
+      },
+      isNotFoundError
+    );
+
+    // Mismatched token
+    await assert.rejects(
+      async () => {
+        await DashboardPage({ searchParams: Promise.resolve({ token: 'wrong-token' }) });
+      },
+      isNotFoundError
+    );
+  } finally {
+    if (origSecret !== undefined) process.env.DASHBOARD_SECRET = origSecret;
+    else delete process.env.DASHBOARD_SECRET;
+  }
+});
+
+test('DashboardPage: succeeds with authorized token and renders valid Server Component tree', async () => {
+  const { default: DashboardPage } = await import('../app/dashboard/page');
+  const origSecret = process.env.DASHBOARD_SECRET;
+  try {
+    process.env.DASHBOARD_SECRET = 'valid-owner-token';
+
+    const jsx = await DashboardPage({
+      searchParams: Promise.resolve({ token: 'valid-owner-token' }),
+    });
+
+    assert.ok(jsx);
+    assert.equal(jsx.type, 'main');
+    assert.ok(jsx.props);
+  } finally {
+    if (origSecret !== undefined) process.env.DASHBOARD_SECRET = origSecret;
+    else delete process.env.DASHBOARD_SECRET;
+  }
+});
+
