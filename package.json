@@ -31,7 +31,8 @@
     "test:eval": "tsx --test tests/eval-20.test.ts",
     "eval:run": "tsx scripts/run-eval-suite.ts",
     "refresh:run": "tsx scripts/run-content-refresh.ts",
-    "post:retire": "tsx scripts/retire-post.ts"
+    "post:retire": "tsx scripts/retire-post.ts",
+    "silos:check": "tsx scripts/check-pillar-clusters.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

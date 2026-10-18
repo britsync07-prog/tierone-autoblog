@@ -107,3 +107,41 @@ export function buildFaqJsonLd(
     })),
   };
 }
+
+export interface CollectionPagePost {
+  title: string;
+  slug: string;
+  publishedAt: string;
+  updatedAt?: string;
+}
+
+/**
+ * Generates Schema.org CollectionPage JSON-LD for elevated Pillar Hubs (Plan 06-04, D-09, GROW-03).
+ * Links the central silo topic to all published spoke articles via hasPart.
+ */
+export function buildCollectionPageJsonLd(
+  silo: { landingTitle: string; metaDescription: string; [key: string]: any },
+  posts: Array<CollectionPagePost>,
+  canonical: string,
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: clean(silo.landingTitle),
+    description: clean(silo.metaDescription),
+    url: canonical,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    hasPart: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: clean(post.title),
+      url: `${SITE_URL}/blog/${post.slug}`,
+      datePublished: post.publishedAt,
+      ...(post.updatedAt ? { dateModified: post.updatedAt } : {}),
+    })),
+  };
+}
+
