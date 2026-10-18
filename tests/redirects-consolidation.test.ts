@@ -217,7 +217,7 @@ test('retireAndRedirectPost: successfully relocates post to quarantine, updates 
           stage: 'published',
           createdAt: new Date().toISOString(),
           updatedAt: new Date().toISOString(),
-          draft: { slug: postSlug },
+          draft: { slug: postSlug, attempts: 1 },
           qa: { passedAt: new Date().toISOString() },
         },
       ],

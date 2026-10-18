@@ -16,7 +16,6 @@ import type { RegistryEntry, RegistryShard } from '../lib/pipeline/types';
 function createMockShard(silo: string, entries: Partial<RegistryEntry>[]): RegistryShard {
   return {
     version: 1,
-    silo: silo as any,
     updatedAt: new Date().toISOString(),
     keywords: entries.map((e, idx) => ({
       id: e.id ?? `test-${silo}-${idx + 1}`,
@@ -28,12 +27,10 @@ function createMockShard(silo: string, entries: Partial<RegistryEntry>[]): Regis
       updatedAt: e.updatedAt ?? new Date().toISOString(),
       brief: e.brief ?? { completedAt: new Date('2026-06-01T00:00:00Z').toISOString() },
       outline: e.outline ?? { completedAt: new Date('2026-06-01T00:00:00Z').toISOString(), lint: 'pass' },
-      qa: e.qa ?? { passedAt: e.publishedAt ?? new Date().toISOString(), score: 95 },
+      qa: e.qa ?? { passedAt: e.publishedAt ?? new Date().toISOString() },
       draft: e.draft ?? {
         slug: `test-post-${idx + 1}`,
-        title: `Test Post ${idx + 1}`,
-        targetWordCount: 1500,
-        completedAt: new Date().toISOString(),
+        attempts: 1,
       },
       ...e,
     })) as RegistryEntry[],
@@ -290,8 +287,8 @@ test('velocity governor: Day gating and scheduled publisher integration', async 
     {
       id: 'draft-candidate-1',
       stage: 'drafted',
-      qa: { passedAt: new Date('2026-10-10T12:00:00Z').toISOString(), score: 95 },
-      draft: { slug: 'new-draft', title: 'New Draft', targetWordCount: 1500, completedAt: '' },
+      qa: { passedAt: new Date('2026-10-10T12:00:00Z').toISOString() },
+      draft: { slug: 'new-draft', attempts: 1 },
     },
     {
       id: 'published-1',
@@ -331,8 +328,8 @@ test('velocity governor: Day gating and scheduled publisher integration', async 
     {
       id: 'draft-candidate-1',
       stage: 'drafted',
-      qa: { passedAt: new Date('2026-10-10T12:00:00Z').toISOString(), score: 95 },
-      draft: { slug: 'new-draft', title: 'New Draft', targetWordCount: 1500, completedAt: '' },
+      qa: { passedAt: new Date('2026-10-10T12:00:00Z').toISOString() },
+      draft: { slug: 'new-draft', attempts: 1 },
     },
     ...Array.from({ length: 10 }, (_, i) => ({
       id: `published-${i + 1}`,

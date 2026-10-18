@@ -15,7 +15,6 @@ import type { RegistryEntry, RegistryShard } from '../lib/pipeline/types';
 function createMockShard(silo: string, entries: Partial<RegistryEntry>[]): RegistryShard {
   return {
     version: 1,
-    silo: silo as any,
     updatedAt: new Date().toISOString(),
     keywords: entries.map((e, idx) => ({
       id: e.id ?? `kw-${silo}-${idx + 1}`,
@@ -27,12 +26,10 @@ function createMockShard(silo: string, entries: Partial<RegistryEntry>[]): Regis
       updatedAt: e.updatedAt ?? new Date().toISOString(),
       brief: { completedAt: new Date('2026-06-01T00:00:00Z').toISOString() },
       outline: { completedAt: new Date('2026-06-01T00:00:00Z').toISOString(), lint: 'pass' },
-      qa: { passedAt: new Date('2026-08-01T00:00:00Z').toISOString(), score: 95 },
+      qa: { passedAt: new Date('2026-08-01T00:00:00Z').toISOString() },
       draft: e.draft ?? {
         slug: `post-${silo}-${idx + 1}`,
-        title: `Post ${silo} ${idx + 1}`,
-        targetWordCount: 1500,
-        completedAt: new Date().toISOString(),
+        attempts: 1,
       },
       ...e,
     })) as RegistryEntry[],
@@ -93,7 +90,7 @@ test('pillar hub: cluster threshold detection (<8 vs >=8 posts)', () => {
   const entriesSilo0 = Array.from({ length: 5 }, (_, i) => ({
     id: `p0-${i + 1}`,
     stage: 'published' as const,
-    draft: { slug: `p0-post-${i + 1}`, title: `P0 Post ${i + 1}`, targetWordCount: 1500, completedAt: '' },
+    draft: { slug: `p0-post-${i + 1}`, attempts: 1 },
   }));
   saveShard(keywordsDir, SILO_SLUGS[0], createMockShard(SILO_SLUGS[0], entriesSilo0));
 
@@ -101,7 +98,7 @@ test('pillar hub: cluster threshold detection (<8 vs >=8 posts)', () => {
   const entriesSilo1 = Array.from({ length: 9 }, (_, i) => ({
     id: `p1-${i + 1}`,
     stage: 'published' as const,
-    draft: { slug: `p1-post-${i + 1}`, title: `P1 Post ${i + 1}`, targetWordCount: 1500, completedAt: '' },
+    draft: { slug: `p1-post-${i + 1}`, attempts: 1 },
   }));
   saveShard(keywordsDir, SILO_SLUGS[1], createMockShard(SILO_SLUGS[1], entriesSilo1));
 
@@ -132,7 +129,7 @@ test('pillar hub: cornerstone guide queuing and detection', () => {
   const entries = Array.from({ length: 8 }, (_, i) => ({
     id: `kw-c-${i + 1}`,
     stage: 'published' as const,
-    draft: { slug: `post-c-${i + 1}`, title: `Post C ${i + 1}`, targetWordCount: 1500, completedAt: '' },
+    draft: { slug: `post-c-${i + 1}`, attempts: 1 },
   }));
 
   saveShard(keywordsDir, silo, createMockShard(silo, entries));
@@ -164,11 +161,9 @@ test('pillar hub: cornerstone guide queuing and detection', () => {
   queuedEntry.stage = 'published';
   queuedEntry.draft = {
     slug: `${silo}-complete-guide`,
-    title: 'Complete Architectural Guide',
-    targetWordCount: 3000,
-    completedAt: new Date().toISOString(),
+    attempts: 1,
   };
-  queuedEntry.qa = { passedAt: new Date().toISOString(), score: 98 };
+  queuedEntry.qa = { passedAt: new Date().toISOString() };
   saveShard(keywordsDir, silo, shardAfter);
 
   const updatedReports = analyzeSiloClusters(keywordsDir, postsDir);
@@ -195,17 +190,17 @@ test('pillar hub: bidirectional link mesh check flags orphan spokes lacking pill
     {
       id: 'spoke-healthy',
       stage: 'published',
-      draft: { slug: 'spoke-healthy', title: 'Healthy Spoke', targetWordCount: 1500, completedAt: '' },
+      draft: { slug: 'spoke-healthy', attempts: 1 },
     },
     {
       id: 'spoke-orphan',
       stage: 'published',
-      draft: { slug: 'spoke-orphan', title: 'Orphan Spoke', targetWordCount: 1500, completedAt: '' },
+      draft: { slug: 'spoke-orphan', attempts: 1 },
     },
     {
       id: 'cornerstone-post',
       stage: 'published',
-      draft: { slug: cornerstoneSlug, title: 'Cornerstone Guide', targetWordCount: 3000, completedAt: '' },
+      draft: { slug: cornerstoneSlug, attempts: 1 },
     },
   ];
 
