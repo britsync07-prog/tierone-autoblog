@@ -32,7 +32,8 @@
     "eval:run": "tsx scripts/run-eval-suite.ts",
     "refresh:run": "tsx scripts/run-content-refresh.ts",
     "post:retire": "tsx scripts/retire-post.ts",
-    "silos:check": "tsx scripts/check-pillar-clusters.ts"
+    "silos:check": "tsx scripts/check-pillar-clusters.ts",
+    "indexnow:sync": "node -r dotenv/config scripts/sync-indexnow-key.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",
