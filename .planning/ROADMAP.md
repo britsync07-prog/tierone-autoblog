@@ -97,7 +97,12 @@ Plans:
   2. Unverifiable factual claims are cut, not softened; statistics carry sources with dates and date-sensitive claims carry as-of dates
   3. Blocked topics (tax/banking/credit/health/finance-advice) are rejected and every byline is the real publisher with AI-process disclosure — no fabricated authors
   4. K consecutive failures auto-pause publishing with an owner alert, and the quarantine queue is human-readable
-**Plans**: TBD
+**Plans**: 5 plans
+  - 04-01-PLAN.md: Quarantine Storage & Circuit-Breaker Foundation (D-01, D-02, D-03, D-10, D-11, D-12)
+  - 04-02-PLAN.md: Deterministic Pre-Filters & Link Crawler (D-06, D-09)
+  - 04-03-PLAN.md: Originality & Anti-Near-Duplicate Shingler (D-07)
+  - 04-04-PLAN.md: Fact-Checking & Claim Verification Engine (D-04, D-05)
+  - 04-05-PLAN.md: Information Gain Evaluator & Full Pipeline QA Stage (D-08, red-team tests)
 
 ### Phase 5: Autonomous Publish + Indexing
 **Goal**: System publishes on schedule and gets new posts indexed without human intervention
@@ -131,6 +136,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
 | 2. SEO Architecture + Silo IA | 4/4 | Complete (phase sweep verified 5/5 criteria, 2026-10-17) | 2026-10-17 |
 | 3. Content Pipeline | 6/6 | Complete (pipeline verified 5/5 criteria, 2026-10-18) | 2026-10-18 |
-| 4. Quality Gates | 0/TBD | Not started | - |
+| 4. Quality Gates | 0/5 | Not started | - |
 | 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |
 | 6. Observe, Refresh + Compound | 0/TBD | Not started | - |
