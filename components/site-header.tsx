@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Logo from '@/components/logo';
 
 const NAV = [
+  { label: 'AI News', href: '/ai-news' },
   { label: 'About', href: '/about' },
   { label: 'Editorial process', href: '/editorial-process' },
   { label: 'Contact', href: '/contact' },

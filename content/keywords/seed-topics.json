@@ -7,9 +7,7 @@
       "chatgpt vs claude for writing",
       "ai paraphrasing tool",
       "ai grammar checker",
-      "sudowrite review",
-      "ai essay writer",
-      "ai blog writer"
+      "sudowrite review"
     ],
     "ai-coding": [
       "ai coding assistant",
@@ -17,9 +15,7 @@
       "claude in terminal",
       "ai code review tool",
       "cursor vs copilot",
-      "chatgpt for programming",
-      "best llm for coding",
-      "ai pair programming"
+      "chatgpt for programming"
     ],
     "ai-image": [
       "ai image generator",
@@ -27,9 +23,7 @@
       "free ai image generator",
       "dalle alternatives",
       "ai photo editor",
-      "ideogram review",
-      "ai logo generator",
-      "ai image upscaler"
+      "ideogram review"
     ],
     "ai-productivity": [
       "ai productivity tools",
@@ -37,9 +31,7 @@
       "ai meeting summarizer",
       "best ai calendar app",
       "ai task manager",
-      "chatgpt for work",
-      "ai email assistant",
-      "ai transcription tool"
+      "chatgpt for work"
     ],
     "ai-guides": [
       "how to use chatgpt effectively",
@@ -47,9 +39,14 @@
       "ai for small business",
       "chatgpt workflow tutorial",
       "automate tasks with ai",
-      "chatgpt beginner guide",
-      "ai tools for students",
-      "chatgpt prompt examples"
+      "chatgpt beginner guide"
+    ],
+    "ai-news": [
+      "breaking ai news",
+      "daily tech news",
+      "anthropic releases",
+      "openai updates",
+      "developer tools news"
     ]
   }
 }

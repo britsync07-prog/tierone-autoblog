@@ -11,6 +11,7 @@ export const SILO_SLUGS = [
   'ai-image',
   'ai-productivity',
   'ai-guides',
+  'ai-news',
 ] as const;
 
 export type SiloSlug = (typeof SILO_SLUGS)[number];
@@ -72,6 +73,15 @@ export const SILOS: Record<SiloSlug, Silo> = {
       'Practical AI guides for 2026 — write better prompts, avoid rookie mistakes, verify AI output, and build prompting skills that transfer across every tool.',
     intro:
       'The gap between mediocre and excellent AI output is rarely the model — it is the skill of the person driving it. This hub hosts our evergreen how-to guides: writing prompts that get precise answers on the first try, structuring multi-step tasks the model can actually follow, verifying AI output instead of trusting it blindly, and avoiding the rookie mistakes that waste credits and credibility. Unlike tool reviews that expire with each release cycle, these guides teach transferable technique that works across ChatGPT, Claude, Gemini, and whatever launches next. Each article pairs concrete before-and-after examples with checklists you can reuse immediately. New to prompting? Start with the flagship better-prompts walkthrough, then work through the verification and workflow guides — and bookmark the checklists, since they compound in value as models improve.',
+  },
+  'ai-news': {
+    slug: 'ai-news',
+    label: 'AI & Tech News',
+    landingTitle: 'Breaking AI & Tech News: Daily Analysis & Industry Updates',
+    metaDescription:
+      'Get daily breaking AI and tech news analyzed for developers, engineers, and tech creators. Real architectural insights, zero fluff, updated every morning.',
+    intro:
+      "The artificial intelligence and software engineering ecosystem moves too quickly for shallow recaps and marketing press releases. Our daily news desk tracks foundation model releases, developer tooling shifts, open-source breakthroughs, and infrastructure benchmarks that genuinely impact production workflows. Every morning, our automated intelligence engine ingests reports across engineering communities, filters out speculative hype, and delivers deep architectural analysis: what actually launched, how it works under the hood, benchmark verifications, and what it means for practitioners building software today. Rather than repeating rumors, every report links to primary sources, documentation, and code repositories. Start with today's breaking coverage below, or explore our categorized guides to see how emerging models compare to existing industry standards.",
   },
 };
 

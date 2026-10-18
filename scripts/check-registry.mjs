@@ -72,7 +72,7 @@ const STAGES = (() => {
 
 // ---- group 1: source ground truth shapes ----
 
-check('silo-source', SILO_SLUGS.length === 5, `SILO_SLUGS parsed = [${SILO_SLUGS.join(', ')}]`);
+check('silo-source', SILO_SLUGS.length === 6, `SILO_SLUGS parsed = [${SILO_SLUGS.join(', ')}]`);
 check(
   'stage-vocab',
   (STAGES.length === 7 || STAGES.length === 8) &&
