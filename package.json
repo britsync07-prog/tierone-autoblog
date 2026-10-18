@@ -26,7 +26,8 @@
     "quarantine:list": "node scripts/quarantine-list.mjs",
     "quarantine:view": "node scripts/quarantine-view.mjs",
     "pipeline:resume": "node scripts/pipeline-resume.mjs",
-    "publish:scheduled": "tsx scripts/publish-scheduled.ts"
+    "publish:scheduled": "tsx scripts/publish-scheduled.ts",
+    "verify:live": "tsx scripts/verify-live-url.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

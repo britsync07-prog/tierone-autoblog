@@ -204,8 +204,8 @@ export function listPromotable(
 export function assertTransitionStage(from: RegistryStage, to: RegistryStage): void {
   if (to === 'rejected') return;
   if (to === 'quarantined') {
-    if (from !== 'drafted') {
-      fail(`invalid stage transition '${from}' -> 'quarantined' (only 'drafted' entries can be quarantined)`);
+    if (from !== 'drafted' && from !== 'published') {
+      fail(`invalid stage transition '${from}' -> 'quarantined' (only 'drafted' or 'published' entries can be quarantined)`);
     }
     return;
   }

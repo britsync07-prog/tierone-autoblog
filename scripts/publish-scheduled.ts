@@ -16,12 +16,17 @@ import { loadShard, publishEntry, saveShard } from '../lib/pipeline/registry';
 import { acquireClaimLock, releaseClaimLock } from '../lib/pipeline/publish/claim-lock';
 import { clearDlqEntry, checkDlqExhaustion, recordDlqFailure } from '../lib/pipeline/publish/dlq';
 import { dispatchDualTrackIndexing } from '../lib/pipeline/indexing';
+import { verifyLiveUrl } from '../lib/pipeline/publish/verifier';
+import { executeAutomatedRollback } from '../lib/pipeline/publish/rollback';
 import { SITE_URL } from '../lib/site';
 import type { RegistryEntry } from '../lib/pipeline/types';
 
 export interface PublishOptions {
   candidateId?: string;
   dryRun?: boolean;
+  verifyLive?: boolean;
+  fetchFn?: typeof fetch;
+  execGit?: (cmd: string) => Promise<void>;
   keywordsDir?: string;
   quarantineDir?: string;
   postsDir?: string;
@@ -143,6 +148,37 @@ export async function runPublishScheduled(options: PublishOptions = {}): Promise
     const postUrl = `${cleanSiteUrl}/blog/${slug}`;
     const sitemapUrl = `${cleanSiteUrl}/sitemap.xml`;
 
+    // Post-publish live URL verification & automated rollback (AUTO-02, Plan 05-03)
+    const shouldVerifyLive = Boolean(options.verifyLive);
+    if (shouldVerifyLive) {
+      console.log(`[publish] Polling and verifying live URL: ${postUrl}`);
+      const liveReport = await verifyLiveUrl(postUrl, {
+        siteUrl: cleanSiteUrl,
+        fetchFn: options.fetchFn,
+      });
+
+      if (!liveReport.passed) {
+        console.error(`[publish] CRITICAL: Live verification failed for ${postUrl}`);
+        console.error(`[publish] Triggering automated rollback for ${candidate.id} (${slug})...`);
+
+        await executeAutomatedRollback({
+          entryId: candidate.id,
+          slug,
+          silo: candidate.silo,
+          failureReport: liveReport,
+          postsDir: options.postsDir,
+          quarantineDir: options.quarantineDir,
+          keywordsDir,
+          dryRun: options.dryRun,
+          execGit: options.execGit,
+        });
+
+        releaseClaimLock(claim.hash, keywordsDir);
+        throw new Error(`Live verification failed for ${postUrl}: ${liveReport.summary}`);
+      }
+      console.log(`[publish] Live verification passed for ${postUrl}`);
+    }
+
     console.log(`[publish] Dispatching dual-track indexing for ${postUrl}`);
     await dispatchDualTrackIndexing({
       postUrl,
@@ -161,11 +197,13 @@ export async function runPublishScheduled(options: PublishOptions = {}): Promise
     const errorMsg = err instanceof Error ? err.message : String(err);
     console.error(`[publish] Publication failed for ${candidate.id}:`, err);
 
-    recordDlqFailure(candidate.id, candidate.silo, errorMsg, {
-      keywordsDir,
-      quarantineDir: options.quarantineDir,
-      postsDir: options.postsDir,
-    });
+    if (!errorMsg.includes('Live verification failed')) {
+      recordDlqFailure(candidate.id, candidate.silo, errorMsg, {
+        keywordsDir,
+        quarantineDir: options.quarantineDir,
+        postsDir: options.postsDir,
+      });
+    }
 
     releaseClaimLock(claim.hash, keywordsDir);
     throw err;
@@ -182,11 +220,16 @@ if (
   const args = process.argv.slice(2);
   let candidateId: string | undefined;
   let dryRun = false;
+  let verifyLive: boolean | undefined;
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === '--dry-run') {
       dryRun = true;
+    } else if (arg === '--verify-live') {
+      verifyLive = true;
+    } else if (arg === '--no-verify-live') {
+      verifyLive = false;
     } else if (arg.startsWith('--candidate=')) {
       candidateId = arg.split('=')[1];
     } else if (arg === '--candidate' && args[i + 1]) {
@@ -196,7 +239,10 @@ if (
     }
   }
 
-  runPublishScheduled({ candidateId, dryRun })
+  // Real CLI default is verifyLive = true, offline dry-run default is false
+  const activeVerifyLive = verifyLive !== undefined ? verifyLive : !dryRun;
+
+  runPublishScheduled({ candidateId, dryRun, verifyLive: activeVerifyLive })
     .then((result) => {
       if (result.status === 'skipped' && result.reason?.includes('not found')) {
         process.exit(1);

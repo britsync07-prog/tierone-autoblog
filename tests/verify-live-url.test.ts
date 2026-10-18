@@ -1,5 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import {
   pollUntilLive,
   extractJsonLd,
@@ -7,7 +9,13 @@ import {
   scanPlaceholders,
   probeInternalLinks,
   verifyLiveUrl,
+  type LiveVerificationReport,
 } from '../lib/pipeline/publish/verifier';
+import { executeAutomatedRollback } from '../lib/pipeline/publish/rollback';
+import { runPublishScheduled } from '../scripts/publish-scheduled';
+import { loadShard, saveShard } from '../lib/pipeline/registry';
+import { readPipelineState } from '../lib/pipeline/qa/circuit-breaker';
+import type { RegistryShard, RegistryEntry } from '../lib/pipeline/types';
 
 const VALID_ARTICLE_HTML = `
 <!DOCTYPE html>
@@ -303,4 +311,251 @@ test('verifyLiveUrl: reports failure when live page contains placeholders and br
   assert.equal(report.placeholders.passed, false);
   assert.equal(report.links.allPassed, false);
   assert.match(report.summary, /^FAILED:/);
+});
+
+function setupTestEnv(testDir: string) {
+  rmSync(testDir, { recursive: true, force: true });
+  mkdirSync(join(testDir, 'posts'), { recursive: true });
+  mkdirSync(join(testDir, 'quarantine'), { recursive: true });
+  for (const s of ['ai-writing', 'ai-coding', 'ai-image', 'ai-productivity', 'ai-guides']) {
+    mkdirSync(join(testDir, 'keywords', s), { recursive: true });
+    writeFileSync(
+      join(testDir, 'keywords', s, 'registry.json'),
+      JSON.stringify({ version: 1, updatedAt: '2026-10-18T00:00:00.000Z', keywords: [] }),
+      'utf8',
+    );
+  }
+}
+
+test('executeAutomatedRollback: moves post to quarantine, updates registry, records circuit-breaker, and calls git unpublish commands', async () => {
+  const testDir = join(process.cwd(), 'tests', 'tmp-rollback-exec');
+  setupTestEnv(testDir);
+  const postsDir = join(testDir, 'posts');
+  const quarantineDir = join(testDir, 'quarantine');
+  const keywordsDir = join(testDir, 'keywords');
+
+  // Create post file
+  const postFile = join(postsDir, 'sample-failing-post.mdx');
+  writeFileSync(postFile, '# Sample Corrupted Post\n[TODO: fix]', 'utf8');
+
+  // Create registry shard
+  const initialEntry: RegistryEntry = {
+    id: 'kw-rollback-test',
+    keyword: 'sample rollback keyword',
+    silo: 'ai-coding',
+    stage: 'published',
+    createdAt: '2026-10-18T01:00:00.000Z',
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    draft: { slug: 'sample-failing-post', attempts: 1 },
+    qa: { passedAt: '2026-10-18T01:00:00.000Z' },
+  };
+  const shard: RegistryShard = {
+    version: 1,
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    keywords: [initialEntry],
+  };
+  saveShard(keywordsDir, 'ai-coding', shard);
+
+  const mockFailureReport: LiveVerificationReport = {
+    passed: false,
+    url: 'https://exclusivesources.online/blog/sample-failing-post',
+    durationMs: 450,
+    status: 200,
+    checks: [{ name: 'banned_placeholders', passed: false, message: 'Found [TODO: fix]' }],
+    jsonLd: {
+      valid: false,
+      articleFound: false,
+      articleValid: false,
+      breadcrumbFound: false,
+      breadcrumbValid: false,
+      errors: ['Missing Article schema'],
+    },
+    placeholders: { passed: false, clean: false, matches: ['[TODO: fix]'] },
+    links: { allPassed: true, probedCount: 0, brokenLinks: [] },
+    summary: 'FAILED: Live URL failed verification: banned_placeholders: Found [TODO: fix]',
+  };
+
+  const executedGitCommands: string[] = [];
+  const mockExecGit = async (cmd: string) => {
+    executedGitCommands.push(cmd);
+  };
+
+  const rollbackResult = await executeAutomatedRollback({
+    entryId: 'kw-rollback-test',
+    slug: 'sample-failing-post',
+    silo: 'ai-coding',
+    failureReport: mockFailureReport,
+    postsDir,
+    quarantineDir,
+    keywordsDir,
+    dryRun: false,
+    execGit: mockExecGit,
+  });
+
+  assert.equal(rollbackResult.rolledBack, true);
+  assert.equal(existsSync(postFile), false);
+  assert.equal(existsSync(join(quarantineDir, 'kw-rollback-test.mdx')), true);
+  assert.equal(existsSync(rollbackResult.reportPath), true);
+
+  // Verify incident report content
+  const incidentReport = JSON.parse(readFileSync(rollbackResult.reportPath, 'utf8'));
+  assert.equal(incidentReport.entryId, 'kw-rollback-test');
+  assert.equal(incidentReport.slug, 'sample-failing-post');
+  assert.equal(incidentReport.reason, 'live_verification_failed');
+
+  // Verify registry entry transitioned to 'quarantined'
+  const updatedShard = loadShard(keywordsDir, 'ai-coding');
+  const updatedEntry = updatedShard.keywords.find((k) => k.id === 'kw-rollback-test');
+  assert.equal(updatedEntry?.stage, 'quarantined');
+  assert.equal(updatedEntry?.quarantine?.failedRule, 'live_verification_failed');
+
+  // Verify circuit breaker logged failure
+  const state = readPipelineState(keywordsDir);
+  assert.equal(state.consecutiveFailures, 1);
+  assert.equal(state.failureHistory[0].id, 'kw-rollback-test');
+  assert.equal(state.failureHistory[0].failedRule, 'live_verification_failed');
+
+  // Verify git rollback commands were issued
+  assert.equal(executedGitCommands.length, 3);
+  assert.match(executedGitCommands[0], /git add/);
+  assert.match(executedGitCommands[1], /git commit -m "\[auto-unpublish\] sample-failing-post: live verification failed \[skip ci\]"/);
+  assert.match(executedGitCommands[2], /git push origin master/);
+
+  rmSync(testDir, { recursive: true, force: true });
+});
+
+test('runPublishScheduled with verifyLive: executes automated rollback when live verification fails', async () => {
+  const testDir = join(process.cwd(), 'tests', 'tmp-rollback-fail');
+  setupTestEnv(testDir);
+  const postsDir = join(testDir, 'posts');
+  const quarantineDir = join(testDir, 'quarantine');
+  const keywordsDir = join(testDir, 'keywords');
+
+  // Create post file
+  const postFile = join(postsDir, 'bad-live-post.mdx');
+  writeFileSync(postFile, '# Bad Post\n[TODO]', 'utf8');
+
+  // Create drafted candidate
+  const entry: RegistryEntry = {
+    id: 'kw-verify-fail',
+    keyword: 'bad keyword candidate',
+    silo: 'ai-coding',
+    stage: 'drafted',
+    createdAt: '2026-10-18T01:00:00.000Z',
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    brief: { completedAt: '2026-10-18T01:00:00.000Z' },
+    outline: { completedAt: '2026-10-18T01:00:00.000Z', lint: 'pass' },
+    draft: { slug: 'bad-live-post', attempts: 1 },
+    qa: { passedAt: '2026-10-18T01:00:00.000Z' },
+  };
+  const shard: RegistryShard = {
+    version: 1,
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    keywords: [entry],
+  };
+  saveShard(keywordsDir, 'ai-coding', shard);
+
+  // Mock fetch that returns placeholder in HTML
+  const mockFetch = async () =>
+    new Response('<html><body><h1>Bad</h1><p>[TODO: unfinished draft]</p></body></html>', {
+      status: 200,
+      headers: { 'Content-Type': 'text/html' },
+    });
+
+  const executedGitCommands: string[] = [];
+  const mockExecGit = async (cmd: string) => {
+    executedGitCommands.push(cmd);
+  };
+
+  await assert.rejects(
+    async () => {
+      await runPublishScheduled({
+        candidateId: 'kw-verify-fail',
+        verifyLive: true,
+        keywordsDir,
+        quarantineDir,
+        postsDir,
+        siteUrl: 'https://exclusivesources.online',
+        fetchFn: mockFetch as any,
+        execGit: mockExecGit,
+      });
+    },
+    (err: Error) => {
+      assert.match(err.message, /Live verification failed/);
+      return true;
+    },
+  );
+
+  // Post should be moved to quarantine
+  assert.equal(existsSync(postFile), false);
+  assert.equal(existsSync(join(quarantineDir, 'kw-verify-fail.mdx')), true);
+
+  // Registry entry should be quarantined
+  const finalShard = loadShard(keywordsDir, 'ai-coding');
+  assert.equal(finalShard.keywords[0].stage, 'quarantined');
+  assert.equal(finalShard.keywords[0].quarantine?.failedRule, 'live_verification_failed');
+
+  // Rollback git commit should have been called
+  assert.ok(executedGitCommands.some((c) => c.includes('[auto-unpublish] bad-live-post')));
+
+  rmSync(testDir, { recursive: true, force: true });
+});
+
+test('runPublishScheduled with verifyLive: succeeds and publishes candidate when live verification passes', async () => {
+  const testDir = join(process.cwd(), 'tests', 'tmp-rollback-pass');
+  setupTestEnv(testDir);
+  const postsDir = join(testDir, 'posts');
+  const quarantineDir = join(testDir, 'quarantine');
+  const keywordsDir = join(testDir, 'keywords');
+
+  // Create post file
+  const postFile = join(postsDir, 'good-live-post.mdx');
+  writeFileSync(postFile, '# Good Post\nClean content', 'utf8');
+
+  // Create drafted candidate
+  const entry: RegistryEntry = {
+    id: 'kw-verify-pass',
+    keyword: 'good keyword candidate',
+    silo: 'ai-coding',
+    stage: 'drafted',
+    createdAt: '2026-10-18T01:00:00.000Z',
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    brief: { completedAt: '2026-10-18T01:00:00.000Z' },
+    outline: { completedAt: '2026-10-18T01:00:00.000Z', lint: 'pass' },
+    draft: { slug: 'good-live-post', attempts: 1 },
+    qa: { passedAt: '2026-10-18T01:00:00.000Z' },
+  };
+  const shard: RegistryShard = {
+    version: 1,
+    updatedAt: '2026-10-18T01:00:00.000Z',
+    keywords: [entry],
+  };
+  saveShard(keywordsDir, 'ai-coding', shard);
+
+  // Mock fetch that returns VALID_ARTICLE_HTML
+  const mockFetch = async () =>
+    new Response(VALID_ARTICLE_HTML, {
+      status: 200,
+      headers: { 'Content-Type': 'text/html' },
+    });
+
+  const res = await runPublishScheduled({
+    candidateId: 'kw-verify-pass',
+    verifyLive: true,
+    keywordsDir,
+    quarantineDir,
+    postsDir,
+    siteUrl: 'https://exclusivesources.online',
+    fetchFn: mockFetch as any,
+  });
+
+  assert.equal(res.status, 'published');
+  assert.equal(res.slug, 'good-live-post');
+
+  // Shard should be published
+  const finalShard = loadShard(keywordsDir, 'ai-coding');
+  assert.equal(finalShard.keywords[0].stage, 'published');
+  assert.ok(finalShard.keywords[0].publishedAt);
+
+  rmSync(testDir, { recursive: true, force: true });
 });

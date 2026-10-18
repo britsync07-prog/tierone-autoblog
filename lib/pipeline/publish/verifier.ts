@@ -97,14 +97,22 @@ export async function pollUntilLive(
 
   if (typeof optionsOrTimeout === 'number') {
     maxWaitMs = optionsOrTimeout;
-    if (customFetchArg) fetchFn = customFetchArg;
+    if (customFetchArg) {
+      fetchFn = customFetchArg;
+      delayMs = 0;
+    }
   } else if (optionsOrTimeout && typeof optionsOrTimeout === 'object') {
     if (optionsOrTimeout.maxWaitMs !== undefined) maxWaitMs = optionsOrTimeout.maxWaitMs;
     else if (optionsOrTimeout.timeoutMs !== undefined) maxWaitMs = optionsOrTimeout.timeoutMs;
 
-    if (optionsOrTimeout.initialDelayMs !== undefined) delayMs = optionsOrTimeout.initialDelayMs;
     if (optionsOrTimeout.fetchFn) fetchFn = optionsOrTimeout.fetchFn;
     else if (optionsOrTimeout.customFetch) fetchFn = optionsOrTimeout.customFetch;
+
+    if (optionsOrTimeout.initialDelayMs !== undefined) {
+      delayMs = optionsOrTimeout.initialDelayMs;
+    } else if (optionsOrTimeout.fetchFn || optionsOrTimeout.customFetch) {
+      delayMs = 0;
+    }
   }
 
   if (delayMs > 0) {
