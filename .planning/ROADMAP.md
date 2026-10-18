@@ -76,7 +76,7 @@ Cross-cutting constraints: single-source SEO strings via lib/site.ts + lib/silos
   3. Drafts land at 1,500–2,500 words in the strict template (H1 50–60 chars, meta 150–160, TL;DR ≤100 words, H2/H3 body, tables/lists, 3–5 PAA-derived FAQs, conclusion + CTA)
   4. Posts render a comparison-table component and a related-post block (same-silo, zero orphans, mandatory pillar up-link)
   5. Post images ship as hero/OG/in-article in AVIF/WebP with LCP preload and enforced alt text
-**Plans:** 4/6 plans executed
+**Plans:** 6/6 plans executed
 
 Plans:
 - [x] 03-01-PLAN.md — Registry + governance foundation: types/registry/budget/runner, 5 shards + seed topics, check:registry, whole-phase npm plumbing (W1)
@@ -84,7 +84,7 @@ Plans:
 - [x] 03-03-PLAN.md — Brief + outline intelligence: dual-provider LLM client, gap-brief stage, outline stage + structure-lint gate check:outline (W2)
 - [x] 03-04-PLAN.md — Comparison-table as frontmatter data: draft-schema single source, <ComparisonTable> component, seed-01 retrofit, check-seeds conditional (W2)
 - [x] 03-05-PLAN.md — Image assets before drafts: images module + assets stage (hero/OG/in-article AVIF/WebP), hero render + MDX image mapping (W3)
-- [ ] 03-06-PLAN.md — Draft stage + template gate: draft-body LLM task, outlined→drafted with gate-before-advance, check:template, real full-chain run, CI wiring (W4)
+- [x] 03-06-PLAN.md — Draft stage + template gate: draft-body LLM task, outlined→drafted with gate-before-advance, check:template, real full-chain run, CI wiring (W4)
 
 **UI hint**: yes
 
@@ -130,7 +130,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Site Foundation + Trust | 4/4 | Complete (verified 5/5, 2026-10-17) | 2026-10-17 |
 | 2. SEO Architecture + Silo IA | 4/4 | Complete (phase sweep verified 5/5 criteria, 2026-10-17) | 2026-10-17 |
-| 3. Content Pipeline | 4/6 | In Progress|  |
+| 3. Content Pipeline | 6/6 | Complete (pipeline verified 5/5 criteria, 2026-10-18) | 2026-10-18 |
 | 4. Quality Gates | 0/TBD | Not started | - |
 | 5. Autonomous Publish + Indexing | 0/TBD | Not started | - |
 | 6. Observe, Refresh + Compound | 0/TBD | Not started | - |
