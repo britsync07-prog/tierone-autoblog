@@ -75,14 +75,16 @@ const STAGES = (() => {
 check('silo-source', SILO_SLUGS.length === 5, `SILO_SLUGS parsed = [${SILO_SLUGS.join(', ')}]`);
 check(
   'stage-vocab',
-  STAGES.length === 7 && STAGES.includes('rejected') && STAGES.includes('quarantined'),
-  `RegistryStage parsed = [${STAGES.join(', ')}] (expected 7 values incl. 'quarantined' and 'rejected')`,
+  (STAGES.length === 7 || STAGES.length === 8) &&
+    STAGES.includes('rejected') &&
+    STAGES.includes('quarantined'),
+  `RegistryStage parsed = [${STAGES.join(', ')}] (expected 7-8 values incl. 'quarantined' and 'rejected')`,
 );
 
 // ---- group 2: per-silo shards ----
 
 const ID_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const chainIdx = (stage) => ['expanded', 'filtered', 'briefed', 'outlined', 'drafted'].indexOf(stage);
+const chainIdx = (stage) => ['expanded', 'filtered', 'briefed', 'outlined', 'drafted', 'published'].indexOf(stage);
 
 function validateEntry(silo, e, file, i) {
   const ctx = `${file} entry[${i}] (${e?.id ?? '?'})`;
@@ -111,8 +113,8 @@ function validateEntry(silo, e, file, i) {
     if (idx >= chainIdx('outlined')) {
       check('registry:' + silo, e.outline?.lint === 'pass', `${ctx}: stage '${e.stage}' requires outline.lint === 'pass'`);
     }
-    if (e.stage === 'drafted') {
-      check('registry:' + silo, typeof e.draft?.slug === 'string' && e.draft.slug.length > 0, `${ctx}: stage 'drafted' requires draft.slug`);
+    if (e.stage === 'drafted' || e.stage === 'published') {
+      check('registry:' + silo, typeof e.draft?.slug === 'string' && e.draft.slug.length > 0, `${ctx}: stage '${e.stage}' requires draft.slug`);
     }
   }
   if (e.images) {

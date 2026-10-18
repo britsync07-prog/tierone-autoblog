@@ -1,0 +1,262 @@
+[
+  {
+    "id": "eq-write-01",
+    "query": "best ai writing assistants 2026 comparison",
+    "silo": "ai-writing",
+    "targetAudience": "Content marketers and professional bloggers",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-write-02",
+    "query": "jasper vs copy ai for marketing teams",
+    "silo": "ai-writing",
+    "targetAudience": "Marketing team leads and copywriters",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-write-03",
+    "query": "how to use claude for long form blog drafting",
+    "silo": "ai-writing",
+    "targetAudience": "SEO writers and long-form essayists",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-write-04",
+    "query": "quillbot paraphrasing alternatives and drawbacks",
+    "silo": "ai-writing",
+    "targetAudience": "Students, researchers, and content editors",
+    "intent": "troubleshooting",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-code-01",
+    "query": "chatgpt vs claude for coding benchmarks 2026",
+    "silo": "ai-coding",
+    "targetAudience": "Senior software engineers and tech leads",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-code-02",
+    "query": "github copilot vs cursor ide workflow comparison",
+    "silo": "ai-coding",
+    "targetAudience": "Full-stack developers and engineering teams",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-code-03",
+    "query": "how to use ai for automated code reviews",
+    "silo": "ai-coding",
+    "targetAudience": "DevOps engineers and engineering managers",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-code-04",
+    "query": "debugging complex typescript errors with ai",
+    "silo": "ai-coding",
+    "targetAudience": "TypeScript developers and frontend engineers",
+    "intent": "troubleshooting",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-image-01",
+    "query": "best free ai image generators 2026 ranked",
+    "silo": "ai-image",
+    "targetAudience": "Designers, social media creators, and indie hackers",
+    "intent": "best-of",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-image-02",
+    "query": "midjourney vs dall e 3 commercial license comparison",
+    "silo": "ai-image",
+    "targetAudience": "Commercial artists, agency owners, and product designers",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-image-03",
+    "query": "how to write prompts for photorealistic ai images",
+    "silo": "ai-image",
+    "targetAudience": "Prompt engineers and digital illustrators",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-image-04",
+    "query": "stable diffusion local setup guide and requirements",
+    "silo": "ai-image",
+    "targetAudience": "Local AI enthusiasts and technical artists",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-prod-01",
+    "query": "best ai meeting note takers compared 2026",
+    "silo": "ai-productivity",
+    "targetAudience": "Remote team managers and knowledge workers",
+    "intent": "best-of",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-prod-02",
+    "query": "ai email assistant tools for inbox zero",
+    "silo": "ai-productivity",
+    "targetAudience": "Executives, founders, and busy professionals",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-prod-03",
+    "query": "notion ai vs obsidian for knowledge management",
+    "silo": "ai-productivity",
+    "targetAudience": "Productivity enthusiasts and researchers",
+    "intent": "comparison",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-prod-04",
+    "query": "ai calendar scheduling assistants tested",
+    "silo": "ai-productivity",
+    "targetAudience": "Operations managers and executive assistants",
+    "intent": "best-of",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-guide-01",
+    "query": "how to write better ai prompts beginner guide",
+    "silo": "ai-guides",
+    "targetAudience": "AI beginners and general knowledge workers",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-guide-02",
+    "query": "how to verify ai generated factual claims",
+    "silo": "ai-guides",
+    "targetAudience": "Journalists, researchers, and content reviewers",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-guide-03",
+    "query": "common prompt engineering mistakes to avoid",
+    "silo": "ai-guides",
+    "targetAudience": "Prompt engineers and developers integrating LLMs",
+    "intent": "troubleshooting",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  },
+  {
+    "id": "eq-guide-04",
+    "query": "multi step reasoning prompts for complex tasks",
+    "silo": "ai-guides",
+    "targetAudience": "Advanced AI practitioners and technical leads",
+    "intent": "guide",
+    "expectedGainPoints": [
+      "workflowGuidance",
+      "comparisonSynthesis",
+      "edgeCaseCoverage",
+      "gapClosure"
+    ]
+  }
+]
