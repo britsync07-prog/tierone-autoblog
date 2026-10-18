@@ -18,6 +18,7 @@
     "pipeline:outline": "tsx lib/pipeline/run.ts --stage outline",
     "pipeline:assets": "tsx lib/pipeline/run.ts --stage assets",
     "pipeline:draft": "tsx lib/pipeline/run.ts --stage draft",
+    "pipeline:qa": "tsx lib/pipeline/run.ts --stage qa",
     "check:registry": "node scripts/check-registry.mjs",
     "check:outline": "node scripts/check-outline.mjs",
     "check:template": "node scripts/check-template.mjs",

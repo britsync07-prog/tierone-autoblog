@@ -1,0 +1,11 @@
+{
+  "paused": false,
+  "consecutiveFailures": 0,
+  "failureHistory": [
+    {
+      "id": "best-ai-writing-tools",
+      "failedRule": "byline-eeat",
+      "timestamp": "2026-10-18T07:41:33.489Z"
+    }
+  ]
+}

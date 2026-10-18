@@ -159,7 +159,11 @@ Return structured JSON conforming to the schema:
   ];
 
   try {
-    const res = await completeJson('generic-structured', extractedClaimsSchema, messages);
+    const res = await completeJson({
+      task: 'generic-structured',
+      zodSchema: extractedClaimsSchema,
+      messages,
+    });
     return res.parsed;
   } catch {
     // Graceful fallback to deterministic extractor on transport failure

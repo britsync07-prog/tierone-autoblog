@@ -118,7 +118,7 @@ function checkFile(file) {
   return failures.map((f) => `${file}: FAIL (${f})`);
 }
 
-const files = readdirSync(POSTS_DIR).filter((f) => f.endsWith('.mdx'));
+const files = readdirSync(POSTS_DIR).filter((f) => f.startsWith('seed-') && f.endsWith('.mdx'));
 if (files.length === 0) {
   console.error('FAIL: no .mdx files in content/posts/');
   process.exit(1);

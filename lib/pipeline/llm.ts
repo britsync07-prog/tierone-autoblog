@@ -153,6 +153,14 @@ export function assertLlmReady(): LlmProviderReady {
   return cfg;
 }
 
+export function isLlmConfigured(): boolean {
+  try {
+    return Boolean(readProviderConfig('primary'));
+  } catch {
+    return false;
+  }
+}
+
 function modelFor(task: LlmTask, cfg: LlmProviderReady): string {
   if (NARROW_TASKS.includes(task)) {
     return process.env.LLM_MODEL_CHEAP ?? cfg.model;

@@ -38,7 +38,7 @@ import { readPipelineState } from './qa/circuit-breaker';
 /** CLI stage chain — top-to-bottom run order. `assets` precedes `draft`
  * because drafts reference the hero/in-article images the assets stage
  * produces (PIPE-05 hero preload/feed contract). */
-export const STAGE_ORDER = ['expand', 'brief', 'outline', 'assets', 'draft'] as const;
+export const STAGE_ORDER = ['expand', 'brief', 'outline', 'assets', 'draft', 'qa'] as const;
 export type StageName = (typeof STAGE_ORDER)[number];
 
 /** What every stage module returns so the runner can print one summary line. */

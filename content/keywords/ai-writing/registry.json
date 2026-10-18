@@ -234,7 +234,7 @@
       "stage": "drafted",
       "seedTopic": "best ai writing tools",
       "createdAt": "2026-10-17T11:16:03.671Z",
-      "updatedAt": "2026-10-18T05:12:44.067Z",
+      "updatedAt": "2026-10-18T07:41:33.488Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -300,6 +300,11 @@
         "slug": "best-ai-writing-tools",
         "landedAt": "2026-10-18T05:12:44.067Z",
         "attempts": 2
+      },
+      "qa": {
+        "passedAt": "2026-10-18T07:46:30.744Z",
+        "informationGainScore": 3,
+        "claimsChecked": 1
       }
     },
     {
