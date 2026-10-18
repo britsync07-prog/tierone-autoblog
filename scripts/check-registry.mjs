@@ -75,8 +75,8 @@ const STAGES = (() => {
 check('silo-source', SILO_SLUGS.length === 5, `SILO_SLUGS parsed = [${SILO_SLUGS.join(', ')}]`);
 check(
   'stage-vocab',
-  STAGES.length === 6 && STAGES.includes('rejected'),
-  `RegistryStage parsed = [${STAGES.join(', ')}] (expected 6 values incl. 'rejected')`,
+  STAGES.length === 7 && STAGES.includes('rejected') && STAGES.includes('quarantined'),
+  `RegistryStage parsed = [${STAGES.join(', ')}] (expected 7 values incl. 'quarantined' and 'rejected')`,
 );
 
 // ---- group 2: per-silo shards ----
@@ -99,6 +99,9 @@ function validateEntry(silo, e, file, i) {
   if (e.stage === 'rejected') {
     // D-04: no silent discards — every rejection carries an auditable reason
     check('registry:' + silo, typeof e.rejectionReason === 'string' && e.rejectionReason.trim().length > 0, `${ctx}: rejected without rejectionReason`);
+  } else if (e.stage === 'quarantined') {
+    check('registry:' + silo, typeof e.quarantine?.failedRule === 'string' && e.quarantine.failedRule.trim().length > 0, `${ctx}: quarantined without quarantine.failedRule`);
+    check('registry:' + silo, typeof e.quarantine?.reportPath === 'string' && e.quarantine.reportPath.trim().length > 0, `${ctx}: quarantined without quarantine.reportPath`);
   } else {
     check('registry:' + silo, STAGES.includes(e.stage), `${ctx}: stage '${e.stage}' not in RegistryStage vocabulary`);
     const idx = chainIdx(e.stage);

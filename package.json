@@ -20,7 +20,10 @@
     "pipeline:draft": "tsx lib/pipeline/run.ts --stage draft",
     "check:registry": "node scripts/check-registry.mjs",
     "check:outline": "node scripts/check-outline.mjs",
-    "check:template": "node scripts/check-template.mjs"
+    "check:template": "node scripts/check-template.mjs",
+    "quarantine:list": "node scripts/quarantine-list.mjs",
+    "quarantine:view": "node scripts/quarantine-view.mjs",
+    "pipeline:resume": "node scripts/pipeline-resume.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

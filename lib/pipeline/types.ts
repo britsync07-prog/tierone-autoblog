@@ -8,6 +8,7 @@ export type RegistryStage =
   | 'briefed'
   | 'outlined'
   | 'drafted'
+  | 'quarantined'
   | 'rejected';
 export type GeoCode = 'us' | 'uk' | 'ca' | 'au';
 export const GEO_CODES: GeoCode[] = ['us', 'uk', 'ca', 'au'];
@@ -67,6 +68,17 @@ export interface RegistryEntry {
    * entry is still 'outlined' — it only gains a landedAt once the gate passes. */
   draft?: { slug: string; landedAt?: string; attempts: number; lastError?: string };
   images?: { hero: ImageSlot; inArticle?: ImageSlot[]; completedAt: string };
+  quarantine?: {
+    failedRule: string;
+    score?: number | string;
+    reportPath: string;
+    quarantinedAt: string;
+  };
+  qa?: {
+    passedAt: string;
+    informationGainScore?: number;
+    claimsChecked?: number;
+  };
 }
 
 /** Per-silo shard file (D-08): content/keywords/{silo}/registry.json */

@@ -33,6 +33,7 @@ import {
 } from './registry';
 import { SILO_SLUGS, type SiloSlug } from '../silos';
 import type { RegistryEntry, RegistryStage, RegistryShard } from './types';
+import { readPipelineState } from './qa/circuit-breaker';
 
 /** CLI stage chain — top-to-bottom run order. `assets` precedes `draft`
  * because drafts reference the hero/in-article images the assets stage
@@ -155,6 +156,19 @@ function isMissingStageModule(err: unknown, stage: StageName): boolean {
 
 async function runPipeline(options: CliOptions): Promise<number> {
   const { stages, registryDir } = options;
+
+  // Circuit-breaker preflight check (D-10/D-11):
+  const pipelineState = readPipelineState(registryDir);
+  if (pipelineState.paused) {
+    console.log(
+      `FAIL: Pipeline is PAUSED due to ${pipelineState.consecutiveFailures} consecutive QA failures.`,
+    );
+    console.log(
+      `See content/quarantine/ALERT.md for details. Run 'npm run pipeline:resume' to reset.`,
+    );
+    return 1;
+  }
+
   let anyFailure = false;
   let aborted = false;
 

@@ -80,8 +80,12 @@ function validateEntry(silo: SiloSlug, entry: unknown, file: string, index: numb
     if (!isNonEmpty(e.rejectionReason)) {
       fail(`${ctx} (${e.id}): stage 'rejected' requires a non-empty rejectionReason`);
     }
+  } else if (e.stage === 'quarantined') {
+    if (!e.quarantine || !isNonEmpty(e.quarantine.failedRule) || !isNonEmpty(e.quarantine.reportPath)) {
+      fail(`${ctx} (${e.id}): stage 'quarantined' requires quarantine.failedRule and quarantine.reportPath`);
+    }
   } else if (stageIdx === -1) {
-    fail(`${ctx} (${e.id}): unknown stage '${String(e.stage)}' (vocabulary: ${STAGE_CHAIN.join(' -> ')}, rejected)`);
+    fail(`${ctx} (${e.id}): unknown stage '${String(e.stage)}' (vocabulary: ${STAGE_CHAIN.join(' -> ')}, quarantined, rejected)`);
   } else {
     // Promoted stages carry the proof of each completed stage (D-04).
     if (stageIdx >= STAGE_CHAIN.indexOf('briefed') && !isNonEmpty(e.brief?.completedAt)) {
@@ -189,9 +193,15 @@ export function listPromotable(
   return out.slice(0, limit);
 }
 
-/** Legal transitions: exactly +1 in STAGE_CHAIN, or to terminal 'rejected'. */
+/** Legal transitions: exactly +1 in STAGE_CHAIN, to 'quarantined' from 'drafted', or to terminal 'rejected'. */
 function assertTransitionStage(from: RegistryStage, to: RegistryStage): void {
   if (to === 'rejected') return;
+  if (to === 'quarantined') {
+    if (from !== 'drafted') {
+      fail(`invalid stage transition '${from}' -> 'quarantined' (only 'drafted' entries can be quarantined)`);
+    }
+    return;
+  }
   const fromIdx = STAGE_CHAIN.indexOf(from);
   const toIdx = STAGE_CHAIN.indexOf(to);
   if (fromIdx === -1 || toIdx === -1) {
@@ -224,6 +234,27 @@ export function reject(entry: RegistryEntry, reason: string): RegistryEntry {
   }
   entry.stage = 'rejected';
   entry.rejectionReason = reason;
+  entry.updatedAt = new Date().toISOString();
+  return entry;
+}
+
+/** Quarantine a drafted entry with structured failure info (D-01/D-02). */
+export function quarantineEntry(
+  entry: RegistryEntry,
+  info: NonNullable<RegistryEntry['quarantine']>,
+): RegistryEntry {
+  assertTransitionStage(entry.stage, 'quarantined');
+  if (!isNonEmpty(info.failedRule)) {
+    fail('quarantineEntry requires a non-empty failedRule');
+  }
+  if (!isNonEmpty(info.reportPath)) {
+    fail('quarantineEntry requires a non-empty reportPath');
+  }
+  entry.stage = 'quarantined';
+  entry.quarantine = {
+    ...info,
+    quarantinedAt: info.quarantinedAt || new Date().toISOString(),
+  };
   entry.updatedAt = new Date().toISOString();
   return entry;
 }
