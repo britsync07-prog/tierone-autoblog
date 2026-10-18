@@ -1,4 +1,25 @@
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { withContentCollections } from '@content-collections/next';
+
+function loadJsonRedirects() {
+  try {
+    const file = resolve('content/redirects.json');
+    if (!existsSync(file)) return [];
+    const data = JSON.parse(readFileSync(file, 'utf8'));
+    if (!Array.isArray(data)) return [];
+    return data
+      .filter((item) => item && typeof item === 'object' && item.source && item.destination)
+      .map((item) => ({
+        source: String(item.source),
+        destination: String(item.destination),
+        permanent: item.permanent ?? true,
+      }));
+  } catch (err) {
+    console.warn('[next.config.mjs] Failed to load content/redirects.json:', err);
+    return [];
+  }
+}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -55,6 +76,9 @@ const nextConfig = {
         destination: '/api/indexnow?key=:key',
       },
     ];
+  },
+  async redirects() {
+    return loadJsonRedirects();
   },
 };
 
