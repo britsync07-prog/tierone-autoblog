@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "tsx --test tests/**/*.test.ts",
     "check:seeds": "node scripts/check-seeds.mjs",
     "check:crawl": "node scripts/check-crawl.mjs",
     "pipeline": "tsx lib/pipeline/run.ts",
@@ -24,7 +25,8 @@
     "check:template": "node scripts/check-template.mjs",
     "quarantine:list": "node scripts/quarantine-list.mjs",
     "quarantine:view": "node scripts/quarantine-view.mjs",
-    "pipeline:resume": "node scripts/pipeline-resume.mjs"
+    "pipeline:resume": "node scripts/pipeline-resume.mjs",
+    "publish:scheduled": "tsx scripts/publish-scheduled.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",
