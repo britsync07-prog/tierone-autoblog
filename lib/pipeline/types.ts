@@ -9,6 +9,7 @@ export type RegistryStage =
   | 'outlined'
   | 'drafted'
   | 'quarantined'
+  | 'published'
   | 'rejected';
 export type GeoCode = 'us' | 'uk' | 'ca' | 'au';
 export const GEO_CODES: GeoCode[] = ['us', 'uk', 'ca', 'au'];
@@ -79,6 +80,7 @@ export interface RegistryEntry {
     informationGainScore?: number;
     claimsChecked?: number;
   };
+  publishedAt?: string;
 }
 
 /** Per-silo shard file (D-08): content/keywords/{silo}/registry.json */

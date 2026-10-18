@@ -27,6 +27,11 @@ export interface PipelineState {
   consecutiveFailures: number;
   failureHistory: FailureRecord[];
   reason?: string;
+  activeClaim?: {
+    hash: string;
+    entryId: string;
+    claimedAt: string;
+  };
 }
 
 export interface CircuitBreakerOptions {
@@ -73,7 +78,7 @@ export function readPipelineState(keywordsDir?: string): PipelineState {
   }
 }
 
-function writePipelineState(state: PipelineState, keywordsDir?: string): void {
+export function writePipelineState(state: PipelineState, keywordsDir?: string): void {
   const dir = resolve(keywordsDir ?? DEFAULT_KEYWORDS_DIR);
   mkdirSync(dir, { recursive: true });
   const file = join(dir, 'pipeline-state.json');

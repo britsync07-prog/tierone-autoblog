@@ -84,8 +84,15 @@ function validateEntry(silo: SiloSlug, entry: unknown, file: string, index: numb
     if (!e.quarantine || !isNonEmpty(e.quarantine.failedRule) || !isNonEmpty(e.quarantine.reportPath)) {
       fail(`${ctx} (${e.id}): stage 'quarantined' requires quarantine.failedRule and quarantine.reportPath`);
     }
+  } else if (e.stage === 'published') {
+    if (!isNonEmpty(e.draft?.slug)) {
+      fail(`${ctx} (${e.id}): stage 'published' requires draft.slug`);
+    }
+    if (!isNonEmpty(e.qa?.passedAt)) {
+      fail(`${ctx} (${e.id}): stage 'published' requires qa.passedAt`);
+    }
   } else if (stageIdx === -1) {
-    fail(`${ctx} (${e.id}): unknown stage '${String(e.stage)}' (vocabulary: ${STAGE_CHAIN.join(' -> ')}, quarantined, rejected)`);
+    fail(`${ctx} (${e.id}): unknown stage '${String(e.stage)}' (vocabulary: ${STAGE_CHAIN.join(' -> ')}, quarantined, published, rejected)`);
   } else {
     // Promoted stages carry the proof of each completed stage (D-04).
     if (stageIdx >= STAGE_CHAIN.indexOf('briefed') && !isNonEmpty(e.brief?.completedAt)) {
@@ -193,12 +200,18 @@ export function listPromotable(
   return out.slice(0, limit);
 }
 
-/** Legal transitions: exactly +1 in STAGE_CHAIN, to 'quarantined' from 'drafted', or to terminal 'rejected'. */
-function assertTransitionStage(from: RegistryStage, to: RegistryStage): void {
+/** Legal transitions: exactly +1 in STAGE_CHAIN, to 'quarantined' from 'drafted', to 'published' from 'drafted' or 'quarantined', or to terminal 'rejected'. */
+export function assertTransitionStage(from: RegistryStage, to: RegistryStage): void {
   if (to === 'rejected') return;
   if (to === 'quarantined') {
     if (from !== 'drafted') {
       fail(`invalid stage transition '${from}' -> 'quarantined' (only 'drafted' entries can be quarantined)`);
+    }
+    return;
+  }
+  if (to === 'published') {
+    if (from !== 'drafted' && from !== 'quarantined') {
+      fail(`invalid stage transition '${from}' -> 'published' (only 'drafted' or 'quarantined' entries can be published)`);
     }
     return;
   }
@@ -255,6 +268,21 @@ export function quarantineEntry(
     ...info,
     quarantinedAt: info.quarantinedAt || new Date().toISOString(),
   };
+  entry.updatedAt = new Date().toISOString();
+  return entry;
+}
+
+/** Mark a drafted or restored entry as published with timestamp (Plan 05-02). */
+export function publishEntry(entry: RegistryEntry): RegistryEntry {
+  assertTransitionStage(entry.stage, 'published');
+  if (!isNonEmpty(entry.draft?.slug)) {
+    fail(`publishEntry (${entry.id}): requires draft.slug`);
+  }
+  if (!isNonEmpty(entry.qa?.passedAt)) {
+    fail(`publishEntry (${entry.id}): requires qa.passedAt`);
+  }
+  entry.stage = 'published';
+  entry.publishedAt = new Date().toISOString();
   entry.updatedAt = new Date().toISOString();
   return entry;
 }
