@@ -14,8 +14,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Site Foundation + Trust** - Fast, trustworthy article site on the edge with seed posts
 - [x] **Phase 2: SEO Architecture + Silo IA** - Crawlable flat-URL site with silo link graph and single-locale plumbing (all 5 success criteria verified via 02-04 phase sweep)
-- [ ] **Phase 3: Content Pipeline** - Serial gated pipeline from keyword registry to structured draft
-- [ ] **Phase 4: Quality Gates** - Fail-closed EEAT/anti-spam gates with quarantine and auto-pause
+- [x] **Phase 3: Content Pipeline** - Serial gated pipeline from keyword registry to structured draft
+- [x] **Phase 4: Quality Gates** - Fail-closed EEAT/anti-spam gates with quarantine and auto-pause
 - [ ] **Phase 5: Autonomous Publish + Indexing** - Throttled cron publishing with live-URL verification and dual-track indexing
 - [ ] **Phase 6: Observe, Refresh + Compound** - Country-segmented analytics driving refresh, pillars, and gated velocity scale
 
