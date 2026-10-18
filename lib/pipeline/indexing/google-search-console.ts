@@ -56,6 +56,15 @@ export function getGscAuth(
   });
 }
 
+export function formatGscSiteUrl(siteUrl: string): string {
+  const envUrl = process.env.GSC_SITE_URL?.trim();
+  const target = envUrl || siteUrl;
+  if (target.startsWith('sc-domain:')) {
+    return target.replace(/\/+$/, '');
+  }
+  return target.endsWith('/') ? target : `${target}/`;
+}
+
 export async function submitGscSitemap(options: GscSubmitOptions): Promise<GscSubmitResult> {
   const clientEmail = (options.clientEmail ?? process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL)?.trim();
   const rawPrivateKey = (options.privateKey ?? process.env.GOOGLE_PRIVATE_KEY)?.trim();
@@ -75,9 +84,7 @@ export async function submitGscSitemap(options: GscSubmitOptions): Promise<GscSu
   }
 
   try {
-    const formattedSiteUrl = options.siteUrl.endsWith('/')
-      ? options.siteUrl
-      : `${options.siteUrl}/`;
+    const formattedSiteUrl = formatGscSiteUrl(options.siteUrl);
 
     if (options.searchConsoleClient) {
       await options.searchConsoleClient.sitemaps.submit({

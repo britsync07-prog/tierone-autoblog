@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import { getGscAuth } from '../indexing/google-search-console';
+import { getGscAuth, formatGscSiteUrl } from '../indexing/google-search-console';
 import {
   GSC_TIER1_MAP,
   type GscSearchRow,
@@ -45,9 +45,7 @@ export async function fetchGscSearchAnalytics(
     searchconsole = google.searchconsole({ version: 'v1', auth });
   }
 
-  const formattedSiteUrl = options.siteUrl.endsWith('/')
-    ? options.siteUrl
-    : `${options.siteUrl}/`;
+  const formattedSiteUrl = formatGscSiteUrl(options.siteUrl);
 
   try {
     const queryRes = await searchconsole.searchanalytics.query({
