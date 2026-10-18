@@ -66,7 +66,7 @@ export const draftSchema = z.object({
     .array(z.object({ q: z.string().min(1), a: z.string().min(1) }))
     .min(3)
     .max(5),
-  silo: z.enum(SILO_SLUGS),
+  silo: z.union([z.enum(SILO_SLUGS), z.literal('ai-news')]),
   tldr: z
     .string()
     .min(1)
