@@ -30,10 +30,10 @@
 
 ### Quality Gates (EEAT + Anti-Spam)
 
-- [ ] **QA-01**: System blocks publishing on any critical QA fail (originality, information-gain vs top-3, thin-content floor, banned-phrase, link-validity, schema-validity) — quarantine, never fail-open
-- [ ] **QA-02**: System verifies factual claims against live sources (unverifiable claims cut) with source-dated stats and as-of dates
-- [ ] **QA-03**: System enforces topic blocklist (no tax/banking/credit/health/finance-advice in v1) and real-publisher byline (no fabricated authors, AI-process disclosure)
-- [ ] **QA-04**: System auto-pauses publishing after K consecutive failures with owner alert + readable quarantine queue
+- [x] **QA-01**: System blocks publishing on any critical QA fail (originality, information-gain vs top-3, thin-content floor, banned-phrase, link-validity, schema-validity) — quarantine, never fail-open
+- [x] **QA-02**: System verifies factual claims against live sources (unverifiable claims cut) with source-dated stats and as-of dates
+- [x] **QA-03**: System enforces topic blocklist (no tax/banking/credit/health/finance-advice in v1) and real-publisher byline (no fabricated authors, AI-process disclosure)
+- [x] **QA-04**: System auto-pauses publishing after K consecutive failures with owner alert + readable quarantine queue
 
 ### Autonomous Publish + Indexing
 
@@ -108,10 +108,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PIPE-03 | Phase 3 | Complete |
 | PIPE-04 | Phase 3 | Complete |
 | PIPE-05 | Phase 3 | Complete |
-| QA-01 | Phase 4 | Pending |
-| QA-02 | Phase 4 | Pending |
-| QA-03 | Phase 4 | Pending |
-| QA-04 | Phase 4 | Pending |
+| QA-01 | Phase 4 | Complete |
+| QA-02 | Phase 4 | Complete |
+| QA-03 | Phase 4 | Complete |
+| QA-04 | Phase 4 | Complete |
 | AUTO-01 | Phase 5 | Pending |
 | AUTO-02 | Phase 5 | Pending |
 | AUTO-03 | Phase 5 | Pending |
