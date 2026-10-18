@@ -151,7 +151,7 @@ test('publishEntry advances drafted entry to published stage with timestamps and
   const published = publishEntry(validEntry);
   assert.equal(published.stage, 'published');
   assert.equal(typeof published.publishedAt, 'string');
-  assert.ok(Date.parse(published.publishedAt) > 0);
+  assert.ok(Date.parse(published.publishedAt!) > 0);
 
   // Missing draft.slug or qa.passedAt throws
   const invalidEntry: RegistryEntry = {

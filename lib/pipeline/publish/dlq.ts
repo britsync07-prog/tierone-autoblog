@@ -16,7 +16,7 @@ import {
   writeFileSync,
 } from 'node:fs';
 import { join, resolve } from 'node:path';
-import type { SiloSlug } from '../silos';
+import type { SiloSlug } from '../../silos';
 import { loadShard, quarantineEntry, saveShard } from '../registry';
 import { quarantineDraft } from '../qa/quarantine';
 import { recordQaFailure } from '../qa/circuit-breaker';
