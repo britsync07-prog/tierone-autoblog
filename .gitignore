@@ -46,3 +46,8 @@ next-env.d.ts
 
 # lighthouse-ci (local lab artifacts, large HTML/JSON per run)
 .lighthouseci/
+
+# cloudflare pages build
+deploy-pages/
+.open-next/
+.wrangler/
