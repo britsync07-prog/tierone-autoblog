@@ -198,7 +198,7 @@ export async function runDailyNewsPublisher(
       sources = DEFAULT_NEWS_FEEDS.filter((f) =>
         f.name.toLowerCase().includes(feedFilter),
       );
-      hnOptions = { maxItems: 0 };
+      hnOptions = { limit: 0 };
     }
   }
 
