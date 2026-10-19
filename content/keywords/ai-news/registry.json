@@ -1,5 +1,25 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T06:00:00.000Z",
-  "keywords": []
+  "updatedAt": "2026-10-19T12:00:55.407Z",
+  "keywords": [
+    {
+      "id": "anthropic-claude-3-7-sonnet",
+      "keyword": "Someone behind the software",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-10-19T12:00:55.407Z",
+      "updatedAt": "2026-10-19T12:00:55.407Z",
+      "publishedAt": "2026-10-19T12:00:55.407Z",
+      "draft": {
+        "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+        "attempts": 1,
+        "landedAt": "2026-10-19T12:00:55.407Z"
+      },
+      "qa": {
+        "passedAt": "2026-10-19T12:00:55.407Z",
+        "informationGainScore": 726,
+        "claimsChecked": 1
+      }
+    }
+  ]
 }

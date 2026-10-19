@@ -1,5 +1,17 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T00:00:00.000Z",
-  "events": []
+  "updatedAt": "2026-10-19T12:00:56.096Z",
+  "events": [
+    {
+      "id": "489a23c9b4aa060e",
+      "title": "Someone behind the software",
+      "normalizedTitle": "someone behind software",
+      "sourceUrl": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "canonicalDomain": "karrisaarinen.com",
+      "publishedDate": "2026-10-18T16:32:00.000Z",
+      "coveredAt": "2026-10-19T12:00:55.407Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    }
+  ]
 }
