@@ -1,0 +1,43 @@
+{
+  "contract": "1.0.0",
+  "flavor": "core",
+  "milestone": "v1.0",
+  "phases": [
+    {
+      "number": "1",
+      "name": "Site Foundation + Trust",
+      "status": "complete"
+    },
+    {
+      "number": "2",
+      "name": "SEO Architecture + Silo IA",
+      "status": "complete"
+    },
+    {
+      "number": "3",
+      "name": "Content Pipeline",
+      "status": "complete"
+    },
+    {
+      "number": "4",
+      "name": "Quality Gates",
+      "status": "complete"
+    },
+    {
+      "number": "5",
+      "name": "Autonomous Publish + Indexing",
+      "status": "complete"
+    },
+    {
+      "number": "6",
+      "name": "Observe, Refresh + Compound",
+      "status": "complete"
+    }
+  ],
+  "next": {
+    "command": "/gsd-new-milestone",
+    "label": "Start a new milestone",
+    "reason": "All phases complete — start a new milestone"
+  },
+  "updated_at": "2026-10-18T22:37:20.275Z"
+}
