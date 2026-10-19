@@ -81,7 +81,7 @@ function hasComparisonBlock(fmBlock) {
 function checkFile(dir, file) {
   const failures = [];
   const rel = join(dir, file);
-  const raw = readFileSync(rel, 'utf8');
+  const raw = readFileSync(rel, 'utf8').replace(/\r\n/g, '\n');
   const { error, fm, body, fmBlock } = parseFrontmatter(raw);
   if (error) return [`${file}: FAIL (${error})`];
 

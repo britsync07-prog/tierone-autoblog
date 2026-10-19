@@ -226,6 +226,7 @@ export default async function PostPage({
                   width={1280}
                   height={720}
                   priority
+                  unoptimized
                   fetchPriority="high"
                   sizes="(min-width: 768px) 45rem, 100vw"
                   className="w-full object-cover"

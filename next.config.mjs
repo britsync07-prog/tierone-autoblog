@@ -41,6 +41,7 @@ const nextConfig = {
     },
   },
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
   },
   // Edge/security posture (T-01-01): HSTS + hardening headers on every route.

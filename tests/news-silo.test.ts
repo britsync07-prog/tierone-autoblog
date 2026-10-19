@@ -11,48 +11,10 @@ import {
 import { draftSchema } from '../lib/pipeline/draft-schema';
 import { SITE_NAME, SITE_URL } from '../lib/site';
 
-function parseFrontmatter(content: string): Record<string, any> {
-  const match = /^---\r?\n([\s\S]*?)\r?\n---/.exec(content);
-  if (!match) throw new Error('Missing frontmatter');
-  const yaml = match[1];
-  const lines = yaml.split(/\r?\n/);
-  const result: Record<string, any> = {};
-  let currentKey = '';
-  let inFaq = false;
-  let currentFaq: { q?: string; a?: string } | null = null;
+import matter from 'gray-matter';
 
-  for (const line of lines) {
-    if (line.trim().startsWith('faq:')) {
-      inFaq = true;
-      result.faq = [];
-      continue;
-    }
-    if (inFaq) {
-      if (/^\s*-\s*q:\s*"(.*)"\s*$/.test(line)) {
-        const q = line.match(/^\s*-\s*q:\s*"(.*)"\s*$/)![1];
-        currentFaq = { q };
-        result.faq.push(currentFaq);
-        continue;
-      }
-      if (/^\s*a:\s*"(.*)"\s*$/.test(line) && currentFaq) {
-        currentFaq.a = line.match(/^\s*a:\s*"(.*)"\s*$/)![1];
-        continue;
-      }
-      if (!/^\s+/.test(line)) {
-        inFaq = false;
-      }
-    }
-    const kv = /^([a-zA-Z0-9_-]+):\s*"(.*)"\s*$/.exec(line);
-    if (kv) {
-      result[kv[1]] = kv[2];
-      continue;
-    }
-    const kvPlain = /^([a-zA-Z0-9_-]+):\s*(.*)\s*$/.exec(line);
-    if (kvPlain && !inFaq) {
-      result[kvPlain[1]] = kvPlain[2].replace(/^["']|["']$/g, '');
-    }
-  }
-  return result;
+function parseFrontmatter(content: string): Record<string, any> {
+  return matter(content).data;
 }
 
 test('news silo: SILO_SLUGS includes ai-news as 6th silo', () => {
