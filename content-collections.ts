@@ -70,14 +70,14 @@ function extractHeadings(body: string): PostHeading[] {
   const slugger = new GithubSlugger();
   const headings: PostHeading[] = [];
   let inFence = false;
-  for (const line of body.split('\n')) {
+  for (const line of body.split(/\r?\n/)) {
     const trimmed = line.trim();
     if (/^(`{3,}|~{3,})/.test(trimmed)) {
       inFence = !inFence;
       continue;
     }
     if (inFence) continue;
-    const match = /^(#{1,6})\s+(.+)$/.exec(line);
+    const match = /^(#{1,6})\s+(.+)$/.exec(trimmed);
     if (!match) continue;
     const level = match[1].length;
     const rawText = match[2].replace(/\s+#+$/, '').trim();

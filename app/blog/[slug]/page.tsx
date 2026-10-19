@@ -199,15 +199,15 @@ export default async function PostPage({
         ])}
       />
       {faqJsonLd ? <FAQJsonLd {...faqJsonLd} /> : null}
-      <main id="main-content" className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+      <main id="main-content" className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <ReadingProgress />
         <Breadcrumb
           siloLabel={siloDef.label}
           siloHref={siloHref}
           title={post.title}
         />
-        <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,68ch)_240px]">
-          <article className="mx-auto w-full max-w-[68ch]">
+        <div className={`mt-8 grid gap-12 ${post.headings && post.headings.length > 0 ? 'lg:grid-cols-[minmax(0,1fr)_260px]' : 'max-w-4xl mx-auto'}`}>
+          <article className="mx-auto w-full max-w-4xl min-w-0">
             <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-[#09090b] sm:text-4xl lg:text-[42px]">
               {post.title}
             </h1>
