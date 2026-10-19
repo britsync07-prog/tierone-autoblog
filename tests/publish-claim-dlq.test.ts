@@ -340,12 +340,15 @@ test('runPublishScheduled publishes candidate, dispatches indexing, and releases
   };
   saveShard(keywordsDir, 'ai-coding', shard);
 
+  const baseDate = new Date('2026-10-18T10:00:00.000Z');
+
   // Dry run first
   const dryResult = await runPublishScheduled({
     keywordsDir,
     quarantineDir,
     postsDir,
     dryRun: true,
+    now: baseDate,
   });
   assert.equal(dryResult.status, 'dry-run');
   assert.equal(isClaimActive(keywordsDir), false);
@@ -360,6 +363,7 @@ test('runPublishScheduled publishes candidate, dispatches indexing, and releases
     quarantineDir,
     postsDir,
     siteUrl: 'https://exclusivesources.online',
+    now: baseDate,
   });
   assert.equal(pubResult.status, 'published');
   assert.equal(pubResult.candidateId, 'kw-pub-test');
@@ -376,6 +380,7 @@ test('runPublishScheduled publishes candidate, dispatches indexing, and releases
     keywordsDir,
     quarantineDir,
     postsDir,
+    now: baseDate,
   });
   assert.equal(emptyResult.status, 'skipped');
 
@@ -400,7 +405,10 @@ test('runPublishScheduled respects active claim lock and aborts concurrent execu
   const lock = acquireClaimLock('other-worker', '2026-10-18T00:00:00.000Z', keywordsDir);
   assert.equal(lock.success, true);
 
-  const lockedResult = await runPublishScheduled({ keywordsDir });
+  const lockedResult = await runPublishScheduled({
+    keywordsDir,
+    now: new Date('2026-10-18T10:00:00.000Z'),
+  });
   assert.equal(lockedResult.status, 'locked');
 
   releaseClaimLock(lock.hash, keywordsDir);

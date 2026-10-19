@@ -59,7 +59,7 @@ export const TASK_MAX_TOKENS: Record<LlmTask, number> = {
   'title-desc': 400,
   'outline-body': 4000,
   'draft-body': Number(process.env.LLM_MAX_TOKENS_DRAFT ?? 6000),
-  'generic-structured': 2000,
+  'generic-structured': Number(process.env.LLM_MAX_TOKENS_STRUCTURED ?? 6000),
 };
 
 /** Narrow/routed-cheap tasks (⚠ rework: model-level routing — cheap model id
@@ -289,6 +289,7 @@ export interface CompleteJsonOptions<T> {
   task: LlmTask;
   zodSchema: ZodType<T>;
   messages: LlmMessage[];
+  maxTokens?: number;
   /** Fixture text key (stage callers pass `${stage}:${silo}:${id}`) — used to
    * look up fixture payloads deterministically with zero API spend. */
   fixtureKey?: string;
@@ -332,7 +333,7 @@ export async function completeJson<T>(opts: CompleteJsonOptions<T>): Promise<Llm
     opts.messages[0]?.role === 'system'
       ? opts.messages
       : [{ role: 'system', content: LLM_JSON_SYSTEM }, ...opts.messages];
-  const maxTokens = TASK_MAX_TOKENS[opts.task];
+  const maxTokens = opts.maxTokens ?? TASK_MAX_TOKENS[opts.task];
 
   for (const link of chain) {
     const model = modelFor(opts.task, link.cfg);

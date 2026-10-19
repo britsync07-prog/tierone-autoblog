@@ -77,6 +77,7 @@ export async function synthesizeNewsArticle(
     const complete = options?.llmAdapter ?? completeJson;
     const res = await complete<NewsSynthesisResult>({
       task: 'generic-structured',
+      maxTokens: 6000,
       zodSchema: newsSynthesisSchema,
       messages: [
         { role: 'system', content: prompt.system },
