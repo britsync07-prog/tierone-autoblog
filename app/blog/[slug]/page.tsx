@@ -49,19 +49,12 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    // GEO-01/GEO-03 (single-locale): self-referencing canonical + en-US and
-    // x-default pointing at it — derived only via lib/seo/canonical.
     alternates: { ...localeAlternates(canonical) },
     openGraph: {
       title: post.title,
       description: post.description,
       url: canonical,
       type: 'article',
-      // D-13/PIPE-05: hero posts advertise the generated art itself — the
-      // site-absolute 1280x720 AVIF first, then the SAME-art 1200x630 og.jpg
-      // crop (derived from the frontmatter hero src — note the basename
-      // change, hero.avif -> og.jpg is not an extension swap). Seeds keep
-      // the Phase-1 @vercel/og fallback shape byte-identical.
       images: post.heroImage
         ? [
             {
@@ -83,8 +76,6 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      // Hero posts tweet the universal raster og.jpg crop (AVIF-gap safe);
-      // seeds keep the @vercel/og route image unchanged.
       images: [
         post.heroImage
           ? `${SITE_URL}${post.heroImage.src.replace(/hero\.(?:avif|webp)$/, 'og.jpg')}`
@@ -94,10 +85,6 @@ export async function generateMetadata({
   };
 }
 
-// D-06 silo crumb: Home / {Silo} / Title — the middle node links to the silo
-// landing. The BreadcrumbList JSON-LD below mirrors this exact trail from
-// the same post object (schema-mirror rule: no SEO string rendered twice
-// from two sources).
 function Breadcrumb({
   siloLabel,
   siloHref,
@@ -109,20 +96,20 @@ function Breadcrumb({
 }) {
   return (
     <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-2 text-[13px] font-medium text-zinc-400">
+      <ol className="flex flex-wrap items-center gap-2 text-sm font-medium text-[#82828e]">
         <li>
-          <a href="/" className="transition-colors hover:text-emerald-400">
+          <a href="/" className="transition-colors hover:text-[#fe7141]">
             Home
           </a>
         </li>
-        <li aria-hidden="true" className="text-zinc-600">/</li>
+        <li aria-hidden="true" className="text-[#52525b]">/</li>
         <li>
-          <a href={siloHref} className="transition-colors hover:text-emerald-400">
+          <a href={siloHref} className="transition-colors hover:text-[#fe7141]">
             {siloLabel}
           </a>
         </li>
-        <li aria-hidden="true" className="text-zinc-600">/</li>
-        <li aria-current="page" className="max-w-[320px] truncate text-zinc-200 sm:max-w-md">
+        <li aria-hidden="true" className="text-[#52525b]">/</li>
+        <li aria-current="page" className="max-w-[320px] truncate text-white sm:max-w-md">
           {title}
         </li>
       </ol>
@@ -131,29 +118,26 @@ function Breadcrumb({
 }
 
 function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
+  if (!faq || faq.length === 0) return null;
   return (
-    <section aria-label="Frequently asked questions" className="mt-16 border-t border-white/[0.08] pt-12">
-      <div className="flex items-center gap-2.5">
-        <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400">
-          <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 10-1-1zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-          </svg>
-        </span>
+    <section aria-label="Frequently asked questions" className="mt-20 pt-8">
+      <div className="flex items-center gap-3">
+        <span className="h-4 w-1 bg-[#fe7141]" />
         <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
           Frequently Asked Questions
         </h2>
       </div>
 
-      <div className="mt-6 space-y-4">
+      <div className="mt-8 space-y-6">
         {faq.map((item) => (
           <div
             key={item.q}
-            className="rounded-xl border border-white/[0.08] bg-[#121215] p-5 sm:p-6 transition-colors hover:border-white/[0.14]"
+            className="rounded-sm bg-[#141418] p-6 sm:p-7"
           >
             <h3 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-white">
               {item.q}
             </h3>
-            <p className="mt-3 text-[15px] leading-relaxed text-zinc-300">
+            <p className="mt-3 text-base leading-relaxed text-[#d1d1d6]">
               {item.a}
             </p>
           </div>
@@ -163,15 +147,9 @@ function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
   );
 }
 
-// Static copy-button wiring for Shiki-highlighted code blocks. This constant
-// string carries zero post data (no injection vector); a single delegated
-// listener serves every `[data-copy-button]` on the page. Keeps
-// ReadingProgress the sole client island (D-08).
 const COPY_SCRIPT = `(function(){document.addEventListener('click',function(e){var t=e.target;var b=t&&t.closest?t.closest('[data-copy-button]'):null;if(!b)return;var box=b.closest('[data-code-block]');var code=box?box.querySelector('code'):null;if(!code)return;var text=code.innerText||code.textContent||'';var label=b.textContent;var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent=label;},1500);};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){done();});}else{var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(err){}document.body.removeChild(ta);done();}});})();`;
 
 function ArticleBody({ code }: { code: string }) {
-  // Renders the MDX body, reserving the invisible in-article ad slot right
-  // after the 2nd H2 (D-11). The counter is per-render (request-scoped).
   const base = useMDXComponents();
   let h2Count = 0;
   const h2 = ({ id, children }: ComponentProps<'h2'>): ReactNode => {
@@ -202,15 +180,10 @@ export default async function PostPage({
   const { slug } = await params;
   const post = findPost(slug);
   if (!post) notFound();
-  // T-02-02 posture: enum-validated posts always resolve their silo, but the
-  // lookup is guarded so a future taxonomy drift fails closed, not open.
+
   const siloDef = getSilo(post.silo);
   if (!siloDef) notFound();
 
-  // SEO-02/GEO-01 structured data + head links, all single-sourced from the
-  // same `post` object that renders the visible crumb/FAQ (mirror by
-  // construction). Builders strip `<` (T-02-01) and next-seo v7 components
-  // serialize + escape the JSON.
   const canonical = canonicalFor(`/blog/${slug}`);
   const siloHref = siloUrl(siloDef.slug);
   const faqJsonLd = buildFaqJsonLd(post.faq);
@@ -226,16 +199,16 @@ export default async function PostPage({
         ])}
       />
       {faqJsonLd ? <FAQJsonLd {...faqJsonLd} /> : null}
-      <main id="main-content" className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
         <ReadingProgress />
         <Breadcrumb
           siloLabel={siloDef.label}
           siloHref={siloHref}
           title={post.title}
         />
-        <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,68ch)_240px]">
+        <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,68ch)_240px]">
           <article className="mx-auto w-full max-w-[68ch]">
-            <h1 className="text-3xl font-extrabold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-[40px]">
+            <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-[42px]">
               {post.title}
             </h1>
             <Byline
@@ -245,9 +218,8 @@ export default async function PostPage({
               updated={post.updatedAt}
               readingMinutes={post.readingMinutes}
             />
-            {/* D-13/PIPE-05: pipeline-generated LCP hero. */}
             {post.heroImage ? (
-              <div className="mt-6 overflow-hidden rounded-xl border border-white/[0.08] shadow-2xl">
+              <div className="mt-8 overflow-hidden rounded-sm">
                 <Image
                   src={post.heroImage.src}
                   alt={post.heroImage.alt}
@@ -265,7 +237,6 @@ export default async function PostPage({
             </div>
             <Tldr items={[post.tldr]} />
             <TocInline headings={post.headings} />
-            {/* D-14/PIPE-04: frontmatter comparison DATA renders immediately ABOVE MDX */}
             {post.comparison && <ComparisonTable {...post.comparison} />}
             <ArticleBody code={post.mdx} />
             <FaqSection faq={post.faq} />

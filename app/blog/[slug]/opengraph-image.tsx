@@ -2,10 +2,6 @@ import { ImageResponse } from 'next/og';
 import { allPosts } from 'content-collections';
 import { SITE_NAME, SITE_URL } from '@/lib/site';
 
-// Brand title card (D-21): light editorial background, post title +
-// geometric mark. Titles are author-controlled frontmatter — truncated to 110
-// chars and stripped of markup before drawing (T-02-02). System fonts only:
-// no remote fetch at image-render time.
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -28,7 +24,7 @@ export default async function PostOpengraphImage({
         style={{
           width: 1200,
           height: 630,
-          backgroundColor: '#ffffff',
+          backgroundColor: '#0a0a0c',
           display: 'flex',
           flexDirection: 'column',
           padding: 80,
@@ -36,16 +32,17 @@ export default async function PostOpengraphImage({
         }}
       >
         <div
-          style={{ width: '100%', height: 8, backgroundColor: '#4f46e5' }}
+          style={{ width: 120, height: 6, backgroundColor: '#fe7141' }}
         />
         <div
           style={{
-            fontSize: 64,
-            fontWeight: 600,
-            lineHeight: 1.2,
-            color: '#171717',
+            fontSize: 56,
+            fontWeight: 700,
+            lineHeight: 1.15,
+            color: '#ffffff',
             marginTop: 48,
             flex: 1,
+            letterSpacing: '-0.03em',
           }}
         >
           {title}
@@ -61,10 +58,10 @@ export default async function PostOpengraphImage({
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div
               style={{
-                width: 48,
-                height: 48,
-                borderRadius: 10,
-                backgroundColor: '#4f46e5',
+                width: 44,
+                height: 44,
+                borderRadius: 4,
+                backgroundColor: '#fe7141',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -73,20 +70,20 @@ export default async function PostOpengraphImage({
             >
               <div
                 style={{
-                  width: 20,
-                  height: 20,
-                  backgroundColor: '#ffffff',
+                  width: 18,
+                  height: 18,
+                  backgroundColor: '#0a0a0c',
                   transform: 'rotate(45deg)',
                 }}
               />
             </div>
             <div
-              style={{ fontSize: 32, fontWeight: 600, color: '#171717' }}
+              style={{ fontSize: 30, fontWeight: 700, color: '#ffffff', letterSpacing: '-0.02em' }}
             >
               {SITE_NAME}
             </div>
           </div>
-          <div style={{ fontSize: 28, color: '#64748b' }}>{DOMAIN}</div>
+          <div style={{ fontSize: 24, color: '#82828e' }}>{DOMAIN}</div>
         </div>
       </div>
     ),

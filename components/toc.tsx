@@ -1,16 +1,15 @@
-// Table of contents (D-05). Headings are extracted at build time from
+// Table of contents. Headings are extracted at build time from
 // rehype-slug ids and passed as a prop — no client-side DOM scraping.
-// Desktop: sticky sidebar. Mobile: inline <details> block.
 export type TocHeading = { id: string; text: string; level: 2 | 3 };
 
 function TocList({ headings }: { headings: TocHeading[] }) {
   return (
-    <ul className="space-y-1.5">
+    <ul className="space-y-2">
       {headings.map((h) => (
         <li key={h.id} className={h.level === 3 ? 'ml-3' : undefined}>
           <a
             href={`#${h.id}`}
-            className="block text-[13px] leading-snug text-zinc-400 transition-colors hover:text-emerald-400"
+            className="block text-[13.5px] leading-snug text-[#a1a1aa] transition-colors hover:text-[#fe7141]"
           >
             {h.text}
           </a>
@@ -25,13 +24,13 @@ export function Toc({ headings }: { headings: TocHeading[] }) {
   return (
     <nav
       aria-label="Table of contents"
-      className="toc-sidebar hidden lg:block sticky top-24 border-l border-white/[0.08] pl-5 max-h-[calc(100vh-8rem)] overflow-y-auto"
+      className="toc-sidebar hidden lg:block sticky top-24 bg-[#141418] p-5 rounded-sm max-h-[calc(100svh-8rem)] overflow-y-auto"
     >
-      <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-emerald-400">
-        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-        Contents
+      <p className="flex items-center gap-2 text-xs font-bold text-white">
+        <span className="h-2 w-2 rounded-full bg-[#fe7141]" />
+        Article Contents
       </p>
-      <div className="mt-3">
+      <div className="mt-3.5">
         <TocList headings={headings} />
       </div>
     </nav>
@@ -41,11 +40,11 @@ export function Toc({ headings }: { headings: TocHeading[] }) {
 export function TocInline({ headings }: { headings: TocHeading[] }) {
   if (headings.length === 0) return null;
   return (
-    <details className="my-6 lg:hidden rounded-xl border border-white/[0.08] bg-[#121215] px-4 transition-colors">
-      <summary className="cursor-pointer py-3 text-[13.5px] font-semibold text-zinc-200 hover:text-emerald-400 focus:outline-none">
+    <details className="my-8 lg:hidden rounded-sm bg-[#141418] p-4">
+      <summary className="cursor-pointer font-semibold text-white hover:text-[#fe7141] focus:outline-none">
         Table of Contents ({headings.length} sections)
       </summary>
-      <div className="border-t border-white/[0.06] pt-3 pb-4">
+      <div className="mt-4 pt-3">
         <TocList headings={headings} />
       </div>
     </details>

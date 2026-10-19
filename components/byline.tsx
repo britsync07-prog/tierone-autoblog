@@ -1,4 +1,4 @@
-// Real-author byline (D-12). Name links to the author page; dates render in
+// Real-author byline. Name links to the author page; dates render in
 // en-US with a fixed UTC timezone so builds are deterministic.
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString('en-US', {
@@ -23,43 +23,41 @@ export default function Byline({
   readingMinutes: number;
 }) {
   return (
-    <div className="mt-4 flex flex-wrap items-center gap-3 border-y border-white/[0.08] py-3 text-[13.5px] text-zinc-400">
-      <div className="flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-emerald-600 to-teal-400 p-0.5">
-          <div className="flex h-full w-full items-center justify-center rounded-full bg-[#121215] text-[11px] font-bold text-white">
-            {authorName.charAt(0)}
-          </div>
+    <div className="mt-6 flex flex-wrap items-center gap-3 rounded-sm bg-[#141418] px-4 py-3 text-[14px] text-[#a1a1aa]">
+      <div className="flex items-center gap-2.5">
+        <div className="flex h-6 w-6 items-center justify-center rounded-sm bg-[#fe7141] text-[12px] font-bold text-black">
+          {authorName.charAt(0)}
         </div>
         <span>
           By{' '}
           <a
             href={`/authors/${authorSlug}`}
-            className="font-semibold text-white transition-colors hover:text-emerald-400"
+            className="font-semibold text-white transition-colors hover:text-[#fe7141]"
           >
             {authorName}
           </a>
         </span>
       </div>
 
-      <span className="text-zinc-600" aria-hidden="true">·</span>
+      <span className="text-[#52525b]" aria-hidden="true">·</span>
 
-      <time dateTime={date} className="text-zinc-300">
+      <time dateTime={date} className="text-[#d1d1d6]">
         {formatDate(date)}
       </time>
 
       {updated !== date && (
         <>
-          <span className="text-zinc-600" aria-hidden="true">·</span>
-          <span className="text-emerald-400 font-medium">
+          <span className="text-[#52525b]" aria-hidden="true">·</span>
+          <span className="text-[#fe7141] font-medium">
             Updated {formatDate(updated)}
           </span>
         </>
       )}
 
-      <span className="text-zinc-600" aria-hidden="true">·</span>
+      <span className="text-[#52525b]" aria-hidden="true">·</span>
 
-      <span className="inline-flex items-center gap-1 text-zinc-400">
-        <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+      <span className="inline-flex items-center gap-1.5 text-[#82828e]">
+        <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z" clipRule="evenodd" />
         </svg>
         {readingMinutes} min read

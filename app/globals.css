@@ -1,24 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Obsidian Tech Editorial theme: dark ground (#09090b), crisp white headings (#fafafa),
-   muted zinc body (#a1a1aa), and electric emerald accent (#10b981). Zero webfonts: system stack. */
+/* Taste-Skill v2: "editorial-report" (The Printed Annual)
+   Ground: #0a0a0c, Surface: #141418, Ink: #ffffff, Muted: #82828e, Accent: #fe7141 (International Orange).
+   Typography: Bricolage Grotesque (display & text).
+   Strict anti-slop: Zero drop-shadows at rest, zero gradients, zero hairlines, zero micro-caps. */
+
 :root {
-  --color-ground: #09090b;
-  --color-surface: #121215;
-  --color-surface-hover: #18181c;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(255, 255, 255, 0.16);
-  --color-accent: #10b981;
-  --color-accent-glow: rgba(16, 185, 129, 0.15);
+  --color-ground: #0a0a0c;
+  --color-surface: #141418;
+  --color-surface-raised: #1c1c22;
+  --color-ink: #ffffff;
+  --color-muted: #82828e;
+  --color-accent: #fe7141;
+  --color-accent-ink: #000000;
 }
 
 body {
-  background-color: #09090b;
-  color: #d4d4d8;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+  background-color: #0a0a0c;
+  color: #d1d1d6;
+  font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-optical-sizing: auto;
   overflow-x: hidden;
 }
 
@@ -26,14 +29,13 @@ code,
 pre,
 kbd,
 samp {
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 /* Custom text selection highlight */
 ::selection {
-  background-color: rgba(16, 185, 129, 0.28);
-  color: #ffffff;
+  background-color: #fe7141;
+  color: #000000;
 }
 
 /* Subtle modern scrollbar */
@@ -42,7 +44,7 @@ samp {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #0a0a0c;
 }
 ::-webkit-scrollbar-thumb {
   background: #27272a;
@@ -54,7 +56,7 @@ samp {
 
 /* Visible keyboard focus everywhere (a11y budget). */
 :focus-visible {
-  outline: 2px solid #10b981;
+  outline: 2px solid #fe7141;
   outline-offset: 2px;
 }
 
@@ -75,7 +77,7 @@ samp {
 .prose h2 .anchor-link:focus-visible,
 .prose h3 .anchor-link:focus-visible {
   opacity: 1;
-  color: #10b981;
+  color: #fe7141;
 }
 
 /* Editorial Dark Prose Typography adjustments */
@@ -86,93 +88,92 @@ samp {
 .prose h2,
 .prose h3,
 .prose h4 {
-  color: #fafafa;
+  color: #ffffff;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
 }
 .prose strong,
 .prose b {
   color: #ffffff;
 }
 .prose p {
-  line-height: 1.75;
+  line-height: 1.7;
 }
 .prose ul,
 .prose ol {
-  color: #a1a1aa;
+  line-height: 1.7;
 }
-.prose li::marker {
-  color: #52525b;
+.prose a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #fe7141;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+.prose a:hover {
+  color: #fe7141;
 }
 .prose blockquote {
-  border-left-color: #10b981;
-  color: #d4d4d8;
-  background-color: rgba(255, 255, 255, 0.02);
-  padding: 0.75rem 1.25rem;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-left-width: 4px;
+  border-left-color: #fe7141;
+  color: #d1d1d6;
   font-style: normal;
+  padding-left: 1.25rem;
 }
-.prose code:not(pre code) {
-  background-color: rgba(255, 255, 255, 0.06);
-  color: #34d399;
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.25rem;
-  font-size: 0.875em;
-  font-weight: 400;
+.prose hr {
+  display: none;
 }
-.prose code:not(pre code)::before,
-.prose code:not(pre code)::after {
-  content: "" !important;
-}
-
-/* Comparison tables: clean dark editorial borders, tinted header, crisp cells. */
 .prose table {
   width: 100%;
+  border-collapse: collapse;
+}
+.prose th {
+  color: #ffffff;
   text-align: left;
-  font-size: 14px;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #141418;
+}
+.prose td {
+  padding: 0.75rem 1rem;
+}
+
+/* Rehype-pretty-code styling for code blocks */
+figure[data-rehype-pretty-code-figure] {
+  margin: 1.75rem 0;
+  border-radius: 8px;
+  background-color: #141418;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.prose thead th {
-  background-color: rgba(255, 255, 255, 0.04);
-  color: #fafafa;
-  font-weight: 600;
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.prose tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.015);
-}
-.prose tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-}
-.prose tbody td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  color: #d4d4d8;
 }
 
-/* Shiki-highlighted code (rehype-pretty-code, server-rendered). */
-[data-rehype-pretty-code-figure] pre {
-  margin: 0;
-  background-color: #0c0c0e !important;
+figcaption[data-rehype-pretty-code-title] {
+  padding: 0.65rem 1rem;
+  font-size: 0.8125rem;
+  color: #a1a1aa;
+  background-color: #1c1c22;
 }
+
+pre[data-theme] {
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1.5rem;
+  margin-right: 1.25rem;
+  text-align: right;
+  color: #52525b;
+}
+
 [data-highlighted-line] {
-  background-color: rgba(16, 185, 129, 0.12);
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+  background-color: rgba(254, 113, 65, 0.12);
 }

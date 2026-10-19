@@ -19,43 +19,41 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-12 sm:px-6">
+    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-16 sm:px-6">
       <article className="mx-auto max-w-[68ch]">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           About {SITE_NAME}
         </h1>
-        <div className="mt-8 rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 space-y-6 text-[15.5px] leading-relaxed text-zinc-300 shadow-xl">
+        <div className="mt-8 rounded-sm bg-[#141418] p-6 sm:p-10 space-y-6 text-base leading-relaxed text-[#d1d1d6]">
           <p>
             <span className="font-semibold text-white">{SITE_NAME} — </span>
-            {SITE_TAGLINE}. Every guide is written for builders in the US, UK,
-            Canada, and Australia, in en-US.
+            {SITE_TAGLINE}. Every guide is written for engineers and technical leaders across Tier-1 markets (US, UK, Canada, and Australia).
           </p>
           <p>
-            This site is published by{' '}
+            This publication is founded and edited by{' '}
             <Link
               href={`/authors/${AUTHOR_SLUG}`}
-              className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
+              className="font-semibold text-[#fe7141] underline underline-offset-4 decoration-[#fe7141] transition-colors hover:text-white"
             >
               {AUTHOR_NAME}
             </Link>
-            , a Full-Stack Product Engineer based in Bangladesh. There is one
-            real publisher behind every article — no guest posts, no anonymous
-            bylines.
+            , a Full-Stack Product Engineer based in Bangladesh. There is one accountable publisher behind every release — zero anonymous content farms or scraped reposts.
           </p>
           <p>
-            Every article starts as a hands-on draft, is checked against our
-            sourcing standards, and is published only when it meets them. Read
-            our{' '}
-            <Link href="/editorial-process" className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300">
+            Every dispatch starts with code analysis or benchmark testing, passes structured information gain rubrics, and publishes only when technical claims are verified against primary documentation. Review our{' '}
+            <Link
+              href="/editorial-process"
+              className="font-semibold text-[#fe7141] underline underline-offset-4 decoration-[#fe7141] transition-colors hover:text-white"
+            >
               editorial process
             </Link>
-            , including how AI assistance is disclosed on every post.
+            , including our transparent disclosure on machine assistance.
           </p>
           <p>
-            Questions, corrections, or partnership inquiries:{' '}
+            Direct inquiries, corrections, and benchmark pitches:{' '}
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
+              className="font-semibold text-[#fe7141] underline underline-offset-4 decoration-[#fe7141] transition-colors hover:text-white"
             >
               {CONTACT_EMAIL}
             </a>

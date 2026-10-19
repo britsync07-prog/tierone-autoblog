@@ -2,9 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-// Reading-progress bar (D-08). The ONLY client component on article pages:
-// a fixed top accent bar driven by a passive scroll listener with
-// requestAnimationFrame coalescing, cleaned up on unmount.
+// Reading-progress bar: clean solid accent bar without gradients or shadows.
 export default function ReadingProgress() {
   const barRef = useRef<HTMLDivElement>(null);
 
@@ -37,7 +35,7 @@ export default function ReadingProgress() {
     <div
       ref={barRef}
       aria-hidden="true"
-      className="fixed top-0 left-0 h-1 w-0 bg-gradient-to-r from-emerald-500 to-teal-400 shadow-[0_0_10px_rgba(16,185,129,0.6)] z-50"
+      className="fixed top-0 left-0 h-1 w-0 bg-[#fe7141] z-50"
     />
   );
 }

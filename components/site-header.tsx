@@ -10,29 +10,23 @@ const NAV = [
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-white/[0.08] bg-[#09090b]/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 bg-[#0a0a0c]">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Logo />
         <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">
-          <ul className="flex items-center gap-1 sm:gap-2">
+          <ul className="flex items-center gap-2 sm:gap-4">
             {NAV.map((item) => {
               const isNews = item.href === '/ai-news';
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13.5px] font-medium transition-all ${
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[14px] font-medium transition-colors ${
                       isNews
-                        ? 'border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 hover:border-emerald-500/50'
-                        : 'text-zinc-400 hover:bg-white/[0.06] hover:text-white'
+                        ? 'bg-[#fe7141] text-black font-semibold'
+                        : 'text-[#d1d1d6] hover:bg-[#141418] hover:text-white'
                     }`}
                   >
-                    {isNews && (
-                      <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-                      </span>
-                    )}
                     {item.label}
                   </Link>
                 </li>
