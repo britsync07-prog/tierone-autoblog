@@ -24,7 +24,7 @@ export default async function PostOpengraphImage({
         style={{
           width: 1200,
           height: 630,
-          backgroundColor: '#0a0a0c',
+          backgroundColor: '#ffffff',
           display: 'flex',
           flexDirection: 'column',
           padding: 80,
@@ -32,14 +32,14 @@ export default async function PostOpengraphImage({
         }}
       >
         <div
-          style={{ width: 120, height: 6, backgroundColor: '#fe7141' }}
+          style={{ width: 120, height: 6, backgroundColor: '#d92b21' }}
         />
         <div
           style={{
             fontSize: 56,
             fontWeight: 700,
             lineHeight: 1.15,
-            color: '#ffffff',
+            color: '#09090b',
             marginTop: 48,
             flex: 1,
             letterSpacing: '-0.03em',
@@ -61,7 +61,7 @@ export default async function PostOpengraphImage({
                 width: 44,
                 height: 44,
                 borderRadius: 4,
-                backgroundColor: '#fe7141',
+                backgroundColor: '#d92b21',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -72,18 +72,18 @@ export default async function PostOpengraphImage({
                 style={{
                   width: 18,
                   height: 18,
-                  backgroundColor: '#0a0a0c',
+                  backgroundColor: '#ffffff',
                   transform: 'rotate(45deg)',
                 }}
               />
             </div>
             <div
-              style={{ fontSize: 30, fontWeight: 700, color: '#ffffff', letterSpacing: '-0.02em' }}
+              style={{ fontSize: 30, fontWeight: 700, color: '#09090b', letterSpacing: '-0.02em' }}
             >
               {SITE_NAME}
             </div>
           </div>
-          <div style={{ fontSize: 24, color: '#82828e' }}>{DOMAIN}</div>
+          <div style={{ fontSize: 24, color: '#52525b' }}>{DOMAIN}</div>
         </div>
       </div>
     ),

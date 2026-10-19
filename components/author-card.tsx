@@ -8,7 +8,7 @@ const AUTHOR_ROLE = 'Full-Stack Product Engineer based in Bangladesh';
 export default function AuthorCard({ showPhoto }: { showPhoto: boolean }) {
   const showImage = showPhoto && AUTHOR_PHOTO_EXISTS;
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-md bg-[#141418] p-6 sm:p-8">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-sm bg-[#f4f4f6] p-6 sm:p-8">
       {showImage ? (
         <Image
           src="/images/author.jpg"
@@ -22,29 +22,29 @@ export default function AuthorCard({ showPhoto }: { showPhoto: boolean }) {
         <div
           role="img"
           aria-label="Initials monogram for Musfiqur Rahman Saimon"
-          className="grid h-24 w-24 shrink-0 place-items-center rounded-sm bg-[#fe7141] text-3xl font-extrabold text-black"
+          className="grid h-24 w-24 shrink-0 place-items-center rounded-sm bg-[#d92b21] text-3xl font-extrabold text-white"
         >
           MS
         </div>
       )}
       <div>
-        <p className="text-2xl font-bold tracking-tight text-white">{AUTHOR_NAME}</p>
-        <p className="mt-1 text-sm text-[#a1a1aa] leading-relaxed">{AUTHOR_ROLE}</p>
+        <p className="text-2xl font-bold tracking-tight text-[#09090b]">{AUTHOR_NAME}</p>
+        <p className="mt-1 text-sm text-[#52525b] leading-relaxed">{AUTHOR_ROLE}</p>
         <p className="mt-4 flex items-center gap-3 text-sm">
           <a
             href={LINKEDIN_URL}
             rel="me noopener"
-            className="font-medium text-[#fe7141] underline underline-offset-4 transition-colors hover:text-white"
+            className="font-semibold text-[#d92b21] underline underline-offset-4 transition-colors hover:text-[#09090b]"
           >
             LinkedIn
           </a>
-          <span aria-hidden="true" className="text-[#52525b]">
+          <span aria-hidden="true" className="text-[#a1a1aa]">
             ·
           </span>
           <a
             href={GITHUB_URL}
             rel="me noopener"
-            className="font-medium text-[#fe7141] underline underline-offset-4 transition-colors hover:text-white"
+            className="font-semibold text-[#d92b21] underline underline-offset-4 transition-colors hover:text-[#09090b]"
           >
             GitHub
           </a>

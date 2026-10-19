@@ -10,7 +10,7 @@ const NAV = [
 
 export default function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 bg-[#0a0a0c]">
+    <header className="sticky top-0 z-40 bg-white">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Logo />
         <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">
@@ -21,10 +21,10 @@ export default function SiteHeader() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[14px] font-medium transition-colors ${
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[14px] font-medium rounded-sm transition-colors ${
                       isNews
-                        ? 'bg-[#fe7141] text-black font-semibold'
-                        : 'text-[#d1d1d6] hover:bg-[#141418] hover:text-white'
+                        ? 'bg-[#d92b21] text-white font-semibold hover:bg-[#b91c1c]'
+                        : 'text-[#3f3f46] hover:bg-[#f4f4f6] hover:text-[#09090b]'
                     }`}
                   >
                     {item.label}

@@ -26,11 +26,11 @@ export default function SiteFooter() {
   const domain = SITE_URL.replace(/^https?:\/\//, '');
 
   return (
-    <footer className="mt-32 bg-[#141418] text-[#d1d1d6]">
-      {/* Taste-skill Footer Blueprint: Massive architectural wordmark */}
+    <footer className="mt-32 bg-[#09090b] text-[#f4f4f5]">
+      {/* Taste-skill Footer Blueprint: Inverted architectural wordmark */}
       <div className="overflow-hidden bg-[#000000] px-4 pt-10 pb-6 sm:px-6">
         <div className="mx-auto max-w-5xl">
-          <p className="text-[clamp(2.5rem,8vw,7rem)] font-bold tracking-[-0.05em] leading-[0.85] text-[#222228] select-none">
+          <p className="text-[clamp(2.5rem,8vw,7rem)] font-bold tracking-[-0.05em] leading-[0.85] text-[#27272a] select-none">
             {SITE_NAME.toUpperCase()}
           </p>
         </div>
@@ -45,11 +45,11 @@ export default function SiteFooter() {
             <p className="max-w-md text-base leading-relaxed text-[#a1a1aa]">
               {SITE_TAGLINE}. Independent technical journalism, comprehensive tool benchmarks, and breaking engineering dispatches.
             </p>
-            <p className="text-sm text-[#82828e]">
+            <p className="text-sm text-[#71717a]">
               Published by{' '}
               <Link
                 href={`/authors/${AUTHOR_SLUG}`}
-                className="font-medium text-white underline underline-offset-4 decoration-[#fe7141]"
+                className="font-medium text-white underline underline-offset-4 decoration-[#d92b21]"
               >
                 {AUTHOR_NAME}
               </Link>
@@ -65,7 +65,7 @@ export default function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-[#a1a1aa] transition-colors hover:text-[#fe7141]"
+                    className="text-sm text-[#a1a1aa] transition-colors hover:text-[#d92b21]"
                   >
                     {item.label}
                   </Link>
@@ -83,7 +83,7 @@ export default function SiteFooter() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-[#a1a1aa] transition-colors hover:text-[#fe7141]"
+                    className="text-sm text-[#a1a1aa] transition-colors hover:text-[#d92b21]"
                   >
                     {item.label}
                   </Link>
@@ -93,13 +93,13 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col items-start justify-between gap-4 pt-8 text-xs text-[#82828e] sm:flex-row sm:items-center">
+        <div className="mt-16 flex flex-col items-start justify-between gap-4 pt-8 text-xs tabular-nums text-[#71717a] sm:flex-row sm:items-center">
           <p>
             © {year} {SITE_NAME} · {domain} · Tier-1 Edition (US, UK, CA, AU)
           </p>
           <a
             href="#main-content"
-            className="text-xs text-[#a1a1aa] hover:text-[#fe7141]"
+            className="text-white hover:text-[#d92b21] transition-colors"
           >
             Back to top ↑
           </a>

@@ -40,19 +40,19 @@ export default function AuthorPage() {
     <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-16 sm:px-6">
       <AuthorJsonLd />
       <article className="mx-auto max-w-[68ch]">
-        <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight text-[#09090b] sm:text-4xl">
           About the Publisher
         </h1>
         <div className="mt-8">
           <AuthorCard showPhoto />
         </div>
-        <div className="mt-10 space-y-8 text-base leading-relaxed text-[#d1d1d6]">
-          <div className="rounded-sm bg-[#141418] p-6 sm:p-8 space-y-4">
+        <div className="mt-10 space-y-8 text-base leading-relaxed text-[#27272a]">
+          <div className="rounded-sm bg-[#f4f4f6] p-6 sm:p-8 space-y-4">
             <p>
-              <span className="font-semibold text-white">Focus: </span>
+              <span className="font-semibold text-[#09090b]">Focus: </span>
               Engineering resilient autonomous agents, rigorous LLM pipelines, and high-performance web systems.
             </p>
-            <blockquote className="rounded-sm border-l-4 border-[#fe7141] bg-[#1c1c22] p-4 text-white">
+            <blockquote className="rounded-sm border-l-4 border-[#d92b21] bg-[#ebebee] p-4 text-[#09090b]">
               Paper-trade it, test it against code, then deploy it.
             </blockquote>
             <p>
@@ -63,8 +63,8 @@ export default function AuthorPage() {
             </p>
           </div>
 
-          <section aria-label="Profiles" className="rounded-sm bg-[#141418] p-6 sm:p-8">
-            <h2 className="text-xl font-bold tracking-tight text-white">
+          <section aria-label="Profiles" className="rounded-sm bg-[#f4f4f6] p-6 sm:p-8">
+            <h2 className="text-xl font-bold tracking-tight text-[#09090b]">
               Verified Profiles
             </h2>
             <ul className="mt-4 space-y-3">
@@ -72,7 +72,7 @@ export default function AuthorPage() {
                 <a
                   href="https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa"
                   rel="me noopener"
-                  className="font-semibold text-[#fe7141] underline underline-offset-4 decoration-[#fe7141] transition-colors hover:text-white"
+                  className="font-semibold text-[#d92b21] underline underline-offset-4 decoration-[#d92b21] transition-colors hover:text-[#09090b]"
                 >
                   LinkedIn Profile →
                 </a>
@@ -81,7 +81,7 @@ export default function AuthorPage() {
                 <a
                   href="https://github.com/britsync07-prog"
                   rel="me noopener"
-                  className="font-semibold text-[#fe7141] underline underline-offset-4 decoration-[#fe7141] transition-colors hover:text-white"
+                  className="font-semibold text-[#d92b21] underline underline-offset-4 decoration-[#d92b21] transition-colors hover:text-[#09090b]"
                 >
                   GitHub Repository &amp; Code →
                 </a>
@@ -89,7 +89,7 @@ export default function AuthorPage() {
             </ul>
           </section>
 
-          <p className="text-xs text-[#82828e]">
+          <p className="text-xs text-[#71717a]">
             {SITE_NAME} publishes under this single, accountable byline. There are no ghostwriters or unverified contributors.
           </p>
         </div>

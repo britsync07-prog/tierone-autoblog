@@ -35,7 +35,7 @@ export default function ReadingProgress() {
     <div
       ref={barRef}
       aria-hidden="true"
-      className="fixed top-0 left-0 h-1 w-0 bg-[#fe7141] z-50"
+      className="fixed top-0 left-0 h-1 w-0 bg-[#d92b21] z-50"
     />
   );
 }

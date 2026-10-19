@@ -2,24 +2,25 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* Taste-Skill v2: "editorial-report" (The Printed Annual)
-   Ground: #0a0a0c, Surface: #141418, Ink: #ffffff, Muted: #82828e, Accent: #fe7141 (International Orange).
+/* Taste-Skill v2: "editorial-report" (The Printed Annual / Light Broadsheet)
+   Ground: #ffffff (Crisp Newsprint White), Surface: #f4f4f6 (Stone Paper Tile), 
+   Ink: #09090b (Black News Ink), Muted: #52525b, Accent: #d92b21 (Signal Red).
    Typography: Bricolage Grotesque (display & text).
    Strict anti-slop: Zero drop-shadows at rest, zero gradients, zero hairlines, zero micro-caps. */
 
 :root {
-  --color-ground: #0a0a0c;
-  --color-surface: #141418;
-  --color-surface-raised: #1c1c22;
-  --color-ink: #ffffff;
-  --color-muted: #82828e;
-  --color-accent: #fe7141;
-  --color-accent-ink: #000000;
+  --color-ground: #ffffff;
+  --color-surface: #f4f4f6;
+  --color-surface-raised: #ffffff;
+  --color-ink: #09090b;
+  --color-muted: #52525b;
+  --color-accent: #d92b21;
+  --color-accent-ink: #ffffff;
 }
 
 body {
-  background-color: #0a0a0c;
-  color: #d1d1d6;
+  background-color: #ffffff;
+  color: #27272a;
   font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-optical-sizing: auto;
   overflow-x: hidden;
@@ -34,8 +35,8 @@ samp {
 
 /* Custom text selection highlight */
 ::selection {
-  background-color: #fe7141;
-  color: #000000;
+  background-color: #d92b21;
+  color: #ffffff;
 }
 
 /* Subtle modern scrollbar */
@@ -44,19 +45,19 @@ samp {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0c;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #d4d4d8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #a1a1aa;
 }
 
 /* Visible keyboard focus everywhere (a11y budget). */
 :focus-visible {
-  outline: 2px solid #fe7141;
+  outline: 2px solid #d92b21;
   outline-offset: 2px;
 }
 
@@ -67,7 +68,7 @@ samp {
   margin-left: 0.5rem;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #52525b;
+  color: #a1a1aa;
   opacity: 0;
   text-decoration: none;
   transition: opacity 0.15s ease, color 0.15s ease;
@@ -77,49 +78,54 @@ samp {
 .prose h2 .anchor-link:focus-visible,
 .prose h3 .anchor-link:focus-visible {
   opacity: 1;
-  color: #fe7141;
+  color: #d92b21;
 }
 
-/* Editorial Dark Prose Typography adjustments */
+/* Editorial Light Prose Typography adjustments */
 .prose {
-  color: #a1a1aa;
+  color: #27272a;
 }
 .prose h1,
 .prose h2,
 .prose h3,
 .prose h4 {
-  color: #ffffff;
+  color: #09090b;
   font-weight: 600;
   letter-spacing: -0.03em;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 .prose strong,
 .prose b {
-  color: #ffffff;
+  color: #09090b;
+  font-weight: 600;
 }
 .prose p {
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .prose ul,
 .prose ol {
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .prose a {
-  color: #ffffff;
+  color: #09090b;
   text-decoration: underline;
-  text-decoration-color: #fe7141;
+  text-decoration-color: #d92b21;
   text-underline-offset: 3px;
   transition: color 0.15s ease;
 }
 .prose a:hover {
-  color: #fe7141;
+  color: #d92b21;
 }
 .prose blockquote {
   border-left-width: 4px;
-  border-left-color: #fe7141;
-  color: #d1d1d6;
+  border-left-color: #d92b21;
+  color: #3f3f46;
   font-style: normal;
   padding-left: 1.25rem;
+  background-color: #f4f4f6;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 2px;
 }
 .prose hr {
   display: none;
@@ -129,10 +135,10 @@ samp {
   border-collapse: collapse;
 }
 .prose th {
-  color: #ffffff;
+  color: #09090b;
   text-align: left;
   padding: 0.75rem 1rem;
-  background-color: #141418;
+  background-color: #f4f4f6;
 }
 .prose td {
   padding: 0.75rem 1rem;
@@ -141,16 +147,17 @@ samp {
 /* Rehype-pretty-code styling for code blocks */
 figure[data-rehype-pretty-code-figure] {
   margin: 1.75rem 0;
-  border-radius: 8px;
-  background-color: #141418;
+  border-radius: 4px;
+  background-color: #18181b;
   overflow: hidden;
+  color: #fafafa;
 }
 
 figcaption[data-rehype-pretty-code-title] {
   padding: 0.65rem 1rem;
   font-size: 0.8125rem;
   color: #a1a1aa;
-  background-color: #1c1c22;
+  background-color: #27272a;
 }
 
 pre[data-theme] {
@@ -171,9 +178,9 @@ code[data-line-numbers] > [data-line]::before {
   width: 1.5rem;
   margin-right: 1.25rem;
   text-align: right;
-  color: #52525b;
+  color: #71717a;
 }
 
 [data-highlighted-line] {
-  background-color: rgba(254, 113, 65, 0.12);
+  background-color: rgba(217, 43, 33, 0.15);
 }

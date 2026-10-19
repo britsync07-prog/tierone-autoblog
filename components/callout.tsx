@@ -4,15 +4,15 @@ import type { ReactNode } from 'react';
 // `<Callout variant="info" title="...">...</Callout>`.
 // Formatted per taste-skill: pure solid tone step, no shadows, no micro-caps.
 const boxStyles = {
-  info: 'bg-[#141824] text-[#d1d5db] border-l-4 border-sky-400',
-  warning: 'bg-[#241a14] text-[#d1d5db] border-l-4 border-amber-400',
-  success: 'bg-[#18181f] text-[#d1d5db] border-l-4 border-[#fe7141]',
+  info: 'bg-[#f0f4f8] text-[#1e293b] border-l-4 border-[#0284c7]',
+  warning: 'bg-[#fef9ee] text-[#451a03] border-l-4 border-[#d97706]',
+  success: 'bg-[#f4f4f6] text-[#09090b] border-l-4 border-[#d92b21]',
 } as const;
 
 const titleStyles = {
-  info: 'text-sky-400',
-  warning: 'text-amber-400',
-  success: 'text-[#fe7141]',
+  info: 'text-[#0284c7]',
+  warning: 'text-[#b45309]',
+  success: 'text-[#d92b21]',
 } as const;
 
 export default function Callout({
@@ -32,7 +32,7 @@ export default function Callout({
       <p className={`text-sm font-bold ${titleStyles[variant]}`}>
         {title}
       </p>
-      <div className="mt-2 text-base leading-relaxed text-[#d1d1d6]">
+      <div className="mt-2 text-base leading-relaxed text-[#374151]">
         {children}
       </div>
     </div>

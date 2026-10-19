@@ -20,26 +20,26 @@ export default function RelatedPosts({
   return (
     <section aria-label="Related guides" className="mt-20 pt-8">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+        <h2 className="text-xl font-bold tracking-tight text-[#09090b] sm:text-2xl">
           More in{' '}
           <Link
             href={siloUrl(silo)}
-            className="text-[#fe7141] hover:text-white underline underline-offset-4 decoration-[#fe7141] transition-colors"
+            className="text-[#d92b21] hover:text-[#09090b] underline underline-offset-4 decoration-[#d92b21] transition-colors"
           >
             {label}
           </Link>
         </h2>
         <Link
           href={siloUrl(silo)}
-          className="text-sm font-semibold text-[#a1a1aa] hover:text-[#fe7141] transition-colors"
+          className="text-sm font-semibold text-[#52525b] hover:text-[#d92b21] transition-colors"
         >
           View all in {label} →
         </Link>
       </div>
 
       {related.length === 0 ? (
-        <p className="mt-4 text-sm text-[#82828e]">
-          <Link href={siloUrl(silo)} className="text-[#fe7141] hover:underline">
+        <p className="mt-4 text-sm text-[#52525b]">
+          <Link href={siloUrl(silo)} className="text-[#d92b21] hover:underline">
             See all {label} guides
           </Link>{' '}
           while more are in the pipeline.
@@ -49,17 +49,17 @@ export default function RelatedPosts({
           {related.map((post) => (
             <li
               key={post.slug}
-              className="group rounded-sm bg-[#141418] p-5 transition-colors hover:bg-[#18181f]"
+              className="group rounded-sm bg-[#f4f4f6] p-5 transition-colors hover:bg-[#ebebee]"
             >
-              <h3 className="text-base font-bold leading-snug tracking-tight text-white">
+              <h3 className="text-base font-bold leading-snug tracking-tight text-[#09090b]">
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="transition-colors group-hover:text-[#fe7141]"
+                  className="transition-colors group-hover:text-[#d92b21]"
                 >
                   {post.title}
                 </Link>
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-[#82828e] line-clamp-2">
+              <p className="mt-2 text-xs leading-relaxed text-[#52525b] line-clamp-2">
                 {post.description}
               </p>
             </li>

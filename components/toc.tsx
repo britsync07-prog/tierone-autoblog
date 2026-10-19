@@ -9,7 +9,7 @@ function TocList({ headings }: { headings: TocHeading[] }) {
         <li key={h.id} className={h.level === 3 ? 'ml-3' : undefined}>
           <a
             href={`#${h.id}`}
-            className="block text-[13.5px] leading-snug text-[#a1a1aa] transition-colors hover:text-[#fe7141]"
+            className="block text-[13.5px] leading-snug text-[#52525b] transition-colors hover:text-[#d92b21]"
           >
             {h.text}
           </a>
@@ -24,10 +24,10 @@ export function Toc({ headings }: { headings: TocHeading[] }) {
   return (
     <nav
       aria-label="Table of contents"
-      className="toc-sidebar hidden lg:block sticky top-24 bg-[#141418] p-5 rounded-sm max-h-[calc(100svh-8rem)] overflow-y-auto"
+      className="toc-sidebar hidden lg:block sticky top-24 bg-[#f4f4f6] p-5 rounded-sm max-h-[calc(100svh-8rem)] overflow-y-auto"
     >
-      <p className="flex items-center gap-2 text-xs font-bold text-white">
-        <span className="h-2 w-2 rounded-full bg-[#fe7141]" />
+      <p className="flex items-center gap-2 text-xs font-bold text-[#09090b]">
+        <span className="h-2 w-2 rounded-full bg-[#d92b21]" />
         Article Contents
       </p>
       <div className="mt-3.5">
@@ -40,8 +40,8 @@ export function Toc({ headings }: { headings: TocHeading[] }) {
 export function TocInline({ headings }: { headings: TocHeading[] }) {
   if (headings.length === 0) return null;
   return (
-    <details className="my-8 lg:hidden rounded-sm bg-[#141418] p-4">
-      <summary className="cursor-pointer font-semibold text-white hover:text-[#fe7141] focus:outline-none">
+    <details className="my-8 lg:hidden rounded-sm bg-[#f4f4f6] p-4">
+      <summary className="cursor-pointer font-semibold text-[#09090b] hover:text-[#d92b21] focus:outline-none">
         Table of Contents ({headings.length} sections)
       </summary>
       <div className="mt-4 pt-3">

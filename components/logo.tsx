@@ -10,7 +10,7 @@ export default function Logo() {
       className="group flex items-center gap-2.5 transition-opacity hover:opacity-90"
       aria-label={SITE_NAME}
     >
-      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-[#fe7141] text-black">
+      <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-[#d92b21] text-white">
         <svg
           width="18"
           height="18"
@@ -23,10 +23,10 @@ export default function Logo() {
             d="M9 2L16 16H2L9 2Z"
             fill="currentColor"
           />
-          <circle cx="9" cy="11.5" r="1.75" fill="#0a0a0c" />
+          <circle cx="9" cy="11.5" r="1.75" fill="#ffffff" />
         </svg>
       </div>
-      <span className="text-[19px] font-bold tracking-[-0.04em] text-white">
+      <span className="text-[19px] font-bold tracking-[-0.04em] text-[#09090b]">
         {SITE_NAME}
       </span>
     </Link>

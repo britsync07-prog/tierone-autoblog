@@ -18,23 +18,23 @@ export default function ComparisonTable({
 }: ComparisonTableProps) {
   return (
     <figure
-      className="my-10 overflow-hidden rounded-md bg-[#141418]"
+      className="my-10 overflow-hidden rounded-sm bg-[#f4f4f6]"
       data-comparison-table
     >
       {title ? (
-        <figcaption className="bg-[#1c1c22] px-5 py-3 text-sm font-bold text-[#fe7141]">
+        <figcaption className="bg-[#e4e4e7] px-5 py-3 text-sm font-bold text-[#d92b21]">
           {title}
         </figcaption>
       ) : null}
       <div className="overflow-x-auto">
         <table className="w-full text-left text-[14px]">
           <thead>
-            <tr className="bg-[#18181f]">
+            <tr className="bg-[#ebebee]">
               {columns.map((col) => (
                 <th
                   key={col.id}
                   scope="col"
-                  className="px-5 py-3.5 font-semibold text-white"
+                  className="px-5 py-3.5 font-semibold text-[#09090b]"
                 >
                   {col.label}
                 </th>
@@ -49,24 +49,24 @@ export default function ComparisonTable({
                   key={i}
                   className={`transition-colors ${
                     isBest
-                      ? 'bg-[#fe7141]/10 hover:bg-[#fe7141]/15'
-                      : 'hover:bg-white/[0.02]'
+                      ? 'bg-[#d92b21]/10 hover:bg-[#d92b21]/15'
+                      : 'hover:bg-black/[0.02]'
                   }`}
                 >
                   {row.cells.map((cell, j) => (
                     <td
                       key={j}
-                      className="px-5 py-3.5 align-top text-[#d1d1d6]"
+                      className="px-5 py-3.5 align-top text-[#27272a]"
                     >
                       {isBest && j === 0 ? (
                         <div className="flex items-center gap-2">
                           <span
                             aria-label="best pick"
-                            className="inline-flex items-center justify-center rounded-sm bg-[#fe7141] px-2 py-0.5 text-xs font-bold text-black"
+                            className="inline-flex items-center justify-center rounded-sm bg-[#d92b21] px-2 py-0.5 text-xs font-bold text-white"
                           >
                             Top Pick
                           </span>
-                          <span className="font-semibold text-white">{cell}</span>
+                          <span className="font-semibold text-[#09090b]">{cell}</span>
                         </div>
                       ) : (
                         cell
@@ -80,7 +80,7 @@ export default function ComparisonTable({
         </table>
       </div>
       {note ? (
-        <p className="bg-[#18181f] px-5 py-3 text-xs text-[#82828e]">
+        <p className="bg-[#ebebee] px-5 py-3 text-xs text-[#52525b]">
           {note}
         </p>
       ) : null}

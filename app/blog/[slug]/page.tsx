@@ -96,20 +96,20 @@ function Breadcrumb({
 }) {
   return (
     <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-2 text-sm font-medium text-[#82828e]">
+      <ol className="flex flex-wrap items-center gap-2 text-sm font-medium text-[#52525b]">
         <li>
-          <a href="/" className="transition-colors hover:text-[#fe7141]">
+          <a href="/" className="transition-colors hover:text-[#d92b21]">
             Home
           </a>
         </li>
-        <li aria-hidden="true" className="text-[#52525b]">/</li>
+        <li aria-hidden="true" className="text-[#a1a1aa]">/</li>
         <li>
-          <a href={siloHref} className="transition-colors hover:text-[#fe7141]">
+          <a href={siloHref} className="transition-colors hover:text-[#d92b21]">
             {siloLabel}
           </a>
         </li>
-        <li aria-hidden="true" className="text-[#52525b]">/</li>
-        <li aria-current="page" className="max-w-[320px] truncate text-white sm:max-w-md">
+        <li aria-hidden="true" className="text-[#a1a1aa]">/</li>
+        <li aria-current="page" className="max-w-[320px] truncate text-[#09090b] sm:max-w-md">
           {title}
         </li>
       </ol>
@@ -122,8 +122,8 @@ function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
   return (
     <section aria-label="Frequently asked questions" className="mt-20 pt-8">
       <div className="flex items-center gap-3">
-        <span className="h-4 w-1 bg-[#fe7141]" />
-        <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+        <span className="h-4 w-1 bg-[#d92b21]" />
+        <h2 className="text-xl font-bold tracking-tight text-[#09090b] sm:text-2xl">
           Frequently Asked Questions
         </h2>
       </div>
@@ -132,12 +132,12 @@ function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
         {faq.map((item) => (
           <div
             key={item.q}
-            className="rounded-sm bg-[#141418] p-6 sm:p-7"
+            className="rounded-sm bg-[#f4f4f6] p-6 sm:p-7"
           >
-            <h3 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-white">
+            <h3 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-[#09090b]">
               {item.q}
             </h3>
-            <p className="mt-3 text-base leading-relaxed text-[#d1d1d6]">
+            <p className="mt-3 text-base leading-relaxed text-[#27272a]">
               {item.a}
             </p>
           </div>
@@ -156,7 +156,7 @@ function ArticleBody({ code }: { code: string }) {
     h2Count += 1;
     return (
       <>
-        <h2 id={id} className="group scroll-mt-24 text-2xl font-bold tracking-tight text-white">
+        <h2 id={id} className="group scroll-mt-24 text-2xl font-bold tracking-tight text-[#09090b]">
           {children}
         </h2>
         {h2Count === 2 ? (
@@ -208,7 +208,7 @@ export default async function PostPage({
         />
         <div className="mt-8 grid gap-12 lg:grid-cols-[minmax(0,68ch)_240px]">
           <article className="mx-auto w-full max-w-[68ch]">
-            <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-[42px]">
+            <h1 className="text-3xl font-bold leading-[1.12] tracking-tight text-[#09090b] sm:text-4xl lg:text-[42px]">
               {post.title}
             </h1>
             <Byline
