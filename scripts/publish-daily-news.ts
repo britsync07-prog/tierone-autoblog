@@ -19,6 +19,7 @@ import matter from 'gray-matter';
 import { aggregateDailyNews, type AggregateDailyNewsResult } from '../lib/pipeline/news/aggregator';
 import { synthesizeNewsArticle } from '../lib/pipeline/news/synthesizer';
 import { assembleNewsPostMdx } from '../lib/pipeline/news/assembler';
+import { downloadAndProcessNewsThumbnail } from '../lib/pipeline/news/images';
 import {
   DEFAULT_COVERED_LEDGER_PATH,
   loadCoveredLedger,
@@ -268,10 +269,31 @@ export async function runDailyNewsPublisher(
     throw err;
   }
 
+  // Step 4.5: Download and optimize source/RSS thumbnail image
+  let heroImage: { src: string; alt: string } | undefined;
+  if (!options.dryRun) {
+    try {
+      const processed = await downloadAndProcessNewsThumbnail({
+        imageUrl: candidate.imageUrl,
+        sourceUrl: candidate.link,
+        slug: synthesized.slug,
+        headline: candidate.title,
+        fetchFn: effectiveFetchFn,
+      });
+      if (processed) {
+        heroImage = { src: processed.src, alt: processed.alt };
+        console.log(`[daily-news] Processed source thumbnail: ${processed.src}`);
+      }
+    } catch (imgErr) {
+      console.warn('[daily-news] Thumbnail processing warning:', imgErr);
+    }
+  }
+
   // Step 5: Assemble MDX and validate frontmatter
   const assembled = assembleNewsPostMdx(synthesized, candidate.link, {
     publishedAt,
     silo: 'ai-news',
+    heroImage,
   });
 
   const { mdxContent, frontmatter } = assembled;

@@ -12,6 +12,10 @@ export interface AssembleNewsOptions {
   silo?: SiloSlug | 'ai-news';
   author?: string;
   canonical?: string;
+  heroImage?: {
+    src: string;
+    alt: string;
+  };
 }
 
 /**
@@ -44,6 +48,7 @@ export function assembleNewsPostMdx(
     silo,
     tldr: synthesized.tldr,
     faq: normalizedFaq,
+    ...(options?.heroImage ? { heroImage: options.heroImage } : {}),
   };
 
   // Fail-closed validation against single-source draftSchema
@@ -81,6 +86,10 @@ export function assembleNewsPostMdx(
     )
     .join('\n');
 
+  const heroImageYaml = frontmatter.heroImage
+    ? `heroImage:\n  src: "${frontmatter.heroImage.src}"\n  alt: "${escapeYamlString(frontmatter.heroImage.alt)}"\n`
+    : '';
+
   const mdxContent = `---
 title: "${escapeYamlString(frontmatter.title)}"
 description: "${escapeYamlString(frontmatter.description)}"
@@ -89,7 +98,7 @@ publishedAt: "${frontmatter.publishedAt}"
 updatedAt: "${frontmatter.updatedAt}"
 silo: "${frontmatter.silo}"
 tldr: "${escapeYamlString(frontmatter.tldr)}"
-faq:
+${heroImageYaml}faq:
 ${faqYaml}
 ---
 

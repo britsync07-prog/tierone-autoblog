@@ -7,6 +7,7 @@ export interface RawNewsItem {
   summary: string;         // Clean text excerpt (max 500 chars)
   score?: number;          // HN points or upvotes (if applicable)
   author?: string;         // Original author or reporting publication
+  imageUrl?: string;       // Original source or RSS enclosure thumbnail URL
 }
 
 export interface CoveredEvent {

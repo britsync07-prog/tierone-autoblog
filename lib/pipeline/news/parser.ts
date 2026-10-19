@@ -122,6 +122,9 @@ export function parseRssOrAtomXml(xmlText: string, sourceName: string): RawNewsI
       const authorMatch = block.match(/<author>[\s\S]*?<name[^>]*>([\s\S]*?)<\/name>[\s\S]*?<\/author>/i);
       const author = authorMatch ? cleanCdataAndEntities(authorMatch[1]) : undefined;
 
+      // Extract image thumbnail from enclosure, media tags, or content
+      const imageUrl = extractThumbnailFromBlock(block);
+
       if (!title || !link) {
         continue;
       }
@@ -141,6 +144,7 @@ export function parseRssOrAtomXml(xmlText: string, sourceName: string): RawNewsI
         source: sourceName,
         summary,
         author: author || undefined,
+        imageUrl,
       });
     }
   } else {
@@ -187,6 +191,9 @@ export function parseRssOrAtomXml(xmlText: string, sourceName: string): RawNewsI
         block.match(/<dc:creator[^>]*>([\s\S]*?)<\/dc:creator>/i);
       const author = authorMatch ? cleanCdataAndEntities(authorMatch[1]) : undefined;
 
+      // Extract image thumbnail from enclosure, media tags, or content
+      const imageUrl = extractThumbnailFromBlock(block);
+
       if (!title || !link) {
         continue;
       }
@@ -206,11 +213,52 @@ export function parseRssOrAtomXml(xmlText: string, sourceName: string): RawNewsI
         source: sourceName,
         summary,
         author: author || undefined,
+        imageUrl,
       });
     }
   }
 
   return items;
+}
+
+/**
+ * Extracts a thumbnail image URL from an RSS item or Atom entry XML block.
+ */
+export function extractThumbnailFromBlock(block: string): string | undefined {
+  // 1. Check <enclosure url="..." /> or <link rel="enclosure" href="..." />
+  const enclosureMatch =
+    block.match(/<enclosure[^>]+url=["']([^"']+)["'][^>]*>/i) ||
+    block.match(/<link[^>]+rel=["']enclosure["'][^>]+href=["']([^"']+)["'][^>]*>/i) ||
+    block.match(/<link[^>]+href=["']([^"']+)["'][^>]+rel=["']enclosure["'][^>]*>/i);
+  if (enclosureMatch && isValidImageUrl(enclosureMatch[1])) {
+    return cleanImageUrl(enclosureMatch[1]);
+  }
+
+  // 2. Check <media:content url="..." /> or <media:thumbnail url="..." />
+  const mediaMatch =
+    block.match(/<media:content[^>]+url=["']([^"']+)["'][^>]*>/i) ||
+    block.match(/<media:thumbnail[^>]+url=["']([^"']+)["'][^>]*>/i);
+  if (mediaMatch && isValidImageUrl(mediaMatch[1])) {
+    return cleanImageUrl(mediaMatch[1]);
+  }
+
+  // 3. Check inline <img> tag in HTML content or CDATA
+  const imgMatch = block.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i);
+  if (imgMatch && isValidImageUrl(imgMatch[1])) {
+    return cleanImageUrl(imgMatch[1]);
+  }
+
+  return undefined;
+}
+
+function isValidImageUrl(url: string): boolean {
+  if (!url || typeof url !== 'string') return false;
+  const trimmed = url.trim();
+  return trimmed.startsWith('http://') || trimmed.startsWith('https://');
+}
+
+function cleanImageUrl(url: string): string {
+  return url.replace(/&amp;/g, '&').trim();
 }
 
 // Convenient alias matching both plan and task naming
