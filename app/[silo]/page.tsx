@@ -82,53 +82,64 @@ export default async function SiloLandingPage({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
         />
-        <main id="main-content" className="mx-auto max-w-3xl px-4 py-16">
+        <main id="main-content" className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
           <nav aria-label="Breadcrumb">
-            <ol className="flex flex-wrap items-center gap-2 text-[14px] text-slate-600">
+            <ol className="flex flex-wrap items-center gap-2 text-[13px] font-medium text-zinc-400">
               <li>
-                <Link href="/" className="hover:text-[#4f46e5] hover:underline">
+                <Link href="/" className="transition-colors hover:text-emerald-400">
                   Home
                 </Link>
               </li>
-              <li aria-hidden="true">/</li>
-              <li aria-current="page" className="text-[#171717]">
+              <li aria-hidden="true" className="text-zinc-600">/</li>
+              <li aria-current="page" className="text-zinc-200">
                 {def.label}
               </li>
             </ol>
           </nav>
 
-          <h1 className="mt-4 text-[30px] font-semibold leading-[1.2] text-[#171717]">
-            {def.label}
-          </h1>
-          <p className="mt-4 text-[16px] leading-[1.5] text-[#171717]">
-            {def.intro}
-          </p>
+          <header className="relative mt-6 overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-[#141419] to-[#0d0d10] p-6 sm:p-8">
+            <div className="absolute top-0 right-0 -mt-12 -mr-12 h-48 w-48 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none" />
+            <div className="relative">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-400">
+                Topical Cluster
+              </span>
+              <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                {def.label}
+              </h1>
+              <p className="mt-3 max-w-3xl text-base leading-relaxed text-zinc-300">
+                {def.intro}
+              </p>
+            </div>
+          </header>
 
           <section aria-label={`Latest ${def.label}`} className="mt-12">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+            <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
               {silo === 'ai-news' ? `Latest ${def.label}` : `Latest ${def.label} guides`}
             </h2>
+
             {posts.length === 0 ? (
-              <p className="mt-4 text-[16px] leading-[1.5] text-slate-600">
-                Fresh {def.label} content is on the way. Check back soon.
-              </p>
+              <div className="mt-6 rounded-xl border border-white/[0.08] bg-[#121215] p-8 text-center">
+                <p className="text-sm text-zinc-400">
+                  Fresh {def.label} content is on the way. Check back soon.
+                </p>
+              </div>
             ) : (
-              <ul className="mt-6 grid gap-8">
+              <ul className="mt-6 divide-y divide-white/[0.06] rounded-xl border border-white/[0.08] bg-[#121215]">
                 {posts.map((post) => (
-                  <li key={post.slug}>
+                  <li key={post.slug} className="p-5 sm:p-6 transition-colors hover:bg-white/[0.02]">
                     <article>
-                      <h3 className="text-[20px] md:text-[24px] font-semibold leading-[1.2]">
+                      <h3 className="text-lg font-bold leading-snug tracking-tight text-white sm:text-xl">
                         <Link
                           href={`/blog/${post.slug}`}
-                          className="text-[#171717] hover:text-[#4f46e5]"
+                          className="transition-colors hover:text-emerald-400"
                         >
                           {post.title}
                         </Link>
                       </h3>
-                      <p className="mt-2 text-[16px] leading-[1.5] text-slate-600 line-clamp-2">
+                      <p className="mt-2 text-sm leading-relaxed text-zinc-300 line-clamp-2">
                         {post.description}
                       </p>
-                      <p className="mt-2 text-[14px] text-slate-600">
+                      <p className="mt-3 text-[13px] text-zinc-400">
                         {formatDate(post.publishedAt)} · {post.readingMinutes} min read
                       </p>
                     </article>
@@ -136,8 +147,9 @@ export default async function SiloLandingPage({
                 ))}
               </ul>
             )}
-            <p className="mt-8 text-[16px] leading-[1.5] text-slate-600">
-              <Link href="/#topics" className="text-[#4f46e5] hover:underline">
+
+            <p className="mt-8 text-sm text-zinc-400">
+              <Link href="/#topics" className="font-medium text-emerald-400 underline underline-offset-4 hover:text-emerald-300">
                 Browse all topics
               </Link>{' '}
               to explore the other guides on this site.
@@ -189,69 +201,72 @@ export default async function SiloLandingPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
       />
 
-      <main id="main-content" className="mx-auto max-w-5xl px-4 py-16">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb">
-          <ol className="flex flex-wrap items-center gap-2 text-[14px] text-slate-600">
+          <ol className="flex flex-wrap items-center gap-2 text-[13px] font-medium text-zinc-400">
             <li>
-              <Link href="/" className="hover:text-[#4f46e5] hover:underline">
+              <Link href="/" className="transition-colors hover:text-emerald-400">
                 Home
               </Link>
             </li>
-            <li aria-hidden="true">/</li>
-            <li aria-current="page" className="text-[#171717] font-medium">
+            <li aria-hidden="true" className="text-zinc-600">/</li>
+            <li aria-current="page" className="font-medium text-zinc-200">
               {def.label}
             </li>
           </ol>
         </nav>
 
         {/* 1. Authority Hero Banner */}
-        <header className="mt-6 rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 p-8 md:p-12 text-white shadow-xl">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center rounded-full bg-indigo-500/20 border border-indigo-400/30 px-3 py-1 text-xs font-semibold tracking-wider text-indigo-200 uppercase">
-              Topic Pillar Hub
-            </span>
-            <span className="text-xs text-slate-300">
-              {posts.length} Verified Guides · 2026 Edition
-            </span>
+        <header className="relative mt-6 overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-br from-[#16161b] via-[#121215] to-[#0d0d10] p-8 md:p-12 text-white shadow-2xl">
+          <div className="absolute top-0 right-0 -mt-12 -mr-12 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none" />
+          <div className="relative">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-400">
+                Topic Pillar Hub
+              </span>
+              <span className="text-xs text-zinc-400">
+                {posts.length} Verified Guides · 2026 Edition
+              </span>
+            </div>
+
+            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-[42px] lg:leading-[1.15]">
+              {def.landingTitle}
+            </h1>
+
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-zinc-300 md:text-lg">
+              {def.intro}
+            </p>
           </div>
-
-          <h1 className="mt-4 text-[32px] md:text-[42px] font-bold leading-[1.15] tracking-tight">
-            {def.landingTitle}
-          </h1>
-
-          <p className="mt-4 text-[16px] md:text-[18px] leading-[1.6] text-slate-200 max-w-3xl">
-            {def.intro}
-          </p>
         </header>
 
         {/* 2. Cornerstone Guide Spotlight */}
         {cornerstoneGuide && (
           <section aria-label="Cornerstone Architecture Guide" className="mt-12">
-            <div className="rounded-xl border-2 border-indigo-200 bg-indigo-50/50 p-6 md:p-8 transition-shadow hover:shadow-md">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-700">
-                <span className="flex h-2 w-2 rounded-full bg-indigo-600" />
+            <div className="rounded-xl border border-emerald-500/30 bg-gradient-to-br from-emerald-950/20 via-[#121215] to-[#121215] p-6 md:p-8 shadow-xl shadow-emerald-950/10 transition-all hover:border-emerald-500/50">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400">
+                <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
                 Cornerstone Architecture Guide
               </div>
-              <h2 className="mt-3 text-[24px] md:text-[28px] font-bold leading-[1.2]">
+              <h2 className="mt-3 text-2xl font-bold tracking-tight text-white md:text-[28px] md:leading-[1.2]">
                 <Link
                   href={`/blog/${cornerstoneGuide.slug}`}
-                  className="text-slate-900 hover:text-indigo-600"
+                  className="transition-colors hover:text-emerald-400"
                 >
                   {cornerstoneGuide.title}
                 </Link>
               </h2>
-              <p className="mt-3 text-[16px] leading-[1.5] text-slate-700">
+              <p className="mt-3 text-[15px] leading-relaxed text-zinc-300">
                 {cornerstoneGuide.description}
               </p>
-              <div className="mt-4 flex items-center gap-4 text-xs font-medium text-slate-600">
+              <div className="mt-5 flex items-center gap-4 text-xs font-medium text-zinc-400">
                 <span>{formatDate(cornerstoneGuide.publishedAt)}</span>
                 <span>•</span>
                 <span>{cornerstoneGuide.readingMinutes} min read</span>
                 <span>•</span>
                 <Link
                   href={`/blog/${cornerstoneGuide.slug}`}
-                  className="text-indigo-600 font-semibold hover:underline"
+                  className="font-semibold text-emerald-400 hover:text-emerald-300 hover:underline"
                 >
                   Read Flagship Guide →
                 </Link>
@@ -264,11 +279,11 @@ export default async function SiloLandingPage({
         <div className="mt-16 space-y-14">
           {comparisonPosts.length > 0 && (
             <section aria-label="Comparisons & Benchmarks">
-              <div className="border-b border-slate-200 pb-3">
-                <h2 className="text-[22px] md:text-[26px] font-bold text-slate-900">
+              <div className="border-b border-white/[0.08] pb-3">
+                <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
                   Head-to-Head Comparisons & Benchmarks
                 </h2>
-                <p className="mt-1 text-sm text-slate-600">
+                <p className="mt-1 text-sm text-zinc-400">
                   Side-by-side empirical evaluations, real tool costs, and verdict breakdowns.
                 </p>
               </div>
@@ -276,22 +291,22 @@ export default async function SiloLandingPage({
                 {comparisonPosts.map((post) => (
                   <article
                     key={post.slug}
-                    className="flex flex-col justify-between rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:border-indigo-300 hover:shadow-md"
+                    className="flex flex-col justify-between rounded-xl border border-white/[0.08] bg-[#121215] p-5 shadow-sm transition hover:border-emerald-500/30 hover:bg-[#15151a]"
                   >
                     <div>
-                      <h3 className="text-[18px] font-semibold leading-[1.3]">
+                      <h3 className="text-[17px] font-bold leading-snug tracking-tight text-white">
                         <Link
                           href={`/blog/${post.slug}`}
-                          className="text-slate-900 hover:text-indigo-600"
+                          className="transition-colors hover:text-emerald-400"
                         >
                           {post.title}
                         </Link>
                       </h3>
-                      <p className="mt-2 text-sm text-slate-600 line-clamp-2">
+                      <p className="mt-2 text-sm leading-relaxed text-zinc-300 line-clamp-2">
                         {post.description}
                       </p>
                     </div>
-                    <div className="mt-4 flex items-center gap-2 text-xs text-slate-500">
+                    <div className="mt-4 flex items-center gap-2 text-xs text-zinc-400">
                       <span>{formatDate(post.publishedAt)}</span>
                       <span>•</span>
                       <span>{post.readingMinutes} min read</span>
@@ -304,11 +319,11 @@ export default async function SiloLandingPage({
 
           {guidePosts.length > 0 && (
             <section aria-label="Workflows & Practical Guides">
-              <div className="border-b border-slate-200 pb-3">
-                <h2 className="text-[22px] md:text-[26px] font-bold text-slate-900">
+              <div className="border-b border-white/[0.08] pb-3">
+                <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
                   Workflows & Step-by-Step Guides
                 </h2>
-                <p className="mt-1 text-sm text-slate-600">
+                <p className="mt-1 text-sm text-zinc-400">
                   Actionable techniques, prompt engineering, and proven operational playbooks.
                 </p>
               </div>
@@ -316,22 +331,22 @@ export default async function SiloLandingPage({
                 {guidePosts.map((post) => (
                   <article
                     key={post.slug}
-                    className="flex flex-col justify-between rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:border-indigo-300 hover:shadow-md"
+                    className="flex flex-col justify-between rounded-xl border border-white/[0.08] bg-[#121215] p-5 shadow-sm transition hover:border-emerald-500/30 hover:bg-[#15151a]"
                   >
                     <div>
-                      <h3 className="text-[18px] font-semibold leading-[1.3]">
+                      <h3 className="text-[17px] font-bold leading-snug tracking-tight text-white">
                         <Link
                           href={`/blog/${post.slug}`}
-                          className="text-slate-900 hover:text-indigo-600"
+                          className="transition-colors hover:text-emerald-400"
                         >
                           {post.title}
                         </Link>
                       </h3>
-                      <p className="mt-2 text-sm text-slate-600 line-clamp-2">
+                      <p className="mt-2 text-sm leading-relaxed text-zinc-300 line-clamp-2">
                         {post.description}
                       </p>
                     </div>
-                    <div className="mt-4 flex items-center gap-2 text-xs text-slate-500">
+                    <div className="mt-4 flex items-center gap-2 text-xs text-zinc-400">
                       <span>{formatDate(post.publishedAt)}</span>
                       <span>•</span>
                       <span>{post.readingMinutes} min read</span>
@@ -344,11 +359,11 @@ export default async function SiloLandingPage({
 
           {deepDivePosts.length > 0 && (
             <section aria-label="Architecture & In-Depth Analyses">
-              <div className="border-b border-slate-200 pb-3">
-                <h2 className="text-[22px] md:text-[26px] font-bold text-slate-900">
+              <div className="border-b border-white/[0.08] pb-3">
+                <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
                   Architecture & Deep Dives
                 </h2>
-                <p className="mt-1 text-sm text-slate-600">
+                <p className="mt-1 text-sm text-zinc-400">
                   Foundational mechanics, ecosystem updates, and technical insights.
                 </p>
               </div>
@@ -356,22 +371,22 @@ export default async function SiloLandingPage({
                 {deepDivePosts.map((post) => (
                   <article
                     key={post.slug}
-                    className="flex flex-col justify-between rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:border-indigo-300 hover:shadow-md"
+                    className="flex flex-col justify-between rounded-xl border border-white/[0.08] bg-[#121215] p-5 shadow-sm transition hover:border-emerald-500/30 hover:bg-[#15151a]"
                   >
                     <div>
-                      <h3 className="text-[18px] font-semibold leading-[1.3]">
+                      <h3 className="text-[17px] font-bold leading-snug tracking-tight text-white">
                         <Link
                           href={`/blog/${post.slug}`}
-                          className="text-slate-900 hover:text-indigo-600"
+                          className="transition-colors hover:text-emerald-400"
                         >
                           {post.title}
                         </Link>
                       </h3>
-                      <p className="mt-2 text-sm text-slate-600 line-clamp-2">
+                      <p className="mt-2 text-sm leading-relaxed text-zinc-300 line-clamp-2">
                         {post.description}
                       </p>
                     </div>
-                    <div className="mt-4 flex items-center gap-2 text-xs text-slate-500">
+                    <div className="mt-4 flex items-center gap-2 text-xs text-zinc-400">
                       <span>{formatDate(post.publishedAt)}</span>
                       <span>•</span>
                       <span>{post.readingMinutes} min read</span>
@@ -385,30 +400,30 @@ export default async function SiloLandingPage({
 
         {/* 4. Complete Spoke Directory */}
         <section aria-label={`Complete ${def.label} Directory`} className="mt-16">
-          <div className="border-b border-slate-200 pb-3">
-            <h2 className="text-[22px] md:text-[26px] font-bold text-slate-900">
+          <div className="border-b border-white/[0.08] pb-3">
+            <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
               All {def.label} Articles ({posts.length})
             </h2>
-            <p className="mt-1 text-sm text-slate-600">
+            <p className="mt-1 text-sm text-zinc-400">
               Complete index of published articles in this topical cluster.
             </p>
           </div>
 
-          <div className="mt-6 divide-y divide-slate-100">
+          <div className="mt-6 divide-y divide-white/[0.04] rounded-xl border border-white/[0.08] bg-[#121215] px-5 sm:px-6">
             {posts.map((post) => (
               <div key={post.slug} className="py-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
                 <div className="max-w-2xl">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="text-[16px] font-semibold text-slate-900 hover:text-indigo-600"
+                    className="text-[15px] font-semibold text-white transition-colors hover:text-emerald-400"
                   >
                     {post.title}
                   </Link>
-                  <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">
+                  <p className="mt-1 text-xs text-zinc-400 line-clamp-1">
                     {post.description}
                   </p>
                 </div>
-                <div className="text-xs text-slate-400 shrink-0">
+                <div className="text-xs text-zinc-400 shrink-0">
                   {formatDate(post.publishedAt)} · {post.readingMinutes}m
                 </div>
               </div>
@@ -417,20 +432,20 @@ export default async function SiloLandingPage({
         </section>
 
         {/* 5. Cluster Navigation & Up-Links */}
-        <nav aria-label="Topic navigation" className="mt-16 rounded-xl bg-slate-50 border border-slate-200 p-6 text-center">
-          <p className="text-sm text-slate-700">
+        <nav aria-label="Topic navigation" className="mt-16 rounded-2xl border border-white/[0.08] bg-[#121215] p-8 text-center">
+          <p className="text-sm text-zinc-300">
             Explore our other authoritative technology hubs or return to the main index.
           </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-3">
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
             <Link
               href="/#topics"
-              className="inline-flex items-center rounded-lg bg-indigo-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-indigo-700"
+              className="inline-flex items-center rounded-lg bg-emerald-600 px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-emerald-950/20 transition-all hover:bg-emerald-500"
             >
               Browse All Topics →
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center rounded-lg bg-white border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+              className="inline-flex items-center rounded-lg border border-white/[0.1] bg-white/[0.04] px-4 py-2.5 text-xs font-semibold text-zinc-200 transition-all hover:bg-white/[0.08] hover:text-white"
             >
               Home Index
             </Link>

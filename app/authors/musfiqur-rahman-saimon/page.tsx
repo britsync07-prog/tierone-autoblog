@@ -41,55 +41,59 @@ function AuthorJsonLd() {
 
 export default function AuthorPage() {
   return (
-    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-16">
-      <article className="mx-auto max-w-[65ch]">
-        <h1 className="text-[30px] font-semibold leading-[1.2] text-[#171717]">
-          {AUTHOR_NAME}
+    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-12 sm:px-6">
+      <article className="mx-auto max-w-[68ch]">
+        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          About the Publisher
         </h1>
         <div className="mt-6">
           <AuthorCard showPhoto />
         </div>
-        <div className="mt-8 space-y-6 text-[16px] leading-[1.5] text-[#171717]">
-          <p>
-            <span className="font-semibold">Focus: </span>
-            Shipping complete, production-grade products.
-          </p>
-          <blockquote className="rounded-lg border border-l-4 border-indigo-200 bg-indigo-50 p-4">
-            Paper-trade it, test it, then deploy it.
-          </blockquote>
-          <p>
-            Currently building: AI-powered tooling &amp; agent integrations
-            (MCP).
-          </p>
-          <p>
-            Based in Bangladesh; writing for a US/UK/CA/AU audience in en-US.
-          </p>
-          <section aria-label="Profiles">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
-              Profiles
+        <div className="mt-8 space-y-6 text-[15.5px] leading-relaxed text-zinc-300">
+          <div className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 space-y-4 shadow-xl">
+            <p>
+              <span className="font-semibold text-white">Focus: </span>
+              Shipping complete, production-grade products and autonomous content systems.
+            </p>
+            <blockquote className="rounded-xl border border-l-4 border-emerald-500/40 bg-emerald-950/20 p-4 text-emerald-200">
+              Paper-trade it, test it, then deploy it.
+            </blockquote>
+            <p>
+              Currently building: AI-powered tooling &amp; agent integrations
+              (MCP).
+            </p>
+            <p>
+              Based in Bangladesh; writing for a US/UK/CA/AU audience in en-US.
+            </p>
+          </div>
+
+          <section aria-label="Profiles" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
+              Verified Profiles
             </h2>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 space-y-2.5">
               <li>
                 <a
                   href="https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa"
                   rel="me noopener"
-                  className="text-[#4f46e5] underline"
+                  className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
                 >
-                  LinkedIn
+                  LinkedIn Profile →
                 </a>
               </li>
               <li>
                 <a
                   href="https://github.com/britsync07-prog"
                   rel="me noopener"
-                  className="text-[#4f46e5] underline"
+                  className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
                 >
-                  GitHub
+                  GitHub Repository &amp; Code →
                 </a>
               </li>
             </ul>
           </section>
-          <p className="text-[14px] text-slate-600">
+
+          <p className="text-xs text-zinc-500">
             {SITE_NAME} publishes under this single, real byline. There are no
             other authors on this site.
           </p>

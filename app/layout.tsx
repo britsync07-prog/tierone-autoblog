@@ -65,10 +65,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-US">
-      <body className="min-h-full flex flex-col bg-white text-[#171717] antialiased">
+      <body className="min-h-screen flex flex-col bg-[#09090b] text-[#d4d4d8] antialiased selection:bg-emerald-500/25 selection:text-white">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:text-[#4f46e5]"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:border focus:border-emerald-500/50 focus:bg-[#121215] focus:px-4 focus:py-2.5 focus:text-emerald-400 focus:shadow-xl focus:outline-none"
         >
           Skip to content
         </a>

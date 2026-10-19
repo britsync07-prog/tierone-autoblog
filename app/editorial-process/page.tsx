@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 
 export default function EditorialProcessPage() {
   return (
-    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-16">
-      <article className="mx-auto max-w-[65ch]">
-        <h1 className="text-[30px] font-semibold leading-[1.2] text-[#171717]">
-          Editorial process
+    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-12 sm:px-6">
+      <article className="mx-auto max-w-[68ch]">
+        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          Editorial Process & Sourcing Standards
         </h1>
-        <div className="mt-6 space-y-6 text-[16px] leading-[1.5] text-[#171717]">
-          <section aria-label="How articles are produced">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+        <div className="mt-8 space-y-6">
+          <section aria-label="How articles are produced" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               How articles are produced
             </h2>
-            <div className="mt-4 space-y-6">
+            <div className="mt-4 space-y-4 text-[15.5px] leading-relaxed text-zinc-300">
               <p>
                 Each article starts with a topic chosen for builders who want
                 practical answers about AI tools — what a tool does, what it
@@ -39,7 +39,7 @@ export default function EditorialProcessPage() {
                 The publisher —{' '}
                 <Link
                   href={`/authors/${AUTHOR_SLUG}`}
-                  className="text-[#4f46e5] underline"
+                  className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
                 >
                   {AUTHOR_NAME}
                 </Link>{' '}
@@ -49,11 +49,12 @@ export default function EditorialProcessPage() {
               </p>
             </div>
           </section>
-          <section aria-label="AI assistance disclosure">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="AI assistance disclosure" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               AI assistance disclosure
             </h2>
-            <div className="mt-4 space-y-6">
+            <div className="mt-4 space-y-4 text-[15.5px] leading-relaxed text-zinc-300">
               <p>
                 Drafts on this site are AI-assisted: writing tools help with
                 research synthesis and first drafts, but every article is
@@ -67,11 +68,12 @@ export default function EditorialProcessPage() {
               </p>
             </div>
           </section>
-          <section aria-label="Sourcing and verification standards">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="Sourcing and verification standards" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               Sourcing and verification standards
             </h2>
-            <div className="mt-4 space-y-6">
+            <div className="mt-4 space-y-4 text-[15.5px] leading-relaxed text-zinc-300">
               <p>
                 Every statistic, price, and feature claim carries a named
                 source with a date. Where possible, claims are verified against
@@ -84,18 +86,19 @@ export default function EditorialProcessPage() {
               </p>
             </div>
           </section>
-          <section aria-label="What we do not publish">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="What we do not publish" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               What we don&apos;t publish
             </h2>
-            <div className="mt-4 space-y-6">
+            <div className="mt-4 space-y-4 text-[15.5px] leading-relaxed text-zinc-300">
               <p>
                 We don&apos;t publish scraped or lightly rewritten content from
                 other sites. We don&apos;t publish fabricated authors,
                 credentials, or experience — the single real byline on the{' '}
                 <Link
                   href={`/authors/${AUTHOR_SLUG}`}
-                  className="text-[#4f46e5] underline"
+                  className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
                 >
                   author page
                 </Link>{' '}

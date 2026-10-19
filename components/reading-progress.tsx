@@ -37,7 +37,7 @@ export default function ReadingProgress() {
     <div
       ref={barRef}
       aria-hidden="true"
-      className="fixed top-0 left-0 h-1 w-0 bg-[#4f46e5] z-50"
+      className="fixed top-0 left-0 h-1 w-0 bg-gradient-to-r from-emerald-500 to-teal-400 shadow-[0_0_10px_rgba(16,185,129,0.6)] z-50"
     />
   );
 }

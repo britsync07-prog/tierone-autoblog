@@ -28,64 +28,72 @@ export default function ComparisonTable({
 }: ComparisonTableProps) {
   return (
     <figure
-      className="my-6 overflow-hidden rounded-lg border border-slate-200"
+      className="my-8 overflow-hidden rounded-xl border border-white/[0.08] bg-[#121215] shadow-xl"
       data-comparison-table
     >
       {title ? (
-        <figcaption className="border-b border-slate-200 bg-slate-50 px-4 py-2 text-[12px] font-medium uppercase tracking-wide text-slate-500">
+        <figcaption className="flex items-center gap-2 border-b border-white/[0.08] bg-[#16161b] px-4 py-2.5 text-[12px] font-bold uppercase tracking-wider text-emerald-400">
+          <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M3 3.5A1.5 1.5 0 014.5 2h9A1.5 1.5 0 0115 3.5v13a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 013 16.5v-13zm2 0v13h9v-13h-9z" clipRule="evenodd" />
+          </svg>
           {title}
         </figcaption>
       ) : null}
       <div className="overflow-x-auto">
-        <table className="w-full text-left text-[14px]">
+        <table className="w-full text-left text-[13.5px]">
           <thead>
-            <tr>
+            <tr className="border-b border-white/[0.08] bg-[#141418]">
               {columns.map((col) => (
                 <th
                   key={col.id}
                   scope="col"
-                  className="border-b border-slate-200 bg-slate-50 px-4 py-2 font-semibold text-[#171717]"
+                  className="px-4 py-3 font-semibold text-white"
                 >
                   {col.label}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody>
-            {rows.map((row, i) => (
-              <tr
-                // Rows are immutable frontmatter data: positional keys are
-                // stable for server-only static renders.
-                key={i}
-                className={row.best === true ? 'bg-indigo-50' : undefined}
-              >
-                {row.cells.map((cell, j) => (
-                  <td
-                    key={j}
-                    className="border-b border-slate-100 px-4 py-2 align-top text-slate-700"
-                  >
-                    {row.best === true && j === 0 ? (
-                      // The best pick carries two independent signals — the
-                      // indigo tint above and this star with its accessible
-                      // label — so color and glyph are never the sole carrier.
-                      <>
-                        <span aria-label="best pick" className="mr-1">
-                          ★
-                        </span>
-                        {cell}
-                      </>
-                    ) : (
-                      cell
-                    )}
-                  </td>
-                ))}
-              </tr>
-            ))}
+          <tbody className="divide-y divide-white/[0.04]">
+            {rows.map((row, i) => {
+              const isBest = row.best === true;
+              return (
+                <tr
+                  key={i}
+                  className={`transition-colors ${
+                    isBest
+                      ? 'bg-emerald-500/[0.08] hover:bg-emerald-500/[0.12]'
+                      : 'hover:bg-white/[0.02]'
+                  }`}
+                >
+                  {row.cells.map((cell, j) => (
+                    <td
+                      key={j}
+                      className="px-4 py-3 align-top text-zinc-300"
+                    >
+                      {isBest && j === 0 ? (
+                        <div className="flex items-center gap-1.5">
+                          <span
+                            aria-label="best pick"
+                            className="inline-flex items-center justify-center rounded bg-amber-400/20 px-1.5 py-0.5 text-[11px] font-bold text-amber-300 shadow-sm"
+                          >
+                            ★ Top Pick
+                          </span>
+                          <span className="font-semibold text-white">{cell}</span>
+                        </div>
+                      ) : (
+                        cell
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
       {note ? (
-        <p className="border-t border-slate-100 bg-slate-50 px-4 py-2 text-[12px] text-slate-500">
+        <p className="border-t border-white/[0.06] bg-[#141418] px-4 py-2.5 text-[12px] text-zinc-400">
           {note}
         </p>
       ) : null}

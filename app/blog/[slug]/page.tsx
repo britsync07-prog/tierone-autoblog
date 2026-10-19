@@ -109,20 +109,20 @@ function Breadcrumb({
 }) {
   return (
     <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-2 text-[14px] text-slate-600">
+      <ol className="flex flex-wrap items-center gap-2 text-[13px] font-medium text-zinc-400">
         <li>
-          <a href="/" className="hover:text-[#4f46e5] hover:underline">
+          <a href="/" className="transition-colors hover:text-emerald-400">
             Home
           </a>
         </li>
-        <li aria-hidden="true">/</li>
+        <li aria-hidden="true" className="text-zinc-600">/</li>
         <li>
-          <a href={siloHref} className="hover:text-[#4f46e5] hover:underline">
+          <a href={siloHref} className="transition-colors hover:text-emerald-400">
             {siloLabel}
           </a>
         </li>
-        <li aria-hidden="true">/</li>
-        <li aria-current="page" className="text-[#171717]">
+        <li aria-hidden="true" className="text-zinc-600">/</li>
+        <li aria-current="page" className="max-w-[320px] truncate text-zinc-200 sm:max-w-md">
           {title}
         </li>
       </ol>
@@ -132,17 +132,28 @@ function Breadcrumb({
 
 function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
   return (
-    <section aria-label="Frequently asked questions" className="mt-12">
-      <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
-        Frequently asked questions
-      </h2>
-      <div className="mt-4 space-y-6">
+    <section aria-label="Frequently asked questions" className="mt-16 border-t border-white/[0.08] pt-12">
+      <div className="flex items-center gap-2.5">
+        <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400">
+          <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 10-1-1zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+          </svg>
+        </span>
+        <h2 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div className="mt-6 space-y-4">
         {faq.map((item) => (
-          <div key={item.q}>
-            <h3 className="text-[20px] font-semibold leading-[1.2] text-[#171717]">
+          <div
+            key={item.q}
+            className="rounded-xl border border-white/[0.08] bg-[#121215] p-5 sm:p-6 transition-colors hover:border-white/[0.14]"
+          >
+            <h3 className="text-base sm:text-lg font-bold leading-snug tracking-tight text-white">
               {item.q}
             </h3>
-            <p className="mt-2 text-[16px] leading-[1.5] text-[#171717]">
+            <p className="mt-3 text-[15px] leading-relaxed text-zinc-300">
               {item.a}
             </p>
           </div>
@@ -167,7 +178,7 @@ function ArticleBody({ code }: { code: string }) {
     h2Count += 1;
     return (
       <>
-        <h2 id={id} className="group scroll-mt-24">
+        <h2 id={id} className="group scroll-mt-24 text-2xl font-bold tracking-tight text-white">
           {children}
         </h2>
         {h2Count === 2 ? (
@@ -177,7 +188,7 @@ function ArticleBody({ code }: { code: string }) {
     );
   };
   return (
-    <div className="prose prose-slate max-w-none">
+    <div className="prose max-w-none">
       <MDXContent code={code} components={{ ...base, h2 }} />
     </div>
   );
@@ -215,16 +226,16 @@ export default async function PostPage({
         ])}
       />
       {faqJsonLd ? <FAQJsonLd {...faqJsonLd} /> : null}
-      <main id="main-content" className="mx-auto max-w-5xl px-4 py-8">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
         <ReadingProgress />
         <Breadcrumb
           siloLabel={siloDef.label}
           siloHref={siloHref}
           title={post.title}
         />
-        <div className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,65ch)_220px]">
-          <article className="mx-auto w-full max-w-[65ch]">
-            <h1 className="text-[30px] font-semibold leading-[1.2] text-[#171717]">
+        <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,68ch)_240px]">
+          <article className="mx-auto w-full max-w-[68ch]">
+            <h1 className="text-3xl font-extrabold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-[40px]">
               {post.title}
             </h1>
             <Byline
@@ -234,28 +245,27 @@ export default async function PostPage({
               updated={post.updatedAt}
               readingMinutes={post.readingMinutes}
             />
-            {/* D-13/PIPE-05: pipeline-generated LCP hero. priority +
-                fetchPriority="high" preloads it as the LCP candidate; the
-                enforced frontmatter alt is the only alt source. Seeds (no
-                hero art) render exactly as before — zero new markup. */}
+            {/* D-13/PIPE-05: pipeline-generated LCP hero. */}
             {post.heroImage ? (
-              <Image
-                src={post.heroImage.src}
-                alt={post.heroImage.alt}
-                width={1280}
-                height={720}
-                priority
-                fetchPriority="high"
-                sizes="(min-width: 768px) 42rem, 100vw"
-                className="mt-4 rounded-lg"
-              />
+              <div className="mt-6 overflow-hidden rounded-xl border border-white/[0.08] shadow-2xl">
+                <Image
+                  src={post.heroImage.src}
+                  alt={post.heroImage.alt}
+                  width={1280}
+                  height={720}
+                  priority
+                  fetchPriority="high"
+                  sizes="(min-width: 768px) 45rem, 100vw"
+                  className="w-full object-cover"
+                />
+              </div>
             ) : null}
-            <AiBadge href="/editorial-process" />
+            <div className="mt-4">
+              <AiBadge href="/editorial-process" />
+            </div>
             <Tldr items={[post.tldr]} />
             <TocInline headings={post.headings} />
-            {/* D-14/PIPE-04: frontmatter comparison DATA renders immediately
-                ABOVE the MDX body (Wirecutter early-table pattern). Posts
-                without comparison frontmatter are rendered unchanged. */}
+            {/* D-14/PIPE-04: frontmatter comparison DATA renders immediately ABOVE MDX */}
             {post.comparison && <ComparisonTable {...post.comparison} />}
             <ArticleBody code={post.mdx} />
             <FaqSection faq={post.faq} />

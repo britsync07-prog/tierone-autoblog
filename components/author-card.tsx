@@ -11,43 +11,43 @@ const AUTHOR_ROLE = 'Full-Stack Product Engineer based in Bangladesh';
 export default function AuthorCard({ showPhoto }: { showPhoto: boolean }) {
   const showImage = showPhoto && AUTHOR_PHOTO_EXISTS;
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
       {showImage ? (
         <Image
           src="/images/author.jpg"
           alt="Portrait of Musfiqur Rahman Saimon"
-          width={200}
-          height={200}
+          width={140}
+          height={140}
           priority={false}
-          className="shrink-0 rounded-full"
+          className="shrink-0 rounded-full border-2 border-emerald-500/40 shadow-lg"
         />
       ) : (
         <div
           role="img"
           aria-label="Initials monogram for Musfiqur Rahman Saimon"
-          className="grid h-[200px] w-[200px] shrink-0 place-items-center rounded-full bg-[#4f46e5] text-5xl font-semibold text-white"
+          className="grid h-28 w-28 shrink-0 place-items-center rounded-2xl bg-gradient-to-tr from-emerald-600 via-teal-500 to-emerald-400 text-3xl font-extrabold text-white shadow-xl shadow-emerald-950/30"
         >
           MS
         </div>
       )}
       <div>
-        <p className="text-[16px] font-semibold text-[#171717]">{AUTHOR_NAME}</p>
-        <p className="mt-1 text-[14px] text-slate-600">{AUTHOR_ROLE}</p>
-        <p className="mt-2 text-[14px]">
+        <p className="text-2xl font-bold tracking-tight text-white">{AUTHOR_NAME}</p>
+        <p className="mt-1 text-sm text-zinc-300 leading-relaxed">{AUTHOR_ROLE}</p>
+        <p className="mt-3.5 flex items-center gap-3 text-sm">
           <a
             href={LINKEDIN_URL}
             rel="me noopener"
-            className="text-[#4f46e5] underline"
+            className="inline-flex items-center gap-1.5 font-medium text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
           >
             LinkedIn
           </a>
-          <span aria-hidden="true" className="mx-2 text-slate-300">
+          <span aria-hidden="true" className="text-zinc-600">
             ·
           </span>
           <a
             href={GITHUB_URL}
             rel="me noopener"
-            className="text-[#4f46e5] underline"
+            className="inline-flex items-center gap-1.5 font-medium text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
           >
             GitHub
           </a>

@@ -12,33 +12,34 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-16">
-      <article className="mx-auto max-w-[65ch]">
-        <h1 className="text-[30px] font-semibold leading-[1.2] text-[#171717]">
-          Terms of use
+    <main id="main-content" className="mx-auto max-w-5xl flex-1 px-4 py-12 sm:px-6">
+      <article className="mx-auto max-w-[68ch]">
+        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          Terms of Use
         </h1>
-        <div className="mt-6 space-y-6 text-[16px] leading-[1.5] text-[#171717]">
-          <section aria-label="Informational content">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+        <div className="mt-8 space-y-6">
+          <section aria-label="Informational content" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               Informational content
             </h2>
-            <p className="mt-4">
+            <p className="mt-4 text-[15.5px] leading-relaxed text-zinc-300">
               {SITE_NAME} publishes informational AI-tool guides: what tools
               do, what they cost, and how they compare. This content is not
               professional advice — financial, legal, or otherwise — and
               reading it does not create any professional relationship.
             </p>
           </section>
-          <section aria-label="How content is made">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="How content is made" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               How content is made
             </h2>
-            <p className="mt-4">
+            <p className="mt-4 text-[15.5px] leading-relaxed text-zinc-300">
               Drafts on this site are AI-assisted and verified by the
               publisher before publication. Read our{' '}
               <Link
                 href="/editorial-process"
-                className="text-[#4f46e5] underline"
+                className="font-semibold text-emerald-400 underline underline-offset-4 transition-colors hover:text-emerald-300"
               >
                 editorial process
               </Link>{' '}
@@ -46,11 +47,12 @@ export default function TermsPage() {
               what we refuse to publish.
             </p>
           </section>
-          <section aria-label="No warranty">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="No warranty" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               No warranty
             </h2>
-            <p className="mt-4">
+            <p className="mt-4 text-[15.5px] leading-relaxed text-zinc-300">
               Tool features and prices change quickly; we work to keep guides
               accurate at their stated review date but offer no warranty that
               any page is complete, current, or fit for your particular
@@ -58,17 +60,19 @@ export default function TermsPage() {
               you buy.
             </p>
           </section>
-          <section aria-label="Outbound links">
-            <h2 className="text-[24px] font-semibold leading-[1.2] text-[#171717]">
+
+          <section aria-label="Outbound links" className="rounded-2xl border border-white/[0.08] bg-[#121215] p-6 sm:p-8 shadow-xl">
+            <h2 className="text-xl font-bold tracking-tight text-white">
               Outbound links
             </h2>
-            <p className="mt-4">
+            <p className="mt-4 text-[15.5px] leading-relaxed text-zinc-300">
               Articles link out to tool makers, documentation, and publisher
               profiles. We are not responsible for the content, accuracy, or
               practices of third-party sites those links point to.
             </p>
           </section>
-          <p className="text-[14px] text-slate-600">
+
+          <p className="text-xs text-zinc-500">
             Last reviewed October 2026; formal counsel review deferred until
             revenue justifies it.
           </p>
