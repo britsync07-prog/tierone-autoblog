@@ -1,0 +1,42 @@
+{
+  "entryId": "best-ai-writing-tools",
+  "slug": "best-ai-writing-tools",
+  "silo": "ai-writing",
+  "timestamp": "2026-10-19T12:41:01.897Z",
+  "reason": "live_verification_failed",
+  "summary": "FAILED: Live URL not reachable (Status: 404). Deployment polling timed out after 180000ms. Last response: Received HTTP 404 with content-type: text/plain; charset=utf-8",
+  "report": {
+    "passed": false,
+    "url": "https://exclusivesources.online/blog/best-ai-writing-tools",
+    "durationMs": 180001,
+    "status": 404,
+    "checks": [
+      {
+        "name": "http_polling",
+        "passed": false,
+        "message": "Deployment polling timed out after 180000ms. Last response: Received HTTP 404 with content-type: text/plain; charset=utf-8"
+      }
+    ],
+    "jsonLd": {
+      "valid": false,
+      "articleFound": false,
+      "articleValid": false,
+      "breadcrumbFound": false,
+      "breadcrumbValid": false,
+      "errors": [
+        "Document could not be fetched"
+      ]
+    },
+    "placeholders": {
+      "passed": false,
+      "clean": false,
+      "matches": []
+    },
+    "links": {
+      "allPassed": false,
+      "probedCount": 0,
+      "brokenLinks": []
+    },
+    "summary": "FAILED: Live URL not reachable (Status: 404). Deployment polling timed out after 180000ms. Last response: Received HTTP 404 with content-type: text/plain; charset=utf-8"
+  }
+}

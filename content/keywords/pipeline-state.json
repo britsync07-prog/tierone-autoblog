@@ -1,11 +1,21 @@
 {
   "paused": false,
-  "consecutiveFailures": 0,
+  "consecutiveFailures": 1,
   "failureHistory": [
     {
       "id": "best-ai-writing-tools",
       "failedRule": "byline-eeat",
       "timestamp": "2026-10-18T07:41:33.489Z"
+    },
+    {
+      "id": "best-ai-writing-tools",
+      "failedRule": "live_verification_failed",
+      "timestamp": "2026-10-19T12:41:01.900Z"
     }
-  ]
+  ],
+  "activeClaim": {
+    "hash": "24438932276a94bb1aaeddecdadd069bbcdd9738cf2747bca8ac1ad54863795d",
+    "entryId": "best-ai-writing-tools",
+    "claimedAt": "2026-10-19T12:38:01.892Z"
+  }
 }

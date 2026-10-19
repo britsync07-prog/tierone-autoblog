@@ -1,0 +1,14 @@
+{
+  "id": "best-ai-writing-tools",
+  "slug": "best-ai-writing-tools",
+  "failedGate": "live_verification_failed",
+  "details": "FAILED: Live URL not reachable (Status: 404). Deployment polling timed out after 180000ms. Last response: Received HTTP 404 with content-type: text/plain; charset=utf-8",
+  "timestamp": "2026-10-19T12:41:01.897Z",
+  "remediationSteps": [
+    "Inspect live failure report: content/quarantine/best-ai-writing-tools-live-fail-report.json",
+    "Resolve schema errors, eliminate placeholder tokens, and fix dead internal links",
+    "Re-run QA and verify local build before re-publishing"
+  ],
+  "sourcePostPath": "/home/runner/work/tierone-autoblog/tierone-autoblog/content/posts/best-ai-writing-tools.mdx",
+  "quarantinePath": "/home/runner/work/tierone-autoblog/tierone-autoblog/content/quarantine/best-ai-writing-tools.mdx"
+}

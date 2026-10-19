@@ -231,10 +231,10 @@
       "id": "best-ai-writing-tools",
       "keyword": "best ai writing tools",
       "silo": "ai-writing",
-      "stage": "drafted",
+      "stage": "quarantined",
       "seedTopic": "best ai writing tools",
       "createdAt": "2026-10-17T11:16:03.671Z",
-      "updatedAt": "2026-10-18T07:41:33.488Z",
+      "updatedAt": "2026-10-19T12:41:01.897Z",
       "freeSignal": {
         "autocomplete": {
           "us": {
@@ -305,6 +305,12 @@
         "passedAt": "2026-10-18T07:46:30.744Z",
         "informationGainScore": 3,
         "claimsChecked": 1
+      },
+      "publishedAt": "2026-10-19T12:38:01.894Z",
+      "quarantine": {
+        "failedRule": "live_verification_failed",
+        "reportPath": "content/quarantine/best-ai-writing-tools-live-fail-report.json",
+        "quarantinedAt": "2026-10-19T12:41:01.897Z"
       }
     },
     {
