@@ -12,5 +12,19 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-10-20T10:53:36.432Z",
+    "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+    "postUrl": "https://exclusivesources.online/blog/anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "message": "Invalid or missing IndexNow key. Must be 8-128 alphanumeric/dash characters."
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]

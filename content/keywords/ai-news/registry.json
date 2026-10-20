@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:00:55.407Z",
+  "updatedAt": "2026-10-20T10:53:35.517Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Someone behind the software",
+      "keyword": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-19T12:00:55.407Z",
-      "publishedAt": "2026-10-19T12:00:55.407Z",
+      "updatedAt": "2026-10-20T10:53:35.517Z",
+      "publishedAt": "2026-10-20T10:53:35.517Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-19T12:00:55.407Z"
+        "landedAt": "2026-10-20T10:53:35.517Z"
       },
       "qa": {
-        "passedAt": "2026-10-19T12:00:55.407Z",
-        "informationGainScore": 726,
+        "passedAt": "2026-10-20T10:53:35.517Z",
+        "informationGainScore": 739,
         "claimsChecked": 1
       }
     }

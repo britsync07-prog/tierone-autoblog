@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T12:00:56.096Z",
+  "updatedAt": "2026-10-20T10:53:36.430Z",
   "events": [
+    {
+      "id": "55c3c0be518a12ff",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "normalizedTitle": "whatsapp help pages hid llm instructions dont recommend regulator",
+      "sourceUrl": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "canonicalDomain": "redact.dev",
+      "publishedDate": "2026-10-19T23:22:18.000Z",
+      "coveredAt": "2026-10-20T10:53:35.517Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "489a23c9b4aa060e",
       "title": "Someone behind the software",
