@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   },
   other: {
     'google-adsense-account': 'ca-pub-1216169179358368',
+    monetag: '5aed58f78612b1efc769e98d8284c4b9',
   },
 };
 
@@ -68,6 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en-US">
       <head>
+        <meta name="monetag" content="5aed58f78612b1efc769e98d8284c4b9" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"
