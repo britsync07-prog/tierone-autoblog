@@ -75,6 +75,11 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"
           crossOrigin="anonymous"
         />
+        <script
+          src="https://5gvci.com/act/files/tag.min.js?z=12082336"
+          data-cfasync="false"
+          async
+        />
       </head>
       <body className="min-h-svh flex flex-col bg-white text-[#27272a] antialiased selection:bg-[#d92b21] selection:text-white">
         <a
