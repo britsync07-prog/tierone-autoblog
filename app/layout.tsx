@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
   },
+  other: {
+    'google-adsense-account': 'ca-pub-1216169179358368',
+  },
 };
 
 // Organization + WebSite structured data in a single sanitized block.
