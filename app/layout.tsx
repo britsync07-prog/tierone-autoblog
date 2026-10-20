@@ -26,7 +26,6 @@ export const metadata: Metadata = {
 };
 
 // Organization + WebSite structured data in a single sanitized block.
-// Plausible snippet below is the ONLY third-party script in v1 (T-01-02).
 function SiteJsonLd() {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -65,6 +64,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-US">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-svh flex flex-col bg-white text-[#27272a] antialiased selection:bg-[#d92b21] selection:text-white">
         <a
           href="#main-content"
