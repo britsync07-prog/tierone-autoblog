@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T10:53:35.517Z",
+  "updatedAt": "2026-10-21T11:06:06.051Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "keyword": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-20T10:53:35.517Z",
-      "publishedAt": "2026-10-20T10:53:35.517Z",
+      "updatedAt": "2026-10-21T11:06:06.051Z",
+      "publishedAt": "2026-10-21T11:06:06.051Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-20T10:53:35.517Z"
+        "landedAt": "2026-10-21T11:06:06.051Z"
       },
       "qa": {
-        "passedAt": "2026-10-20T10:53:35.517Z",
-        "informationGainScore": 739,
+        "passedAt": "2026-10-21T11:06:06.051Z",
+        "informationGainScore": 336,
         "claimsChecked": 1
       }
     }

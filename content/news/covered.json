@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T10:53:36.430Z",
+  "updatedAt": "2026-10-21T11:06:07.050Z",
   "events": [
+    {
+      "id": "2d2caae98728dfe7",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "normalizedTitle": "anthropic pitches ai safety bill may block model if 50 people could killed",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "canonicalDomain": "techcrunch.com",
+      "publishedDate": "2026-10-20T23:01:23.000Z",
+      "coveredAt": "2026-10-21T11:06:06.051Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "anthropic"
+      ]
+    },
     {
       "id": "55c3c0be518a12ff",
       "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
