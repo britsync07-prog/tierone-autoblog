@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T11:06:07.050Z",
+  "updatedAt": "2026-10-22T11:06:13.361Z",
   "events": [
+    {
+      "id": "7643c65b324449e8",
+      "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "normalizedTitle": "meta ordered pay 25b penalty new mexico cambridge analytica case",
+      "sourceUrl": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+      "canonicalDomain": "cnbc.com",
+      "publishedDate": "2026-10-21T17:45:13.000Z",
+      "coveredAt": "2026-10-22T11:06:11.966Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "meta"
+      ]
+    },
     {
       "id": "2d2caae98728dfe7",
       "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",

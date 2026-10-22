@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T11:06:06.051Z",
+  "updatedAt": "2026-10-22T11:06:11.966Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "keyword": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-21T11:06:06.051Z",
-      "publishedAt": "2026-10-21T11:06:06.051Z",
+      "updatedAt": "2026-10-22T11:06:11.966Z",
+      "publishedAt": "2026-10-22T11:06:11.966Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-21T11:06:06.051Z"
+        "landedAt": "2026-10-22T11:06:11.966Z"
       },
       "qa": {
-        "passedAt": "2026-10-21T11:06:06.051Z",
-        "informationGainScore": 336,
+        "passedAt": "2026-10-22T11:06:11.966Z",
+        "informationGainScore": 1069,
         "claimsChecked": 1
       }
     }
