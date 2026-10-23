@@ -86,7 +86,7 @@ export function normalizeUrl(rawUrl: string): string {
       parsed.searchParams.delete(param);
     }
 
-    let host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
     let pathname = parsed.pathname.replace(/\/+$/, '');
     if (!pathname) pathname = '';
 

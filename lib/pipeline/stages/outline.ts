@@ -219,7 +219,7 @@ export async function runStage(ctx: OutlineStageContext, opts: { briefsDir?: str
   const registryDir = ctx.registryDir;
   const notes: string[] = [];
   let advanced = 0;
-  let rejected = 0;
+  const rejected = 0;
   let realCalls = 0;
   let realRequests = 0;
   let fixtureEntries = 0;

@@ -71,7 +71,7 @@ export async function fetchGscSearchAnalytics(
       };
     });
 
-    let sitemapsList: Array<{ path: string; submitted: number; indexed: number }> = [];
+    const sitemapsList: Array<{ path: string; submitted: number; indexed: number }> = [];
     let totalSubmitted = 0;
     let totalIndexed = 0;
 
