@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T11:06:11.966Z",
+  "updatedAt": "2026-10-23T10:57:47.893Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "keyword": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-22T11:06:11.966Z",
-      "publishedAt": "2026-10-22T11:06:11.966Z",
+      "updatedAt": "2026-10-23T10:57:47.893Z",
+      "publishedAt": "2026-10-23T10:57:47.893Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-22T11:06:11.966Z"
+        "landedAt": "2026-10-23T10:57:47.893Z"
       },
       "qa": {
-        "passedAt": "2026-10-22T11:06:11.966Z",
-        "informationGainScore": 1069,
+        "passedAt": "2026-10-23T10:57:47.893Z",
+        "informationGainScore": 841,
         "claimsChecked": 1
       }
     }

@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T11:06:13.361Z",
+  "updatedAt": "2026-10-23T10:57:49.493Z",
   "events": [
+    {
+      "id": "6eb73169f84ce43f",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "normalizedTitle": "openshell safe private runtime fleets autonomous ai agents",
+      "sourceUrl": "https://github.com/NVIDIA/OpenShell",
+      "canonicalDomain": "github.com",
+      "publishedDate": "2026-10-22T17:44:06.000Z",
+      "coveredAt": "2026-10-23T10:57:47.893Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "7643c65b324449e8",
       "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
