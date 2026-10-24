@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T10:57:49.493Z",
+  "updatedAt": "2026-10-24T10:13:37.552Z",
   "events": [
+    {
+      "id": "b5cb20bfbe29ca46",
+      "title": "Dessa: Conversation Model trained only on speech",
+      "normalizedTitle": "dessa conversation model trained only speech",
+      "sourceUrl": "https://block.xyz/dessa",
+      "canonicalDomain": "block.xyz",
+      "publishedDate": "2026-10-23T19:09:54.000Z",
+      "coveredAt": "2026-10-24T10:13:36.293Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "6eb73169f84ce43f",
       "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",

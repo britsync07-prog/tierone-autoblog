@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T10:57:47.893Z",
+  "updatedAt": "2026-10-24T10:13:36.293Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "keyword": "Dessa: Conversation Model trained only on speech",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-23T10:57:47.893Z",
-      "publishedAt": "2026-10-23T10:57:47.893Z",
+      "updatedAt": "2026-10-24T10:13:36.293Z",
+      "publishedAt": "2026-10-24T10:13:36.293Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-23T10:57:47.893Z"
+        "landedAt": "2026-10-24T10:13:36.293Z"
       },
       "qa": {
-        "passedAt": "2026-10-23T10:57:47.893Z",
-        "informationGainScore": 841,
+        "passedAt": "2026-10-24T10:13:36.293Z",
+        "informationGainScore": 621,
         "claimsChecked": 1
       }
     }
