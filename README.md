@@ -1,102 +1,174 @@
-# TierOne AutoBlog
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg?logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+# 🚀 TierOne AutoBlog
 
-TierOne AutoBlog is a fully automated blogging platform built to capture high-volume organic search traffic exclusively from Tier-1 countries (US, UK, CA, AU).
+**An autonomous programmatic SEO engine & AI publishing pipeline built for Tier-1 organic search traffic.**
 
-It autonomously researches, drafts, optimizes, and publishes long-form SEO-structured articles daily with zero human intervention.
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-exclusivesources.online-0070f3?style=for-the-badge&logo=vercel&logoColor=white)](https://exclusivesources.online)
+[![GitHub Stars](https://img.shields.io/github/stars/britsync07-prog/tierone-autoblog?style=for-the-badge&logo=github&color=ffb703)](https://github.com/britsync07-prog/tierone-autoblog/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+[![Tests Passing](https://img.shields.io/badge/Tests-159_Passing_100%25-brightgreen.svg?style=for-the-badge&logo=node.js)](tests/)
+[![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-## What This Is
+<p align="center">
+  <a href="#-live-site">Live Site</a> •
+  <a href="#-visual-showcase">Screenshots</a> •
+  <a href="#-behind-the-build-the-solo-developer-journey">The Solo Dev Story</a> •
+  <a href="#-how-it-works">Architecture</a> •
+  <a href="#-quality-gates--eval-suite">QA Gates</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-author">Author</a>
+</p>
 
-This project is a complete end-to-end programmatic SEO platform. It acts as an autonomous AI agent capable of managing the entire lifecycle of a content site:
-- **Keyword Research & Strategy:** Finds long-tail, low-competition keywords (KD < 20) with strong search volume.
-- **Content Creation:** Generates comprehensive outlines and drafts 1,500–2,500 word articles.
-- **On-Page SEO Optimization:** Strictly structures content with optimized H1s, meta descriptions, FAQ schema, and programmatic breadcrumbs.
-- **Automated Publishing:** Schedules and releases high-quality, formatted posts daily without manual gating.
-
-## Why It Was Built
-
-The primary objective was to build a system that maximizes Tier-1 visitor volume through long-tail organic search traffic in the Tech/AI & Digital Tools niche. I wanted to prove that a completely automated, hands-off pipeline could build topical authority over time without relying on paid APIs or expensive content tools, relying instead on high-quality, procedurally generated programmatic SEO architecture.
-
-It's designed to win search rankings by consistently publishing high-quality, helpful content that passes strict quality gates.
-
-## Core Value
-
-By structuring the content intelligently and adhering strictly to Core Web Vitals (LCP < 2.5s, INP < 200ms, CLS < 0.1), the platform ensures Tier-1 readers land on Google Page 1, stay engaged, and grow organic sessions continuously.
-
-## Challenges Faced & How I Solved Them
-
-Building a fully autonomous AI agent to write articles without producing low-quality "spam" content was the biggest hurdle. Here is how I tackled the core problems:
-
-### 1. Preventing Thin or Spammy AI Content
-**The Problem:** AI-generated content can often be repetitive, shallow, or hallucinate facts, risking a manual Google spam penalty.
-**The Solution:** I built an extensive set of **Quality Gates**. The pipeline includes an originality and anti-near-duplicate shingler, fact-checking verification, and an Information Gain evaluator. If content fails the thin-content floor, uses banned AI phrases ("delve", "fast-paced world"), or generates unverified factual claims, the post is automatically quarantined instead of published.
-
-### 2. Ensuring Bulletproof SEO Architecture
-**The Problem:** Generating articles isn't enough; search engines need to understand the site's structure to crawl efficiently and assign topical authority.
-**The Solution:** I implemented a strict silo taxonomy with programmatic SEO architecture. Every post emits valid `Article`, `FAQPage`, and `BreadcrumbList` JSON-LD schema. Internal links are automated to enforce topic clusters, and split XML sitemaps ensure optimal crawl budget usage.
-
-### 3. Avoiding Paid Third-Party Tools
-**The Problem:** Most automated SEO pipelines rely on expensive third-party tools for keyword research and SERP analysis (like Ahrefs or DataForSEO).
-**The Solution:** As an individual developer, I pivoted the architecture to rely entirely on free, keyless in-house solutions or free-tier endpoints. The system generates its own long-tail programmatic clusters and deduplicates topics to prevent keyword cannibalization autonomously.
-
-### 4. Continuous, Safe Autonomous Publishing
-**The Problem:** Scheduling daily cron jobs could lead to broken links, failed deployments, or poor user experience if an unverified page goes live.
-**The Solution:** I integrated a live-URL verifier post-publish. Once an article is published, a job checks the real URL for status codes, schema validity, and broken links. If anything fails, it automatically unpublishes the post and alerts me.
-
-## Tech Stack
-
-- **Framework:** Next.js 16.x (App Router)
-- **Content:** MDX (Content Collections + Zod)
-- **Language:** TypeScript (Strict)
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel / Cloudflare CDN Edge
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have Node.js version 22 or higher installed.
-
-### Installation
-
-1. Clone the repository:
-   ```shell
-   git clone https://github.com/your-username/tierone-autoblog.git
-   cd tierone-autoblog
-   ```
-
-2. Install dependencies:
-   ```shell
-   npm install
-   ```
-
-3. Set up environment variables:
-   Copy `.env.example` to `.env` and fill in any required keys.
-   ```shell
-   cp .env.example .env
-   ```
-
-4. Run the development server:
-   ```shell
-   npm run dev &
-   ```
-
-5. Build the project:
-   ```shell
-   npm run build
-   ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. Since this is built to be a standalone autonomous agent, enhancements to the AI evaluation stages, quality gates, or SEO schemas are highly appreciated.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+</div>
 
 ---
-*Created by Musfiqur Rahman Saimon*
+
+## 🌐 Live Site
+
+Check out the production publication powered by this autonomous engine:
+👉 **[https://exclusivesources.online](https://exclusivesources.online)**
+
+---
+
+## 📸 Visual Showcase
+
+| Production Homepage & Silo Navigation | Full-Length Synthesized Article View |
+| :---: | :---: |
+| ![TierOne Homepage](assets/screenshots/tierone-home.png) | ![Article Detail](assets/screenshots/tierone-post.png) |
+
+| Topic Silo & Topical Cluster Hub | Mobile Responsive Experience |
+| :---: | :---: |
+| ![Topic Silo Hub](assets/screenshots/tierone-silo.png) | ![Mobile Experience](assets/screenshots/tierone-mobile.png) |
+
+---
+
+## 👨‍💻 Behind the Build: The Solo Developer Journey
+
+> *"Most autonomous content projects fail because they flood the internet with generic, hallucinated AI fluff that gets crushed by Google's helpful content updates. As an individual independent software engineer, I wanted to build an autonomous pipeline that acts like an elite editorial newsroom: rigorous deduplication, multi-source synthesis, strict Information Gain gates, automated rollback, and instant dual-track search indexing."*  
+> — **Musfiqur Rahman Saimon** ([@britsync07-prog](https://github.com/britsync07-prog))
+
+I am **Musfiqur Rahman Saimon**, a solo engineer building open-source production software independently (not a corporation, agency, or VC-backed startup). Architecting and shipping **TierOne AutoBlog** solo meant inventing automated solutions for problems that usually require whole editorial and DevOps teams.
+
+Here are the real problems I encountered while engineering this system and how I solved them:
+
+### 1. Eliminating Generic AI Fluff & Google Spam Penalty Risks
+- **The Problem:** Raw LLM generation produces repetitive phrasing, banned buzzwords (*"in this fast-paced digital era"*, *"delve into"*), and shallow summaries that offer zero original value, putting the domain at high risk of algorithmic search penalties.
+- **How I Tackled It:** I built an automated multi-stage **Quality Assurance Gate Pipeline** ([`lib/pipeline/qa/`](lib/pipeline/qa/)):
+  1. **Information Gain Evaluator:** Scores draft articles on unique data points, comparison matrices, and specific technical citations. If the score falls below `3.0 / 5.0`, the post fails the gate.
+  2. **3-Word Shingle Plagiarism & Deduplication:** Generates contiguous tri-grams and calculates Jaccard similarity across past publications to guarantee originality.
+  3. **Banned Pattern Filter & Redteam Auditor:** Regex scans for boilerplate filler, hallucinated code tokens, and unfinished placeholder markers (`[TODO]`, `NaN`, `undefined`). Any violation quarantines the draft immediately into `quarantine/`.
+
+### 2. Multi-Source News Ingestion with Near-Duplicate Clustering
+- **The Problem:** Ingesting feeds from Hacker News, TechCrunch, The Verge, and Google News often yields 10 different articles covering the exact same breaking story, causing content cannibalization.
+- **How I Tackled It:** I developed a deterministic deduplication algorithm ([`lib/pipeline/news/dedup.ts`](lib/pipeline/news/dedup.ts)) that normalizes canonical URLs, extracts primary named entities, and groups related breaking items into a single synthesis cluster. The AI engine synthesizes perspectives from all sources rather than summarizing just one.
+
+### 3. Operating on Zero Budget Without Costly Third-Party APIs
+- **The Problem:** Enterprise SEO tools (Ahrefs, Semrush, DataForSEO) charge hundreds of dollars per month for keyword and SERP intelligence—unfeasible for an independent developer.
+- **How I Tackled It:** I engineered an internal programmatic keyword clustering model and combined keyless RSS discovery with structured local JSON shard registries ([`lib/pipeline/registry.ts`](lib/pipeline/registry.ts)). This gives TierOne complete autonomy at virtually zero operational cost.
+
+### 4. Post-Publish Verification & Automated Rollback
+- **The Problem:** If a scheduled cron job publishes a broken MDX page, missing image, or malformed JSON-LD schema, search crawlers index errors before human intervention is possible.
+- **How I Tackled It:** I built a live verifier and circuit breaker ([`lib/pipeline/publish/verifier.ts`](lib/pipeline/publish/verifier.ts)). Immediately upon publication, a background worker polls the live production URL, extracts and parses the HTML, verifies the `Article` and `BreadcrumbList` JSON-LD schema, tests internal links, and ensures zero layout bugs. If verification fails, it executes an **Automated Rollback** ([`lib/pipeline/publish/rollback.ts`](lib/pipeline/publish/rollback.ts)), quarantining the post and resetting git state without manual intervention.
+
+### 5. Dual-Track Instant Indexation
+- **The Problem:** Waiting weeks for Googlebot to organically crawl new posts wastes the freshness window of tech news.
+- **How I Tackled It:** I created a dual-track indexing coordinator ([`lib/pipeline/indexing/`](lib/pipeline/indexing/)):
+  - **IndexNow Protocol:** Instantly pushes new URLs to Bing and Yandex within seconds of publication.
+  - **Google Search Console API:** Automatically submits pinged XML sitemaps directly into Google's crawl queue with sanitized private key authentication.
+
+---
+
+## 🏗️ How It Works (Architecture Flow)
+
+```mermaid
+flowchart TD
+    A["Multi-Source News Feeds\n(HN, TechCrunch, Verge, Google News)"] --> B["Freshness Filter (24h Window)"]
+    B --> C["3-Word Shingle & Jaccard Deduplication"]
+    C --> D["LLM Multi-Source Synthesis Engine"]
+    D --> E["5-Layer QA & Info-Gain Gate (>= 3.0)"]
+    E -- Fails Gate --> F["Automatic Quarantine & Circuit Breaker"]
+    E -- Passes Gate --> G["Static MDX Generation & On-Page SEO"]
+    G --> H["Automated Git Deployment (Vercel Edge)"]
+    H --> I["Post-Publish Live URL Verifier"]
+    I -- Verify Failed --> J["Automated Rollback & Unpublish"]
+    I -- Verify Passed --> K["Dual-Track Indexing (IndexNow + GSC)"]
+```
+
+---
+
+## 🛡️ Quality Gates & Eval Suite
+
+TierOne includes a complete offline testing suite featuring **159 automated tests**:
+
+```bash
+npm test
+```
+
+### Highlights from the Test Suite:
+- **`eval-20.test.ts`:** Evaluates 20 queries across 5 topical silos to ensure baseline Information Gain `>= 3.0` and 100% structural compliance.
+- **`news-dedup.test.ts`:** Verifies Jaccard set similarity and shingle clustering to prevent redundant news publication.
+- **`verify-live-url.test.ts`:** Validates live schema parsing, placeholder detection, broken internal link detection, and automated rollback execution.
+- **`velocity-governor.test.ts`:** Enforces domain age rules, active corpus limits, and indexation ratio locks to prevent over-publishing penalties.
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js version 22 or higher
+- npm or pnpm
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/britsync07-prog/tierone-autoblog.git
+cd tierone-autoblog
+npm install
+```
+
+### 2. Environment Configuration
+Copy `.env.example` to `.env` and fill in your credentials:
+```bash
+cp .env.example .env
+```
+
+Key environment variables:
+- `INDEXNOW_KEY` (optional for Bing instant indexation)
+- `GSC_CLIENT_EMAIL` & `GSC_PRIVATE_KEY` (optional for Google Search Console API)
+- `ANTHROPIC_API_KEY` or `GEMINI_API_KEY` (for article synthesis)
+
+### 3. Run Test Suite
+```bash
+npm test
+```
+All 159 tests run offline with mock fixtures in seconds!
+
+### 4. Run Development Server
+```bash
+npm run dev
+```
+Visit `http://localhost:3000` to preview the blog locally.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) and review our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+---
+
+## 👤 Author
+
+**Musfiqur Rahman Saimon**
+- 🐙 GitHub: [@britsync07-prog](https://github.com/britsync07-prog)
+- 💼 Independent Full-Stack Engineer & AI Systems Developer
+
+⭐ **If you find this autonomous SEO architecture innovative or useful, please star the repository!** ⭐
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - Copyright (c) 2026 Musfiqur Rahman Saimon.
