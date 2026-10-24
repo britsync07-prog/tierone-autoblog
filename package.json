@@ -1,7 +1,9 @@
 {
   "name": "tierone-autoblog",
+  "author": "Musfiqur Rahman Saimon",
+  "license": "MIT",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=22"
   },

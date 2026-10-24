@@ -359,7 +359,7 @@ async function processSeedTopic(
     return idx === -1 ? undefined : idx + 1;
   };
 
-  let shard = registry.loadShard(silo);
+  const shard = registry.loadShard(silo);
   const usedIds = new Set<string>(shard.keywords.map((e) => e.id));
 
   for (let i = 0; i < usBatch.suggestions.length; i += 1) {

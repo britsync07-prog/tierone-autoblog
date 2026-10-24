@@ -309,7 +309,7 @@ export function scanPlaceholders(html: string): PlaceholderScanResult {
   }
 
   // 2. Strip <script>, <style>, and HTML comments to avoid false flags in JS/CSS payloads
-  let cleanHtml = html
+  const cleanHtml = html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
     .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
     .replace(/<!--[\s\S]*?-->/g, '');
