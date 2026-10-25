@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T10:13:37.552Z",
+  "updatedAt": "2026-10-25T10:38:41.841Z",
   "events": [
+    {
+      "id": "42532ee811b2ffa8",
+      "title": "We should be more ambitious with the software we build",
+      "normalizedTitle": "we should more ambitious software we build",
+      "sourceUrl": "https://danluu.com/ambitious/",
+      "canonicalDomain": "danluu.com",
+      "publishedDate": "2026-10-24T21:47:31.000Z",
+      "coveredAt": "2026-10-25T10:38:40.685Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "b5cb20bfbe29ca46",
       "title": "Dessa: Conversation Model trained only on speech",
