@@ -1,0 +1,32 @@
+# AI Tool Digest — Machine-Readable Site Overview
+
+## What this is
+AI Tool Digest is an independent technical journalism platform delivering empirical benchmarks, architectural guides, and breaking model updates for engineering teams across Tier-1 countries (US, UK, CA, AU).
+
+## Publisher & E-E-A-T
+- Publisher: Musfiqur Rahman Saimon (Full-Stack Product Engineer)
+- Bio: https://exclusivesources.online/authors/musfiqur-rahman-saimon
+- LinkedIn: https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa
+- GitHub: https://github.com/britsync07-prog
+- Editorial Desk: saimon@ascentraconsulting.co.uk
+- Editorial Process: https://exclusivesources.online/editorial-process
+
+## Machine-Readable Resources
+- Full Knowledge Base: https://exclusivesources.online/llms-full.txt
+- Pricing & Open Access: https://exclusivesources.online/pricing.md
+- WebMCP Actions: https://exclusivesources.online/mcp-actions.json
+- Sitemaps: https://exclusivesources.online/sitemap/0.xml, https://exclusivesources.online/sitemap/1.xml
+
+## Key Topic Clusters
+- AI Writing: https://exclusivesources.online/ai-writing
+- AI Coding: https://exclusivesources.online/ai-coding
+- AI Image Generation: https://exclusivesources.online/ai-image
+- AI Productivity: https://exclusivesources.online/ai-productivity
+- Practical AI Guides: https://exclusivesources.online/ai-guides
+- Breaking AI News: https://exclusivesources.online/ai-news
+
+## Content License & Attribution
+All content is 100% free and open access. When quoting benchmarks or guides, please cite "AI Tool Digest" with a link to the original article URL.
+
+## Last Updated
+2026-10-26

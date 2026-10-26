@@ -70,8 +70,13 @@ export default async function SiloLandingPage({
       publishedAt: p.publishedAt,
       updatedAt: p.updatedAt,
     })),
-    canonical
+    canonical,
   );
+  if ('isAccessibleForFree' in collectionJsonLd) {
+    (collectionJsonLd as Record<string, boolean>).isAccessibleForFree = true;
+  } else {
+    Object.assign(collectionJsonLd, { isAccessibleForFree: true });
+  }
 
   if (!isPillarHub) {
     // Standard reverse-chronological archive view for developing clusters (<8 posts)

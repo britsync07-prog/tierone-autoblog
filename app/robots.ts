@@ -12,10 +12,24 @@ import { SITE_URL } from '@/lib/site';
 // Google and Bing consume every listed sitemap without needing an index.
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      {
+        userAgent: [
+          'Googlebot',
+          'Bingbot',
+          'Applebot',
+          'OAI-SearchBot',
+          'PerplexityBot',
+          'Claude-SearchBot',
+          'Google-Extended',
+        ],
+        allow: '/',
+      },
+    ],
     sitemap: [`${SITE_URL}/sitemap/0.xml`, `${SITE_URL}/sitemap/1.xml`],
   };
 }

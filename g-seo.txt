@@ -1,0 +1,823 @@
+Search Engine Optimization (SEO) Starter Guide
+
+
+When you built your website, you likely created it with your users in mind, trying to make it easy for them to find and explore your content. One of those users is a search engine, which helps people discover your content. SEO—short for search engine optimization—is about helping search engines understand your content, and helping users find your site and make a decision about whether they should visit your site through a search engine.
+
+The Search Essentials outline the most important elements of what makes your website eligible to appear on Google Search. While there's no guarantee that any particular site will be added to Google's index, sites that follow the Search Essentials are more likely to show up in Google's search results. SEO is about taking the next step and working on improving your site's presence in Search. This guide will walk you through some of the most common and effective improvements you can do on your site.
+
+There are no secrets here that'll automatically rank your site first in Google (sorry!). In fact some of the suggestions might not even apply to your business, but following the best practices will hopefully make it easier for search engines (not just Google) to crawl, index, and understand your content.
+
+How does Google Search work?
+Google is a fully automated search engine that uses programs called crawlers to explore the web constantly, looking for pages to add to our index. You usually don't need to do anything except publish your site on the web. In fact, the vast majority of sites listed in our results are found and added automatically as we crawl the web. If you're hungry for more, we have documentation about how Google discovers, crawls, and serves web pages.
+
+Short on time or not feeling adventurous? You might consider hiring a professional. Here's what to consider.
+How long until I see impact in search results?
+Every change you make will take some time to be reflected on Google's end. Some changes might take effect in a few hours, others could take several months. In general, you likely want to wait a few weeks to assess whether your work had beneficial effects in Google Search results. Keep in mind that not all changes you make to your website will result in noticeable impact in search results; if you're not satisfied with your results and your business strategies allow it, try iterating with the changes and see if they make a difference.
+
+Help Google find your content
+Before you actually do anything mentioned in this section, check if Google has already found your content (maybe you don't need to do anything!). Try searching on Google for your site with the site: search operator. If you see results pointing to your site, you're in the index. For example, a search for site:wikipedia.org returns these results. If you don't see your site, check out the technical requirements to make sure there's nothing technically preventing your site from showing in Google Search, and then come back here.
+
+Google primarily finds pages through links from other pages it already crawled. In many cases, these are other websites that are linking to your pages. Other sites linking to you is something that happens naturally over time, and you can also encourage people to discover your content by promoting your site.
+
+If you're open to a little technical challenge, you could also submit a sitemap—which is a file that contains all the URLs on your site that you care about. Some content management systems (CMS) may even do this automatically for you. However this isn't required, and you should first focus on making sure people know about your site.
+
+Check if Google can see your page the same way a user does
+When Google crawls a page, it should ideally see the page the same way an average user does. For this, Google needs to be able to access the same resources as the user's browser. If your site is hiding important components that make up your website (like CSS and JavaScript), Google might not be able to understand your pages, which means they might not show up in search results or rank well for the terms you're targeting.
+
+If your pages have different information depending on the user's physical location, make sure you're satisfied with the information that Google sees from its crawler's location, which is generally the US.
+
+To check how Google sees your page, use the URL Inspection Tool in Search Console.
+
+Don't want a page in Google's search results?
+It might be important for you to opt out your site as a whole or sections of it from appearing in search results. For example, you might not want your posts about your new embarrassing haircut to show up in search results. Google supports various ways that lets you opt out of crawling and indexing of your URLs. If you need to block some files, directories, or even your whole site from Google Search, check out our guide about ways to prevent content from appearing in search results.
+
+Organize your site
+When you're setting up or redoing your site, it can be good to organize it in a logical way because it can help search engines and users understand how your pages relate to the rest of your site. Don't drop everything and start reorganizing your site right now though: while these suggestions can be helpful long term (especially if you're working on a larger website), search engines will likely understand your pages as they are right now, regardless of how your site is organized.
+
+Use descriptive URLs
+Parts of the URL can be displayed in search results as breadcrumbs, so users can also use the URLs to understand whether a result will be useful for them.
+
+Domain
+
+Breadcrumb
+
+Google learns breadcrumbs automatically based on the words in the URL, but you can also influence them with structured data if you like a technical challenge. Try to include words in the URL that may be useful for users; for example:
+
+https://www.example.com/pets/cats.html
+
+A URL that only contains random identifiers is less helpful for users; for example:
+
+https://www.example.com/2/6772756D707920636174
+
+Group topically similar pages in directories
+An illustration of how to group pages in directories
+If you have more than a few thousand URLs on your site, how you organize your content may have effects on how Google crawls and indexes your site. Specifically, using directories (or folders) to group similar topics can help Google learn how often the URLs in individual directories change.
+
+For example, consider the following URLs:
+
+https://www.example.com/policies/return-policy.html
+
+https://www.example.com/promotions/new-promos.html
+
+The content in the policies directory seldomly changes, however the content in the promotions directory likely changes very often. Google can learn this information and crawl the different directories at different frequencies. To learn more about search-friendly site structures, check out our guide for ecommerce sites, for which a good URL structure is more important as they tend to be larger.
+
+Reduce duplicate content
+Some websites show the same content under different URLs, which is called duplicate content. Search engines choose a single URL (the canonical URL) to show users, per piece of content.
+
+Having duplicate content on your site is not a violation of our spam policies, but it can be a bad user experience and search engines might waste crawling resources on URLs that you don't even care about. If you're feeling adventurous, it's worth figuring out if you can specify a canonical version for your pages. But if you don't canonicalize your URLs yourself, Google will try to automatically do it for you.
+
+When working on canonicalization, try to ensure that each piece of content on your site is only accessible through one individual URL; having two pages that contain the same information about your promotions can be a confusing user experience (for example, people might wonder which is the right page, and whether there's a difference between the two).
+
+If you have multiple pages that have the same information, try setting up a redirect from non-preferred URLs to a URL that best represents that information. If you can't redirect, use the rel="canonical" link element instead. But again, don't worry too much about this; search engines can generally figure this out for you on their own most of the time.
+
+Make your site interesting and useful
+Creating content that people find compelling and useful will likely influence your website's presence in search results more than any of the other suggestions in this guide. While "compelling and useful content" can mean different things to different people, content like this generally shares some common attributes, such as:
+
+The text is easy-to-read and well organized: Write content naturally and make sure the content is well written, easy to follow, and free of spelling and grammatical mistakes. Break up long content into paragraphs and sections, and provide headings to help users navigate your pages.
+The content is unique: When you're writing new content, don't copy others' content in part or in its entirety: create the content yourself based on what you know about the topic. Don't just rehash what others already published.
+The content is up-to-date: Check in on previously published content and update it as needed, or even delete it if it's not relevant anymore.
+The content is helpful, reliable, and people-first: Be sure that you're writing content that your readers will find helpful and reliable. For example, providing expert or experienced sources can help people understand your articles' expertise.
+Expect your readers' search terms
+Think about the words that a user might search for to find a piece of your content. Users who know a lot about the topic might use different keywords in their search queries than someone who is new to the topic. For example, some users might search for "charcuterie", while others might search for "cheese board". Anticipating these differences in search behavior and writing with your readers in mind could produce positive effects on how your site performs in search results.
+
+However, don't worry if you don't anticipate every variation of how someone might seek your content. Google's language matching systems are sophisticated and can understand how your page relates to many queries, even if you don't explicitly use the exact terms in them.
+
+Avoid distracting advertisements
+While ads are a part of the internet and are meant to be seen by users, don't let them become overly distracting or prevent your users from reading your content. For example, advertisements, or interstitial pages (pages displayed before or after the content you're expecting) that make it difficult to use the website.
+
+Link to relevant resources
+Links are a great way to connect your users and search engines to other parts of your site, or relevant pages on other sites. In fact, the vast majority of the new pages Google finds every day are through links, making links a crucial resource you need to consider to help your pages be discovered by Google and potentially shown in search results. Additionally, links can also add value by connecting users (and Google) to another resource that corroborates what you're writing about.
+
+An illustration that shows how one web page is linking to other relevant resources
+Write good link text
+Link text (also known as anchor text) is the text part of a link that you can see. This text tells users and Google something about the page you're linking to. With appropriate anchor text, users and search engines can easily understand what your linked pages contain before they visit.An illustration that shows text part of a link
+
+Link when you need to
+Links can provide more context on a topic, both for users and search engines, which may help demonstrate your knowledge on a topic. However when you're linking to pages outside of your control, for example content on other sites, make sure you trust the resource you're linking to. If you can't trust the content and you still want to link to them, add a nofollow or similar annotation to the link to avoid search engines associating your site with the site you're linking to. This helps avoid potential negative consequences in your rankings in Google Search.
+
+If you're accepting user-generated content on your site, such as forum posts or comments, make sure every link that's posted by users has a nofollow or similar annotation automatically added by your CMS. Since you're not creating the content in this case, you likely don't want your site to be blindly associated with the sites users are linking to. This can also help discourage spammers from abusing your website.
+
+Influence how your site looks in Google Search
+
+A typical Google Search results page consists of a few different visual elements that you can influence to help users decide whether they should visit your site through those search results. In this section, we're focusing on the title link and the snippet because these are the more visually significant elements.
+
+Influence your title links
+The title link is the headline part of the search result and it can help people decide which search result to click. There are a few sources that Google uses to generate this title link, including the words inside the <title> element (also called the title text) and other headings on the page. This title text can also be used for the title that's shown in browsers and bookmarks.
+
+How to make your own chili oil
+
+If you use a CMS, you might not need to do anything technical to your titles, beyond just focusing on writing good titles. Most CMSes can automatically turn the titles you write into a <title> element in the HTML.
+An illustration of how title text looks on a web page, and then how it looks in the HTML
+You can influence the title links in Search by writing good titles: a good title is unique to the page, clear and concise, and accurately describes the contents of the page. For example, your title could include the name of your website or business, other bits of important information like the physical location of the business, and maybe some information about what the particular page has to offer for users. Our documentation about title links has more tips about how to create good titles and how to influence your site's search results' title links.
+
+Control your snippets
+Below the title link, a search result typically has a description of the target page to help users decide whether they should click the search result. This is called a snippet.
+
+Learn how to cook eggs with this complete guide in less than 5 minutes. We cover all the methods, including sunny side up, boiled, and poached.
+
+The snippet is sourced from the actual content of the page the search result is linking to, thus you have complete control over the words that can be used to generate the snippet. Occasionally the snippet may be sourced from the contents of the meta description tag, which is typically a succinct, one- or two-sentence summary of the page. A good meta description is short, unique to one particular page, and includes the most relevant points of the page. Check out our tips for writing good meta descriptions for more inspiration.
+
+Add images to your site, and optimize them
+Many people search visually, and images can be how people find your website for the first time. For example, if you have a recipe blog, people might find your content by searching for "fruit tart recipes" and browsing photos of various types of fruit tarts.
+
+As you add images to your site, make sure that people and search engines can find and understand them.
+
+Add high-quality images near relevant text
+When you use high quality images, you give users enough context and detail to decide which image best matches what they were looking for. For example, if people are looking for "daisies" and come across a rogue edelweiss in search results, a higher quality image would help them distinguish the type of flower.
+
+Use images that are sharp and clear, and place them near text that's relevant to the image. The text that's near images can help Google better understand what the image is about and what it means in context to your page.
+
+For example, if the page is reviewing yarn shops in London, then it would make sense to embed one of your photos of the yarn shop in the section that details the location, description, and review information for that yarn shop. This helps Google and users associate the image with text that provides more context to what the page is about.
+
+Add descriptive alt text to the image
+Alt text is a short, but descriptive piece of text that explains the relationship between the image and your content. It helps search engines understand what your image is about and the context of how your image relates to your page, so writing good alt text is quite important. You can add this to your HTML with the alt attribute of the img element, or your CMS may have an easy way to specify a description for an image when you're uploading it to your site. Learn more about how to write good alt text, and how to add it to your images.
+
+Optimize your videos
+If your website includes pages that are primarily about individual videos, people may also be able to discover your site through video results in Google Search. Many of the best practices for images and text also apply to videos:
+
+Create high-quality video content, and embed the video on a standalone page, near text that's relevant to that video.
+Write descriptive text in the titles and description fields of a video (the title of a video is still a title, and so you can apply the best practices for writing titles here too).
+If your site is particularly video-focused, then continue reading about more things you can do to optimize your videos for search engines.
+
+Promote your website
+Effectively promoting your new content will lead to faster discovery by those who are interested in the same subject, and also by search engines. You can do this in many ways:
+
+Social media promotion
+Community engagement
+Advertisement, both offline and online
+Word of mouth, and many other methods
+One of the most effective and lasting ways is word of mouth: that is, people familiar with your site tell their friends about it, who in turn visit your site. This can take time, and usually you need to invest some time and effort in other practices first, such as community engagement. Our friends over at Google for Creators have excellent resources about building and engaging your audience.
+
+Putting effort into the offline promotion of your company or site can also be rewarding. For example, if you have a business site, make sure its URL is listed on your business cards, letterhead, posters, and other materials. With their permission, you could also send out recurring newsletters to your audience letting them know about new content on your website.
+
+As with everything in life, you can overdo promoting your site and actually harm it: people may get fatigued of your promotions, and search engines may perceive some of the practices as manipulation of search results.
+
+Things we believe you shouldn't focus on
+As SEO has evolved, so have the ideas and practices (and at times, misconceptions) related to it. What was considered best practice or top priority in the past may no longer be relevant or effective due to the way search engines (and the internet) have developed over time.
+
+To help you focus on the things that are actually important when it comes to SEO, we collected some of the most common and prominent topics we've seen circulating the internet. In general, our message on these topics is that you should do what's best for your business area; we will elaborate on a few specific points here:
+
+Meta keywords
+Google Search doesn't use the keywords meta tag.
+Keyword stuffing
+Excessively repeating the same words over and over (even in variations) is tiring for users, and keyword stuffing is against Google's spam policies.
+Keywords in the domain name or URL path
+When picking the name of your site, do what's best for your business. Users will use this name to find you, so we recommend following general marketing best practices. From a ranking perspective, the keywords in the name of the domain (or URL path) alone have hardly any effect beyond appearing in breadcrumbs.
+
+And while still on the topic of domain names: the TLD (the domain name ending like ".com" or ".guru") only matters if you're targeting a specific country's users, and even then it's usually a low impact signal. For example, if you're trying to sell Dutch cheese to people searching from Switzerland, it makes some sense (both from business and SEO point of view) to use a .ch domain name. Otherwise Google Search doesn't care which TLD you're using (whether it's a .com or .org or .asia).
+
+Minimum or maximum content length
+The length of the content alone doesn't matter for ranking purposes (there's no magical word count target, minimum or maximum, though you probably want to have at least one word). If you are varying the words (writing naturally to not be repetitive), you have more chances to show up in Search simply because you are using more keywords.
+Subdomains versus subdirectories
+From a business point of view, do whatever makes sense for your business. For example, it might be easier to manage the site if it's segmented by subdirectories, but other times it might make sense to partition topics into subdomains, depending on your site's topic or industry.
+PageRank
+While PageRank uses links and is one of the fundamental algorithms at Google, there's much more to Google Search than just links. We have many ranking signals, and PageRank is just one of those.
+Duplicate content "penalty"
+If you have some content that's accessible under multiple URLs, it's fine; don't fret about it. It's inefficient, but it's not something that will cause a manual action. Copying others' content, however, is a different story.
+Number and order of headings
+Having your headings in semantic order is fantastic for screen readers, but from Google Search perspective, it doesn't matter if you're using them out of order. The web in general is not valid HTML, so Google Search can rarely depend on semantic meanings hidden in the HTML specification.
+
+There's also no magical, ideal amount of headings a given page should have. However, if you think it's too much, then it probably is.
+
+Thinking E-E-A-T is a ranking factor
+No, it's not.
+Next steps
+Get started with Search Console: Setting up a Search Console account helps you monitor and optimize how your website performs on Google Search. Learn how to set up your account and what reports to check out first.
+Maintain your website's SEO over time: Learn more about managing your site's presence in the long term, including more in-depth SEO tasks and scenarios, such as preparing for a site move, or managing a multi-lingual site.
+Enhance how your site looks in Google Search results: Valid structured data on your pages also makes your pages eligible for many special features in Google Search results, including review stars, carousels, and more. Explore the gallery of search result types that your page can be eligible for.
+Stay informed and ask questions
+As you embark on your SEO journey, here are some resources that can help you stay on top of changes and new resources we publish:
+
+Google Search Central blog: Get the latest information from our Google Search Central blog. You can find information about updates to Google Search, new Search Console features, and much more.
+Google Search Central on LinkedIn and X (Twitter): Follow us for updates on Google Search and resources to help you make a great site.
+Google Search Central Help Forum: Post questions about your site's SEO issues and find tips to create high quality sites from the product forum for website owners. There are many experienced contributors in the forum, including Product Experts and occasionally Googlers.
+Google Search Central YouTube Channel: Watch hundreds of helpful videos created for website owners.
+
+
+In-depth guide to how Google Search works
+
+
+
+Google Search is a fully-automated search engine that uses software known as web crawlers that explore the web regularly to find pages to add to our index. In fact, the vast majority of pages listed in our results aren't manually submitted for inclusion, but are found and added automatically when our web crawlers explore the web. This document explains the stages of how Search works in the context of your website. Having this base knowledge can help you fix crawling issues, get your pages indexed, and learn how to optimize how your site appears in Google Search.
+
+Looking for something less technical? Check out our How Search Works site, which explains how Search works from a searcher's perspective.
+A few notes before we get started
+Before we get into the details of how Search works, it's important to note that Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, they're wrong.
+
+Google doesn't guarantee that it will crawl, index, or serve your page, even if your page follows the Google Search Essentials.
+
+Introducing the three stages of Google Search
+Google Search works in three stages, and not all pages make it through each stage:
+
+Crawling: Google downloads text, images, and videos from pages it found on the internet with automated programs called crawlers.
+Indexing: Google analyzes the text, images, and video files on the page, and stores the information in the Google index, which is a large database.
+Serving search results: When a user searches on Google, Google returns information that's relevant to the user's query.
+Crawling
+The first stage is finding out what pages exist on the web. There isn't a central registry of all web pages, so Google must constantly look for new and updated pages and add them to its list of known pages. This process is called "URL discovery". Some pages are known because Google has already visited them. Other pages are discovered when Google extracts a link from a known page to a new page: for example, a hub page, such as a category page, links to a new blog post. Still other pages are discovered when you submit a list of pages (a sitemap) for Google to crawl.
+
+
+Once Google discovers a page's URL, it may visit (or "crawl") the page to find out what's on it. We use a huge set of computers to crawl billions of pages on the web. The program that does the fetching is called Googlebot (also known as a crawler, robot, bot, or spider). Googlebot uses an algorithmic process to determine which sites to crawl, how often, and how many pages to fetch from each site. Google's crawlers are also programmed such that they try not to crawl the site too fast to avoid overloading it. This mechanism is based on the responses of the site (for example, HTTP 500 errors mean "slow down").
+
+However, Googlebot doesn't crawl all the pages it discovered. Some pages may be disallowed for crawling by the site owner, other pages may not be accessible without logging in to the site.
+
+During the crawl, Google renders the page and runs any JavaScript it finds using a recent version of Chrome, similar to how your browser renders pages you visit. Rendering is important because websites often rely on JavaScript to bring content to the page, and without rendering Google might not see that content.
+
+Crawling depends on whether Google's crawlers can access the site. Some common issues with Googlebot accessing sites include:
+
+Problems with the server handling the site
+Network issues
+robots.txt rules preventing Googlebot's access to the page
+Indexing
+After a page is crawled, Google tries to understand what the page is about. This stage is called indexing and it includes processing and analyzing the textual content and key content tags and attributes, such as <title> elements and alt attributes, images, videos, and more.
+
+
+During the indexing process, Google determines if a page is a duplicate of another page on the internet or canonical. The canonical is the page that may be shown in search results. To select the canonical, we first group together (also known as clustering) the pages that we found on the internet that have similar content, and then we select the one that's most representative of the group. The other pages in the group are alternate versions that may be served in different contexts, like if the user is searching from a mobile device or they're looking for a very specific page from that cluster.
+
+Google also collects signals about the canonical page and its contents, which may be used in the next stage, where we serve the page in search results. Some signals include the language of the page, the country the content is local to, and the usability of the page.
+
+The collected information about the canonical page and its cluster may be stored in the Google index, a large database hosted on thousands of computers. Indexing isn't guaranteed; not every page that Google processes will be indexed.
+
+Indexing also depends on the content of the page and its metadata. Some common indexing issues can include:
+
+The quality of the content on page is low
+Robots meta rules disallow indexing
+The design of the website might make indexing difficult
+Serving search results
+Google doesn't accept payment to rank pages higher, and ranking is done programmatically. Learn more about ads on Google Search.
+When a user enters a query, our machines search the index for matching pages and return the results we believe are the highest quality and most relevant to the user's query. Relevancy is determined by hundreds of factors, which could include information such as the user's location, language, and device (desktop or phone). For example, searching for "bicycle repair shops" would show different results to a user in Paris than it would to a user in Hong Kong.
+
+
+Based on the user's query the search features that appear on the search results page also change. For example, searching for "bicycle repair shops" will likely show local results and no image results, however searching for "modern bicycle" is more likely to show image results, but not local results. You can explore the most common UI elements of Google web search in our Visual Element gallery.
+
+Search Console might tell you that a page is indexed, but you don't see it in search results. This might be because:
+
+The content on the page is irrelevant to users' queries
+The quality of the content is low
+Robots meta rules prevent serving
+While this guide explains how Search works, we are always working on improving our algorithms. You can keep track of these changes by following the Google Search Central blog.
+
+
+Automatically generating and ranking results
+Google’s ranking systems are designed to sort through hundreds of billions of webpages and other digital content to present the most relevant, useful results on the first page in a fraction of a second.
+
+A person sorting through Google Search results
+How Google Search continues to improve results
+
+03:56
+How Search systems work
+To give you the most useful information, Search algorithms look at many factors and signals, including the words of your query, relevance and usability of pages, expertise of sources, and your location and settings.
+
+Delivering Results Quickly
+
+People expect Search to deliver quality results in a fraction of a second. As we improve Search and build new features, living up to this expectation is a priority.
+
+We focus on reducing "latency," which is a measurement of the time between when a user enters a search and when they see results. Our teams look at every component of Search to find ways to shave off milliseconds. Any increase in latency (from a new feature or change to Search) must be offset by making some other part of Search faster. This drives teams to continually optimize — phasing out slower code and lesser-used features and improving Search.
+
+Trimming time off of individual queries collectively saves people millions of hours each day.
+
+Read more
+The weight applied to each factor varies depending on the nature of your query. For example, when searching for current news topics, content freshness plays a bigger role than dictionary definitions.
+
+Key Search signals include:
+
+Meaning
+Relevance
+Quality
+Usability
+Context
+
+Meaning of your query
+Illustration of search fields interpreting the word change in different contexts
+To return relevant results, we first need to establish what you’re looking for - the intent behind your query. To do this, we build language models to try to decipher how the relatively few words you enter into the search box match up to the most useful content available.
+
+This system took over five years to develop and significantly improves results in over 30% of searches across languages.
+
+This involves steps as seemingly simple as recognizing and correcting spelling mistakes, and extends to our sophisticated synonym system that allows us to find relevant documents even if they don’t contain the exact words you used. For example, you might have searched for “change laptop brightness” but the manufacturer has written “adjust laptop brightness.” Our systems understand the words and intent are related and so connect you with the right content.
+How Search determines context
+Keywords
+
+If you used words in your query like “cooking” or “pictures,” our systems figure out that showing recipes or images may best match your intent.
+
+Language
+
+The language of your query determines how most results will be displayed - for example, a search in French returns French-language results.
+
+Localization
+
+Our systems can also recognize many queries have a local intent. So when you search for “pizza,” you get results about nearby businesses that deliver.
+
+Current events
+
+When you’re searching for sports scores, company earnings, or stories of the moment, you’ll see the latest information.
+
+Relevance of content
+Next, our systems analyze the content to assess whether it contains information that might be relevant to what you are looking for.  
+
+The most basic signal that information is relevant is when content contains the same keywords as your search query. For example, if those keywords appear in the headings or body text of a webpage, the information might be more relevant. 
+
+Our systems look for quantifiable signals to assess relevance, but they are not designed to analyze subjective concepts such as the viewpoint or political leaning of a page’s content.
+
+We also use aggregated and anonymized interaction data to assess whether search results are relevant to queries. We transform that data into signals that help our machine-learned systems better estimate relevance. Just think: when you search for “dogs,” you likely don’t want a page with the word “dogs” on it hundreds of times. With that in mind, algorithms assess if a page contains other relevant content beyond the keyword “dogs” - such as pictures of dogs, videos, or even a list of breeds.
+
+Illustration of a magnifying glass examining search results for bicycles
+Providing reputable results
+
+Political leanings do not influence how Google ranks search results. We never manipulate search results, modify our products or enforce our policies to promote or disadvantage any particular political ideology, viewpoint or candidate. We conduct hundreds of thousands of experiments every year to ensure that we’re improving Search for everyone.
+
+Independent studies conducted by Stanford and The Economist have all found no forms of political bias in Search and News results. As the Economist concluded: “Google rewards reputable reporting.”
+
+Read more
+Quality of content
+Illustrating representing a number of competing pages, with one selected as having the highest quality for the user
+Labeling ads responsibly
+
+The results you see on Search are solely based on your query, and are not influenced by whether a business, individual, or organization buys ads.
+
+Any advertisements will always be labeled with “Sponsored” or “Ad” and shown separately from search results. We never provide special treatment to advertisers in how our search algorithms rank their websites, and nobody can pay us to do so. The experience of our users comes first, which is why we only show ads that are helpful to people. Even for the fraction of search queries where we do show ads, we don’t make a cent unless people find it relevant enough to click on the ad. We invest significantly in our ads quality systems to continuously improve on our ability to show ads that are highly relevant to people, and helpful to what they’re searching for.
+
+Read more
+After identifying relevant content, our systems aim to prioritize those that seem most helpful. To do this, they identify signals that can help determine which content demonstrates expertise, authoritativeness, and trustworthiness.
+
+For example, one of the factors used to determine quality is understanding if other prominent websites link or refer to the content. This is generally a good sign that the information is trustworthy. Aggregated feedback from our Search quality evaluation process helps to refine how our systems discern the quality of information.
+
+Content on the web and the broader information ecosystem is constantly changing. We continuously measure and assess the quality of our systems to ensure that we’re achieving the right balance of information relevance and authoritativeness to maintain your trust in the results you see.
+
+Search result with image of bicycle and green check mark indicating good usability
+Usability of content
+Our systems also consider the usability of content. When all other signals are relatively equal, content that people will find more accessible may perform better. For example, our systems look at page experience aspects like mobile-friendly content that loads quickly, an important consideration for mobile users.
+Context and settings
+An illustration of the globe showing different regional interpretations of the word football
+Presenting personalized results
+
+“Filter bubbles” are known as situations where internet users only come across content and opinions that reinforce what they already think or believe. Google Search does not put people in “filter bubbles.” Our systems are not designed to infer sensitive characteristics like your race, religion, or political affiliation. Anytime we personalize Search results to be more helpful, we let you know. With our “About this result” feature, you can easily see if your search history or other personal data was a factor in ranking a given result for that query, and you can get easy access to controls to turn personalization off altogether.
+
+Importantly, people can search for anything they want on Google, and seek out a range of perspectives to better understand the world.
+
+Read more
+Search aims to connect human curiosity to knowledge as accurately as possible. To do this, we use information such as your location, past Search history, and Search settings to determine what is most relevant for you in the moment. For example, someone searching “football” in Chicago will likely see results about American football and the Chicago Bears; in London, that search might turn up results about soccer and the Premier League.
+
+Our systems can recognize if you have visited the same page multiple times before and bring that page to the top of your Search results. Or, if you are using the same query, we may show new perspectives and top stories from across the web. As with all information on Search, our systems will take the same approach to surfacing high-quality information based on factors like expertise, experience, authoritativeness, and trustworthiness.
+
+These systems are designed to match your interests, but they are not designed to infer sensitive characteristics like your race, religion, or political party.
+
+We’ve made it easy to adjust your settings and stay in control, whether you’re following specific topics to get the most timely information, or looking for firsthand knowledge from creators and consumers. You can always see which results are personalized, and change your settings at any time.
+
+
+
+
+# Technical SEO Techniques and Strategies | Google Search Central
+
+# Maintaining your website's SEO
+
+If your site is on Google and you're familiar with the [fundamentals of SEO](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), there are more
+things you can do to improve how your site appears on Google. As you manage and maintain your
+website, you may come across more unique scenarios that affect Google Search. This guide covers
+more in-depth SEO tasks, such as preparing for a site move or managing a multi-lingual site.
+
+## Control how Google crawls and indexes your site
+
+Read our guide to understand [how Google Search works](https://developers.google.com/search/docs/fundamentals/how-search-works);
+if you don't understand the crawl/index/serving pipeline well, it
+will be difficult to debug issues or anticipate Search behavior on your site.
+
+### Duplicate content
+
+
+Be sure that you understand what
+[canonical pages are](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls#definition),
+and how they affect crawling and indexing of your site.
+
+### Resources
+
+Be sure that any resources (images, CSS files, and so on) or pages that Google is meant to
+crawl are accessible to Google; that is, they are not blocked by any robots.txt rules and are
+accessible to an anonymous user. Inaccessible pages will not appear in the
+[Page Indexing report](https://search.google.com/search-console/index),
+and the [URL Inspection tool](https://support.google.com/webmasters/answer/9012289)
+will show them as not crawled. Blocked resources are shown only at the
+individual URL level, in the URL Inspection tool. If important resources on a page are blocked,
+this can prevent Google from crawling your page properly. Use the URL Inspection tool to render
+the live page to verify whether Google sees the page as you expect.
+
+### Robots.txt
+
+Use robots.txt rules to prevent crawling, and sitemaps to encourage crawling. Block crawling
+of duplicate content on your site, or unimportant resources (such as small, frequently used
+graphics such as icons or logos) that might overload your server with requests. Don't use
+robots.txt as a mechanism to prevent indexing; use the `noindex` tag or login
+requirements for that. [Read more about blocking access to your content.](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share)
+
+### Sitemaps
+
+Sitemaps are a very important way to tell Google which pages are important to your site, and
+also provide additional information (such as update frequency), and are very important for
+crawling non-textual content (such as images or video). Although Google won't limit crawling
+to pages listed in your sitemaps, it will prioritize crawling these pages. This is especially
+important for sites with rapidly changing content, or with pages that might not be discovered
+through links. Using sitemaps helps Google discover and prioritize which pages to crawl on
+your site. [Read all about sitemaps here.](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
+
+### Internationalized or multi-lingual sites
+
+If your site includes multiple languages, or is targeted at users in specific locales:
+
+- [Read about
+  multi-regional and multi-lingual sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites) for high-level advice on how to manage sites that have localized content for different languages or regions.
+- [Use hreflang](https://developers.google.com/search/docs/specialty/international/localized-versions) to tell Google about different language variations of pages on your site.
+- If your site adapts the content of its pages based on the locale of the request, read [how this can affect Google's crawl of your site](https://developers.google.com/search/docs/specialty/international/locale-adaptive-pages).
+
+### Migrating a page or a site
+
+On the occasion that you might need to move a single URL or even a whole site, follow these guidelines:
+
+#### Migrating a single URL
+
+If you move a page permanently to another location, don't forget
+[to implement `301` redirects for your
+page](https://developers.google.com/search/docs/crawling-indexing/301-redirects). If the move is only temporary for some reason, return `302` instead to tell
+Google to continue to crawl your page.
+
+When a user requests a page that has been removed, you can create a custom `404` page to
+provide a better experience. Just be sure that when a user requests a page that is no longer
+there, you return a true `404` error, not a [`soft 404`](https://developers.google.com/search/docs/crawling-indexing/troubleshoot-crawling-errors#soft-404-errors).
+
+#### Migrating a site
+
+If you're migrating an entire site, implement all the `301` and sitemap changes you need, then
+tell Google about the move so that we can start crawling the new site and forwarding your
+signals to the new site.
+[Learn how to migrate your site.](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+### Follow crawling and indexing best practices
+
+- **[Make your links crawlable](https://developers.google.com/search/docs/crawling-indexing/links-crawlable#crawlable-links).**
+- **[Use `rel=nofollow`](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links)
+  for paid links**, links that require login, or untrusted content (such as user-submitted content) to avoid passing your quality signals on to them, or having their bad quality reflect on you.
+- **[Managing your crawl budget](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget)**: If your site is particularly large (hundreds of millions of pages that change periodically, or perhaps tens of millions of pages that change frequently), Google might not be able to crawl your entire site as often as you'd like, so you might need to point Google to the most important pages on your site. The best mechanism for doing so at present is to list your most recently updated or most important pages in your sitemaps, and hiding your less important pages using robots.txt rules.
+- **JavaScript usage** : Follow [Google's recommendations for JavaScript on websites](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics).
+- **Multi-page articles**: If you have an article broken into several pages, be sure that there are prominent next and previous links for users to click (and that these are crawlable links). That's all you need for the page set to be crawled by Google.
+- **Infinite scroll pages** : Google can have trouble scrolling through infinite scroll pages; provide a paginated version if you want the page to be crawled. [Learn more about search-friendly infinite scroll pages.](https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading#paginated-infinite-scroll)
+- **Block access to URLs that change state,** such as posting comments, creating accounts, adding items to a cart, and so on. Use [robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro) to block these URLs.
+- Review the [list of which file types are indexable by Google](https://developers.google.com/search/docs/crawling-indexing/indexable-file-types).
+- In the unlikely situation that **Google seems to be crawling your site too
+  much** , you can [reduce the crawl rate](https://developers.google.com/search/docs/crawling-indexing/reduce-crawl-rate) for your site. However, this should be a rare occurrence.
+- If your site is still HTTP, we recommend [migrating to HTTPS](https://web.dev/articles/enable-https), for your [users' security, as well as your own](https://developers.google.com/search/blog/2018/12/why-how-to-secure-your-website-https).
+
+## Help Google understand your site
+
+Put key information in text, not graphics, on the site. Although Google can parse and index
+[many file types](https://developers.google.com/search/docs/crawling-indexing/indexable-file-types),
+text is still the safest bet to help us understand the content of the page. If
+you use non-text content, or if you want to provide additional guidance about the content of
+the site, add [structured data](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data) to your
+pages to help us understand your content (and in some cases, provide special search features
+such as [rich results](https://developers.google.com/search/docs/appearance/structured-data/search-gallery)).
+
+If you feel comfortable with HTML and basic coding, you can add structured data by hand
+following the [developer guidelines](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data).
+If you want a little help, you can use the WYSIWYG [Structured Data Markup helper](https://support.google.com/webmasters/answer/3069489)
+to help you generate basic structured data for you.
+
+If you don't have the ability to add structured data to your pages, you might use the
+[Data Highlighter tool](https://support.google.com/webmasters/answer/2753960),
+which lets you highlight portions of a page and tell Google what each section
+represents (an event, a date, a price, and so on). This is simple, but it can break if you
+change the layout of your page.
+
+[Read more about helping Google understand your site content.](https://developers.google.com/search/docs/fundamentals/seo-starter-guide#understand_your_content)
+
+## Follow our guidelines
+
+> [!CAUTION]
+> **Caution** : Be sure to follow our [Search Essentials](https://developers.google.com/search/docs/essentials). Some of these are recommendations and best practices; others can lead to a site being removed from the Google index if you do not follow them.
+
+### Content-specific guidelines
+
+If you have specific types of content on your site, here are some recommendations for getting
+them on Google in the best way:
+
+- **Video** : Be sure to follow our [video best practices](https://developers.google.com/search/docs/appearance/video) to enable Google to find, crawl, and show results for videos hosted on your site.
+- **Images** : Follow our [image best practices](https://developers.google.com/search/docs/appearance/google-images) to get your images to appear in Search. You can show additional information about your image in Google Images by [providing image metadata](https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata) on the image host page. To block an image from being indexed, [use a robots.txt `Disallow` rule](https://developers.google.com/search/docs/crawling-indexing/prevent-images-on-your-page).
+- **For children:** If your content is specifically for children, [tag your pages or site as child-directed](https://developers.google.com/search/docs/advanced/guidelines/tag-child-directed-treatment) in order to comply with the Children's Online Privacy Protection Act ([COPPA](https://business.ftc.gov/privacy-and-security/childrens-privacy)).
+- **Adult sites** : If your site (or specific pages) contain adult-only content, you might consider [tagging it as adult content](https://developers.google.com/search/docs/crawling-indexing/safesearch), which will filter it in SafeSearch results.
+- **News:** If you run a news site, here are some important considerations:
+  - If you have news content, be sure to read the [Google Publisher Center help documentation](https://support.google.com/news/publisher-center/).
+  - In addition, create a [News sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap) to help Google discover content more quickly.
+  - Be sure to [prevent abuse](https://developers.google.com/search/docs/monitor-debug/prevent-abuse) on your site.
+  - If you want to provide a limited number of views to visitors without a subscription or login, read about [flexible sampling](https://developers.google.com/search/docs/appearance/flexible-sampling) to learn some best practices about providing limited access to your content.
+  - See how to [indicate subscription and paywalled content](https://developers.google.com/search/docs/appearance/structured-data/paywalled-content) on your site to Google while still enabling crawling.
+  - See how to use `meta` tags to [limit text or image use when generating search result snippets](https://developers.google.com/search/docs/crawling-indexing/special-tags).
+  - Consider using [AMP](https://amp.dev) or [Web Stories](https://amp.dev/about/stories/) for fast-loading content.
+- **Other sites** (for example, sites about businesses, books, apps, scholarly works): See [other Google services](https://developers.google.com/search/docs/fundamentals/get-on-google) where you can post your information.
+- See if [Google supports a Search feature specific for your content type](https://developers.google.com/search/docs/appearance/structured-data/search-gallery). Google supports specialized Search features for recipes, events, job posting sites, and more.
+
+## Manage the user experience
+
+Providing a good user experience should be your site's top goal, and a good user experience
+is a ranking factor. There are many elements to providing a good user experience; here are a
+few of them.
+
+[Google recommends that websites use HTTPS](https://developers.google.com/search/blog/2018/12/why-how-to-secure-your-website-https),
+rather than HTTP, to improve user and site security. Sites that use HTTP
+can be marked as "not secure" in the Chrome browser.
+[Learn how to secure your site with HTTPS](https://web.dev/articles/enable-https).
+
+A fast page usually beats a slow page in user satisfaction. You can use the
+[Core Web Vitals report](https://search.google.com/search-console/core-web-vitals)
+to see your site-wide performance numbers, or [PageSpeed Insights](https://pagespeed.web.dev/)
+to test performance for individual pages. You can learn more about building fast
+pages on the [web.dev site](https://web.dev/explore/fast). Also consider
+using [AMP](https://amp.dev/about/stories/) for fast pages.
+
+### Mobile considerations
+
+With [over 60 percent of the global internet population using a mobile device to go online](https://www.statista.com/topics/779/mobile-internet/#topicOverview),
+it's important that your site be mobile-friendly. Google now uses a mobile crawler as the
+default crawler for websites.
+[Read about how to make your site mobile friendly](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing).
+
+## Control your search appearance
+
+Google provides [many kinds of search result features and experiences in Google Search](https://developers.google.com/search/docs/appearance/search-result-features),
+including review stars and special result types for specific types of information such as
+events or recipes. See which ones are appropriate for your site and consider implementing them.
+You can [provide a favicon](https://developers.google.com/search/docs/appearance/favicon-in-search)
+to show in search results for your site. You can also [provide an article date](https://developers.google.com/search/docs/appearance/publication-dates)
+to appear in search results.
+
+Be sure to read the articles on how to help Google
+provide good [titles links](https://developers.google.com/search/docs/appearance/title-link) and
+[snippets](https://developers.google.com/search/docs/appearance/snippet). You can also restrict the snippet length, or omit it
+entirely if you wish. See how to use `meta` tags to [limit text or image use when generating search result snippets](https://developers.google.com/search/docs/appearance/snippet#nosnippet).
+
+## Using Search Console
+
+
+Search Console offers a broad range of reports to help you monitor and optimize your site
+performance on Google Search. Learn more about [what reports to use](https://developers.google.com/search/docs/advanced/guidelines/search-console).
+
+
+# SEO Guide for Web Developers | Google Search Central
+
+# Get started with Search: a developer's guide
+
+
+Making your content search-friendly matters because it's how you get more relevant users viewing
+your content. This is called search engine optimization (SEO), which can result in more
+interested users coming to your site. If Google Search has trouble understanding your page,
+you're possibly missing out on an important source of traffic.
+
+
+This guide covers what developers can do to make sure that their sites work well with Google
+Search. In addition to the items in this guide, make sure that your site is
+[secure](https://web.dev/explore/secure),
+[fast](https://web.dev/explore/fast),
+[accessible to all](https://web.dev/explore/accessible), and
+[works on all devices](https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing).
+
+> [!NOTE]
+> For help that's not so technical, visit the [SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). The SEO starter guide covers other aspects of SEO, like authoring content.
+
+## Find out how Google sees your site
+
+
+To get started, test your site in the [URL inspection tool](https://search.google.com/search-console) or
+[Rich Results Test](https://search.google.com/test/rich-results) to
+see how Google sees your site.
+[Googlebot is Google's web
+crawling bot](https://developers.google.com/search/docs/crawling-indexing/googlebot) that discovers new and updated pages for the Google index. For
+more information about the process, go to
+[How Google Search Works](https://developers.google.com/search/docs/fundamentals/how-search-works).
+
+
+You may be surprised to find that Google doesn't always see everything that you see in the
+browser. In the following example, Google doesn't know there are images on this page
+because the page uses a JavaScript feature that isn't supported by Google.
+User view
+
+Here's how a user views the page. Users can view the images and text in the browser.
+
+![A website that shows 6 different images of cats. The title of the website
+is Cute cat content chronicles.](https://developers.google.com/static/search/docs/images/get-started01.png)
+Google view
+
+Here's how Google views the page. Google doesn't know there are images on this page
+because the page uses a JavaScript feature that isn't supported by Google.
+
+![A website that shows the title of the website. There are supposed to be images of cats on the page, but it just shows loading icons.](https://developers.google.com/static/search/docs/images/get-started02.png)
+
+## Check your links
+
+
+Googlebot navigates from URL to URL by fetching and parsing links, sitemaps, and redirects. Googlebot
+treats every URL as if it's the first and only URL it has seen from your site. To make sure
+that Googlebot can find all the URLs on your site:
+
+- Use [`<a>` elements that Google can crawl](https://developers.google.com/search/docs/crawling-indexing/links-crawlable#crawlable-links). Ensure that all pages on the site can be reached by a link from another findable page. Make sure the referring link includes either text or, for images, an alt attribute, that is relevant to the target page.
+- [Build and submit a sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) to help Googlebot more intelligently crawl your site. A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them.
+- For JavaScript apps that have only one HTML page, make sure that each screen or piece of individual content has a URL.
+
+## Check how you're using JavaScript
+
+
+While Google does run JavaScript, there are some differences and limitations that you need
+to account for when designing your pages and applications to accommodate how crawlers access
+and render your content.
+
+Learn more about the [basics of JavaScript SEO](https://developers.google.com/search/docs/guides/javascript-seo-basics) or how to [fix
+Search-related JavaScript problems](https://developers.google.com/search/docs/guides/fix-search-javascript).
+
+
+To learn more about how Google handles JavaScript when crawling, rendering, and indexing, see the following video.
+[Video](https://www.youtube.com/watch?v=Mqi9aLZElgc)
+
+## Keep Google updated when content changes
+
+
+To make sure that Google finds your new or updated pages quickly:
+
+- [Submit sitemaps](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap).
+- [Ask Google to recrawl your
+  URLs](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
+
+If you're still having trouble getting your page indexed, check your server logs for errors.
+
+## Don't forget about the words on the page
+
+
+Googlebot can only find content that is textually visible. For example, text in videos is
+invisible to Googlebot. To make sure that Google Search understands what your page is about:
+
+- **Make sure that your visual content is expressed in text form.** For example, a product category page that contains a list of images of shirts with no textual context about each image is suboptimal. The product category page should include some textual explanation for each image.
+- **Make sure that every page has a
+  [descriptive title](https://developers.google.com/search/docs/appearance/title-link#page-titles) and
+  [meta description](https://developers.google.com/search/docs/appearance/snippet#meta-descriptions)**. Unique titles and meta descriptions help Google show how your pages are relevant to users, which in turn can increase your search traffic.
+- **Use semantic HTML**. While Google indexes HTML, PDF content, images, and videos, it doesn't index content that requires plugins (for example, Java or Silverlight) or content that is rendered in a canvas. Instead of using a plugin, use semantic HTML markup for your content whenever possible.
+- **Make sure your text content is accessible in the
+  [DOM.](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)** [For example, content that is added via the](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)[CSS `content` property](https://developer.mozilla.org/en-US/docs/Web/CSS/content) is not part of the DOM and Google Search ignores it at the moment. It's fine to use the `content` property for decorative content; Google Search may not index this content.
+
+## Tell Google about other versions of your content
+
+
+Google doesn't automatically know that there are multiple versions of your site or content. For
+example, a mobile and desktop version, or international versions of your site. To make sure
+that Google serves the right version to users, you can:
+
+- [Consolidate duplicate
+  URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls).
+- [Tell
+  Google about localized versions of your site](https://developers.google.com/search/docs/specialty/international/localized-versions).
+- [Make your AMP pages
+  discoverable](https://www.ampproject.org/docs/fundamentals/discovery).
+
+## Control what content Google sees
+
+
+There are several ways to block Googlebot:
+
+- To block Google from finding your page, restrict access to your content to logged in users (for example, use a login page or [password-protect your
+  page](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share)).
+- To block Googlebot from crawling your page, [create a robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt).
+
+  > [!NOTE]
+  > A robots.txt is not a mechanism for keeping a web page out of Google. To keep a web page out of Google, use the `noindex` robots rules, or [password-protect](https://developers.google.com/search/docs/crawling-indexing/control-what-you-share) your page.
+
+- To block Google from indexing your page but still allow crawling, [add a
+  `noindex` tag](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#noindex).
+
+  > [!NOTE]
+  > Combining multiple crawling and indexing rules might cause some rules to counteract other rules. Learn how to configure these rules properly by reading [Combining crawling with indexing / serving rules](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#combining).
+
+If your content isn't showing up in Google Search and you want it to show up, follow these
+steps:
+
+- Check if Googlebot can access the page with the [URL inspection tool](https://support.google.com/webmasters/answer/9012289).
+- [Test your robot.txt](https://support.google.com/webmasters/answer/6062598) file to see if you're unintentionally blocking Googlebot from crawling your site.
+- Check your HTML for `noindex` rules in `meta` tags.
+
+## Enable rich results for your site
+
+
+A rich result can include styling, images, or other interactive features that can help your
+site stand out more in Search results. You can help Google understand your page better and
+show rich results for it in Search by providing explicit clues about the meaning of a page
+[with structured data on the page](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data). If
+you're not sure where to start, [explore our gallery of available features](https://developers.google.com/search/docs/guides/search-gallery).
+![A carousel of recipes in search results](https://developers.google.com/static/search/docs/images/recipe-host-carousel-rich-result.png)
+
+
+# Do you need an SEO?
+
+[Video](https://www.youtube.com/watch?v=NWsyr-D06Ck)
+
+As with many business activities, sometimes hiring a professional can be helpful. Deciding to
+hire a company or person to do [search engine optimization (SEO)](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+for your website in Google Search is a big decision that can potentially improve your site's
+visibility and save you time, but you can also risk damage to your site and reputation. Make sure
+to research the potential advantages as well as the damage that an irresponsible SEO can do to
+your site. Many SEOs and other agencies and consultants provide useful services for website
+owners, including:
+
+- Review of your site content or structure
+- Technical advice on website development: for example, hosting, redirects, error pages, use of JavaScript
+- Content development
+- Management of online business development campaigns
+- Keyword research
+- SEO training
+- Expertise in specific markets and geographies
+- Optimizing for generative AI
+
+Advertising with Google won't have any effect on your site's presence in our search results.
+Google never accepts money to include or rank sites in our search results, and it costs
+nothing to appear in our organic search results. Resources such as [Search Console](https://search.google.com/search-console),
+the official [Google Search Central blog](https://developers.google.com/search/blog), and our
+[discussion forum](https://support.google.com/webmasters/community)
+can provide you with a great deal of information about how to optimize your site for Google's non-advertising search results (often called "organic search").
+
+## Deciding on whether you need an SEO
+
+If you run a small local business, you can probably do much of the work yourself. We recommend
+starting with the [SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide),
+as it's a practical guide to improving your site's SEO and it describes much of what your SEO will
+do for you. If you decide to hire a professional to do the work for you in the end, it's also
+useful to be familiar with these techniques so that you can be aware if an SEO wants to use a
+technique that's not recommended or, worse, strongly discouraged.
+
+If you think that you still need extra help from a professional, continue reading about hiring
+an SEO.
+
+## Things to consider when hiring an SEO
+
+As with many business activities, sometimes hiring a professional can be helpful. For example,
+a great time to hire is when you're considering a site redesign (the earlier, the better), or
+planning to launch a new site. That way, you and your SEO can ensure that your site is designed to
+be search engine-friendly from the bottom up. However, a good SEO can also help improve an
+existing site.
+
+Here are some things to consider if you're considering hiring someone to do SEO for your site:
+
+- **Interview your potential SEO.** Some useful questions to ask an SEO include:
+  - Can you show me examples of your previous work and share some success stories?
+  - Do you follow the [Google Search Essentials](https://developers.google.com/search/docs/essentials) (previously known as Webmaster Guidelines)?
+  - What kind of results do you expect to see, and in what timeframe? How do you measure your success?
+  - What's your experience in my industry?
+  - What's your experience in my country/city?
+  - What's your experience developing international sites?
+  - How long have you been in business?
+  - How can I expect to communicate with you? Will you share with me all the changes you make to my site, and provide detailed information about your recommendations and the reasoning behind them?
+  - See if the SEO is interested in you and your business. If they're not interested, find someone who is. Your SEO should ask questions about what makes your business unique, who your competitors are, how search results can help, and how your customers find you.
+- **Check your SEO's business references.** Ask past clients if they felt that this SEO provided useful service, was easy to work with, and produced positive results.
+- **If your SEO offers to do an SEO audit for you, be sure to carefully consider what's involved
+  and only grant read access to Search Console (at this stage, don't grant them write access).** An SEO audit should be about giving you realistic estimates of improvement, and an estimate of the work involved. If they guarantee you that their changes will give you first place in search results, find someone else.
+
+  > [!WARNING]
+  > If your SEO uses a third-party tool, keep in mind that Google doesn't evaluate or endorse third-party SEO tools, and these tools don't have access to Google's internal ranking data. Be wary of tools that claim to be "acceptable" or "approved" by Google Search.
+
+- **Evaluate your SEO's recommendations and tools they use.** Before making significant changes to your site based on a third-party tool's audit, be sure to check their recommendations against [official guidance from Google Search](https://developers.google.com/search/docs/fundamentals/seo-starter-guide), think critically about any claims or recommendations you hear, and make your own informed decisions.
+  - Do they cite official Google documentation as supporting evidence for their recommendations?
+  - If they have advice on optimizing for AI experiences (also known as "AEO" "GEO" services), is their advice aligned with [Google Search's
+    official guidance on optimizing for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)?
+  - Do they use tools that are aligned with Google's guidance?
+- **Be wary of SEO firms and web consultants or agencies that email you out of the blue.**
+
+  Amazingly, we get these spam emails too:
+  > *"Dear google.com,  
+  > I visited your website and noticed that you are not listed in most of the major search engines and directories..."*
+
+  Reserve the same skepticism for unsolicited email about search engines as you do for "burn
+  fat at night" diet pills or requests to help transfer funds from deposed dictators.
+- **No one can guarantee a #1 ranking on Google.** Beware of SEOs that claim to guarantee rankings, allege a "special relationship" with Google, or advertise a "priority submit" to Google.
+- **Be careful if a company is secretive or won't clearly explain what they intend to do.**
+
+  Ask for explanations if something is unclear. If an SEO creates deceptive or misleading
+  content on your behalf, your site could be removed entirely from Google's index. Ultimately,
+  you are responsible for the actions of any companies you hire, so it's best to be sure you
+  know exactly how they intend to "help" you. If an SEO has FTP access to your server, they should
+  be willing to explain all the changes they are making to your site.
+- **You should never have to link to an SEO.**
+
+  Avoid SEOs that talk about link popularity schemes or submitting your site to thousands of
+  search engines. These are typically useless exercises that don't affect your ranking in the
+  results of the major search engines---at least, not in a way you would likely consider to
+  be positive.
+
+**Important:** While SEOs can provide clients with valuable services, some unethical SEOs
+have given the industry a black eye by using overly aggressive marketing efforts or using
+techniques that violate [our spam policies](https://developers.google.com/search/docs/essentials/spam-policies), which
+may result in a negative adjustment of your site's presence in Google, or even the removal of
+your site from our index.
+
+## Reporting issues
+
+If you feel that you were deceived by an SEO in some way, you may want to report it.
+
+In the United States, the Federal Trade Commission (FTC) handles complaints about deceptive or
+unfair business practices. To file a complaint, visit the FTC website to
+[file a complaint online](https://www.ftc.gov/) or call
+1-877-FTC-HELP.
+
+If your complaint is against a company in a country other than the United States, file it at
+<https://www.econsumer.gov/>.
+
+
+

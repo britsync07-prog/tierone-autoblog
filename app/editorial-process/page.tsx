@@ -1,13 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { SITE_URL, AUTHOR_NAME, AUTHOR_SLUG } from '@/lib/site';
+import { AUTHOR_NAME, AUTHOR_SLUG } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+
+const canonical = canonicalFor('/editorial-process');
 
 export const metadata: Metadata = {
-  title: 'Editorial process',
+  title: 'Editorial Process & Standards',
   description:
-    'How articles are produced, how AI assistance is disclosed, and the sourcing standards every post must meet before publication.',
+    'How articles are produced, verified against source documentation, and how AI assistance is disclosed with full human publisher accountability.',
   alternates: {
-    canonical: `${SITE_URL}/editorial-process`,
+    ...localeAlternates(canonical),
   },
 };
 

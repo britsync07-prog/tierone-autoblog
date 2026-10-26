@@ -46,6 +46,7 @@ export async function generateMetadata({
   if (!post) return {};
   const canonical = canonicalFor(`/blog/${slug}`);
   const ogImage = `/blog/${slug}/opengraph-image`;
+  const siloDef = getSilo(post.silo);
   return {
     title: post.title,
     description: post.description,
@@ -81,6 +82,13 @@ export async function generateMetadata({
           ? `${SITE_URL}${post.heroImage.src.replace(/hero\.(?:avif|webp)$/, 'og.jpg')}`
           : ogImage,
       ],
+    },
+    other: {
+      'article:published_time': post.publishedAt,
+      'article:modified_time': post.updatedAt,
+      'article:author': `${SITE_URL}/authors/${AUTHOR_SLUG}`,
+      'article:section': siloDef?.label ?? post.silo,
+      'article:tag': siloDef?.slug ?? post.silo,
     },
   };
 }

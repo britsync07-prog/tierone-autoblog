@@ -1,11 +1,14 @@
 import type { Metadata } from 'next';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+
+const canonical = canonicalFor('/contact');
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: `Contact ${SITE_NAME} by email. Direct communication desk for technical inquiries and feedback.`,
+  title: 'Contact Editorial Desk',
+  description: `Contact ${SITE_NAME} by email. Direct communication desk with the publisher for technical inquiries, research feedback, and corrections.`,
   alternates: {
-    canonical: `${SITE_URL}/contact`,
+    ...localeAlternates(canonical),
   },
 };
 
@@ -16,13 +19,20 @@ export default function ContactPage() {
         <h1 className="text-3xl font-bold tracking-tight text-[#09090b] sm:text-4xl">
           Contact the Editorial Desk
         </h1>
-        <div className="mt-8 rounded-sm bg-[#f4f4f6] p-6 sm:p-10 space-y-6 text-base leading-relaxed text-[#27272a]">
+        <div
+          data-mcp-action="send-editorial-inquiry"
+          data-mcp-description="Direct contact channel to the publisher for technical inquiries, research suggestions, corrections, or benchmark submissions."
+          data-mcp-params='{"required": ["name", "email", "message"]}'
+          className="mt-8 rounded-sm bg-[#f4f4f6] p-6 sm:p-10 space-y-6 text-base leading-relaxed text-[#27272a]"
+        >
           <p>
             For editorial questions, technical corrections, research feedback, or model evaluation proposals, contact the publisher directly:
           </p>
           <div>
             <a
               href="mailto:saimon@ascentraconsulting.co.uk"
+              data-mcp-action="email-editorial-desk"
+              data-mcp-endpoint="mailto:saimon@ascentraconsulting.co.uk"
               className="inline-flex items-center gap-2.5 rounded-sm bg-[#d92b21] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#b91c1c]"
             >
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

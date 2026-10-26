@@ -3,17 +3,19 @@ import Link from 'next/link';
 import {
   SITE_NAME,
   SITE_TAGLINE,
-  SITE_URL,
   AUTHOR_NAME,
   AUTHOR_SLUG,
   CONTACT_EMAIL,
 } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+
+const canonical = canonicalFor('/about');
 
 export const metadata: Metadata = {
   title: 'About',
-  description: `About ${SITE_NAME}: ${SITE_TAGLINE}.`,
+  description: `About ${SITE_NAME}: ${SITE_TAGLINE}. Independent technical journalism and empirical benchmarks for Tier-1 engineering teams.`,
   alternates: {
-    canonical: `${SITE_URL}/about`,
+    ...localeAlternates(canonical),
   },
 };
 

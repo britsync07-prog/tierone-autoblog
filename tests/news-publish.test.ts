@@ -72,16 +72,22 @@ Content here.`;
 });
 
 test('runDailyNewsPublisher with dryRun and mock executes cleanly without writing files', async () => {
-  const result = await runDailyNewsPublisher({
-    dryRun: true,
-    mock: true,
-    now: new Date('2026-10-25T08:00:00.000Z'),
-  });
+  const tempPostsDir = mkdtempSync(join(tmpdir(), 'news-dryrun-posts-'));
+  try {
+    const result = await runDailyNewsPublisher({
+      dryRun: true,
+      mock: true,
+      postsDir: tempPostsDir,
+      now: new Date('2026-10-25T08:00:00.000Z'),
+    });
 
-  assert.equal(result.success, true);
-  assert.equal(result.reason, 'dry_run');
-  assert.ok(result.slug && result.slug.length > 0);
-  assert.ok(result.candidateTitle && result.candidateTitle.length > 0);
+    assert.equal(result.success, true);
+    assert.equal(result.reason, 'dry_run');
+    assert.ok(result.slug && result.slug.length > 0);
+    assert.ok(result.candidateTitle && result.candidateTitle.length > 0);
+  } finally {
+    rmSync(tempPostsDir, { recursive: true, force: true });
+  }
 });
 
 test('runDailyNewsPublisher enforces idempotency lock unless force is set', async () => {

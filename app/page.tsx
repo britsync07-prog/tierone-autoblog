@@ -1,7 +1,31 @@
 import Link from 'next/link';
 import { allPosts } from 'content-collections';
 import { SILO_SLUGS, SILOS, siloUrl } from '@/lib/silos';
-import { SITE_NAME } from '@/lib/site';
+import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const canonical = canonicalFor('/');
+  return {
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description: SITE_TAGLINE,
+    alternates: { ...localeAlternates(canonical) },
+    openGraph: {
+      title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+      description: SITE_TAGLINE,
+      url: canonical,
+      type: 'website',
+      images: ['/opengraph-image'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+      description: SITE_TAGLINE,
+      images: ['/opengraph-image'],
+    },
+  };
+}
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString('en-US', {
@@ -24,7 +48,38 @@ export default function HomePage() {
   const featuredPost = posts[0];
   const recentPosts = posts.slice(1, 7);
 
+  const homepageJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: SITE_NAME,
+    description: SITE_TAGLINE,
+    url: `${SITE_URL}/`,
+    isAccessibleForFree: true,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: [
+        ...recentPosts.map((post, idx) => ({
+          '@type': 'ListItem',
+          position: idx + 1,
+          url: `${SITE_URL}/blog/${post.slug}`,
+        })),
+        ...SILO_SLUGS.map((slug, idx) => ({
+          '@type': 'ListItem',
+          position: recentPosts.length + idx + 1,
+          url: `${SITE_URL}/${slug}`,
+        })),
+      ],
+    },
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homepageJsonLd).replace(/</g, '\\u003c'),
+        }}
+      />
     <main id="main-content" className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
       {/* Editorial Masthead */}
       <section className="rounded-sm bg-[#f4f4f6] p-8 sm:p-12">
@@ -224,5 +279,6 @@ export default function HomePage() {
         )}
       </section>
     </main>
+    </>
   );
 }

@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { SITE_NAME, SITE_URL } from '@/lib/site';
+import { SITE_NAME } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+
+const canonical = canonicalFor('/terms');
 
 export const metadata: Metadata = {
-  title: 'Terms of use',
-  description: `Terms of use for ${SITE_NAME}: informational AI-tool guides, AI-assistance disclosure, and the limits of what this content promises.`,
+  title: 'Terms of Use',
+  description: `Terms of use for ${SITE_NAME}: informational AI tool guides, AI assistance disclosure, and the limits of what this content promises.`,
   alternates: {
-    canonical: `${SITE_URL}/terms`,
+    ...localeAlternates(canonical),
   },
 };
 

@@ -61,11 +61,16 @@ export function buildArticleJsonLd(
       '@type': 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/favicon.svg`,
+      },
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     image: `${canonical}/opengraph-image`,
     mainEntityOfPage: canonical,
+    isAccessibleForFree: true,
   };
 }
 
@@ -91,11 +96,16 @@ export function buildNewsArticleJsonLd(
       '@type': 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/favicon.svg`,
+      },
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
     image: `${canonical}/opengraph-image`,
     mainEntityOfPage: canonical,
+    isAccessibleForFree: true,
   };
 }
 

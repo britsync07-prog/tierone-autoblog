@@ -39,8 +39,8 @@ export function useMDXComponents() {
       return (
         <a
           href={href}
-          {...(external ? { target: '_blank' as const, rel: 'noopener' } : {})}
-          className="font-medium text-emerald-400 underline underline-offset-4 decoration-emerald-500/40 transition-colors hover:text-emerald-300 hover:decoration-emerald-300"
+          {...(external ? { target: '_blank' as const, rel: 'noopener noreferrer' } : {})}
+          className="font-medium text-[#d92b21] underline underline-offset-4 decoration-[#d92b21]/40 transition-colors hover:text-[#b91c1c] hover:decoration-[#b91c1c]"
         >
           {children}
         </a>

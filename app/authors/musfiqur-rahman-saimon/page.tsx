@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
 import AuthorCard from '@/components/author-card';
 import { AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
 
 const AUTHOR_PATH = '/authors/musfiqur-rahman-saimon';
+const canonical = canonicalFor(AUTHOR_PATH);
 
 export const metadata: Metadata = {
-  title: `About ${AUTHOR_NAME}`,
-  description: `${AUTHOR_NAME} is a Full-Stack Product Engineer based in Bangladesh, publishing practical AI tool guides for Tier-1 builders.`,
+  title: `About ${AUTHOR_NAME} — Author Profile`,
+  description: `${AUTHOR_NAME} is a Full-Stack Product Engineer based in Bangladesh, publishing practical AI tool guides and engineering intelligence for Tier-1 builders.`,
   alternates: {
-    canonical: `${SITE_URL}${AUTHOR_PATH}`,
+    ...localeAlternates(canonical),
   },
 };
 
@@ -20,6 +22,13 @@ function AuthorJsonLd() {
     url: `${SITE_URL}${AUTHOR_PATH}`,
     jobTitle: 'Full-Stack Product Engineer',
     homeLocation: 'Bangladesh',
+    description: `${AUTHOR_NAME} publishes practical AI tool guides and engineering intelligence for Tier-1 builders.`,
+    knowsAbout: [
+      'Artificial Intelligence',
+      'Software Engineering',
+      'Autonomous Agents',
+      'LLM Pipelines',
+    ],
     sameAs: [
       'https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa',
       'https://github.com/britsync07-prog',

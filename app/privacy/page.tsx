@@ -1,11 +1,14 @@
 import type { Metadata } from 'next';
-import { SITE_NAME, SITE_URL, CONTACT_EMAIL } from '@/lib/site';
+import { SITE_NAME, CONTACT_EMAIL } from '@/lib/site';
+import { canonicalFor, localeAlternates } from '@/lib/seo/canonical';
+
+const canonical = canonicalFor('/privacy');
 
 export const metadata: Metadata = {
-  title: 'Privacy policy',
+  title: 'Privacy Policy',
   description: `Privacy policy for ${SITE_NAME}: no accounts, no tracking cookies, cookie-less analytics, and a direct email channel for data requests.`,
   alternates: {
-    canonical: `${SITE_URL}/privacy`,
+    ...localeAlternates(canonical),
   },
 };
 

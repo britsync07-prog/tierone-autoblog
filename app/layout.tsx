@@ -6,6 +6,11 @@ import AdSlot from '@/components/ad-slot';
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import './globals.css';
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -40,6 +45,20 @@ function SiteJsonLd() {
         name: SITE_NAME,
         url: SITE_URL,
         slogan: SITE_TAGLINE,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}/favicon.svg`,
+        },
+        sameAs: [
+          'https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa',
+          'https://github.com/britsync07-prog',
+        ],
+        knowsAbout: [
+          'Artificial Intelligence',
+          'Software Engineering',
+          'Autonomous Agents',
+          'Large Language Models',
+        ],
       },
       {
         '@type': 'WebSite',
@@ -48,6 +67,14 @@ function SiteJsonLd() {
         name: SITE_NAME,
         inLanguage: 'en-US',
         publisher: { '@id': `${SITE_URL}/#organization` },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: `${SITE_URL}/#topics`,
+          },
+          'query-input': 'required name=search_term_string',
+        },
       },
     ],
   };
@@ -69,7 +96,16 @@ export default function RootLayout({
   return (
     <html lang="en-US">
       <head>
+        <meta name="theme-color" content="#d92b21" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://plausible.io" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://5gvci.com" />
         <meta name="monetag" content="5aed58f78612b1efc769e98d8284c4b9" />
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs Context" />
+        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLMs Full Knowledge Base" />
+        <link rel="mcp-actions" href="/mcp-actions.json" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"

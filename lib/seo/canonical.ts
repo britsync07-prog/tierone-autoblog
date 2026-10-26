@@ -21,6 +21,12 @@ type Alternates = NonNullable<Metadata['alternates']>;
 export function localeAlternates(canonical: string): Alternates {
   return {
     canonical,
-    languages: { 'en-US': canonical, 'x-default': canonical },
+    languages: {
+      'en-US': canonical,
+      'en-GB': canonical,
+      'en-CA': canonical,
+      'en-AU': canonical,
+      'x-default': canonical,
+    },
   };
 }
