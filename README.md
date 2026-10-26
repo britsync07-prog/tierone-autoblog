@@ -163,7 +163,10 @@ Contributions are welcome! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) a
 
 **Musfiqur Rahman Saimon**
 - 🐙 GitHub: [@britsync07-prog](https://github.com/britsync07-prog)
-- 💼 Independent Full-Stack Engineer & AI Systems Developer
+- 💼 LinkedIn: [Musfiqur Rahman Saimon](https://www.linkedin.com/in/musfiqur-rahman-saimon-a5994b3aa)
+- 📧 Email: [saimon@ascentraconsulting.co.uk](mailto:saimon@ascentraconsulting.co.uk)
+- 🌐 Portfolio: [brit-os.pages.dev](https://brit-os.pages.dev/)
+- 🧑‍💻 Independent Full-Stack Engineer & AI Systems Developer
 
 ⭐ **If you find this autonomous SEO architecture innovative or useful, please star the repository!** ⭐
 
