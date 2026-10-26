@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T10:38:40.685Z",
+  "updatedAt": "2026-10-26T12:11:42.208Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "We should be more ambitious with the software we build",
+      "keyword": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-25T10:38:40.685Z",
-      "publishedAt": "2026-10-25T10:38:40.685Z",
+      "updatedAt": "2026-10-26T12:11:42.208Z",
+      "publishedAt": "2026-10-26T12:11:42.208Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-25T10:38:40.685Z"
+        "landedAt": "2026-10-26T12:11:42.208Z"
       },
       "qa": {
-        "passedAt": "2026-10-25T10:38:40.685Z",
-        "informationGainScore": 711,
+        "passedAt": "2026-10-26T12:11:42.208Z",
+        "informationGainScore": 638,
         "claimsChecked": 1
       }
     }
