@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T10:55:00.000Z",
+  "updatedAt": "2026-10-26T10:55:00.000Z",
+  "planTitle": "TierOne AutoBlog 60-Day Topical Authority Execution Plan",
+  "status": "active",
+  "currentExecutionDay": 1,
+  "totalScheduledDays": 60,
+  "executionCadence": "Every 2 days (Monday, Wednesday, Friday cycle)",
+  "publishedCount": 1,
+  "scheduledCount": 23,
+  "publishedHistory": [
+    {
+      "day": 1,
+      "date": "2026-10-26",
+      "silo": "ai-coding",
+      "title": "Cursor vs Windsurf (2026): Which AI IDE Ships Better Code",
+      "slug": "cursor-vs-windsurf-ai-ide-comparison-2026",
+      "primaryKeyword": "cursor vs windsurf 2026",
+      "intent": "commercial",
+      "wordCount": 2540,
+      "status": "published",
+      "indexingStatus": "dispatched"
+    }
+  ],
+  "nextScheduled": {
+    "day": 3,
+    "scheduledDate": "2026-10-28",
+    "silo": "ai-coding",
+    "title": "Local LLM Coding in 2026: Ollama, DeepSeek-Coder & Continue.dev",
+    "slug": "local-llm-coding-setup-2026",
+    "primaryKeyword": "local llm coding setup 2026",
+    "intent": "technical_guide",
+    "targetWordCount": 2200,
+    "priorityScore": 95,
+    "status": "ready_to_draft",
+    "dependencies": [
+      "cursor-vs-windsurf-ai-ide-comparison-2026"
+    ]
+  },
+  "upcomingSchedule": [
+    {
+      "day": 5,
+      "scheduledDate": "2026-10-30",
+      "silo": "ai-news",
+      "title": "Claude 3.7 Sonnet Hybrid Reasoning: Real Engineering Benchmarks",
+      "slug": "claude-3-7-sonnet-hybrid-reasoning-engineering-benchmarks",
+      "primaryKeyword": "claude 3.7 hybrid reasoning benchmark",
+      "intent": "informational",
+      "targetWordCount": 2100,
+      "priorityScore": 94
+    },
+    {
+      "day": 8,
+      "scheduledDate": "2026-11-02",
+      "silo": "ai-writing",
+      "title": "Claude 3.7 vs ChatGPT 4.5 for Long-Form Writing & Editorial Work",
+      "slug": "claude-3-7-vs-chatgpt-4-5-long-form-writing",
+      "primaryKeyword": "claude 3.7 vs chatgpt 4.5 writing",
+      "intent": "commercial",
+      "targetWordCount": 2400,
+      "priorityScore": 98
+    },
+    {
+      "day": 10,
+      "scheduledDate": "2026-11-04",
+      "silo": "ai-productivity",
+      "title": "CrewAI vs LangGraph: Which Multi-Agent Framework for Production?",
+      "slug": "crewai-vs-langgraph-multi-agent-frameworks",
+      "primaryKeyword": "crewai vs langgraph",
+      "intent": "commercial",
+      "targetWordCount": 2400,
+      "priorityScore": 96
+    },
+    {
+      "day": 12,
+      "scheduledDate": "2026-11-06",
+      "silo": "ai-productivity",
+      "title": "Best AI Meeting Assistants 2026: Otter, Fireflies & Supernormal Tested",
+      "slug": "best-ai-meeting-assistants-2026",
+      "primaryKeyword": "best ai meeting assistants 2026",
+      "intent": "commercial",
+      "targetWordCount": 2000,
+      "priorityScore": 91
+    },
+    {
+      "day": 15,
+      "scheduledDate": "2026-11-09",
+      "silo": "ai-image",
+      "title": "Midjourney v7 vs FLUX.1 Pro: Ultimate Photorealism & Typography Test",
+      "slug": "midjourney-v7-vs-flux-1-pro-comparison",
+      "primaryKeyword": "midjourney v7 vs flux 1 pro",
+      "intent": "commercial",
+      "targetWordCount": 2300,
+      "priorityScore": 93
+    },
+    {
+      "day": 17,
+      "scheduledDate": "2026-11-11",
+      "silo": "ai-image",
+      "title": "Self-Hosted AI Image Generation: Stable Diffusion 3.5 & ComfyUI Guide",
+      "slug": "stable-diffusion-3-5-comfyui-setup-guide",
+      "primaryKeyword": "comfyui stable diffusion 3.5 guide",
+      "intent": "technical_guide",
+      "targetWordCount": 2500,
+      "priorityScore": 89
+    },
+    {
+      "day": 19,
+      "scheduledDate": "2026-11-13",
+      "silo": "ai-writing",
+      "title": "AI Detection Myths in 2026: How Search Engines Filter Thin Content",
+      "slug": "how-google-detects-ai-content-2026",
+      "primaryKeyword": "how google detects ai content 2026",
+      "intent": "informational",
+      "targetWordCount": 2200,
+      "priorityScore": 95
+    },
+    {
+      "day": 22,
+      "scheduledDate": "2026-11-16",
+      "silo": "ai-guides",
+      "title": "Context Window Management: How to Feed 200k+ Tokens Without Loss",
+      "slug": "llm-context-window-optimization-guide",
+      "primaryKeyword": "llm context window optimization",
+      "intent": "technical_guide",
+      "targetWordCount": 2100,
+      "priorityScore": 92
+    },
+    {
+      "day": 24,
+      "scheduledDate": "2026-11-18",
+      "silo": "ai-guides",
+      "title": "Building an Automated AI Daily Newsletter with Python & Claude API",
+      "slug": "build-automated-ai-newsletter-python",
+      "primaryKeyword": "build automated ai newsletter python",
+      "intent": "how_to",
+      "targetWordCount": 2400,
+      "priorityScore": 90
+    },
+    {
+      "day": 26,
+      "scheduledDate": "2026-11-20",
+      "silo": "ai-coding",
+      "title": "The Definitive 2026 AI Developer Stack Review: Tools That Actually Work",
+      "slug": "best-ai-developer-tools-2026",
+      "primaryKeyword": "best ai developer tools 2026",
+      "intent": "cornerstone",
+      "targetWordCount": 3200,
+      "priorityScore": 100
+    }
+  ],
+  "followUpActions": [
+    {
+      "actionId": "verify-indexing-day-1",
+      "targetSlug": "cursor-vs-windsurf-ai-ide-comparison-2026",
+      "scheduledCheck": "2026-10-27T16:00:00.000Z",
+      "description": "Verify Google Search Console URL inspection status and Bing IndexNow ingestion for Day 1 flagship article."
+    },
+    {
+      "actionId": "internal-link-mesh-day-3",
+      "targetSlug": "local-llm-coding-setup-2026",
+      "scheduledCheck": "2026-10-28T16:00:00.000Z",
+      "description": "Establish bidirectional link mesh connecting Day 3 article back to Day 1 Cursor vs Windsurf article."
+    }
+  ]
+}

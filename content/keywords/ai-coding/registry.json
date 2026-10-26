@@ -1,7 +1,26 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T18:36:11.511Z",
+  "updatedAt": "2026-10-26T10:55:00.000Z",
   "keywords": [
+    {
+      "id": "cursor-vs-windsurf-2026",
+      "keyword": "cursor vs windsurf 2026",
+      "silo": "ai-coding",
+      "stage": "published",
+      "createdAt": "2026-10-26T10:55:00.000Z",
+      "updatedAt": "2026-10-26T10:55:00.000Z",
+      "publishedAt": "2026-10-26T10:55:00.000Z",
+      "draft": {
+        "slug": "cursor-vs-windsurf-ai-ide-comparison-2026",
+        "attempts": 1,
+        "landedAt": "2026-10-26T10:55:00.000Z"
+      },
+      "qa": {
+        "passedAt": "2026-10-26T10:55:00.000Z",
+        "informationGainScore": 850,
+        "claimsChecked": 8
+      }
+    },
     {
       "id": "ai-coding-assistant",
       "keyword": "ai coding assistant",
