@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T12:11:42.962Z",
+  "updatedAt": "2026-10-27T11:33:04.053Z",
   "events": [
+    {
+      "id": "b8eac1ac6e149cce",
+      "title": "Anthropic S-1",
+      "normalizedTitle": "anthropic",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "canonicalDomain": "sec.gov",
+      "publishedDate": "2026-10-26T13:04:50.000Z",
+      "coveredAt": "2026-10-27T11:33:02.708Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "anthropic"
+      ]
+    },
     {
       "id": "1a7e953f36796cb0",
       "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
