@@ -80,4 +80,4 @@ jobs:
         run: |
           npm run build
           node scripts/prepare-pages.mjs
-          npx wrangler pages deploy deploy-pages --project-name tierone-autoblog --branch master
+          npx wrangler pages deploy deploy-pages --project-name tierone-autoblog-git --branch master
