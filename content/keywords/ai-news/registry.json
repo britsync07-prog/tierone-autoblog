@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T11:33:02.708Z",
+  "updatedAt": "2026-10-28T12:03:32.177Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Anthropic S-1",
+      "keyword": "Survival LLM: AI assistant and emergency library that runs on your own computer",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-27T11:33:02.708Z",
-      "publishedAt": "2026-10-27T11:33:02.708Z",
+      "updatedAt": "2026-10-28T12:03:32.177Z",
+      "publishedAt": "2026-10-28T12:03:32.177Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-27T11:33:02.708Z"
+        "landedAt": "2026-10-28T12:03:32.177Z"
       },
       "qa": {
-        "passedAt": "2026-10-27T11:33:02.708Z",
-        "informationGainScore": 2506,
+        "passedAt": "2026-10-28T12:03:32.177Z",
+        "informationGainScore": 810,
         "claimsChecked": 1
       }
     }

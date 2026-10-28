@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T11:33:04.053Z",
+  "updatedAt": "2026-10-28T12:03:33.112Z",
   "events": [
+    {
+      "id": "b9b5de18e9156d54",
+      "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
+      "normalizedTitle": "survival llm ai assistant emergency library runs your own computer",
+      "sourceUrl": "https://www.brangus.io/survival-llm",
+      "canonicalDomain": "brangus.io",
+      "publishedDate": "2026-10-27T19:55:06.000Z",
+      "coveredAt": "2026-10-28T12:03:32.177Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "b8eac1ac6e149cce",
       "title": "Anthropic S-1",
