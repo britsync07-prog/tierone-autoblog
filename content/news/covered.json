@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T12:03:33.112Z",
+  "updatedAt": "2026-10-29T12:13:52.376Z",
   "events": [
+    {
+      "id": "6825ae5281ac7c3f",
+      "title": "Gemini 4 Carbon",
+      "normalizedTitle": "gemini carbon",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "canonicalDomain": "blog.google",
+      "publishedDate": "2026-10-28T17:01:23.000Z",
+      "coveredAt": "2026-10-29T12:13:50.878Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "gemini"
+      ]
+    },
     {
       "id": "b9b5de18e9156d54",
       "title": "Survival LLM: AI assistant and emergency library that runs on your own computer",
