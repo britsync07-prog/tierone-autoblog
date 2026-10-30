@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T12:13:50.878Z",
+  "updatedAt": "2026-10-30T12:04:28.344Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Gemini 4 Carbon",
+      "keyword": "We're releasing the weights of Mistral Large 4",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-29T12:13:50.878Z",
-      "publishedAt": "2026-10-29T12:13:50.878Z",
+      "updatedAt": "2026-10-30T12:04:28.344Z",
+      "publishedAt": "2026-10-30T12:04:28.344Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-29T12:13:50.878Z"
+        "landedAt": "2026-10-30T12:04:28.344Z"
       },
       "qa": {
-        "passedAt": "2026-10-29T12:13:50.878Z",
-        "informationGainScore": 1547,
+        "passedAt": "2026-10-30T12:04:28.344Z",
+        "informationGainScore": 2453,
         "claimsChecked": 1
       }
     }

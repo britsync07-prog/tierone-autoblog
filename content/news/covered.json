@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T12:13:52.376Z",
+  "updatedAt": "2026-10-30T12:04:29.593Z",
   "events": [
+    {
+      "id": "bd03e4a483646b85",
+      "title": "We're releasing the weights of Mistral Large 4",
+      "normalizedTitle": "we re releasing weights mistral large",
+      "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+      "canonicalDomain": "mistral.ai",
+      "publishedDate": "2026-10-29T14:13:21.000Z",
+      "coveredAt": "2026-10-30T12:04:28.344Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "mistral"
+      ]
+    },
     {
       "id": "6825ae5281ac7c3f",
       "title": "Gemini 4 Carbon",
