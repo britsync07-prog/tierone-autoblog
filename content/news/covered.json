@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-30T12:04:29.593Z",
+  "updatedAt": "2026-10-31T11:39:45.663Z",
   "events": [
+    {
+      "id": "55737272f83db8f2",
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "normalizedTitle": "ai isn replacing sres deskilling them",
+      "sourceUrl": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "canonicalDomain": "newsletter.signoz.io",
+      "publishedDate": "2026-10-30T15:52:18.000Z",
+      "coveredAt": "2026-10-31T11:39:44.725Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "bd03e4a483646b85",
       "title": "We're releasing the weights of Mistral Large 4",
