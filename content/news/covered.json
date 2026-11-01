@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-31T11:39:45.663Z",
+  "updatedAt": "2026-11-01T12:38:03.498Z",
   "events": [
+    {
+      "id": "3c488a5d9e8fc9b7",
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "normalizedTitle": "anthropic blocks users anything touching training larger models",
+      "sourceUrl": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "canonicalDomain": "twitter.com",
+      "publishedDate": "2026-10-31T19:39:19.000Z",
+      "coveredAt": "2026-11-01T12:38:02.137Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": [
+        "anthropic"
+      ]
+    },
     {
       "id": "55737272f83db8f2",
       "title": "AI isn't replacing SREs, it's deskilling them",

@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-31T11:39:44.725Z",
+  "updatedAt": "2026-11-01T12:38:02.137Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "AI isn't replacing SREs, it's deskilling them",
+      "keyword": "Anthropic blocks users for anything touching training larger models",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-10-31T11:39:44.725Z",
-      "publishedAt": "2026-10-31T11:39:44.725Z",
+      "updatedAt": "2026-11-01T12:38:02.137Z",
+      "publishedAt": "2026-11-01T12:38:02.137Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-10-31T11:39:44.725Z"
+        "landedAt": "2026-11-01T12:38:02.137Z"
       },
       "qa": {
-        "passedAt": "2026-10-31T11:39:44.725Z",
-        "informationGainScore": 1008,
+        "passedAt": "2026-11-01T12:38:02.137Z",
+        "informationGainScore": 660,
         "claimsChecked": 1
       }
     }
