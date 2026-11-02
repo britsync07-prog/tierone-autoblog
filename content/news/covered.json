@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T12:38:03.498Z",
+  "updatedAt": "2026-11-02T14:41:31.837Z",
   "events": [
+    {
+      "id": "8617cd6f7d8f8d1c",
+      "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+      "normalizedTitle": "china first frontier ai export controls mofcom announcement no 48",
+      "sourceUrl": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+      "canonicalDomain": "labs.cloudsecurityalliance.org",
+      "publishedDate": "2026-11-02T07:27:28.000Z",
+      "coveredAt": "2026-11-02T14:41:30.630Z",
+      "postSlug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
+      "keywords": []
+    },
     {
       "id": "3c488a5d9e8fc9b7",
       "title": "Anthropic blocks users for anything touching training larger models",

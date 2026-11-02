@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T12:38:02.137Z",
+  "updatedAt": "2026-11-02T14:41:30.630Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
-      "keyword": "Anthropic blocks users for anything touching training larger models",
+      "keyword": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
       "silo": "ai-news",
       "stage": "published",
       "createdAt": "2026-10-19T12:00:55.407Z",
-      "updatedAt": "2026-11-01T12:38:02.137Z",
-      "publishedAt": "2026-11-01T12:38:02.137Z",
+      "updatedAt": "2026-11-02T14:41:30.630Z",
+      "publishedAt": "2026-11-02T14:41:30.630Z",
       "draft": {
         "slug": "anthropic-claude-3-7-sonnet-hybrid-reasoning-release",
         "attempts": 1,
-        "landedAt": "2026-11-01T12:38:02.137Z"
+        "landedAt": "2026-11-02T14:41:30.630Z"
       },
       "qa": {
-        "passedAt": "2026-11-01T12:38:02.137Z",
-        "informationGainScore": 660,
+        "passedAt": "2026-11-02T14:41:30.630Z",
+        "informationGainScore": 394,
         "claimsChecked": 1
       }
     }
