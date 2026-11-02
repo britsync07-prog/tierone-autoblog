@@ -1,7 +1,48 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T11:26:17.702Z",
+  "updatedAt": "2026-11-03T02:23:00.000Z",
   "items": [
+    {
+      "id": "refresh-best-free-ai-image-generators-2026-11",
+      "slug": "best-free-ai-image-generators",
+      "silo": "ai-image",
+      "type": "striking-distance",
+      "priority": 10,
+      "detectedAt": "2026-11-03T02:14:25.000Z",
+      "status": "applied",
+      "diagnostics": {
+        "currentImpressions": 28,
+        "clicks": 0,
+        "queries": [
+          { "query": "best free ai image generator", "position": 81.2, "impressions": 6, "clicks": 0 },
+          { "query": "best free ai image generators 2026", "position": 83.0, "impressions": 3, "clicks": 0 },
+          { "query": "top free ai image generation tools 2026", "position": 79.3, "impressions": 3, "clicks": 0 },
+          { "query": "best free ai generator", "position": 87.3, "impressions": 3, "clicks": 0 },
+          { "query": "best free ai image generator 2026", "position": 80.0, "impressions": 2, "clicks": 0 },
+          { "query": "free ai image generation tools 2026", "position": 69.5, "impressions": 2, "clicks": 0 },
+          { "query": "which ai is best for image generation for free", "position": 80.0, "impressions": 2, "clicks": 0 },
+          { "query": "best free generative ai", "position": 79.0, "impressions": 1, "clicks": 0 },
+          { "query": "best free image generator", "position": 98.0, "impressions": 1, "clicks": 0 },
+          { "query": "top free ai image generators", "position": 85.0, "impressions": 1, "clicks": 0 },
+          { "query": "best free ai image generation tools 2026", "position": 87.0, "impressions": 1, "clicks": 0 },
+          { "query": "best free ai image generators", "position": 99.7, "impressions": 3, "clicks": 0 }
+        ]
+      },
+      "suggestedActions": [
+        {
+          "action": "bump-date-modified",
+          "details": "Bump updatedAt to 2026-11-03T02:00:00.000Z for fresh indexing signal"
+        },
+        {
+          "action": "inject-faq",
+          "details": "Targeted PAA and GSC queries: which ai is best for image generation for free, commercial rights, ChatGPT limits, Midjourney alternatives"
+        },
+        {
+          "action": "competitor-upgrade",
+          "details": "Added 2026 competitive toolset: Google Gemini (Imagen 3), Microsoft Designer, Ideogram 2.0, Recraft v3, Adobe Firefly, Leonardo AI, Flux.1 Schnell"
+        }
+      ]
+    },
     {
       "id": "refresh-cursor-ai-vs-github-copilot-2026-10",
       "slug": "cursor-ai-vs-github-copilot",
