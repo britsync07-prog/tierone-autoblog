@@ -55,9 +55,7 @@ export async function synthesizeNewsArticle(
   let synthesized: NewsSynthesisResult;
   let rawJson = '';
 
-  const isMockMode =
-    options?.mock === true ||
-    (!process.env.LLM_BASE_URL && !process.env.LLM_API_KEY);
+  const isMockMode = options?.mock === true;
 
   if (options?.jsonFixture !== undefined) {
     const complete = options?.llmAdapter ?? completeJson;
@@ -73,6 +71,13 @@ export async function synthesizeNewsArticle(
     synthesized = loadDefaultMock();
     rawJson = JSON.stringify(synthesized);
   } else {
+    if (!process.env.LLM_BASE_URL && !process.env.LLM_API_KEY && !options?.llmAdapter) {
+      throw new Error(
+        '[synthesizer] Missing LLM credentials (LLM_BASE_URL or LLM_API_KEY). ' +
+          'Refusing to publish static mock post in live production pipeline. ' +
+          'Please ensure LLM_API_KEY and LLM_BASE_URL are configured in environment or GitHub Secrets.',
+      );
+    }
     const prompt = buildNewsSynthesisPrompt(candidate);
     const complete = options?.llmAdapter ?? completeJson;
     const res = await complete<NewsSynthesisResult>({

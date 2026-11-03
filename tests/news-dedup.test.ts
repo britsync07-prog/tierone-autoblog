@@ -145,7 +145,8 @@ test('isStoryDuplicate detects duplicates via URL, shingle similarity, and entit
     source: 'TechCrunch',
     summary: 'Anthropic announced Claude 3.7 Sonnet today.',
   };
-  const shingleCheck = isStoryDuplicate(competingHeadlineCandidate, ledger);
+  const testNow = new Date('2026-10-18T20:00:00Z');
+  const shingleCheck = isStoryDuplicate(competingHeadlineCandidate, ledger, { now: testNow });
   assert.equal(shingleCheck.isDuplicate, true);
   assert.ok(shingleCheck.matchedStory?.id === 'cov-001');
 
@@ -158,7 +159,7 @@ test('isStoryDuplicate detects duplicates via URL, shingle similarity, and entit
     source: 'TechCrunch',
     summary: 'Nvidia announced new compute nodes.',
   };
-  const distinctCheck = isStoryDuplicate(distinctCandidate, ledger);
+  const distinctCheck = isStoryDuplicate(distinctCandidate, ledger, { now: testNow });
   assert.equal(distinctCheck.isDuplicate, false);
 });
 

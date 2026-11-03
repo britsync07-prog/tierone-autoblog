@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T14:41:30.630Z",
+  "updatedAt": "2026-11-03T10:58:43.151Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -18,6 +18,25 @@
       "qa": {
         "passedAt": "2026-11-02T14:41:30.630Z",
         "informationGainScore": 394,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "sec-block-anthropic-ipo-public",
+      "keyword": "The SEC Should Block Anthropic's IPO to Protect the Public",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-03T10:58:43.151Z",
+      "updatedAt": "2026-11-03T10:58:43.151Z",
+      "publishedAt": "2026-11-03T10:58:43.151Z",
+      "draft": {
+        "slug": "sec-block-anthropic-ipo-public-safety",
+        "attempts": 1,
+        "landedAt": "2026-11-03T10:58:43.151Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-03T10:58:43.151Z",
+        "informationGainScore": 638,
         "claimsChecked": 1
       }
     }
