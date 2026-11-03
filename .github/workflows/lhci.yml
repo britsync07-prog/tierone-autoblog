@@ -1,13 +1,13 @@
-// Lighthouse CI gate (SITE-01, T-04-02): every template change is checked
-// against the 90+ mobile performance budget on the homepage and the
-// representative seed-post template. Fails the workflow when performance
-// drops below 0.9 on either URL.
+# Lighthouse CI gate (SITE-01, T-04-02): every template change is checked
+# against the 90+ mobile performance budget on the homepage and the
+# representative seed-post template. Fails the workflow when performance
+# drops below 0.9 on either URL.
 name: lhci
 
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   build:
