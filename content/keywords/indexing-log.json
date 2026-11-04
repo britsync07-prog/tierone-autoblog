@@ -222,5 +222,20 @@
     "gsc": {
       "status": "submitted"
     }
+  },
+  {
+    "timestamp": "2026-11-04T13:44:42.726Z",
+    "slug": "postman-auto-installs-ai-plugins-data-share",
+    "postUrl": "https://exclusivesources.online/blog/postman-auto-installs-ai-plugins-data-share",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]

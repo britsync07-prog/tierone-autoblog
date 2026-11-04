@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T10:58:59.536Z",
+  "updatedAt": "2026-11-04T13:44:42.546Z",
   "events": [
+    {
+      "id": "210b26f029f33a3e",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "normalizedTitle": "postman silently auto installs ai plugins attempts share all api data",
+      "sourceUrl": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "canonicalDomain": "github.com",
+      "publishedDate": "2026-11-03T17:22:37.000Z",
+      "coveredAt": "2026-11-04T13:44:29.061Z",
+      "postSlug": "postman-auto-installs-ai-plugins-data-share",
+      "keywords": []
+    },
     {
       "id": "3cc79194c2806ef2",
       "title": "The SEC Should Block Anthropic's IPO to Protect the Public",

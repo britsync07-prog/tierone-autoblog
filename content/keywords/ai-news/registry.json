@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T10:58:43.151Z",
+  "updatedAt": "2026-11-04T13:44:29.061Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -37,6 +37,25 @@
       "qa": {
         "passedAt": "2026-11-03T10:58:43.151Z",
         "informationGainScore": 638,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "postman-auto-installs-ai-plugins",
+      "keyword": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-04T13:44:29.061Z",
+      "updatedAt": "2026-11-04T13:44:29.061Z",
+      "publishedAt": "2026-11-04T13:44:29.061Z",
+      "draft": {
+        "slug": "postman-auto-installs-ai-plugins-data-share",
+        "attempts": 1,
+        "landedAt": "2026-11-04T13:44:29.061Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-04T13:44:29.061Z",
+        "informationGainScore": 2248,
         "claimsChecked": 1
       }
     }
