@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T13:44:42.546Z",
+  "updatedAt": "2026-11-06T13:42:19.243Z",
   "events": [
+    {
+      "id": "199af8aea5b61129",
+      "title": "Claude Code sends your email address to websites",
+      "normalizedTitle": "claude code sends your email address websites",
+      "sourceUrl": "https://github.com/anthropics/claude-code/issues/107757",
+      "canonicalDomain": "github.com",
+      "publishedDate": "2026-11-05T22:17:15.000Z",
+      "coveredAt": "2026-11-06T13:42:05.822Z",
+      "postSlug": "claude-code-email-leak-hacker-news-issue",
+      "keywords": [
+        "claude"
+      ]
+    },
     {
       "id": "210b26f029f33a3e",
       "title": "Postman silently auto-installs AI plugins and attempts to share all API data",

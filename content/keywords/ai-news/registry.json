@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T13:44:29.061Z",
+  "updatedAt": "2026-11-06T13:42:05.822Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -56,6 +56,25 @@
       "qa": {
         "passedAt": "2026-11-04T13:44:29.061Z",
         "informationGainScore": 2248,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "claude-code-email-leak-hacker",
+      "keyword": "Claude Code sends your email address to websites",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-06T13:42:05.822Z",
+      "updatedAt": "2026-11-06T13:42:05.822Z",
+      "publishedAt": "2026-11-06T13:42:05.822Z",
+      "draft": {
+        "slug": "claude-code-email-leak-hacker-news-issue",
+        "attempts": 1,
+        "landedAt": "2026-11-06T13:42:05.822Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-06T13:42:05.822Z",
+        "informationGainScore": 2070,
         "claimsChecked": 1
       }
     }
