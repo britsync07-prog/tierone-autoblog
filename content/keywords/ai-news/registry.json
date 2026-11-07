@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T13:42:05.822Z",
+  "updatedAt": "2026-11-07T12:23:33.413Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -75,6 +75,25 @@
       "qa": {
         "passedAt": "2026-11-06T13:42:05.822Z",
         "informationGainScore": 2070,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "google-gemini-omni-1-2",
+      "keyword": "Gemini Omni 1.2 Flash",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-07T12:23:33.413Z",
+      "updatedAt": "2026-11-07T12:23:33.413Z",
+      "publishedAt": "2026-11-07T12:23:33.413Z",
+      "draft": {
+        "slug": "google-gemini-omni-1-2-flash-release",
+        "attempts": 1,
+        "landedAt": "2026-11-07T12:23:33.413Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-07T12:23:33.413Z",
+        "informationGainScore": 579,
         "claimsChecked": 1
       }
     }

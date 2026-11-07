@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T13:42:19.243Z",
+  "updatedAt": "2026-11-07T12:23:45.915Z",
   "events": [
+    {
+      "id": "27b87d65d3f99406",
+      "title": "Gemini Omni 1.2 Flash",
+      "normalizedTitle": "gemini omni flash",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "canonicalDomain": "blog.google",
+      "publishedDate": "2026-11-06T13:35:27.000Z",
+      "coveredAt": "2026-11-07T12:23:33.413Z",
+      "postSlug": "google-gemini-omni-1-2-flash-release",
+      "keywords": [
+        "gemini"
+      ]
+    },
     {
       "id": "199af8aea5b61129",
       "title": "Claude Code sends your email address to websites",
