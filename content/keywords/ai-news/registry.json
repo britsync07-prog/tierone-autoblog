@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-07T12:23:33.413Z",
+  "updatedAt": "2026-11-08T12:42:19.144Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -94,6 +94,25 @@
       "qa": {
         "passedAt": "2026-11-07T12:23:33.413Z",
         "informationGainScore": 579,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "claude-code-dont-ask-again",
+      "keyword": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-08T12:42:19.144Z",
+      "updatedAt": "2026-11-08T12:42:19.144Z",
+      "publishedAt": "2026-11-08T12:42:19.144Z",
+      "draft": {
+        "slug": "claude-code-dont-ask-again-github-password-leak",
+        "attempts": 1,
+        "landedAt": "2026-11-08T12:42:19.144Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-08T12:42:19.144Z",
+        "informationGainScore": 777,
         "claimsChecked": 1
       }
     }

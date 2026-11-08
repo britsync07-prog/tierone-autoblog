@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-07T12:23:45.915Z",
+  "updatedAt": "2026-11-08T12:42:29.162Z",
   "events": [
+    {
+      "id": "10bdc73097cfd238",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "normalizedTitle": "claude code don ask again exposes passwords 122 public github files",
+      "sourceUrl": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "canonicalDomain": "apiiro.com",
+      "publishedDate": "2026-11-07T20:45:32.000Z",
+      "coveredAt": "2026-11-08T12:42:19.144Z",
+      "postSlug": "claude-code-dont-ask-again-github-password-leak",
+      "keywords": [
+        "claude",
+        "github"
+      ]
+    },
     {
       "id": "27b87d65d3f99406",
       "title": "Gemini Omni 1.2 Flash",
