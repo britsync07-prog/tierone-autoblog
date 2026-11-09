@@ -282,5 +282,20 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-09T15:03:23.716Z",
+    "slug": "nvidia-jensen-huang-staff-letter-personal-affair",
+    "postUrl": "https://exclusivesources.online/blog/nvidia-jensen-huang-staff-letter-personal-affair",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]

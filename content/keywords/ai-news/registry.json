@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T12:42:19.144Z",
+  "updatedAt": "2026-11-09T15:03:09.859Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -113,6 +113,25 @@
       "qa": {
         "passedAt": "2026-11-08T12:42:19.144Z",
         "informationGainScore": 777,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "nvidia-jensen-huang-staff-letter",
+      "keyword": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-09T15:03:09.859Z",
+      "updatedAt": "2026-11-09T15:03:09.859Z",
+      "publishedAt": "2026-11-09T15:03:09.859Z",
+      "draft": {
+        "slug": "nvidia-jensen-huang-staff-letter-personal-affair",
+        "attempts": 1,
+        "landedAt": "2026-11-09T15:03:09.859Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-09T15:03:09.859Z",
+        "informationGainScore": 1646,
         "claimsChecked": 1
       }
     }

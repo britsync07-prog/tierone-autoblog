@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T12:42:29.162Z",
+  "updatedAt": "2026-11-09T15:03:23.454Z",
   "events": [
+    {
+      "id": "e020f35ba82bcce7",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "normalizedTitle": "nvidia ceo jensen huang letter staff affair",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "canonicalDomain": "nvidianews.nvidia.com",
+      "publishedDate": "2026-11-08T22:20:09.000Z",
+      "coveredAt": "2026-11-09T15:03:09.859Z",
+      "postSlug": "nvidia-jensen-huang-staff-letter-personal-affair",
+      "keywords": [
+        "nvidia"
+      ]
+    },
     {
       "id": "10bdc73097cfd238",
       "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
