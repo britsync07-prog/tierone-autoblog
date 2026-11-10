@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T15:03:23.454Z",
+  "updatedAt": "2026-11-10T14:16:20.983Z",
   "events": [
+    {
+      "id": "a989f1582084d0cf",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "normalizedTitle": "claude fable mythos",
+      "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "canonicalDomain": "anthropic.com",
+      "publishedDate": "2026-11-09T18:01:10.000Z",
+      "coveredAt": "2026-11-10T14:16:08.307Z",
+      "postSlug": "anthropic-claude-fable-5-2-mythos-5-2-release",
+      "keywords": [
+        "claude"
+      ]
+    },
     {
       "id": "e020f35ba82bcce7",
       "title": "Nvidia CEO Jensen Huang's letter to staff about affair",

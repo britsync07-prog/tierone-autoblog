@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T15:03:09.859Z",
+  "updatedAt": "2026-11-10T14:16:08.307Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -132,6 +132,25 @@
       "qa": {
         "passedAt": "2026-11-09T15:03:09.859Z",
         "informationGainScore": 1646,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "anthropic-claude-fable-5-2",
+      "keyword": "Claude Fable 5.2 and Mythos 5.2",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-10T14:16:08.307Z",
+      "updatedAt": "2026-11-10T14:16:08.307Z",
+      "publishedAt": "2026-11-10T14:16:08.307Z",
+      "draft": {
+        "slug": "anthropic-claude-fable-5-2-mythos-5-2-release",
+        "attempts": 1,
+        "landedAt": "2026-11-10T14:16:08.307Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-10T14:16:08.307Z",
+        "informationGainScore": 1221,
         "claimsChecked": 1
       }
     }
