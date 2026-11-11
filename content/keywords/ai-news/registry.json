@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T14:16:08.307Z",
+  "updatedAt": "2026-11-11T13:30:11.175Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -151,6 +151,25 @@
       "qa": {
         "passedAt": "2026-11-10T14:16:08.307Z",
         "informationGainScore": 1221,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "apple-mac-app-local-ai",
+      "keyword": "Apple has new Mac app coming to make running local AI models easy",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-11T13:30:11.175Z",
+      "updatedAt": "2026-11-11T13:30:11.175Z",
+      "publishedAt": "2026-11-11T13:30:11.175Z",
+      "draft": {
+        "slug": "apple-mac-app-local-ai-models",
+        "attempts": 1,
+        "landedAt": "2026-11-11T13:30:11.175Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-11T13:30:11.175Z",
+        "informationGainScore": 1108,
         "claimsChecked": 1
       }
     }

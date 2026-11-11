@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T14:16:20.983Z",
+  "updatedAt": "2026-11-11T13:30:20.582Z",
   "events": [
+    {
+      "id": "601b39403922f80c",
+      "title": "Apple has new Mac app coming to make running local AI models easy",
+      "normalizedTitle": "apple has new mac app coming make running local ai models easy",
+      "sourceUrl": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+      "canonicalDomain": "9to5mac.com",
+      "publishedDate": "2026-11-10T21:25:03.000Z",
+      "coveredAt": "2026-11-11T13:30:11.175Z",
+      "postSlug": "apple-mac-app-local-ai-models",
+      "keywords": [
+        "apple"
+      ]
+    },
     {
       "id": "a989f1582084d0cf",
       "title": "Claude Fable 5.2 and Mythos 5.2",
