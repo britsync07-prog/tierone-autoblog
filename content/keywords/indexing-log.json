@@ -327,5 +327,20 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-12T14:34:53.622Z",
+    "slug": "nvidia-ceo-transition-colette-kress-successor",
+    "postUrl": "https://exclusivesources.online/blog/nvidia-ceo-transition-colette-kress-successor",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]
