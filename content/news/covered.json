@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T13:52:41.115Z",
+  "updatedAt": "2026-11-14T12:56:06.199Z",
   "events": [
+    {
+      "id": "8f4b2632f43363d7",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "normalizedTitle": "nvidia allegedly engineered scarcity funding ai startups buy its gpus",
+      "sourceUrl": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "canonicalDomain": "techpowerup.com",
+      "publishedDate": "2026-11-14T02:52:59.000Z",
+      "coveredAt": "2026-11-14T12:55:55.055Z",
+      "postSlug": "nvidia-funding-ai-startups-gpu-scarcity-allegation",
+      "keywords": [
+        "nvidia"
+      ]
+    },
     {
       "id": "2149fca53e44bc8d",
       "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",

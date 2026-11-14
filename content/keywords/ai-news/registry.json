@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T13:52:28.326Z",
+  "updatedAt": "2026-11-14T12:55:55.055Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -208,6 +208,25 @@
       "qa": {
         "passedAt": "2026-11-13T13:52:28.326Z",
         "informationGainScore": 1022,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "nvidia-funding-ai-startups-gpu",
+      "keyword": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-14T12:55:55.055Z",
+      "updatedAt": "2026-11-14T12:55:55.055Z",
+      "publishedAt": "2026-11-14T12:55:55.055Z",
+      "draft": {
+        "slug": "nvidia-funding-ai-startups-gpu-scarcity-allegation",
+        "attempts": 1,
+        "landedAt": "2026-11-14T12:55:55.055Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-14T12:55:55.055Z",
+        "informationGainScore": 1458,
         "claimsChecked": 1
       }
     }
