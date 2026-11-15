@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14T12:56:06.199Z",
+  "updatedAt": "2026-11-15T13:24:51.190Z",
   "events": [
+    {
+      "id": "a21cc815013d30aa",
+      "title": "A family tree of software job titles",
+      "normalizedTitle": "family tree software job titles",
+      "sourceUrl": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "canonicalDomain": "zwischenzugs.com",
+      "publishedDate": "2026-11-14T17:45:19.000Z",
+      "coveredAt": "2026-11-15T13:24:42.381Z",
+      "postSlug": "software-job-titles-family-tree-analysis",
+      "keywords": []
+    },
     {
       "id": "8f4b2632f43363d7",
       "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",

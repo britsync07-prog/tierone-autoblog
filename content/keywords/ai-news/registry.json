@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14T12:55:55.055Z",
+  "updatedAt": "2026-11-15T13:24:42.381Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -227,6 +227,25 @@
       "qa": {
         "passedAt": "2026-11-14T12:55:55.055Z",
         "informationGainScore": 1458,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "software-job-titles-family-tree",
+      "keyword": "A family tree of software job titles",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-15T13:24:42.381Z",
+      "updatedAt": "2026-11-15T13:24:42.381Z",
+      "publishedAt": "2026-11-15T13:24:42.381Z",
+      "draft": {
+        "slug": "software-job-titles-family-tree-analysis",
+        "attempts": 1,
+        "landedAt": "2026-11-15T13:24:42.381Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-15T13:24:42.381Z",
+        "informationGainScore": 553,
         "claimsChecked": 1
       }
     }
