@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T13:24:51.190Z",
+  "updatedAt": "2026-11-17T15:28:33.093Z",
   "events": [
+    {
+      "id": "d4515e27dcb7f192",
+      "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+      "normalizedTitle": "windows 11 collecting data which coding agents developer tools you use",
+      "sourceUrl": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "canonicalDomain": "xusheng.dev",
+      "publishedDate": "2026-11-16T22:58:20.000Z",
+      "coveredAt": "2026-11-17T15:28:19.240Z",
+      "postSlug": "windows-11-coding-agent-telemetry-collection",
+      "keywords": []
+    },
     {
       "id": "a21cc815013d30aa",
       "title": "A family tree of software job titles",

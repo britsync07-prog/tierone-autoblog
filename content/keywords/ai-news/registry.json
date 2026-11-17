@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T13:24:42.381Z",
+  "updatedAt": "2026-11-17T15:28:19.240Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -246,6 +246,25 @@
       "qa": {
         "passedAt": "2026-11-15T13:24:42.381Z",
         "informationGainScore": 553,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "windows-11-coding-agent-telemetry",
+      "keyword": "Windows 11 is collecting data on which coding agents and developer tools you use",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-17T15:28:19.240Z",
+      "updatedAt": "2026-11-17T15:28:19.240Z",
+      "publishedAt": "2026-11-17T15:28:19.240Z",
+      "draft": {
+        "slug": "windows-11-coding-agent-telemetry-collection",
+        "attempts": 1,
+        "landedAt": "2026-11-17T15:28:19.240Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-17T15:28:19.240Z",
+        "informationGainScore": 1164,
         "claimsChecked": 1
       }
     }
