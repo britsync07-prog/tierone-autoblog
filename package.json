@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/prepare-pages.mjs",
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test tests/**/*.test.ts",
@@ -37,7 +37,7 @@
     "post:retire": "tsx scripts/retire-post.ts",
     "silos:check": "tsx scripts/check-pillar-clusters.ts",
     "indexnow:sync": "node -r dotenv/config scripts/sync-indexnow-key.mjs",
-    "deploy:pages": "npm run build && node scripts/prepare-pages.mjs && wrangler pages deploy deploy-pages --project-name tierone-autoblog --branch master"
+    "deploy:pages": "npm run build && wrangler pages deploy deploy-pages --project-name tierone-autoblog-git --branch master"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

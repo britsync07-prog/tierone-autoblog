@@ -1,0 +1,3 @@
+name = "tierone-autoblog-git"
+compatibility_date = "2026-11-01"
+pages_build_output_dir = "deploy-pages"

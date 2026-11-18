@@ -104,4 +104,16 @@ if (existsSync(redirectsFile)) {
 }
 writeFileSync(join(OUT_DIR, '_redirects'), redirectsContent, 'utf-8');
 
+// 6. Mirror bundle to 'out' directory for standard Cloudflare Pages presets
+const OUT_DIR_ALT = resolve(ROOT, 'out');
+try {
+  if (!existsSync(OUT_DIR_ALT)) {
+    mkdirSync(OUT_DIR_ALT, { recursive: true });
+  }
+  cpSync(OUT_DIR, OUT_DIR_ALT, { recursive: true });
+  console.log('[prepare-pages] Mirrored bundle to alternative directory:', OUT_DIR_ALT);
+} catch (e) {
+  console.warn('[prepare-pages] Warning mirroring to out/ directory:', e.message);
+}
+
 console.log('[prepare-pages] Bundle successfully assembled at:', OUT_DIR);
