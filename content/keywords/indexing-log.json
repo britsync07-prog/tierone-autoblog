@@ -402,5 +402,20 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-18T15:02:41.263Z",
+    "slug": "openai-gpt-6-2-astra-sol-release-analysis",
+    "postUrl": "https://exclusivesources.online/blog/openai-gpt-6-2-astra-sol-release-analysis",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]

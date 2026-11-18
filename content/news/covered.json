@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T15:28:33.093Z",
+  "updatedAt": "2026-11-18T15:02:41.137Z",
   "events": [
+    {
+      "id": "0fb76b8d23388056",
+      "title": "GPT‑6.2 Astra and Sol",
+      "normalizedTitle": "gpt astra sol",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "canonicalDomain": "openai.com",
+      "publishedDate": "2026-11-17T17:46:43.000Z",
+      "coveredAt": "2026-11-18T15:02:31.066Z",
+      "postSlug": "openai-gpt-6-2-astra-sol-release-analysis",
+      "keywords": [
+        "gpt"
+      ]
+    },
     {
       "id": "d4515e27dcb7f192",
       "title": "Windows 11 is collecting data on which coding agents and developer tools you use",

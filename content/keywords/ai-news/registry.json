@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T15:28:19.240Z",
+  "updatedAt": "2026-11-18T15:02:31.066Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -265,6 +265,25 @@
       "qa": {
         "passedAt": "2026-11-17T15:28:19.240Z",
         "informationGainScore": 1164,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "openai-gpt-6-2-astra",
+      "keyword": "GPT‑6.2 Astra and Sol",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-18T15:02:31.066Z",
+      "updatedAt": "2026-11-18T15:02:31.066Z",
+      "publishedAt": "2026-11-18T15:02:31.066Z",
+      "draft": {
+        "slug": "openai-gpt-6-2-astra-sol-release-analysis",
+        "attempts": 1,
+        "landedAt": "2026-11-18T15:02:31.066Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-18T15:02:31.066Z",
+        "informationGainScore": 2088,
         "claimsChecked": 1
       }
     }
