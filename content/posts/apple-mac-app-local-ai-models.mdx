@@ -112,8 +112,8 @@ Both snippets assume the background service is running (the app launches it auto
 
 | From | To | Steps |
 |------|----|-------|
-| Llama.cpp CLI | Apple Local AI CLI | 1. Install the app via App Store.<br>2. Use `ai-import` to convert existing `.ggml` files into `.aial` containers (optional).<br>3. Replace `./main -m model.ggml` with `ai-run --model mymodel`. |
-| Custom Python wrapper over `torch` | Apple Python SDK | 1. Install `pip install apple-local-ai`.<br>2. Swap `torch` inference calls with `client.completions`.<br>3. Adjust batch size according to the device’s VRAM. |
+| Llama.cpp CLI | Apple Local AI CLI | 1. Install the app via App Store.<br />2. Use `ai-import` to convert existing `.ggml` files into `.aial` containers (optional).<br />3. Replace `./main -m model.ggml` with `ai-run --model mymodel`. |
+| Custom Python wrapper over `torch` | Apple Python SDK | 1. Install `pip install apple-local-ai`.<br />2. Swap `torch` inference calls with `client.completions`.<br />3. Adjust batch size according to the device’s VRAM. |
 
 Developers who already employ containerized inference (e.g., Docker images with `vLLM`) can still run those containers on macOS, but Apple Local AI offers a lighter‑weight alternative without the overhead of a full Linux VM.
 
