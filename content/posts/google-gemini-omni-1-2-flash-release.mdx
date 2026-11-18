@@ -25,7 +25,7 @@ faq:
 On November 6, 2026, Google announced **Gemini Omni 1.2 Flash**, an incremental upgrade to its multimodal Gemini Omni family. The headline claims are a **30 % latency reduction** and the introduction of an **8‑bit quantized inference path** that runs on both Google Cloud TPUs and commodity CPUs. The release notes specify the following technical details:
 
 * **Model size:** 7 B parameters (base) with an optional 14 B fine‑tuned checkpoint for vision‑language tasks.
-* **Quantization:** Symmetric 8‑bit integer arithmetic with per‑layer scaling factors, preserving < 1 % BLEU loss on translation benchmarks.
+* **Quantization:** Symmetric 8‑bit integer arithmetic with per‑layer scaling factors, preserving &lt; 1 % BLEU loss on translation benchmarks.
 * **Plugin architecture:** A new `gemini.plugins` namespace that enables developers to register custom preprocessors and post‑processors at runtime.
 * **Deployment targets:** Google Cloud Vertex AI, Google Edge TPU, and a **WebAssembly (Wasm) runtime** for browsers.
 * **API changes:** The REST endpoint `/v1beta2/models/gemini-omni-1-2-flash:predict` replaces the previous `/v1/models/...:predict` path. The request payload now accepts a `plugins` array that lists plugin identifiers and optional configuration objects.

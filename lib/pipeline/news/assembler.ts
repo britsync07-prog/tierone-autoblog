@@ -57,7 +57,8 @@ export function assembleNewsPostMdx(
   // Resolve body markdown
   let body = buildBodyMdxFromSections(synthesized)
     .replace(/<br\s*(?!\/)>/gi, '<br />')
-    .replace(/<hr\s*(?!\/)>/gi, '<hr />');
+    .replace(/<hr\s*(?!\/)>/gi, '<hr />')
+    .replace(/<(\s*[\d=])/g, '&lt;$1');
 
   // Ensure primary source citation URL is present
   if (sourceUrl && !body.includes(sourceUrl)) {
