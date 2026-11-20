@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T15:02:41.137Z",
+  "updatedAt": "2026-11-20T14:51:28.643Z",
   "events": [
+    {
+      "id": "15969c90ab8fc1c8",
+      "title": "Anthropic’s Nasdaq debut",
+      "normalizedTitle": "anthropic nasdaq debut",
+      "sourceUrl": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "canonicalDomain": "reuters.com",
+      "publishedDate": "2026-11-19T17:02:40.000Z",
+      "coveredAt": "2026-11-20T14:51:17.893Z",
+      "postSlug": "anthropic-nasdaq-debut-ai-startup-valuation",
+      "keywords": [
+        "anthropic"
+      ]
+    },
     {
       "id": "0fb76b8d23388056",
       "title": "GPT‑6.2 Astra and Sol",

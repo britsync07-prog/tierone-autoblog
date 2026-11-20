@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T15:02:31.066Z",
+  "updatedAt": "2026-11-20T14:51:17.893Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -284,6 +284,25 @@
       "qa": {
         "passedAt": "2026-11-18T15:02:31.066Z",
         "informationGainScore": 2088,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "anthropic-nasdaq-debut-ai-startup",
+      "keyword": "Anthropic’s Nasdaq debut",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-20T14:51:17.893Z",
+      "updatedAt": "2026-11-20T14:51:17.893Z",
+      "publishedAt": "2026-11-20T14:51:17.893Z",
+      "draft": {
+        "slug": "anthropic-nasdaq-debut-ai-startup-valuation",
+        "attempts": 1,
+        "landedAt": "2026-11-20T14:51:17.893Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-20T14:51:17.893Z",
+        "informationGainScore": 1846,
         "claimsChecked": 1
       }
     }
