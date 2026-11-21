@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T14:51:28.643Z",
+  "updatedAt": "2026-11-21T14:09:30.551Z",
   "events": [
+    {
+      "id": "a8c812cefc0f3f3f",
+      "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+      "normalizedTitle": "dreamcoder coding harness ide author mastering emacs",
+      "sourceUrl": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+      "canonicalDomain": "masteringemacs.org",
+      "publishedDate": "2026-11-20T20:03:59.000Z",
+      "coveredAt": "2026-11-21T14:09:17.796Z",
+      "postSlug": "dreamcoder-ide-emacs-author-launch",
+      "keywords": []
+    },
     {
       "id": "15969c90ab8fc1c8",
       "title": "Anthropic’s Nasdaq debut",

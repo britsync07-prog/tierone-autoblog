@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T14:51:17.893Z",
+  "updatedAt": "2026-11-21T14:09:17.796Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -303,6 +303,25 @@
       "qa": {
         "passedAt": "2026-11-20T14:51:17.893Z",
         "informationGainScore": 1846,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "dreamcoder-ide-emacs-author-launch",
+      "keyword": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-21T14:09:17.796Z",
+      "updatedAt": "2026-11-21T14:09:17.796Z",
+      "publishedAt": "2026-11-21T14:09:17.796Z",
+      "draft": {
+        "slug": "dreamcoder-ide-emacs-author-launch",
+        "attempts": 1,
+        "landedAt": "2026-11-21T14:09:17.796Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-21T14:09:17.796Z",
+        "informationGainScore": 393,
         "claimsChecked": 1
       }
     }
