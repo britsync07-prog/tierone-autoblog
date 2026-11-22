@@ -447,5 +447,20 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-22T13:59:47.893Z",
+    "slug": "anthropic-2028-power-mix-gas-coal-renewables",
+    "postUrl": "https://exclusivesources.online/blog/anthropic-2028-power-mix-gas-coal-renewables",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]
