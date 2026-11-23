@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-22T13:59:47.626Z",
+  "updatedAt": "2026-11-23T17:17:35.857Z",
   "events": [
+    {
+      "id": "cf5164636ad3b77e",
+      "title": "Nvidia Reinstates Jensen Huang as CEO",
+      "normalizedTitle": "nvidia reinstates jensen huang ceo",
+      "sourceUrl": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+      "canonicalDomain": "cnbc.com",
+      "publishedDate": "2026-11-23T14:00:18.000Z",
+      "coveredAt": "2026-11-23T17:17:26.008Z",
+      "postSlug": "nvidia-reinstates-jensen-huang-ceo",
+      "keywords": [
+        "nvidia"
+      ]
+    },
     {
       "id": "8c9d1d1bd7692dd2",
       "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",

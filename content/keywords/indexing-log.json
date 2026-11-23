@@ -462,5 +462,20 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-23T17:17:36.120Z",
+    "slug": "nvidia-reinstates-jensen-huang-ceo",
+    "postUrl": "https://exclusivesources.online/blog/nvidia-reinstates-jensen-huang-ceo",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "error",
+      "httpStatus": 403,
+      "message": "IndexNow API error: HTTP 403 Forbidden"
+    },
+    "gsc": {
+      "status": "skipped-no-creds",
+      "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
+    }
   }
 ]
