@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T17:17:35.857Z",
+  "updatedAt": "2026-11-24T16:56:30.612Z",
   "events": [
+    {
+      "id": "923c0e4c62bee184",
+      "title": "LLM agents work for their parent companies, not for you",
+      "normalizedTitle": "llm agents work their parent companies not you",
+      "sourceUrl": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "canonicalDomain": "michaelharley.net",
+      "publishedDate": "2026-11-24T12:40:15.000Z",
+      "coveredAt": "2026-11-24T16:56:11.319Z",
+      "postSlug": "llm-agents-parent-companies-not-you",
+      "keywords": []
+    },
     {
       "id": "cf5164636ad3b77e",
       "title": "Nvidia Reinstates Jensen Huang as CEO",

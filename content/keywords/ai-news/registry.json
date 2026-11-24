@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T17:17:26.008Z",
+  "updatedAt": "2026-11-24T16:56:11.319Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -360,6 +360,25 @@
       "qa": {
         "passedAt": "2026-11-23T17:17:26.008Z",
         "informationGainScore": 1303,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "llm-agents-parent-companies-not",
+      "keyword": "LLM agents work for their parent companies, not for you",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-24T16:56:11.319Z",
+      "updatedAt": "2026-11-24T16:56:11.319Z",
+      "publishedAt": "2026-11-24T16:56:11.319Z",
+      "draft": {
+        "slug": "llm-agents-parent-companies-not-you",
+        "attempts": 1,
+        "landedAt": "2026-11-24T16:56:11.319Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-24T16:56:11.319Z",
+        "informationGainScore": 936,
         "claimsChecked": 1
       }
     }

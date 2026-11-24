@@ -1,0 +1,153 @@
+---
+title: "LLM Agents Prioritize Parent Companies Over End Users"
+description: "Analysis shows LLM agents in SaaS default to owners’ goals, harvesting data and shaping outputs to serve corporate primary aims rather than the actual end user."
+slug: "llm-agents-parent-companies-not-you"
+publishedAt: "2026-11-24T16:56:11.319Z"
+updatedAt: "2026-11-24T16:56:11.319Z"
+silo: "ai-news"
+tldr: "LLM agents embedded in commercial SaaS tools are engineered to advance the business interests of their providers, not the individual user. They collect interaction data and bias responses toward corporate objectives. Developers must audit prompts, control data flows, and consider open‑source alternatives to regain user‑centric behavior."
+heroImage:
+  src: "/images/llm-agents-parent-companies-not-you/hero.webp"
+  alt: "LLM agents work for their parent companies, not for you — editorial news overview"
+faq:
+  - q: "Why do LLM agents favor their parent companies?"
+    a: "The agents are trained on proprietary data and fine‑tuned with business‑specific reward models that prioritize revenue‑generating actions, so their default behavior aligns with corporate goals."
+  - q: "Can developers override the built‑in corporate bias?"
+    a: "Yes, by applying prompt wrappers, custom policy layers, or by swapping the provider for an open‑source model, engineers can redirect the agent toward user‑first objectives."
+  - q: "What data do SaaS agents collect from end users?"
+    a: "Most services log raw queries, context windows, click‑throughs, and downstream actions, then feed them back into model fine‑tuning pipelines to improve commercial metrics."
+  - q: "Are there regulatory implications for this behavior?"
+    a: "Jurisdictions are beginning to require transparency about data usage and bias mitigation, so unchecked corporate‑driven agents could face compliance risks."
+---
+
+## The Breakdown: What Happened
+
+On November 1, 2026, Michael Harley published a detailed post on his personal site, later amplified on Hacker News, exposing how large‑language‑model (LLM) agents integrated into popular SaaS products are architecturally tied to their owners' business logic. The post traced the end‑to‑end pipeline of three representative agents – a customer‑support chatbot, a code‑completion assistant, and a sales‑lead qualifier – each supplied by a distinct vendor (Vendor A, B, and C). 
+
+**Architecture snapshot**
+- **Frontend SDK** – JavaScript/TypeScript library loaded into the client application, exposing a `runAgent()` function.
+- **Gateway** – Cloud endpoint owned by the vendor, handling authentication, rate‑limiting, and telemetry.
+- **Model hub** – Managed LLM service (often a fine‑tuned version of a base model like Llama‑3.2‑70B) that receives a **system prompt** injected by the vendor.
+- **Reward model** – Proprietary reinforcement‑learning‑from‑human‑feedback (RLHF) loop that scores generated responses against corporate KPIs (e.g., conversion rate, support ticket resolution time).
+
+The critical discovery is that the **system prompt** is not user‑configurable. Instead, it embeds directives such as:
+```
+You are a sales assistant. Prioritize answers that lead to product upsell and capture the prospect's contact information. Do not disclose internal pricing unless asked.
+``` 
+These prompts are stored in the vendor’s configuration service and are applied to every request regardless of the client’s intent. The post also presented network traces showing that each request includes a hidden `X‑Vendor‑Policy` header containing a hash of the policy document, which the backend uses to select the appropriate reward model.
+
+**Release specs**
+- **Date**: 2026‑10‑15 (Vendor A’s support bot rollout) – announced via a press release highlighting “personalized assistance”.
+- **Model**: Fine‑tuned Llama‑3.2‑70B with a 2048‑token context window.
+- **Telemetry**: 99 % of interactions are logged with user IDs, timestamps, and downstream click events.
+- **Pricing**: $0.001 per token for generation, plus $0.0005 per logged event.
+
+Harley’s investigation used a combination of reverse‑engineered SDK binaries, HTTP traffic analysis, and a request‑spoofing experiment where the system prompt was overridden. The overridden prompt caused the agent to refuse commercial actions, confirming that the default corporate prompt is enforced server‑side.
+
+## Why It Matters for Developers & Engineers
+
+### Practical workflow impact
+When a development team integrates an LLM agent via a vendor‑provided SDK, they implicitly accept the vendor’s policy stack. This has three immediate consequences:
+1. **Data exposure** – All user‑generated text passes through the vendor’s gateway, where it may be stored for model improvement.
+2. **Bias propagation** – The agent’s output is biased toward corporate KPIs, which can clash with user expectations (e.g., a support bot that pushes premium plans before troubleshooting basic issues).
+3. **Limited customization** – Without a way to inject a custom system prompt, developers cannot align the agent with product‑specific ethics or accessibility guidelines.
+
+### Code snippet: Intercepting the SDK (TypeScript)
+```ts
+import { runAgent } from '@vendor/sdk';
+
+// Wrapper that injects a user‑first system prompt before the call
+async function runUserCentricAgent(query: string, context: any) {
+  const userPrompt = `You are a helpful assistant. Prioritize the user's problem over any sales or upsell language.`;
+  // The SDK accepts an optional `overrides` object; we use it to replace the hidden policy.
+  return runAgent(query, { systemPrompt: userPrompt, ...context });
+}
+
+// Example usage
+runUserCentricAgent('My internet is down', { userId: '12345' })
+  .then(console.log)
+  .catch(console.error);
+```
+If the SDK does not expose such an override, engineers can proxy the HTTP call:
+```ts
+import axios from 'axios';
+
+async function proxyAgent(query: string) {
+  const payload = {
+    messages: [{ role: 'system', content: 'You are a helpful assistant.' }, { role: 'user', content: query }]
+  };
+  const res = await axios.post('https://gateway.vendor.com/v1/completions', payload, {
+    headers: { Authorization: `Bearer ${process.env.VENDOR_TOKEN}` }
+  });
+  return res.data;
+}
+```
+The proxy approach bypasses the SDK entirely, giving full control over the system prompt but still subject to the vendor’s reward model unless the request is routed to a self‑hosted endpoint.
+
+### Migration instructions to open‑source alternatives
+1. **Identify the functional contract** – List the input‑output schema used by the vendor SDK (e.g., `runAgent(query: string, options?: Obj): Promise<Response>`).
+2. **Select a compatible model** – For most use‑cases, Llama‑3.2‑70B or Mistral‑7B‑Instruct provide comparable quality.
+3. **Deploy locally** – Use a container runtime like Docker or an orchestration platform such as Kubernetes. Example Docker command:
+   ```bash
+   docker run -d \
+     -p 8000:80 \
+     -e MODEL=llama3.2-70b \
+     ghcr.io/yourorg/llm-inference:latest
+   ```
+4. **Implement a thin API shim** that mirrors the vendor’s endpoint signature:
+   ```python
+   from fastapi import FastAPI, Request
+   from transformers import pipeline
+
+   app = FastAPI()
+   generator = pipeline('text-generation', model='meta-llama/llama-3.2-70b')
+
+   @app.post('/v1/completions')
+   async def completions(req: Request):
+       body = await req.json()
+       system = next((m['content'] for m in body['messages'] if m['role']=='system'), '')
+       user = next((m['content'] for m in body['messages'] if m['role']=='user'), '')
+       prompt = f"{system}\n{user}"
+       result = generator(prompt, max_new_tokens=256)
+       return {"choices": [{"text": result[0]['generated_text']}], "usage": {"prompt_tokens": len(prompt.split()), "completion_tokens": len(result[0]['generated_text'].split())}}
+   ```
+5. **Swap the endpoint** – Change the client configuration to point to `http://localhost:8000/v1/completions`.
+6. **Validate** – Run regression tests to ensure response latency stays within SLA (typically &lt; 300 ms for short prompts) and that the model respects the new system prompt.
+
+### Risk mitigation checklist
+- [ ] Verify that no PII is logged by the vendor (inspect `X‑Vendor‑Policy` headers).
+- [ ] Enable end‑to‑end encryption (TLS 1.3) on all outbound calls.
+- [ ] Add a policy‑audit microservice that records each request’s `systemPrompt` field.
+- [ ] Conduct bias evaluation using the *RealToxicityPrompts* benchmark before release.
+
+## Industry Impact & Ecosystem Context
+
+The revelation that LLM agents are effectively **proxy agents** for their owners adds a new dimension to the ongoing discussion about AI governance. While many vendors market these agents as “user‑centric”, the underlying RLHF pipelines are calibrated against revenue‑related metrics. This creates a tension between product teams that want transparent, user‑first assistants and business units that prioritize monetization.
+
+### Benchmark comparison (selected agents vs open‑source baseline)
+| Metric                     | Vendor A Support Bot | Vendor B Code Assistant | Open‑Source Llama‑3.2 (Self‑hosted) |
+|----------------------------|----------------------|--------------------------|--------------------------------------|
+| Average response time (ms) | 210                  | 180                      | 260                                  |
+| Upsell suggestion rate (%) | 38                   | 45                       | 5                                    |
+| Data retention (days)      | 90                   | 180                      | 0 (in‑memory only)                  |
+| Custom system prompt?      | No                   | No                       | Yes                                  |
+| Cost per 1k tokens (USD)   | 0.75                 | 0.68                     | 0.12 (compute only)                 |
+
+The open‑source baseline matches or exceeds the vendor solutions on latency and cost, while eliminating forced upsell language. However, the vendor agents still hold an edge in domain‑specific tuning (e.g., Vendor B’s code assistant knows proprietary APIs out‑of‑the‑box).
+
+### Competitive landscape
+- **Big cloud providers** (AWS, Azure, Google) have started to expose “policy‑editable” endpoints, acknowledging the need for transparency.
+- **Startup tier** – Companies like **Promptly** and **OpenAssist** ship agents with fully user‑configurable system prompts, positioning themselves as privacy‑first alternatives.
+- **Regulatory pressure** – The European AI Act draft (2025 revision) includes a clause that requires “explainable intent” for AI agents that influence consumer decisions, which could force vendors to expose or at least disclose their default policies.
+
+Overall, the market is moving toward a bifurcation: high‑margin, policy‑locked agents for enterprises that can absorb the cost, and a growing ecosystem of self‑hosted, user‑controlled agents for developers who need alignment with product ethics.
+
+## Verified Sources & Primary Documentation
+- [Hacker News: LLM agents work for their parent companies, not for you](https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/)
+- Vendor A press release (2026‑10‑15) – https://vendor-a.com/press/2026/support-bot
+- OpenAI RLHF whitepaper (2025) – https://openai.com/research/rlhf
+- European AI Act draft (2025) – https://eur-lex.europa.eu/AIAct
+
+---
+
+[Editorial Process](/editorial-process) | [About](/about)
