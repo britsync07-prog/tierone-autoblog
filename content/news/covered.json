@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T16:56:30.612Z",
+  "updatedAt": "2026-11-25T16:45:15.369Z",
   "events": [
+    {
+      "id": "d9615c8c024ea5a2",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "normalizedTitle": "gpt models demonstrate intrinsic protein design capabilities",
+      "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "canonicalDomain": "openai.com",
+      "publishedDate": "2026-11-24T21:02:22.000Z",
+      "coveredAt": "2026-11-25T16:45:05.380Z",
+      "postSlug": "openai-gpt-6-intrinsic-protein-design-capability",
+      "keywords": [
+        "gpt"
+      ]
+    },
     {
       "id": "923c0e4c62bee184",
       "title": "LLM agents work for their parent companies, not for you",

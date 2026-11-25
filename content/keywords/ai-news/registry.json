@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T16:56:11.319Z",
+  "updatedAt": "2026-11-25T16:45:05.380Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -379,6 +379,25 @@
       "qa": {
         "passedAt": "2026-11-24T16:56:11.319Z",
         "informationGainScore": 936,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "openai-gpt-6-intrinsic-protein",
+      "keyword": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-25T16:45:05.380Z",
+      "updatedAt": "2026-11-25T16:45:05.380Z",
+      "publishedAt": "2026-11-25T16:45:05.380Z",
+      "draft": {
+        "slug": "openai-gpt-6-intrinsic-protein-design-capability",
+        "attempts": 1,
+        "landedAt": "2026-11-25T16:45:05.380Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-25T16:45:05.380Z",
+        "informationGainScore": 564,
         "claimsChecked": 1
       }
     }
