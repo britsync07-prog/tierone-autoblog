@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T16:45:05.380Z",
+  "updatedAt": "2026-11-26T16:20:06.707Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -398,6 +398,25 @@
       "qa": {
         "passedAt": "2026-11-25T16:45:05.380Z",
         "informationGainScore": 564,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "nyt-photographers-photoshop-ai-update",
+      "keyword": "The New York Times warns photographers not to update Photoshop over AI features",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-26T16:20:06.707Z",
+      "updatedAt": "2026-11-26T16:20:06.707Z",
+      "publishedAt": "2026-11-26T16:20:06.707Z",
+      "draft": {
+        "slug": "nyt-photographers-photoshop-ai-update-warning",
+        "attempts": 1,
+        "landedAt": "2026-11-26T16:20:06.707Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-26T16:20:06.707Z",
+        "informationGainScore": 1053,
         "claimsChecked": 1
       }
     }

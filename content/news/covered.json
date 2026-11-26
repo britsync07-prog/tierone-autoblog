@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-25T16:45:15.369Z",
+  "updatedAt": "2026-11-26T16:20:27.469Z",
   "events": [
+    {
+      "id": "1bfb90103b3c1d8e",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "normalizedTitle": "new york times warns photographers not update photoshop over ai features",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+      "canonicalDomain": "theverge.com",
+      "publishedDate": "2026-11-25T21:18:02.000Z",
+      "coveredAt": "2026-11-26T16:20:06.707Z",
+      "postSlug": "nyt-photographers-photoshop-ai-update-warning",
+      "keywords": []
+    },
     {
       "id": "d9615c8c024ea5a2",
       "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
