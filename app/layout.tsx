@@ -6,6 +6,10 @@ import AdSlot from '@/components/ad-slot';
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import './globals.css';
 
+// Ads are optional. Keeping them off until there is meaningful traffic avoids
+// third-party script cost and intrusive ad-network behavior on every page.
+const adsEnabled = process.env.NEXT_PUBLIC_ENABLE_ADS === 'true';
+
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -29,8 +33,7 @@ export const metadata: Metadata = {
     icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
   },
   other: {
-    'google-adsense-account': 'ca-pub-1216169179358368',
-    monetag: '5aed58f78612b1efc769e98d8284c4b9',
+    ...(adsEnabled ? { 'google-adsense-account': 'ca-pub-1216169179358368' } : {}),
   },
 };
 
@@ -100,22 +103,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://plausible.io" />
-        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
-        <link rel="dns-prefetch" href="https://5gvci.com" />
-        <meta name="monetag" content="5aed58f78612b1efc769e98d8284c4b9" />
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs Context" />
         <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLMs Full Knowledge Base" />
         <link rel="mcp-actions" href="/mcp-actions.json" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"
-          crossOrigin="anonymous"
-        />
-        <script
-          src="https://5gvci.com/act/files/tag.min.js?z=12082336"
-          data-cfasync="false"
-          async
-        />
+        {adsEnabled ? (
+          <>
+            <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1216169179358368"
+              crossOrigin="anonymous"
+            />
+          </>
+        ) : null}
       </head>
       <body className="min-h-svh flex flex-col bg-white text-[#27272a] antialiased selection:bg-[#d92b21] selection:text-white">
         <a
@@ -131,9 +131,11 @@ export default function RootLayout({
         />
         <SiteJsonLd />
         <SiteHeader />
-        <div className="hidden md:block">
-          <AdSlot id="header-leaderboard" width={728} height={90} />
-        </div>
+        {adsEnabled ? (
+          <div className="hidden md:block">
+            <AdSlot id="header-leaderboard" width={728} height={90} />
+          </div>
+        ) : null}
         {children}
         <SiteFooter />
       </body>

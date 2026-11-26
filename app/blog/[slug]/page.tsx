@@ -28,6 +28,8 @@ import Tldr from '@/components/tldr';
 import { Toc, TocInline } from '@/components/toc';
 import ReadingProgress from '@/components/reading-progress';
 
+const adsEnabled = process.env.NEXT_PUBLIC_ENABLE_ADS === 'true';
+
 function findPost(slug: string) {
   return allPosts.find((post) => post.slug === slug);
 }
@@ -157,7 +159,7 @@ function FaqSection({ faq }: { faq: { q: string; a: string }[] }) {
 
 const COPY_SCRIPT = `(function(){document.addEventListener('click',function(e){var t=e.target;var b=t&&t.closest?t.closest('[data-copy-button]'):null;if(!b)return;var box=b.closest('[data-code-block]');var code=box?box.querySelector('code'):null;if(!code)return;var text=code.innerText||code.textContent||'';var label=b.textContent;var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent=label;},1500);};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){done();});}else{var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(err){}document.body.removeChild(ta);done();}});})();`;
 
-function ArticleBody({ code }: { code: string }) {
+function ArticleBody({ code, showAds }: { code: string; showAds: boolean }) {
   const base = useMDXComponents();
   let h2Count = 0;
   const h2 = ({ id, children }: ComponentProps<'h2'>): ReactNode => {
@@ -167,7 +169,7 @@ function ArticleBody({ code }: { code: string }) {
         <h2 id={id} className="group scroll-mt-24 text-2xl font-bold tracking-tight text-[#09090b]">
           {children}
         </h2>
-        {h2Count === 2 ? (
+        {showAds && h2Count === 2 ? (
           <AdSlot id="in-article" width={336} height={280} />
         ) : null}
       </>
@@ -247,7 +249,7 @@ export default async function PostPage({
             <Tldr items={[post.tldr]} />
             <TocInline headings={post.headings} />
             {post.comparison && <ComparisonTable {...post.comparison} />}
-            <ArticleBody code={post.mdx} />
+            <ArticleBody code={post.mdx} showAds={adsEnabled} />
             <FaqSection faq={post.faq} />
             <RelatedPosts currentSlug={post.slug} silo={post.silo} />
           </article>

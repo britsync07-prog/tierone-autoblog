@@ -41,8 +41,8 @@ jobs:
       - name: Run scheduled publisher
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
-          GSC_CLIENT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
-          GSC_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
           NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://exclusivesources.online' }}
         run: npx tsx scripts/publish-scheduled.ts ${{ github.event.inputs.force_candidate_id }}
 
