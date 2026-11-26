@@ -26,6 +26,10 @@ export interface GetDashboardAnalyticsOptions {
   postsDir?: string;
 }
 
+// Cached metrics are a fallback only. Older data is worse than no data because
+// it can hide a current indexing or traffic failure.
+const MAX_SNAPSHOT_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+
 function formatDate(date: Date): string {
   return date.toISOString().split('T')[0];
 }
@@ -195,7 +199,11 @@ export async function getDashboardAnalytics(
   }
 
   const snapshot = loadAnalyticsSnapshot(options?.snapshotPath);
-  if (snapshot) {
+  if (
+    snapshot &&
+    !Number.isNaN(Date.parse(snapshot.fetchedAt)) &&
+    Date.now() - Date.parse(snapshot.fetchedAt) <= MAX_SNAPSHOT_AGE_MS
+  ) {
     return {
       ...snapshot,
       source: 'snapshot',
