@@ -37,6 +37,7 @@
     "post:retire": "tsx scripts/retire-post.ts",
     "silos:check": "tsx scripts/check-pillar-clusters.ts",
     "indexnow:sync": "node -r dotenv/config scripts/sync-indexnow-key.mjs",
+    "indexing:submit-sitemaps": "tsx scripts/submit-sitemaps.ts",
     "deploy:pages": "npm run build && wrangler pages deploy deploy-pages --project-name tierone-autoblog-git --branch master"
   },
   "dependencies": {

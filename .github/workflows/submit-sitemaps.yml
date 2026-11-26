@@ -1,0 +1,30 @@
+name: submit-sitemaps
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 7 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Submit current sitemap to search engines
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || 'https://exclusivesources.online' }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
+        run: npx tsx scripts/submit-sitemaps.ts
