@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T16:20:06.707Z",
+  "updatedAt": "2026-11-27T16:04:16.550Z",
   "keywords": [
     {
       "id": "anthropic-claude-3-7-sonnet",
@@ -417,6 +417,25 @@
       "qa": {
         "passedAt": "2026-11-26T16:20:06.707Z",
         "informationGainScore": 1053,
+        "claimsChecked": 1
+      }
+    },
+    {
+      "id": "openai-self-host-ai-toolkit",
+      "keyword": "AI made self-hosting fun again",
+      "silo": "ai-news",
+      "stage": "published",
+      "createdAt": "2026-11-27T16:04:16.550Z",
+      "updatedAt": "2026-11-27T16:04:16.550Z",
+      "publishedAt": "2026-11-27T16:04:16.550Z",
+      "draft": {
+        "slug": "openai-self-host-ai-toolkit-deployment-fun",
+        "attempts": 1,
+        "landedAt": "2026-11-27T16:04:16.550Z"
+      },
+      "qa": {
+        "passedAt": "2026-11-27T16:04:16.550Z",
+        "informationGainScore": 1498,
         "claimsChecked": 1
       }
     }

@@ -1,7 +1,18 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T16:20:27.469Z",
+  "updatedAt": "2026-11-27T16:04:38.820Z",
   "events": [
+    {
+      "id": "aebfbe56731bd98a",
+      "title": "AI made self-hosting fun again",
+      "normalizedTitle": "ai made self hosting fun again",
+      "sourceUrl": "https://janlukas.blog/posts/ai-self-hosting",
+      "canonicalDomain": "janlukas.blog",
+      "publishedDate": "2026-11-26T21:47:45.000Z",
+      "coveredAt": "2026-11-27T16:04:16.550Z",
+      "postSlug": "openai-self-host-ai-toolkit-deployment-fun",
+      "keywords": []
+    },
     {
       "id": "1bfb90103b3c1d8e",
       "title": "The New York Times warns photographers not to update Photoshop over AI features",

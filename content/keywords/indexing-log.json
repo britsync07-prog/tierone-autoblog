@@ -522,5 +522,19 @@
       "status": "skipped-no-creds",
       "message": "Google Search Console credentials not provisioned (skipped-no-creds)."
     }
+  },
+  {
+    "timestamp": "2026-11-27T16:04:39.475Z",
+    "slug": "openai-self-host-ai-toolkit-deployment-fun",
+    "postUrl": "https://exclusivesources.online/blog/openai-self-host-ai-toolkit-deployment-fun",
+    "sitemapUrl": "https://exclusivesources.online/sitemap.xml",
+    "indexnow": {
+      "status": "submitted",
+      "httpStatus": 200
+    },
+    "gsc": {
+      "status": "error",
+      "message": "User does not have sufficient permission for site 'https://exclusivesources.online/'. See also: https://support.google.com/webmasters/answer/2451999."
+    }
   }
 ]
